@@ -1,0 +1,724 @@
+fileFormatVersion: 2
+guid: 1ec825e661926a8408414a5ad472d83f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5519347727000809057
+    second: fortress_tiles_0
+  - first:
+      213: 5661390351281358677
+    second: fortress_tiles_1
+  - first:
+      213: 8818270279702113317
+    second: fortress_tiles_2
+  - first:
+      213: -6669352572676155947
+    second: fortress_tiles_3
+  - first:
+      213: -5431827325250554141
+    second: fortress_tiles_4
+  - first:
+      213: -4545769831781831768
+    second: fortress_tiles_5
+  - first:
+      213: -137527848707126706
+    second: fortress_tiles_6
+  - first:
+      213: -857949950486057682
+    second: fortress_tiles_7
+  - first:
+      213: -2014178329387898072
+    second: fortress_tiles_8
+  - first:
+      213: -7266177272810433745
+    second: fortress_tiles_9
+  - first:
+      213: 7176505414308206047
+    second: fortress_tiles_10
+  - first:
+      213: 2486858679559506750
+    second: fortress_tiles_11
+  - first:
+      213: -6008115541745502598
+    second: fortress_tiles_12
+  - first:
+      213: 5459740336656816436
+    second: fortress_tiles_13
+  - first:
+      213: -8386855630833287639
+    second: fortress_tiles_14
+  - first:
+      213: -2692352506189554143
+    second: fortress_tiles_15
+  - first:
+      213: -5851105457729724534
+    second: fortress_tiles_16
+  - first:
+      213: 2165096109113636068
+    second: fortress_tiles_17
+  - first:
+      213: -7967147206463336926
+    second: fortress_tiles_18
+  - first:
+      213: 1494246788184339632
+    second: fortress_tiles_19
+  - first:
+      213: 3492208422657198192
+    second: fortress_tiles_20
+  - first:
+      213: 7226526673419819774
+    second: fortress_tiles_21
+  - first:
+      213: 6997643586336667924
+    second: fortress_tiles_22
+  - first:
+      213: 3065020906315122212
+    second: fortress_tiles_23
+  - first:
+      213: 1189479138834266965
+    second: fortress_tiles_24
+  - first:
+      213: -5871011444817189672
+    second: fortress_tiles_25
+  - first:
+      213: -8936711330300133931
+    second: fortress_tiles_26
+  - first:
+      213: 4132416800586475683
+    second: fortress_tiles_27
+  - first:
+      213: -5336682090803466634
+    second: fortress_tiles_28
+  - first:
+      213: 3829146553774685398
+    second: fortress_tiles_29
+  - first:
+      213: -2261528154729998793
+    second: fortress_tiles_30
+  - first:
+      213: 1394146150478510265
+    second: fortress_tiles_31
+  - first:
+      213: -7553647395251344623
+    second: fortress_tiles_32
+  - first:
+      213: 6925968841843535295
+    second: fortress_tiles_33
+  - first:
+      213: 2509741550857482183
+    second: fortress_tiles_34
+  - first:
+      213: -7652735021060701675
+    second: fortress_tiles_35
+  - first:
+      213: 4401435229650760324
+    second: fortress_tiles_36
+  - first:
+      213: -2939464638363282168
+    second: fortress_tiles_37
+  - first:
+      213: 5803671232948219500
+    second: fortress_tiles_38
+  - first:
+      213: 1210949405655379752
+    second: fortress_tiles_39
+  - first:
+      213: -621801750812887933
+    second: fortress_tiles_40
+  - first:
+      213: 3198899563997699089
+    second: fortress_tiles_41
+  - first:
+      213: -3639225857417467670
+    second: fortress_tiles_42
+  - first:
+      213: 3248985458787286201
+    second: fortress_tiles_43
+  - first:
+      213: 3841563385171206975
+    second: fortress_tiles_44
+  - first:
+      213: 8301861361235210618
+    second: fortress_tiles_45
+  - first:
+      213: -3612878124451378866
+    second: fortress_tiles_46
+  - first:
+      213: 7734464870596012577
+    second: fortress_tiles_47
+  - first:
+      213: 903699146527907745
+    second: fortress_tiles_48
+  - first:
+      213: 4628781666405021972
+    second: fortress_tiles_49
+  - first:
+      213: 5408535998378201901
+    second: fortress_tiles_50
+  - first:
+      213: 4354404705874132233
+    second: fortress_tiles_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fortress_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91d14c2c765763b0800000000000000
+      internalID: -5519347727000809057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 159
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55703f6778c419e40800000000000000
+      internalID: 5661390351281358677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 159
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c6703291ac06a70800000000000000
+      internalID: 8818270279702113317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 159
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5dccfbb23b173a0800000000000000
+      internalID: -6669352572676155947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f231e1ba44a592b90800000000000000
+      internalID: -7266177272810433745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 134
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5128cc6a1189360800000000000000
+      internalID: 7176505414308206047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 134
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bcdb90bc8138220800000000000000
+      internalID: 2486858679559506750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 134
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7671c44fb2ee9ca0800000000000000
+      internalID: -6008115541745502598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ec185d3d10f6190800000000000000
+      internalID: -7967147206463336926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 109
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4fe787981acb410800000000000000
+      internalID: 1494246788184339632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_20
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 109
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0780c12de01d67030800000000000000
+      internalID: 3492208422657198192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd7041d46c6af380800000000000000
+      internalID: -8936711330300133931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_27
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 84
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a820d68f2b495930800000000000000
+      internalID: 4132416800586475683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 84
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e6872d9eb40f5b0800000000000000
+      internalID: -5336682090803466634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_29
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 84
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcb6a2c08cd32530800000000000000
+      internalID: 3829146553774685398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5124c755b060cc590800000000000000
+      internalID: -7652735021060701675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 59
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4823935850a051d30800000000000000
+      internalID: 4401435229650760324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_37
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 59
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805d8804c7ce437d0800000000000000
+      internalID: -2939464638363282168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_38
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 59
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e2809bc38ca8050800000000000000
+      internalID: 5803671232948219500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33e64b9b89ff4530800000000000000
+      internalID: 3841563385171206975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_45
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 34
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7137f24ce2263370800000000000000
+      internalID: 8301861361235210618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_tiles_46
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 34
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49cb47dc7a7cddc0800000000000000
+      internalID: -3612878124451378866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

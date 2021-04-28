@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Evan
+  m_EditorClassIdentifier: Assembly-CSharp::BattleCharacterData
+  characterAI: []
+  characterAnims:
+  - {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
+  front: {fileID: 0}
+  back: {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
+  isPartyChar: 0
+  level: 1
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 0
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 12
+  maxHitPointsB: 26
+  attackB: 4
+  defenceB: 4
+  intelligenceB: 2
+  gutsB: 3
+  speedB: 3
+  luckB: 5
+  maxSkillPointsGMax: 3
+  maxSkillPointsGMin: 2
+  maxHitPointsGMax: 5
+  maxHitPointsGMin: 3
+  attackG: 3
+  defenceG: 2
+  intelligenceG: 3
+  gutsG: 3
+  speedG: 4
+  luckG: 5
+  inBattle: 1
+  moveDatabase:
+  - move: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+    level: 0
+  - move: {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+    level: 2
+  - move: {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+    level: 3
+  - move: {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+    level: 5
+  - move: {fileID: 11400000, guid: 5319d7adb7e1b3a43aefef5bfde09318, type: 2}
+    level: 7
+  - move: {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
+    level: 10
+  - move: {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
+    level: 14
+  - move: {fileID: 11400000, guid: 50be62d9a3130454dae34bbe0897af9d, type: 2}
+    level: 23
+  currentMoves:
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 0.71
+  - 2
+  - 0.52
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1.5
+  - 1
+  - 1
+  - 2
+  - 0.7
+  money: 0
+  itemDrop: []
+  relationships: []

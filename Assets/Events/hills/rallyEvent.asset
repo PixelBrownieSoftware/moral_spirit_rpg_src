@@ -1,0 +1,777 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
+  m_Name: rallyEvent
+  m_EditorClassIdentifier: 
+  elements:
+  - logic: 0
+    eventType: 3
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Bill
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: b090213569162764a8820cbd7b776e57, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: ... and the world needs to be eliminated of corrupt adults who care
+      about nothing but money!
+    string1: Speaker's voice
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah! All hail Lord Abaddon!
+    string1: Young audience
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: You guys hearing this? They've gone mad!
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah... they sound like they are yearning for some large fictional creature.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Abaddon will come upon us and rid us of these filthy adults.
+    string1: Speaker's voice
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: One thing I'm really confused about is why they are targeting adults
+      specifically.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Hmm...
+    string1: Evan
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Hey! There are some unclean adults spying on us!
+    string1: Boy
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: That's rude! You don't just call someone you don't know-
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Bill! Come here!
+    string1: Boy
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Lords Gabriel and Micheal! We have spotted unclean adults!
+    string1: Bill
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ah... I see you were the same people who beaten down Rebecca.
+    string1: Gabriel
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I was told of you two by Gabriel, and I also see a new member.
+    string1: Tall angel
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Welcome all, my name is Micheal
+    string1: Tall angel
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: You seem to have overcome the trials with Rebecca.
+    string1: Micheal
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: She was releived of her spirit and she will not continue on to the blessed
+      kingdom.
+    string1: Micheal
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: That dosen't mean I still can't fight!
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Still here? Very well, if you think you can fight us, then you can join
+      your new freinds.
+    string1: Micheal
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Rebecca? What are you doing here? You gonna fight alongside us?
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I don't have a choice! I'm only doing this to get my honour back, not
+      be friends with you!
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 6
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 13
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: She was releived of her spirit and she will not continue on to the blessed
+      kingdom.
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Rebecca joins the party.
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I can't wait to smack you all up! Especially you Rebecca!
+    string1: Bill
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: We'll see about that! You're just a stuck up who wants attention!
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: ADD_PARTY_MEMBER
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: HAHAHAHHAHAHAAA!
+    string1: Bill
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 6
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: 
+    string1: Bill
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: b090213569162764a8820cbd7b776e57, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}

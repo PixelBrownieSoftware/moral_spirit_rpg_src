@@ -1,0 +1,106 @@
+{
+    "characterAI": [
+        {
+            "conditions": 6,
+            "element": 0,
+            "healthPercentage": 0.4569999873638153,
+            "name": "",
+            "moveName": "Sana",
+            "onParty": true
+        },
+        {
+            "conditions": 8,
+            "element": 0,
+            "healthPercentage": 0.5289999842643738,
+            "name": "",
+            "moveName": "Splash",
+            "onParty": false
+        },
+        {
+            "conditions": 0,
+            "element": 0,
+            "healthPercentage": 0.0,
+            "name": "",
+            "moveName": "Tackle",
+            "onParty": false
+        }
+    ],
+    "characterAnims": [
+        "kappa"
+    ],
+    "isPartyChar": false,
+    "name": "Kappa",
+    "level": 11,
+    "exp": 0,
+    "expToNextLevel": 0,
+    "baseExpYeild": 2,
+    "hitPoints": 0,
+    "maxHitPoints": 26,
+    "skillPoints": 0,
+    "couragePoints": 0.0,
+    "maxSkillPoints": 18,
+    "attack": 3,
+    "defence": 5,
+    "intelligence": 2,
+    "guts": 4,
+    "speed": 3,
+    "luck": 0,
+    "maxSkillPointsB": 8,
+    "maxHitPointsB": 12,
+    "attackB": 3,
+    "defenceB": 5,
+    "intelligenceB": 2,
+    "gutsB": 2,
+    "speedB": 4,
+    "luckB": 2,
+    "maxSkillPointsGMax": 3,
+    "maxSkillPointsGMin": 3,
+    "maxHitPointsGMax": 4,
+    "maxHitPointsGMin": 2,
+    "attackG": 5,
+    "defenceG": 3,
+    "intelligenceG": 4,
+    "gutsG": 3,
+    "speedG": 4,
+    "luckG": 7,
+    "inBattle": false,
+    "moveDatabase": [
+        {
+            "moveName": "Tackle",
+            "level": 0
+        },
+        {
+            "moveName": "Sana",
+            "level": 0
+        },
+        {
+            "moveName": "Splash",
+            "level": 0
+        }
+    ],
+    "currentMoves": [],
+    "currentStatus": 0,
+    "elementTypeCharts": [
+        1.0,
+        1.0,
+        2.0,
+        0.4000000059604645,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "actionTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "money": 0.0
+}

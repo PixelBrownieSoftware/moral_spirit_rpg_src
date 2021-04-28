@@ -1,0 +1,28 @@
+[LOOKING AT A BUNCH OF BOOKS IN A CASTLE]
+There is an old wooden bookshelf filled to the brim with colourful books. Want to pick out one?
+
+	> Yes
+	As you looked through the shelves, you found one book that caught your eye. It was a red covered book.
+	It has the title "How to capture annoying people". You decide to read through it.
+	...
+	.....
+	The writing was quite cheesy, you sniggered a bit at some of the subtly put jokes.
+
+	Sinro: Pfft... some of the lines there are so ridiculous, why would 'Bully' expect any of his methoods to work?
+	Does he use these books as actual advice? 
+	They seem more like jokes.
+	
+	> No
+	You decided not to pick out a book.
+
+
+[SPEAKING TO A FAIRY]
+Topic - about work
+
+
+[SPREAKING TO A LAMB PERSON]
+Topic - about one's brother playing around
+
+
+[SPEAKING TO AN ELF WOMAN]
+Topic - talking about picking things from an apple tree, dosen't want her boyfreind to eat all the apples

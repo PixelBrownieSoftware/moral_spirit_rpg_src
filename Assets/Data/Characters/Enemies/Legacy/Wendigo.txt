@@ -1,0 +1,94 @@
+{
+    "characterAI": [
+        {
+            "conditions": 5,
+            "element": 0,
+            "healthPercentage": 0.36500000953674319,
+            "name": "",
+            "moveName": "Tackle",
+            "onParty": false
+        },
+        {
+            "conditions": 0,
+            "element": 0,
+            "healthPercentage": 0.0,
+            "name": "",
+            "moveName": "Persuade",
+            "onParty": false
+        }
+    ],
+    "characterAnims": [
+        "weird rock thing"
+    ],
+    "isPartyChar": false,
+    "name": "Wendigo",
+    "level": 10,
+    "exp": 0,
+    "expToNextLevel": 0,
+    "baseExpYeild": 5,
+    "hitPoints": 0,
+    "maxHitPoints": 54,
+    "skillPoints": 0,
+    "couragePoints": 0.0,
+    "maxSkillPoints": 45,
+    "attack": 8,
+    "defence": 6,
+    "intelligence": 7,
+    "guts": 7,
+    "speed": 6,
+    "luck": 0,
+    "maxSkillPointsB": 26,
+    "maxHitPointsB": 13,
+    "attackB": 4,
+    "defenceB": 5,
+    "intelligenceB": 7,
+    "gutsB": 3,
+    "speedB": 3,
+    "luckB": 5,
+    "maxSkillPointsGMax": 5,
+    "maxSkillPointsGMin": 3,
+    "maxHitPointsGMax": 4,
+    "maxHitPointsGMin": 2,
+    "attackG": 5,
+    "defenceG": 4,
+    "intelligenceG": 3,
+    "gutsG": 6,
+    "speedG": 4,
+    "luckG": 4,
+    "inBattle": false,
+    "moveDatabase": [
+        {
+            "moveName": "Tackle",
+            "level": 0
+        },
+        {
+            "moveName": "Persuade",
+            "level": 0
+        }
+    ],
+    "currentMoves": [],
+    "currentStatus": 0,
+    "elementTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "actionTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "money": 0.0
+}

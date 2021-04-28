@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Fancy woman
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: a756c77d80d9eb14ca80557509a8e831, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 2ee0d9618f790a14f89f9905a812bd20, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims: []
+  front: {fileID: -7433917049176664399, guid: b7a1c4952b27a95439399b40d419c2bb, type: 3}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 1
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 0
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 29
+  maxHitPointsB: 22
+  attackB: 1
+  defenceB: 2
+  intelligenceB: 5
+  gutsB: 2
+  speedB: 4
+  luckB: 1
+  maxSkillPointsGMax: 6
+  maxSkillPointsGMin: 2
+  maxHitPointsGMax: 4
+  maxHitPointsGMin: 2
+  attackG: 3
+  defenceG: 2
+  intelligenceG: 2
+  gutsG: 2
+  speedG: 2
+  luckG: 3
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1.32
+  - 2.02
+  - 1
+  - 1
+  - 1.56
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 2.05
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1.41
+  - 1.68
+  - 0.2
+  - 2.1
+  - 0.46
+  money: 0
+  itemDrop: []
+  relationships: []

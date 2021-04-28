@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Bill
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: f0777d40932c65c418fbb2a502667079, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 6
+    element: 0
+    healthPercentage: 0.4
+    name: 
+    moveName: {fileID: 11400000, guid: 3dfe3f42a073b8844b1812fdc574d4f6, type: 2}
+    onParty: 1
+    isImportant: 1
+  - conditions: 0
+    element: 0
+    healthPercentage: 0.3
+    name: 
+    moveName: {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0.3
+    name: 
+    moveName: {fileID: 11400000, guid: 542d1352cbf6b314f8afae59fd2972eb, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims: []
+  front: {fileID: 4850137332638064930, guid: a5e5704622cf7094ebc1399455c41f7e, type: 3}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 20
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 145
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 32
+  maxHitPointsB: 23
+  attackB: 4
+  defenceB: 4
+  intelligenceB: 4
+  gutsB: 5
+  speedB: 2
+  luckB: 4
+  maxSkillPointsGMax: 8
+  maxSkillPointsGMin: 6
+  maxHitPointsGMax: 7
+  maxHitPointsGMin: 5
+  attackG: 3
+  defenceG: 3
+  intelligenceG: 3
+  gutsG: 3
+  speedG: 3
+  luckG: 2
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 0.617
+  - 2.084
+  - 1.297
+  - 1
+  - 1
+  - 2
+  - 1.413
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 2.026
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []

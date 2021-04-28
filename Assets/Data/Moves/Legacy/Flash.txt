@@ -1,0 +1,16 @@
+{
+    "name": "Flash",
+    "onTeam": false,
+    "spCost": 25,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 7,
+    "action_type": 0,
+    "moveType": 1,
+    "power": 41,
+    "animation": [],
+    "moveRequirements": []
+}

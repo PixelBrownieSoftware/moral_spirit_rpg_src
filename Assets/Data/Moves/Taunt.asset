@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7dd4cf0c39b354a82a3382f4e4a2c9, type: 3}
+  m_Name: Taunt
+  m_EditorClassIdentifier: 
+  isMultiHit: 0
+  isFixed: 0
+  onTeam: 0
+  cost: 0
+  affectedBySilence: 0
+  multiTech: 0
+  actionDescription: 
+  infoDescription: 
+  element: 8
+  action_type: 3
+  moveType: 3
+  target: 0
+  power: 7
+  animation: []
+  moveRequirements: []
+  accuracy: 85
+  str_inc: 0
+  vit_inc: 0.2
+  dex_inc: 0
+  luc_inc: 0
+  agi_inc: 0
+  gut_inc: 0.5
+  buffUser: 0
+  statusEffectChances:
+    statusEffectChance: 0
+    status_effect: 0
+  statusMoveType: 5

@@ -1,0 +1,1972 @@
+fileFormatVersion: 2
+guid: 0af0f5f722738d74fa55b6eb87cc63a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: builidng_0
+  - first:
+      213: 21300002
+    second: builidng_1
+  - first:
+      213: 21300004
+    second: builidng_2
+  - first:
+      213: 21300006
+    second: builidng_3
+  - first:
+      213: 21300008
+    second: builidng_4
+  - first:
+      213: 21300010
+    second: builidng_5
+  - first:
+      213: 21300012
+    second: builidng_6
+  - first:
+      213: 21300014
+    second: builidng_7
+  - first:
+      213: 21300016
+    second: builidng_8
+  - first:
+      213: 21300018
+    second: builidng_9
+  - first:
+      213: 21300020
+    second: builidng_10
+  - first:
+      213: 21300022
+    second: builidng_11
+  - first:
+      213: 21300024
+    second: builidng_12
+  - first:
+      213: 21300026
+    second: builidng_13
+  - first:
+      213: 21300028
+    second: builidng_14
+  - first:
+      213: 21300030
+    second: builidng_15
+  - first:
+      213: 21300032
+    second: builidng_16
+  - first:
+      213: 21300034
+    second: builidng_17
+  - first:
+      213: 21300036
+    second: builidng_18
+  - first:
+      213: 21300038
+    second: builidng_19
+  - first:
+      213: 21300040
+    second: builidng_20
+  - first:
+      213: 21300042
+    second: builidng_21
+  - first:
+      213: 21300044
+    second: builidng_22
+  - first:
+      213: 21300046
+    second: builidng_23
+  - first:
+      213: 21300048
+    second: builidng_24
+  - first:
+      213: 21300050
+    second: builidng_25
+  - first:
+      213: 21300052
+    second: builidng_26
+  - first:
+      213: 21300054
+    second: builidng_27
+  - first:
+      213: 21300056
+    second: builidng_28
+  - first:
+      213: 21300058
+    second: builidng_29
+  - first:
+      213: 21300060
+    second: builidng_30
+  - first:
+      213: 21300062
+    second: builidng_31
+  - first:
+      213: 21300064
+    second: builidng_32
+  - first:
+      213: 21300066
+    second: builidng_33
+  - first:
+      213: 21300068
+    second: builidng_34
+  - first:
+      213: 21300070
+    second: builidng_35
+  - first:
+      213: 21300072
+    second: builidng_36
+  - first:
+      213: 21300074
+    second: builidng_37
+  - first:
+      213: 21300076
+    second: builidng_38
+  - first:
+      213: 21300078
+    second: builidng_39
+  - first:
+      213: 21300080
+    second: builidng_40
+  - first:
+      213: 21300082
+    second: builidng_41
+  - first:
+      213: 21300084
+    second: builidng_42
+  - first:
+      213: 21300086
+    second: builidng_43
+  - first:
+      213: 21300088
+    second: builidng_44
+  - first:
+      213: 21300090
+    second: builidng_45
+  - first:
+      213: 21300092
+    second: builidng_46
+  - first:
+      213: 21300094
+    second: builidng_47
+  - first:
+      213: 21300096
+    second: builidng_48
+  - first:
+      213: 21300098
+    second: builidng_49
+  - first:
+      213: 21300100
+    second: builidng_50
+  - first:
+      213: 21300102
+    second: builidng_51
+  - first:
+      213: 21300104
+    second: builidng_52
+  - first:
+      213: 21300106
+    second: builidng_53
+  - first:
+      213: 21300108
+    second: builidng_54
+  - first:
+      213: 21300110
+    second: builidng_55
+  - first:
+      213: 21300112
+    second: builidng_56
+  - first:
+      213: 21300114
+    second: builidng_57
+  - first:
+      213: 21300116
+    second: builidng_58
+  - first:
+      213: 21300118
+    second: builidng_59
+  - first:
+      213: 21300120
+    second: builidng_60
+  - first:
+      213: 21300122
+    second: builidng_61
+  - first:
+      213: 21300124
+    second: builidng_62
+  - first:
+      213: 21300126
+    second: builidng_63
+  - first:
+      213: 21300128
+    second: builidng_64
+  - first:
+      213: 21300130
+    second: builidng_65
+  - first:
+      213: 21300132
+    second: builidng_66
+  - first:
+      213: 21300134
+    second: builidng_67
+  - first:
+      213: 21300136
+    second: builidng_68
+  - first:
+      213: 21300138
+    second: builidng_69
+  - first:
+      213: 21300140
+    second: builidng_70
+  - first:
+      213: 21300142
+    second: builidng_71
+  - first:
+      213: 21300144
+    second: builidng_72
+  - first:
+      213: 21300146
+    second: builidng_73
+  - first:
+      213: 21300148
+    second: builidng_74
+  - first:
+      213: 21300150
+    second: builidng_75
+  - first:
+      213: 21300152
+    second: builidng_76
+  - first:
+      213: 21300154
+    second: builidng_77
+  - first:
+      213: 21300156
+    second: builidng_78
+  - first:
+      213: 21300158
+    second: builidng_79
+  - first:
+      213: 21300160
+    second: builidng_80
+  - first:
+      213: 21300162
+    second: builidng_81
+  - first:
+      213: 21300164
+    second: builidng_82
+  - first:
+      213: 21300166
+    second: builidng_83
+  - first:
+      213: 21300168
+    second: builidng_84
+  - first:
+      213: 21300170
+    second: builidng_85
+  - first:
+      213: 21300172
+    second: builidng_86
+  - first:
+      213: 21300174
+    second: builidng_87
+  - first:
+      213: 21300176
+    second: builidng_88
+  - first:
+      213: 21300178
+    second: builidng_89
+  - first:
+      213: 21300180
+    second: builidng_90
+  - first:
+      213: 21300182
+    second: builidng_91
+  - first:
+      213: 21300184
+    second: builidng_92
+  - first:
+      213: 21300186
+    second: builidng_93
+  - first:
+      213: 21300188
+    second: builidng_94
+  - first:
+      213: 21300190
+    second: builidng_95
+  - first:
+      213: 21300192
+    second: builidng_96
+  - first:
+      213: 21300194
+    second: builidng_97
+  - first:
+      213: 21300196
+    second: builidng_98
+  - first:
+      213: 21300198
+    second: builidng_99
+  - first:
+      213: 21300200
+    second: builidng_100
+  - first:
+      213: 21300202
+    second: builidng_101
+  - first:
+      213: 21300204
+    second: builidng_102
+  - first:
+      213: 21300206
+    second: builidng_103
+  - first:
+      213: 21300208
+    second: builidng_104
+  - first:
+      213: 21300210
+    second: builidng_105
+  - first:
+      213: 21300212
+    second: builidng_106
+  - first:
+      213: 21300214
+    second: builidng_107
+  - first:
+      213: 21300216
+    second: builidng_108
+  - first:
+      213: 21300218
+    second: builidng_109
+  - first:
+      213: 21300220
+    second: builidng_110
+  - first:
+      213: 21300222
+    second: builidng_111
+  - first:
+      213: 21300224
+    second: builidng_112
+  - first:
+      213: 21300226
+    second: builidng_113
+  - first:
+      213: 21300228
+    second: builidng_114
+  - first:
+      213: 21300230
+    second: builidng_115
+  - first:
+      213: 21300232
+    second: builidng_116
+  - first:
+      213: 21300234
+    second: builidng_117
+  - first:
+      213: 21300236
+    second: builidng_118
+  - first:
+      213: 21300238
+    second: builidng_119
+  - first:
+      213: 21300240
+    second: builidng_120
+  - first:
+      213: 21300242
+    second: builidng_121
+  - first:
+      213: 21300244
+    second: builidng_122
+  - first:
+      213: 21300246
+    second: builidng_123
+  - first:
+      213: 21300248
+    second: builidng_124
+  - first:
+      213: 21300250
+    second: builidng_125
+  - first:
+      213: 21300252
+    second: builidng_126
+  - first:
+      213: 21300254
+    second: builidng_127
+  - first:
+      213: 21300256
+    second: builidng_128
+  - first:
+      213: 21300258
+    second: builidng_129
+  - first:
+      213: 21300260
+    second: builidng_130
+  - first:
+      213: 21300262
+    second: builidng_131
+  - first:
+      213: 21300264
+    second: builidng_132
+  - first:
+      213: 21300266
+    second: builidng_133
+  - first:
+      213: 21300268
+    second: builidng_134
+  - first:
+      213: 21300270
+    second: builidng_135
+  - first:
+      213: 21300272
+    second: builidng_136
+  - first:
+      213: 21300274
+    second: builidng_137
+  - first:
+      213: 21300276
+    second: builidng_138
+  - first:
+      213: 21300278
+    second: builidng_139
+  - first:
+      213: 21300280
+    second: builidng_140
+  - first:
+      213: 21300282
+    second: builidng_141
+  - first:
+      213: 21300284
+    second: builidng_142
+  - first:
+      213: 21300286
+    second: builidng_143
+  - first:
+      213: 21300288
+    second: builidng_144
+  - first:
+      213: 21300290
+    second: builidng_145
+  - first:
+      213: 21300292
+    second: builidng_146
+  - first:
+      213: 21300294
+    second: builidng_147
+  - first:
+      213: 21300296
+    second: builidng_148
+  - first:
+      213: 21300298
+    second: builidng_149
+  - first:
+      213: 21300300
+    second: builidng_150
+  - first:
+      213: 21300302
+    second: builidng_151
+  - first:
+      213: 21300304
+    second: builidng_152
+  - first:
+      213: 21300306
+    second: builidng_153
+  - first:
+      213: 21300308
+    second: builidng_154
+  - first:
+      213: 21300310
+    second: builidng_155
+  - first:
+      213: 21300312
+    second: builidng_156
+  - first:
+      213: 21300314
+    second: builidng_157
+  - first:
+      213: 21300316
+    second: builidng_158
+  - first:
+      213: 21300318
+    second: builidng_159
+  - first:
+      213: 21300320
+    second: builidng_160
+  - first:
+      213: 21300322
+    second: builidng_161
+  - first:
+      213: 21300324
+    second: builidng_162
+  - first:
+      213: 21300326
+    second: builidng_163
+  - first:
+      213: 21300328
+    second: builidng_164
+  - first:
+      213: 21300330
+    second: builidng_165
+  - first:
+      213: 21300332
+    second: builidng_166
+  - first:
+      213: 21300334
+    second: builidng_167
+  - first:
+      213: 21300336
+    second: builidng_168
+  - first:
+      213: 21300338
+    second: builidng_169
+  - first:
+      213: 21300340
+    second: builidng_170
+  - first:
+      213: 21300342
+    second: builidng_171
+  - first:
+      213: 21300344
+    second: builidng_172
+  - first:
+      213: 21300346
+    second: builidng_173
+  - first:
+      213: 21300348
+    second: builidng_174
+  - first:
+      213: 21300350
+    second: builidng_175
+  - first:
+      213: 21300352
+    second: builidng_176
+  - first:
+      213: 21300354
+    second: builidng_177
+  - first:
+      213: 21300356
+    second: builidng_178
+  - first:
+      213: 21300358
+    second: builidng_179
+  - first:
+      213: 21300360
+    second: builidng_180
+  - first:
+      213: 21300362
+    second: builidng_181
+  - first:
+      213: 21300364
+    second: builidng_182
+  - first:
+      213: 21300366
+    second: builidng_183
+  - first:
+      213: 21300368
+    second: builidng_184
+  - first:
+      213: 21300370
+    second: builidng_185
+  - first:
+      213: 21300372
+    second: builidng_186
+  - first:
+      213: 21300374
+    second: builidng_187
+  - first:
+      213: 21300376
+    second: builidng_188
+  - first:
+      213: 21300378
+    second: builidng_189
+  - first:
+      213: 21300380
+    second: builidng_190
+  - first:
+      213: 21300382
+    second: builidng_191
+  - first:
+      213: 21300384
+    second: builidng_192
+  - first:
+      213: 21300386
+    second: builidng_193
+  - first:
+      213: 21300388
+    second: builidng_194
+  - first:
+      213: 21300390
+    second: builidng_195
+  - first:
+      213: 21300392
+    second: builidng_196
+  - first:
+      213: 21300394
+    second: builidng_197
+  - first:
+      213: 21300396
+    second: builidng_198
+  - first:
+      213: 21300398
+    second: builidng_199
+  - first:
+      213: 21300400
+    second: builidng_200
+  - first:
+      213: 21300402
+    second: builidng_201
+  - first:
+      213: 21300404
+    second: builidng_202
+  - first:
+      213: 21300406
+    second: builidng_203
+  - first:
+      213: 21300408
+    second: builidng_204
+  - first:
+      213: 21300410
+    second: builidng_205
+  - first:
+      213: 21300412
+    second: builidng_206
+  - first:
+      213: 21300414
+    second: builidng_207
+  - first:
+      213: 21300416
+    second: builidng_208
+  - first:
+      213: 21300418
+    second: builidng_209
+  - first:
+      213: 21300420
+    second: builidng_210
+  - first:
+      213: 21300422
+    second: builidng_211
+  - first:
+      213: 21300424
+    second: builidng_212
+  - first:
+      213: 21300426
+    second: builidng_213
+  - first:
+      213: 21300428
+    second: builidng_214
+  - first:
+      213: 21300430
+    second: builidng_215
+  - first:
+      213: 21300432
+    second: builidng_216
+  - first:
+      213: 21300434
+    second: builidng_217
+  - first:
+      213: 21300436
+    second: builidng_218
+  - first:
+      213: 21300438
+    second: builidng_219
+  - first:
+      213: 21300440
+    second: builidng_220
+  - first:
+      213: 21300442
+    second: builidng_221
+  - first:
+      213: 21300444
+    second: builidng_222
+  - first:
+      213: 21300446
+    second: builidng_223
+  - first:
+      213: 21300448
+    second: builidng_224
+  - first:
+      213: 21300450
+    second: builidng_225
+  - first:
+      213: 21300452
+    second: builidng_226
+  - first:
+      213: 21300454
+    second: builidng_227
+  - first:
+      213: 21300456
+    second: builidng_228
+  - first:
+      213: 21300458
+    second: builidng_229
+  - first:
+      213: 21300460
+    second: builidng_230
+  - first:
+      213: 21300462
+    second: builidng_231
+  - first:
+      213: 21300464
+    second: builidng_232
+  - first:
+      213: 21300466
+    second: builidng_233
+  - first:
+      213: 21300468
+    second: builidng_234
+  - first:
+      213: 21300470
+    second: builidng_235
+  - first:
+      213: 21300472
+    second: builidng_236
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: builidng_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7c9e8b5f2452a4b9c5acbb93610a0b
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d41e23a7b13dc4a9b67ed8b82337c9
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d707addc3b605fd488627ce086aa258d
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc3e6dc440f3be4090d07b784432096
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61592f1f44bdc744ea2c7624d70d2009
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a3906d3c0b37a429a8af46feab80c6
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bea16face59f4047bc758b56512f681
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db37798865df1e44a3bb05eb7c548e7
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb8451706f3707418196f09d0456406
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa1d43c65e19cf43820c770d55c02ae
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a8fde132fbe4548ad2299fde5f809e
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_11
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72811f4faa7a33a4ead668a1032deb51
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43e630d74c34a44a8ef8df0846d4099
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4839d85d3db0da499907934ee7eb6a4
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575ebb26a64f4e34ab5ad73634177e9f
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e063d35b390ab45ae2f624d065d69a
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44addc4b8fe447c41ac8fecb5878ed25
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0966948f435f04ea5b3bf1091ac3cc
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_18
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b880c57f137dd04da833765517d1772
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69847e5ab919264594e2cf2a690b4f4
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2732b01177d689e42a6814e015e07da4
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f305f38f5824e004d93d99fb93935205
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ee745dd92bbbe4d9833b3863580bf1
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_23
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab42c4b3bbb469a45900f4ef8115b419
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339979618f276d54fab87ea45c62bce1
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf8aa89eed06124c8eaa44d422c3c37
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_26
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a1b0fad309d894d94762398a0a3d91
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_27
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84138c8c2c14c946a911d7c876ba3bb
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d086837ef54cc1e43a40bc5287269ffb
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_29
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5187ba87d1f15af41944b06e9b96dbf4
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 60
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcdcaea5e6239a46ac3f4147d2445da
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf0f47018072bf4f9ff434b750fac01
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_32
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2126cdf8cfa35448b02832974395250
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_33
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d70021d32fb61469af6da751177762
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_34
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551a86380b90f3544ad86febe8155b70
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_35
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67490fcd33fbde44e889d54fdbbe0d8d
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d73aef2d44a8584fba21a40ded9ebc1
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_37
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7e4346de81be748bbb06e31b16bdf2
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1284c8ca1931f474dbf40bd5bc5df5df
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e54d8263065c604190fae8792670566
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_40
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c817f475c8f69e14c8ea7b9173082b2c
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_41
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e516c2dee1c7b445b5e53266098c80d
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_42
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983bb9960c1df6f4097240113366214b
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60818e1d38359344292630643a5c6df0
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_44
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f96998073b44fb48bad850e00baec46
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acde96b5da415649b7e222b0319b3c5
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_46
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 20
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7df44c6cf8a42a44ae926a697b5b84e
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b0cb144614c4248a630781ebe780af
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_48
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21cf163031467d44afcddf71cb32507
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_49
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f831513e0cc22e741987f3ef60493d49
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_50
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee6287c7e1f4b04084d502a5c8efc90
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_51
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ba829c7b28315418f5009bed506989
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_52
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4a587fcdfc417418228ee31ab648c2
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246af495159bf5a4390685ea4f800d78
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: builidng_54
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7741532c3532bd24abb98acf6d0a91e2
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c46847fa519ba4442be76bee31b2ba37
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

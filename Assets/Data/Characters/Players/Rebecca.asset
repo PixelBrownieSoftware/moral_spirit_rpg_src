@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Rebecca
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 7
+    element: 0
+    healthPercentage: 0.39
+    name: 
+    moveName: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 6
+    element: 0
+    healthPercentage: 0.25
+    name: 
+    moveName: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
+    onParty: 0
+    isImportant: 1
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims:
+  - {fileID: 5899511935908729651, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  front: {fileID: 5899511935908729651, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  back: {fileID: 4856682898194012189, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
+  isPartyChar: 0
+  level: 5
+  exp: 99
+  expToNextLevel: 0
+  baseExpYeild: 65
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 22
+  maxHitPointsB: 16
+  attackB: 3
+  defenceB: 3
+  intelligenceB: 4
+  gutsB: 4
+  speedB: 3
+  luckB: 3
+  maxSkillPointsGMax: 6
+  maxSkillPointsGMin: 2
+  maxHitPointsGMax: 4
+  maxHitPointsGMin: 2
+  attackG: 6
+  defenceG: 3
+  intelligenceG: 3
+  gutsG: 3
+  speedG: 3
+  luckG: 3
+  inBattle: 1
+  moveDatabase:
+  - move: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+    level: 5
+  - move: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
+    level: 8
+  - move: {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
+    level: 2
+  - move: {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
+    level: 7
+  - move: {fileID: 11400000, guid: a756c77d80d9eb14ca80557509a8e831, type: 2}
+    level: 10
+  - move: {fileID: 11400000, guid: 74a895e6164ccfd4aba7ec9763d58847, type: 2}
+    level: 12
+  - move: {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
+    level: 15
+  - move: {fileID: 11400000, guid: cda91f69a509f5945b1a191ebadb29d4, type: 2}
+    level: 25
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1.2
+  - 0.85
+  - 1
+  - 0.82
+  - 0.5
+  - 1.62
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1.2
+  - 1.15
+  - 2
+  - 1
+  - 1
+  money: 0.15
+  itemDrop:
+  - {fileID: 11400000, guid: ad06269c1122c6143bd74b377fbdd857, type: 2}
+  relationships: []

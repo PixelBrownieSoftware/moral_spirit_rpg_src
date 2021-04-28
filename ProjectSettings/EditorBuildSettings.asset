@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Game.unity
+    guid: f9c3e24dc4996784d9dd57dfc5b48591
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 7b54510e09c09184690a843ab7238b5f
+  - enabled: 1
+    path: Assets/Scenes/test_scene.unity
+    guid: 3ddcbe2cf414792479699405d1a44be7
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 496aad9736dc18a4d9eedfa66f2696d2
+  - enabled: 1
+    path: Assets/Scenes/subway_a.unity
+    guid: 70d7655841869f34991ac49202fff986
+  - enabled: 1
+    path: Assets/Scenes/park_a.unity
+    guid: 02e25920fa0cd4449b2daa74e5318061
+  - enabled: 1
+    path: Assets/Scenes/apartment_bedroom.unity
+    guid: daca79c4e42253a41a2ea2b0f7e634cc
+  - enabled: 1
+    path: Assets/Scenes/city.unity
+    guid: 490c40eee9989214c8c77841a1b17c9f
+  - enabled: 1
+    path: Assets/Scenes/barrington_park.unity
+    guid: f3d48a3419790ca49a3ff7d61c9615be
+  - enabled: 1
+    path: Assets/Scenes/barrington_supermarket_besco.unity
+    guid: adc7fa0ec81c50c4e954cba8e4a9a815
+  - enabled: 1
+    path: Assets/Scenes/subway_b.unity
+    guid: 520b1dfa216f53049ad8c893f4245576
+  - enabled: 1
+    path: Assets/Scenes/park_b.unity
+    guid: 3dc1f48f0e22e8748815b1b86a35bec6
+  - enabled: 1
+    path: Assets/Scenes/school_1f.unity
+    guid: 0141df3aaa35ad84db5e2ff923d89b4a
+  - enabled: 1
+    path: Assets/Scenes/school_room.unity
+    guid: ff6fc290d0383fa418502ac3e8c877a0
+  - enabled: 1
+    path: Assets/Scenes/lounge_1f.unity
+    guid: 27538a9134c6fb140a5b054a04bfe578
+  - enabled: 1
+    path: Assets/Scenes/university.unity
+    guid: cd56fb7bdf32df8409c0234e5dc202cc
+  - enabled: 1
+    path: Assets/Scenes/university_lab.unity
+    guid: 976166ca6cbea8c448961c678c3f3c79
+  - enabled: 1
+    path: Assets/Scenes/cutscene_place.unity
+    guid: ab580865ec3d7e741ad9e847a8c31516
+  - enabled: 1
+    path: Assets/Scenes/intro_game_scene.unity
+    guid: 36d529d218aceb84ba10b2a35c7053ed
+  m_configObjects: {}

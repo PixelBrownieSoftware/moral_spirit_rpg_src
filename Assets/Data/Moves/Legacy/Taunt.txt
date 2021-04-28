@@ -1,0 +1,16 @@
+{
+    "name": "Taunt",
+    "onTeam": false,
+    "spCost": 0,
+    "cpCost": 5,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 8,
+    "action_type": 3,
+    "moveType": 2,
+    "power": 8,
+    "animation": [],
+    "moveRequirements": []
+}

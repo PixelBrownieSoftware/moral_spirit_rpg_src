@@ -1,0 +1,44 @@
+[SCENE 1]
+
+Bully: What are you doing here, Sinro?
+You should be giving up already!
+
+Sinro: Yikes! He's here! Evan! Run!
+
+Evan: ...!
+
+Bully: And who do you happen to be? Another one of his little freinds?
+
+Evan:
+	> Maybe.
+
+	Sinro: He's just trying to distract you Evan, run!
+
+	Bully: I'm trying to talk to him IDIOT!
+	You're really pissing me off!
+
+	> ...
+	
+	Bully: Not talking to me, huh?
+	I'll make you talk!
+
+*Run begins*
+
+
+[SCENE 2]
+
+Bully: Freinds! FREINDS! GET THEM BOTH!
+
+Freinds: Yes sir!
+Under the order of our leader we shall capture you!
+
+Sinro: There's more of them! Quick, jump across these platforms!
+
+[AFTER GOING THROUGH PLATFORMS]
+
+Sinro: Great! Now follow me!
+
+[AFTER LOOSING THEM]
+
+Sinro: Whew I think we lost them for now...
+They're easy to outrun, but you really don't want to get in their way when they are in your way.

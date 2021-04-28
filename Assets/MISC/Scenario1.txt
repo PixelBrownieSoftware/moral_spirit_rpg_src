@@ -1,0 +1,64 @@
+[Written on 11th November 2019, when Evan and Sinro meet a bully]
+
+Sinro: Shoot it's him!
+
+Bully: How's it going with those crimes?
+
+Sinro: I told you before, they're not crimes!
+What do you want?
+
+Bully: Oh? Who's this chump next to you?
+
+Sinro: He's just some guy I found from somewhere. I don't really know him well.
+He's kind of quiet.
+
+Bully: Hey you, Evan! Why are you siding with a fool like him?
+
+Evan: 
+	- Not sure.
+	- He's the first one I saw
+	- He's cool
+
+[If Evan picks 'not sure']
+
+Bully: Ha! Not too long you'll find out he's a caused loads of crimes-
+
+Sinro: Can you just shut up and leave me alone! I'm trying to take [Hero] out of here.
+
+Bully: Evan:, here let me take you out instead - don't stay with this fool.
+I'm telling ya, he's a master crimminal of several acts.
+
+Evan:
+	- ...
+	- Okay then.
+
+[Okay then]
+
+Bully: Good awnser, now come with me and I will show you around and give you the exit.
+
+Seymour: Evan, come to your senses! 
+***
+
+(...)
+[Hero]: ....
+
+Bully: What's with the poker face? Knock some sense in you, Sinro's a criminal, you never know what he's going-
+
+Sinro: That's my line! 
+***
+
+You're just going to lock [Hero] up and that's another life I have to save. I've already got my own problems.
+
+Bully: Don't put words in my mouth, you filthy pig! That's it you're going to get it!
+
+Sinro: Get what?
+
+Bully: Y'know... 'it'? This little butt of mine into your face.
+
+Sinro: No thanks, cmon [Hero], let's kick his butt!
+
+[Hero]: (I don't know who I should side with, but from the nature of the bully perhaps I should side with Sinro).
+
+*Battke begins*
+
+ 

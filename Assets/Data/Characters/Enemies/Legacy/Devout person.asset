@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Devout person
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0.611
+    name: 
+    moveName: {fileID: 11400000, guid: a75f37df80b0d8f49a462c4a24146bcd, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 10
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims:
+  - {fileID: 21300000, guid: 5ca0158afc923c44a8be0b42466ca2c1, type: 3}
+  isPartyChar: 0
+  level: 1
+  exp: 75
+  expToNextLevel: 0
+  baseExpYeild: 95.8
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 18
+  maxHitPointsB: 23
+  attackB: 4
+  defenceB: 3
+  intelligenceB: 3
+  gutsB: 2
+  speedB: 2
+  luckB: 5
+  maxSkillPointsGMax: 4
+  maxSkillPointsGMin: 3
+  maxHitPointsGMax: 3
+  maxHitPointsGMin: 2
+  attackG: 2
+  defenceG: 2
+  intelligenceG: 3
+  gutsG: 2
+  speedG: 3
+  luckG: 4
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - -1.4
+  - -0.7
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0.35
+  itemDrop:
+  - {fileID: 11400000, guid: c7bf881b05ddbbe46a06afb8c78f4c3a, type: 2}
+  relationships: []

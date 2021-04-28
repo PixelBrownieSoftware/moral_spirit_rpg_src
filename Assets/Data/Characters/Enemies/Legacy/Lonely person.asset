@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Lonely person
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 10
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 01589561c33c69140834dc1e18a16dfa, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims:
+  - {fileID: 21300000, guid: ac4baad3cc6bc85499110d876395136c, type: 3}
+  isPartyChar: 0
+  level: 1
+  exp: 65
+  expToNextLevel: 0
+  baseExpYeild: 95.8
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 13
+  maxHitPointsB: 18
+  attackB: 2
+  defenceB: 2
+  intelligenceB: 3
+  gutsB: 2
+  speedB: 3
+  luckB: 5
+  maxSkillPointsGMax: 4
+  maxSkillPointsGMin: 3
+  maxHitPointsGMax: 4
+  maxHitPointsGMin: 2
+  attackG: 2
+  defenceG: 3
+  intelligenceG: 3
+  gutsG: 4
+  speedG: 4
+  luckG: 2
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0.45
+  itemDrop:
+  - {fileID: 11400000, guid: 5da244c7592379547af91aa32172273e, type: 2}
+  relationships: []

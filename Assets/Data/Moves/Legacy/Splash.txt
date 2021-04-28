@@ -1,0 +1,1 @@
+{"name":"Splash","onTeam":false,"spCost":5,"cpCost":0,"affectedBySilence":false,"multiTech":false,"actionDescription":"","infoDescription":"","element":11,"action_type":0,"moveType":1,"power":17,"animation":[],"moveRequirements":[]}

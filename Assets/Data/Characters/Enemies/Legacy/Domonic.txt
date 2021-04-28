@@ -1,0 +1,106 @@
+{
+    "characterAI": [
+        {
+            "conditions": 5,
+            "element": 0,
+            "healthPercentage": 0.5090000033378601,
+            "name": "",
+            "moveName": "Sana",
+            "onParty": true
+        },
+        {
+            "conditions": 7,
+            "element": 0,
+            "healthPercentage": 0.628000020980835,
+            "name": "",
+            "moveName": "Provoke",
+            "onParty": false
+        },
+        {
+            "conditions": 0,
+            "element": 0,
+            "healthPercentage": 0.0,
+            "name": "",
+            "moveName": "Tackle",
+            "onParty": false
+        }
+    ],
+    "characterAnims": [
+        "garkachan"
+    ],
+    "isPartyChar": false,
+    "name": "Domonic",
+    "level": 7,
+    "exp": 0,
+    "expToNextLevel": 0,
+    "baseExpYeild": 7,
+    "hitPoints": 0,
+    "maxHitPoints": 0,
+    "skillPoints": 0,
+    "couragePoints": 0.0,
+    "maxSkillPoints": 0,
+    "attack": 0,
+    "defence": 0,
+    "intelligence": 0,
+    "guts": 0,
+    "speed": 0,
+    "luck": 0,
+    "maxSkillPointsB": 13,
+    "maxHitPointsB": 18,
+    "attackB": 3,
+    "defenceB": 4,
+    "intelligenceB": 5,
+    "gutsB": 6,
+    "speedB": 1,
+    "luckB": 3,
+    "maxSkillPointsGMax": 3,
+    "maxSkillPointsGMin": 3,
+    "maxHitPointsGMax": 5,
+    "maxHitPointsGMin": 5,
+    "attackG": 4,
+    "defenceG": 2,
+    "intelligenceG": 3,
+    "gutsG": 7,
+    "speedG": 6,
+    "luckG": 4,
+    "inBattle": true,
+    "moveDatabase": [
+        {
+            "moveName": "Tackle",
+            "level": 0
+        },
+        {
+            "moveName": "Provoke",
+            "level": 0
+        },
+        {
+            "moveName": "Sana",
+            "level": 0
+        }
+    ],
+    "currentMoves": [],
+    "currentStatus": 0,
+    "elementTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.4500000476837159,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "actionTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "money": 0.0
+}

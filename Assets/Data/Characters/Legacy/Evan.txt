@@ -1,0 +1,79 @@
+{
+    "characterAI": [],
+    "characterAnims": [],
+    "isPartyChar": false,
+    "name": "Evan",
+    "level": 100,
+    "exp": 0,
+    "expToNextLevel": 0,
+    "baseExpYeild": 0,
+    "hitPoints": 0,
+    "maxHitPoints": 0,
+    "skillPoints": 0,
+    "couragePoints": 0.0,
+    "maxSkillPoints": 0,
+    "attack": 4,
+    "defence": 4,
+    "intelligence": 4,
+    "guts": 4,
+    "speed": 4,
+    "luck": 0,
+    "maxSkillPointsB": 7,
+    "maxHitPointsB": 26,
+    "attackB": 5,
+    "defenceB": 5,
+    "intelligenceB": 5,
+    "gutsB": 5,
+    "speedB": 5,
+    "luckB": 5,
+    "maxSkillPointsGMax": 4,
+    "maxSkillPointsGMin": 2,
+    "maxHitPointsGMax": 6,
+    "maxHitPointsGMin": 4,
+    "attackG": 1,
+    "defenceG": 1,
+    "intelligenceG": 1,
+    "gutsG": 1,
+    "speedG": 1,
+    "luckG": 1,
+    "inBattle": false,
+    "moveDatabase": [
+        {
+            "moveName": "Tackle",
+            "level": 0
+        },
+        {
+            "moveName": "Persuade",
+            "level": 0
+        },
+        {
+            "moveName": "Discuss fitness",
+            "level": 3
+        }
+    ],
+    "currentMoves": [],
+    "currentStatus": 0,
+    "elementTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.6000000238418579,
+        1.0
+    ],
+    "actionTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "money": 0.0
+}

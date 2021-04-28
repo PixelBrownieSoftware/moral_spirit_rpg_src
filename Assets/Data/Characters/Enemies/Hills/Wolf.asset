@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Wolf
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 299680b048ec0ef429a8822ccd58a5be, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 82ee26c8a77254d45b04c96ffb5d4dcf, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims: []
+  front: {fileID: -1290595026419785593, guid: a5e5704622cf7094ebc1399455c41f7e, type: 3}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 6
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 25
+  maxHitPoints: 2
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 17
+  maxHitPointsB: 9
+  attackB: 4
+  defenceB: 4
+  intelligenceB: 3
+  gutsB: 5
+  speedB: 6
+  luckB: 4
+  maxSkillPointsGMax: 5
+  maxSkillPointsGMin: 4
+  maxHitPointsGMax: 6
+  maxHitPointsGMin: 3
+  attackG: 3
+  defenceG: 3
+  intelligenceG: 4
+  gutsG: 3
+  speedG: 2
+  luckG: 3
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1.42
+  - 2
+  - 1
+  - 0.54
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 0.67
+  - 2
+  - 0.62
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []

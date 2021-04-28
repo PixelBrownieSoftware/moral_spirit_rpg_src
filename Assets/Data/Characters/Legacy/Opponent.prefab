@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3178760801441375161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3178760801441375163}
+  - component: {fileID: 3178760801441375160}
+  - component: {fileID: 2664010498712847631}
+  m_Layer: 0
+  m_Name: Opponent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3178760801441375163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178760801441375161}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -604, y: -368, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3178760801441375160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178760801441375161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7628367b6df7739409f338bdd7bc29df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relationships: []
+  level: 5
+  exp: 0
+  baseExpYeild: 25
+  hitPointMeter: 0
+  hitPoints: 150
+  maxHitPoints: 150
+  skillPoints: 90
+  couragePoints: 0
+  maxSkillPoints: 90
+  attack: 7
+  defence: 0
+  intelligence: 3
+  guts: 0
+  speed: 15
+  luck: 0
+  attackBuff: 0
+  defenceBuff: 0
+  intelligenceBuff: 0
+  gutsBuff: 0
+  speedBuff: 0
+  luckBuff: 0
+  meterSpeed: 0
+  isGuarding: 0
+  moveDatabase: []
+  characterAI: []
+  currentMove: {fileID: 0}
+  itemUsed: {fileID: 0}
+  targetCharacter: {fileID: 0}
+  defeatDrops: []
+  spareDrops: []
+  moneySpare: 0
+  skillMoves: []
+  CurrentMoveNum: 0
+  move_typ: 0
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  rend: {fileID: 2664010498712847631}
+  sprites:
+  - {fileID: 21300000, guid: 72cb80dd316e20245a7501fa999bff28, type: 3}
+  - {fileID: 21300000, guid: 3062af7ea3524af44b8bf01900c4b358, type: 3}
+  - {fileID: 21300000, guid: acc7b7bc6f78cbe4eb18bdecd869e5e5, type: 3}
+  - {fileID: 21300000, guid: 58fa3b2e22b60b54bb0648398aafd0ea, type: 3}
+  - {fileID: 21300000, guid: ac4baad3cc6bc85499110d876395136c, type: 3}
+  - {fileID: 21300000, guid: c0ca54f73d9f89646b47ded8d85d049e, type: 3}
+  - {fileID: 21300000, guid: d8ac7cb1a36eade48beafab3e903fdfa, type: 3}
+  - {fileID: 21300000, guid: 8b96b7993c16e9247b9625865ced8d40, type: 3}
+  - {fileID: -3460323606291361141, guid: c1fbeb44d00978a46b4dd4dfdc176577, type: 3}
+  - {fileID: 21300000, guid: 063f57e784a6f34499fc8d5558ec201d, type: 3}
+  - {fileID: 21300000, guid: 14cddfb2cff8a65468db4ed126211ee6, type: 3}
+  - {fileID: 21300000, guid: f2cc3a4e12a15284897ec93771eed14d, type: 3}
+  front: {fileID: 0}
+  back: {fileID: 0}
+  data: {fileID: 0}
+--- !u!212 &2664010498712847631
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178760801441375161}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.99, y: 0.99}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

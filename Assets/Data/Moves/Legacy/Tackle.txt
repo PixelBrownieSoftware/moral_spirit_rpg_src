@@ -1,0 +1,1 @@
+{"name":"Tackle","onTeam":false,"spCost":5,"cpCost":0,"affectedBySilence":false,"multiTech":false,"actionDescription":"","infoDescription":"","element":0,"action_type":0,"moveType":0,"power":15,"animation":[{"name":"slash","pos":0}],"moveRequirements":[]}

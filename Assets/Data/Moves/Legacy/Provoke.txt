@@ -1,0 +1,16 @@
+{
+    "name": "Provoke",
+    "onTeam": false,
+    "spCost": 0,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 0,
+    "action_type": 2,
+    "moveType": 2,
+    "power": 17,
+    "animation": [],
+    "moveRequirements": []
+}

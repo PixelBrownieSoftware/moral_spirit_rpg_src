@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Strange Voice
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 4b33ef74b27380d4dae8401de7ff9786, type: 2}
+    onParty: 0
+  characterAnims:
+  - {fileID: -3460323606291361141, guid: c1fbeb44d00978a46b4dd4dfdc176577, type: 3}
+  isPartyChar: 0
+  level: 1
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 0
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 9999
+  maxHitPointsB: 9999
+  attackB: 9999
+  defenceB: 9999
+  intelligenceB: 9999
+  gutsB: 9999
+  speedB: 9999
+  luckB: 9999
+  maxSkillPointsGMax: 9999
+  maxSkillPointsGMin: 9999
+  maxHitPointsGMax: 9999
+  maxHitPointsGMin: 9999
+  attackG: 9999
+  defenceG: 9999
+  intelligenceG: 9999
+  gutsG: 9999
+  speedG: 9999
+  luckG: 9999
+  inBattle: 1
+  moveDatabase:
+  - move: {fileID: 11400000, guid: 4b33ef74b27380d4dae8401de7ff9786, type: 2}
+    level: 0
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0

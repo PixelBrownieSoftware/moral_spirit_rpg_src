@@ -1,0 +1,13 @@
+{
+    "name": "Freeze",
+    "onTeam": false,
+    "spCost": 14,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "actionDescription": "",
+    "infoDescription": "freezes an enemy.",
+    "element": 3,
+    "action_type": 0,
+    "moveType": 1,
+    "power": 37
+}

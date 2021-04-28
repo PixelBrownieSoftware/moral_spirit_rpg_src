@@ -1,0 +1,79 @@
+{
+    "characterAI": [],
+    "characterAnims": [],
+    "isPartyChar": false,
+    "name": "Sebastian",
+    "level": 100,
+    "exp": 0,
+    "expToNextLevel": 0,
+    "baseExpYeild": 0,
+    "hitPoints": 0,
+    "maxHitPoints": 23,
+    "skillPoints": 0,
+    "couragePoints": 0.0,
+    "maxSkillPoints": 37,
+    "attack": 0,
+    "defence": 0,
+    "intelligence": 0,
+    "guts": 0,
+    "speed": 0,
+    "luck": 0,
+    "maxSkillPointsB": 15,
+    "maxHitPointsB": 21,
+    "attackB": 3,
+    "defenceB": 6,
+    "intelligenceB": 5,
+    "gutsB": 4,
+    "speedB": 2,
+    "luckB": 3,
+    "maxSkillPointsGMax": 5,
+    "maxSkillPointsGMin": 3,
+    "maxHitPointsGMax": 6,
+    "maxHitPointsGMin": 5,
+    "attackG": 5,
+    "defenceG": 3,
+    "intelligenceG": 3,
+    "gutsG": 3,
+    "speedG": 5,
+    "luckG": 6,
+    "inBattle": false,
+    "moveDatabase": [
+        {
+            "moveName": "Sana",
+            "level": 0
+        },
+        {
+            "moveName": "Joke",
+            "level": 0
+        },
+        {
+            "moveName": "Freeze",
+            "level": 5
+        }
+    ],
+    "currentMoves": [],
+    "currentStatus": 0,
+    "elementTypeCharts": [
+        1.0,
+        1.0,
+        1.25,
+        -1.0,
+        1.0,
+        2.0999999046325685,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "actionTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "money": 0.0
+}

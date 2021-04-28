@@ -1,0 +1,11 @@
+{
+    "name": "",
+    "enemyNames": [
+        "Mandrake",
+        "Wendigo"
+    ],
+    "maxLevel": 3,
+    "minLevel": 2,
+    "fixedLevel": [],
+    "battleEvents": []
+}

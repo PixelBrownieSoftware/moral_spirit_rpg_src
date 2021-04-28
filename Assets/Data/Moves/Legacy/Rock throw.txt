@@ -1,0 +1,16 @@
+{
+    "name": "Rock throw",
+    "onTeam": false,
+    "spCost": 0,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 10,
+    "action_type": 0,
+    "moveType": 0,
+    "power": 18,
+    "animation": [],
+    "moveRequirements": []
+}

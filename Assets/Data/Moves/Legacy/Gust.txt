@@ -1,0 +1,16 @@
+{
+    "name": "Gust",
+    "onTeam": false,
+    "spCost": 10,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 4,
+    "action_type": 0,
+    "moveType": 1,
+    "power": 21,
+    "animation": [],
+    "moveRequirements": []
+}

@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "enemyNames": [
+        "Spirit User",
+        "Domonic",
+        "Spirit User"
+    ],
+    "maxLevel": 20,
+    "minLevel": 20,
+    "fixedLevel": [],
+    "battleEvents": []
+}

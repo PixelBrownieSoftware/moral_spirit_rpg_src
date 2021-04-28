@@ -1,0 +1,122 @@
+{
+    "characterAI": [
+        {
+            "conditions": 5,
+            "element": 0,
+            "healthPercentage": 0.8999999761581421,
+            "name": "",
+            "moveName": "Tackle",
+            "onParty": false
+        },
+        {
+            "conditions": 6,
+            "element": 0,
+            "healthPercentage": 0.824999988079071,
+            "name": "",
+            "moveName": "Needle jab",
+            "onParty": false
+        },
+        {
+            "conditions": 7,
+            "element": 0,
+            "healthPercentage": 0.5130000114440918,
+            "name": "",
+            "moveName": "Sana",
+            "onParty": true
+        },
+        {
+            "conditions": 0,
+            "element": 0,
+            "healthPercentage": 0.0,
+            "name": "",
+            "moveName": "Seduce",
+            "onParty": false
+        }
+    ],
+    "characterAnims": [
+        "stress disorder"
+    ],
+    "isPartyChar": false,
+    "name": "Mandrake",
+    "level": 4,
+    "exp": 0,
+    "expToNextLevel": 0,
+    "baseExpYeild": 5,
+    "hitPoints": 0,
+    "maxHitPoints": 0,
+    "skillPoints": 0,
+    "couragePoints": 0.0,
+    "maxSkillPoints": 0,
+    "attack": 0,
+    "defence": 0,
+    "intelligence": 0,
+    "guts": 0,
+    "speed": 0,
+    "luck": 0,
+    "maxSkillPointsB": 4,
+    "maxHitPointsB": 7,
+    "attackB": 3,
+    "defenceB": 6,
+    "intelligenceB": 4,
+    "gutsB": 2,
+    "speedB": 3,
+    "luckB": 8,
+    "maxSkillPointsGMax": 6,
+    "maxSkillPointsGMin": 4,
+    "maxHitPointsGMax": 4,
+    "maxHitPointsGMin": 3,
+    "attackG": 3,
+    "defenceG": 4,
+    "intelligenceG": 5,
+    "gutsG": 2,
+    "speedG": 4,
+    "luckG": 3,
+    "inBattle": true,
+    "moveDatabase": [
+        {
+            "moveName": "Tackle",
+            "level": 0
+        },
+        {
+            "moveName": "Leer",
+            "level": 0
+        },
+        {
+            "moveName": "Seduce",
+            "level": 0
+        },
+        {
+            "moveName": "Needle jab",
+            "level": 0
+        },
+        {
+            "moveName": "Sana",
+            "level": 0
+        }
+    ],
+    "currentMoves": [],
+    "currentStatus": 0,
+    "elementTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "actionTypeCharts": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "money": 0.0
+}

@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6aa7109b6963a46850a45af304b7a3, type: 3}
+  m_Name: beginingDreamBattle
+  m_EditorClassIdentifier: 
+  endEvent: goToWork
+  enemies:
+  - {fileID: 11400000, guid: 75dd4a9421ee5ae41bfe12b4211dc9e0, type: 2}
+  maxLevel: 0
+  minLevel: 0
+  fixedLevel: 
+  battleEvents:
+  - battleCond: 2
+    battleCheckCond: 0
+    battleAction: 0
+    int0: 3
+    int1: 0
+    float0: 0
+    name: 
+    string0: Evan... Evan...
+    stringArr: []
+    enabled: 1
+  - battleCond: 2
+    battleCheckCond: 0
+    battleAction: 0
+    int0: 3
+    int1: 0
+    float0: 1
+    name: 
+    string0: The great father has called...
+    stringArr: []
+    enabled: 1
+  - battleCond: 2
+    battleCheckCond: 0
+    battleAction: 0
+    int0: 3
+    int1: 0
+    float0: 1
+    name: 
+    string0: That you will become one of the chosen ones...
+    stringArr: []
+    enabled: 1
+  - battleCond: 2
+    battleCheckCond: 0
+    battleAction: 0
+    int0: 2
+    int1: 0
+    float0: 1
+    name: 
+    string0: And ascend to the heavens...
+    stringArr: []
+    enabled: 1
+  - battleCond: 2
+    battleCheckCond: 0
+    battleAction: 0
+    int0: 3
+    int1: 0
+    float0: 1
+    name: 
+    string0: But you must prove yourself...
+    stringArr: []
+    enabled: 1
+  - battleCond: 2
+    battleCheckCond: 0
+    battleAction: 2
+    int0: 3
+    int1: 0
+    float0: 1
+    name: goToWork
+    string0: goToWork
+    stringArr: []
+    enabled: 1

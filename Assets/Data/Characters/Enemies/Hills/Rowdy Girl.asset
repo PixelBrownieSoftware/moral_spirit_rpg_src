@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Rowdy Girl
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 78825537f771e324fa344eb6a59ef795, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims: []
+  front: {fileID: 7435701977175634043, guid: a5e5704622cf7094ebc1399455c41f7e, type: 3}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 1
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 45
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 16
+  maxHitPointsB: 23
+  attackB: 4
+  defenceB: 4
+  intelligenceB: 4
+  gutsB: 2
+  speedB: 3
+  luckB: 3
+  maxSkillPointsGMax: 4
+  maxSkillPointsGMin: 2
+  maxHitPointsGMax: 5
+  maxHitPointsGMin: 3
+  attackG: 3
+  defenceG: 3
+  intelligenceG: 5
+  gutsG: 5
+  speedG: 3
+  luckG: 3
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []

@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "enemyNames": [
+        "Kappa",
+        "Wendigo",
+        "Kappa",
+        "Mandrake"
+    ],
+    "maxLevel": 6,
+    "minLevel": 5,
+    "fixedLevel": []
+}

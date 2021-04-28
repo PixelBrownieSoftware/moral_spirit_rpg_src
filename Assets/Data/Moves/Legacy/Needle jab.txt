@@ -1,0 +1,16 @@
+{
+    "name": "Needle jab",
+    "onTeam": false,
+    "spCost": 0,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 9,
+    "action_type": 0,
+    "moveType": 0,
+    "power": 19,
+    "animation": [],
+    "moveRequirements": []
+}

@@ -1,0 +1,11 @@
+{
+    "name": "",
+    "enemyNames": [
+        "Kappa",
+        "Wendigo"
+    ],
+    "maxLevel": 2,
+    "minLevel": 1,
+    "fixedLevel": [],
+    "battleEvents": []
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Brainshock",
+    "onTeam": false,
+    "spCost": 17,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 6,
+    "action_type": 0,
+    "moveType": 1,
+    "power": 32,
+    "animation": [],
+    "moveRequirements": []
+}

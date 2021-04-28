@@ -1,0 +1,39 @@
+Sinro: Before we start fighting, have you ever fought these kinds of battles?
+
+Evan: [I have played some RPG games...]
+
+	Sinro: Um... okay... so I'm sure you know about the charge meter, health, moves.
+		But there is something in this game that you probably haven't seen in other RPGS, do you know what that is?
+
+	Evan: [Yeah]
+		Sinro: Well If you know your stuff, then let's not waste any time!
+
+	Evan: [No]
+		Sinro: You see the 'Action' option? You can talk or interact with enemies?
+		These lower the enemies stamina points, if their stamina points are lowered to zero or less they will start to waste turns
+		At this point, defeating them would be easier because if they can't use any skll moves, there's no way the'll use anything strong.
+		Or you could spare them, they'll give you items you can't get if you just defeated them, but you'll gain less exp.
+		Plus if they have freinds around, they probably won't like you bribing the target in question, so you'll need to weaken them first.
+		There are also recovery ones where people like me can help you recover your stamina, but keep in mind that you can't use most them on yourself
+		Stronger talk moves also cost talk points which can be gained by guarding, fighting or saying effective things.
+		Any questions?
+		
+		Evan: [Why don't they drop these items when killed]
+			Sinro: I don't have a clear answer to this, this world is pretty strange so not all logic works like it does in your world.
+			Sinro: Well then, let's not waste any time!
+
+		Evan [No]
+			Sinro: Well then, let's not waste any time!
+
+
+Evan: [I don't think so]
+	
+	Sinro: You have hit points, stamina points, talk points and charge points.
+	       Keep track of your hit points, if you loose all of it you probably won't be getting back up anytime soon.
+	       If they are low, always ask me to heal you up since I know 'Sana' which is a healing skill.
+
+	       Stamina points are used for skills, stuff like attacks, healing, stat boosts et cetra.
+	       It's also used as a second health bar, when it reaches zero or below you won't loose, but you will waste turns having to recover SP.
+	       If it reaches too negative however, you won't be able to fight, unless you have someone to help you up.
+	       
+	       But don't worry, I have your back thanks to the Action skills, these can be used

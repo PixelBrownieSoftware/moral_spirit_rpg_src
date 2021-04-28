@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: King Abaddon
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
+    onParty: 1
+    isImportant: 0
+  characterAnims: []
+  front: {fileID: 0}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 41
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 0
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 125
+  maxHitPointsB: 83
+  attackB: 5
+  defenceB: 5
+  intelligenceB: 5
+  gutsB: 5
+  speedB: 5
+  luckB: 5
+  maxSkillPointsGMax: 75
+  maxSkillPointsGMin: 75
+  maxHitPointsGMax: 45
+  maxHitPointsGMin: 45
+  attackG: 3
+  defenceG: 3
+  intelligenceG: 3
+  gutsG: 3
+  speedG: 3
+  luckG: 3
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []

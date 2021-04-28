@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Cheeky girl
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 6
+    element: 0
+    healthPercentage: 0.59
+    name: 
+    moveName: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
+    onParty: 1
+    isImportant: 1
+  characterAnims:
+  - {fileID: 21300000, guid: 5ca0158afc923c44a8be0b42466ca2c1, type: 3}
+  front: {fileID: -5428665518763133480, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 12
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 35
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 22
+  maxHitPointsB: 12
+  attackB: 4
+  defenceB: 3
+  intelligenceB: 4
+  gutsB: 4
+  speedB: 4
+  luckB: 4
+  maxSkillPointsGMax: 6
+  maxSkillPointsGMin: 4
+  maxHitPointsGMax: 5
+  maxHitPointsGMin: 3
+  attackG: 3
+  defenceG: 3
+  intelligenceG: 3
+  gutsG: 3
+  speedG: 3
+  luckG: 3
+  inBattle: 1
+  moveDatabase:
+  - move: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+    level: 0
+  - move: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
+    level: 0
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1.64
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 0.67
+  - 2.26
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []

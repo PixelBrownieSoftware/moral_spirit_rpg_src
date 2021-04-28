@@ -1,0 +1,13 @@
+{
+    "name": "Seduce",
+    "onTeam": false,
+    "spCost": 0,
+    "cpCost": 2,
+    "affectedBySilence": false,
+    "actionDescription": "seduced the target!",
+    "infoDescription": "Seduces a foe.",
+    "element": 0,
+    "action_type": 4,
+    "moveType": 2,
+    "power": 15
+}

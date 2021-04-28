@@ -1,0 +1,16 @@
+{
+    "name": "Sever",
+    "onTeam": false,
+    "spCost": 0,
+    "cpCost": 0,
+    "affectedBySilence": false,
+    "multiTech": false,
+    "actionDescription": "",
+    "infoDescription": "",
+    "element": 12,
+    "action_type": 0,
+    "moveType": 0,
+    "power": 17,
+    "animation": [],
+    "moveRequirements": []
+}

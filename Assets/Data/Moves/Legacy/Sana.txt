@@ -1,0 +1,1 @@
+{"name":"Sana","onTeam":true,"spCost":15,"cpCost":0,"affectedBySilence":false,"multiTech":false,"actionDescription":"used heal.","infoDescription":"Heals a small amount.","element":6,"action_type":0,"moveType":1,"power":25,"animation":[{"name":"heal","pos":0}],"moveRequirements":[]}

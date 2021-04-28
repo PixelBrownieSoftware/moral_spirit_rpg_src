@@ -1,0 +1,13 @@
+{
+    "name": "Discuss fitness",
+    "onTeam": false,
+    "spCost": 0,
+    "cpCost": 2,
+    "affectedBySilence": false,
+    "actionDescription": "went on about how much calories they lost.",
+    "infoDescription": "Talks about fitness.",
+    "element": 0,
+    "action_type": 5,
+    "moveType": 2,
+    "power": 15
+}

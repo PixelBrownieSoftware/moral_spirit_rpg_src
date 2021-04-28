@@ -1,0 +1,1 @@
+{"name":"Ember","onTeam":false,"spCost":6,"cpCost":5,"affectedBySilence":false,"actionDescription":"","infoDescription":"","element":2,"action_type":2,"moveType":1,"power":28}

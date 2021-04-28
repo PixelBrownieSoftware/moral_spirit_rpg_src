@@ -1,0 +1,1 @@
+{"name":"Joke","onTeam":false,"spCost":0,"cpCost":5,"affectedBySilence":false,"actionDescription":"","infoDescription":"","element":0,"action_type":2,"moveType":2,"power":16}

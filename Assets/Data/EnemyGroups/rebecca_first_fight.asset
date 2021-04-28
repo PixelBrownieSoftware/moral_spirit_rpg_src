@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6aa7109b6963a46850a45af304b7a3, type: 3}
+  m_Name: rebecca_first_fight
+  m_EditorClassIdentifier: 
+  endEvent: {fileID: 11400000, guid: bb9a01c58f8a5d546825037c6868745c, type: 2}
+  enemies:
+  - {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+  maxLevel: 4
+  minLevel: 4
+  fixedLevel: 04000000
+  isFixedLevel: 1
+  battleEvents:
+  - eventScript: {fileID: 11400000, guid: 86e6336c11bec8746ab6dbc8375b2fcd, type: 2}
+    battleCond: 2
+    battleCheckCond: 1
+    enabled: 1
+    int0: 0
+  allRelations: 1
+  isFleeable: 0

@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Diligent girl
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+    onParty: 1
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims: []
+  front: {fileID: 6140219172232408187, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 1
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 56
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 26
+  maxHitPointsB: 14
+  attackB: 1
+  defenceB: 3
+  intelligenceB: 5
+  gutsB: 7
+  speedB: 4
+  luckB: 4
+  maxSkillPointsGMax: 7
+  maxSkillPointsGMin: 4
+  maxHitPointsGMax: 5
+  maxHitPointsGMin: 2
+  attackG: 3
+  defenceG: 4
+  intelligenceG: 2
+  gutsG: 3
+  speedG: 3
+  luckG: 3
+  inBattle: 1
+  moveDatabase:
+  - move: {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
+    level: 0
+  - move: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+    level: 0
+  - move: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+    level: 0
+  - move: {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
+    level: 0
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []

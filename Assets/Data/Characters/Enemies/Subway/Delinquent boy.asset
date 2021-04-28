@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Delinquent boy
+  m_EditorClassIdentifier: 
+  characterAI:
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
+    onParty: 0
+    isImportant: 0
+  - conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+    onParty: 0
+    isImportant: 0
+  characterAnims:
+  - {fileID: -4402627653049701587, guid: 004e7d5e4e8a80d4e83b33c1bb4ae75e, type: 3}
+  front: {fileID: 6140219172232408187, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 1
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 52
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 15
+  maxHitPointsB: 25
+  attackB: 5
+  defenceB: 3
+  intelligenceB: 2
+  gutsB: 7
+  speedB: 3
+  luckB: 6
+  maxSkillPointsGMax: 5
+  maxSkillPointsGMin: 3
+  maxHitPointsGMax: 6
+  maxHitPointsGMin: 8
+  attackG: 4
+  defenceG: 3
+  intelligenceG: 4
+  gutsG: 4
+  speedG: 3
+  luckG: 3
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 0.6
+  - 2.1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []

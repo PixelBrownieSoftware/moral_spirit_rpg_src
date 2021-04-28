@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Yellow Snake
+  m_EditorClassIdentifier: 
+  characterAI: []
+  characterAnims: []
+  front: {fileID: 0}
+  back: {fileID: 0}
+  isPartyChar: 0
+  level: 11
+  exp: 0
+  expToNextLevel: 0
+  baseExpYeild: 0
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 8
+  maxHitPointsB: 24
+  attackB: 4
+  defenceB: 1
+  intelligenceB: 1
+  gutsB: 2
+  speedB: 2
+  luckB: 2
+  maxSkillPointsGMax: 3
+  maxSkillPointsGMin: 2
+  maxHitPointsGMax: 5
+  maxHitPointsGMin: 3
+  attackG: 2
+  defenceG: 2
+  intelligenceG: 3
+  gutsG: 2
+  speedG: 3
+  luckG: 2
+  inBattle: 1
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []
