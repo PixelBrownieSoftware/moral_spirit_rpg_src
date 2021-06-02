@@ -12,26 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: King Abaddon
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
+  - turnCounters: 3
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 2
+    isImportant: 1
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 9da4ed113a8973e40854e5d7c074c6eb, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
-    onParty: 1
+    onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 5
   characterAnims: []
-  front: {fileID: 0}
-  back: {fileID: 0}
+  front: {fileID: 21300000, guid: cce31dcb98ce61f44967aa2c50325b8a, type: 3}
+  back: {fileID: 21300000, guid: cce31dcb98ce61f44967aa2c50325b8a, type: 3}
   isPartyChar: 0
-  level: 41
+  level: 1
   exp: 0
   expToNextLevel: 0
   baseExpYeild: 0
@@ -57,23 +85,27 @@ MonoBehaviour:
   speedG: 3
   luckG: 3
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
+  - {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
+  - {fileID: 11400000, guid: 9da4ed113a8973e40854e5d7c074c6eb, type: 2}
+  - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
+  - 2
+  - 2
+  - 0.5
+  - -0.5
+  - -1.5
   - 1
+  - -0.5
+  - 0.5
+  - -1.5
   - 1
+  - -2
   - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - -2
   actionTypeCharts:
   - 1
   - 1

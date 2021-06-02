@@ -12,37 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Diligent girl
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
-    onParty: 0
-    isImportant: 0
-  - conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
-    onParty: 1
-    isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
+    moveName: {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: baf2a279b30d44a4abeced655be2c150, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 7
+    element: 0
+    healthPercentage: 0.216
+    name: 
+    moveName: {fileID: 11400000, guid: 3dfe3f42a073b8844b1812fdc574d4f6, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
   characterAnims: []
-  front: {fileID: 6140219172232408187, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  front: {fileID: 6042372742930579777, guid: ce00c4e86cd0fd54e94f908a61ce5638, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 1
@@ -72,14 +86,11 @@ MonoBehaviour:
   luckG: 3
   inBattle: 1
   moveDatabase:
-  - move: {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
-    level: 0
+  - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+  - {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
+  - {fileID: 11400000, guid: baf2a279b30d44a4abeced655be2c150, type: 2}
+  - {fileID: 11400000, guid: 3dfe3f42a073b8844b1812fdc574d4f6, type: 2}
+  - {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

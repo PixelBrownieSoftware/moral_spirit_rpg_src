@@ -20,22 +20,31 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user unleashes the spirit of Peast within them.
   element: 0
   action_type: 0
   moveType: 2
   target: 0
   power: 0
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 85
-  str_inc: 0.6
-  vit_inc: 0.6
-  dex_inc: 0.6
-  luc_inc: 0.6
-  agi_inc: 0.6
-  gut_inc: 0.6
+  str_inc: 0.75
+  vit_inc: 0.75
+  dex_inc: 0.75
+  luc_inc: 0.75
+  agi_inc: 0.75
+  gut_inc: 0.75
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 7
+  dex_req: 5
+  vit_req: 6
+  agi_req: 5
+  gut_req: 6
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

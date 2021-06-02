@@ -12,15 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6aa7109b6963a46850a45af304b7a3, type: 3}
   m_Name: final_boss
   m_EditorClassIdentifier: 
-  endEvent: {fileID: 0}
+  endEvent: {fileID: 11400000, guid: 4077e88a33b0eb643be414060236d722, type: 2}
   enemies:
-  - {fileID: 11400000, guid: 25eb17ca41ef7cd419480a0c0d6aa8a6, type: 2}
   - {fileID: 11400000, guid: 5be311a9499eb1a46a2052db45723e4f, type: 2}
-  - {fileID: 11400000, guid: 55307863b9a77794786d8f7536760b83, type: 2}
   maxLevel: 0
   minLevel: 0
-  fixedLevel: 280000003700000028000000
+  fixedLevel: 2d000000
   isFixedLevel: 1
+  battleEvents: []
   allRelations: 1
   isFleeable: 0
-  relationships: []

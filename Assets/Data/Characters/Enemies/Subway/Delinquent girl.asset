@@ -12,35 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Delinquent girl
   m_EditorClassIdentifier: 
+  shortName: Del.Girl
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: bd236fadec1cf7e4ca598006d1ee553f, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
     onParty: 1
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 1
   characterAnims:
   - {fileID: 21300000, guid: 81cf74c255ca4ad4c8d6c9b34150e94d, type: 3}
   front: {fileID: 2112927663541022341, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
@@ -73,21 +87,17 @@ MonoBehaviour:
   luckG: 3
   inBattle: 1
   moveDatabase:
-  - move: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: bd236fadec1cf7e4ca598006d1ee553f, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
-    level: 7
-  - move: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
-    level: 15
+  - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+  - {fileID: 11400000, guid: bd236fadec1cf7e4ca598006d1ee553f, type: 2}
+  - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+  - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
   - 1
   - 1
-  - 2.02
   - 1
+  - 2.11
   - 1
   - 1
   - 1
@@ -100,8 +110,8 @@ MonoBehaviour:
   actionTypeCharts:
   - 1
   - 1.55
-  - 1.97
-  - -0.45
+  - 2
+  - 0
   - 1
   - 1
   money: 0

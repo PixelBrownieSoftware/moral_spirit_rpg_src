@@ -92,11 +92,11 @@ public class c_player : o_overworlC
         if (col != null)
         {
             print("K");
-            rpg_globals.gl.ShowPrompt();
+            //rpg_globals.gl.ShowPrompt();
         }
         else
         {
-            rpg_globals.gl.HidePrompt();
+            //rpg_globals.gl.HidePrompt();
         }
     }
 

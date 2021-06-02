@@ -15,27 +15,36 @@ MonoBehaviour:
   isMultiHit: 0
   isFixed: 0
   onSelf: 1
-  onTeam: 0
-  cost: 10
+  onTeam: 1
+  cost: 7
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: User concentrates their will power.
   element: 0
   action_type: 0
   moveType: 2
   target: 0
   power: 0
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 85
   str_inc: 0
-  vit_inc: 0.3
+  vit_inc: 0.65
   dex_inc: 0
   luc_inc: 0
   agi_inc: 0
-  gut_inc: 0
+  gut_inc: 0.35
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 4
+  dex_req: 0
+  vit_req: 6
+  agi_req: 0
+  gut_req: 3
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

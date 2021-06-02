@@ -18,6 +18,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  maxLevel: 10
-  minLevel: 7
+  maxLevel: 20
+  minLevel: 17
   fixedLevel: 
+  isFixedLevel: 0
+  battleEvents: []
+  allRelations: 0
+  isFleeable: 1

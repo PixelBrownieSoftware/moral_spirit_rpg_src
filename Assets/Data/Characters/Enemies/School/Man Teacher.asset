@@ -12,29 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Man Teacher
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 1
+  - turnCounters: 0
+    conditions: 1
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: fc0631d18b6ab8c43bf55eeedbf81797, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 1
   characterAnims: []
-  front: {fileID: 4464594796766934591, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  front: {fileID: 1450148641465261668, guid: ce00c4e86cd0fd54e94f908a61ce5638, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 1
   exp: 0
   expToNextLevel: 0
-  baseExpYeild: 0
+  baseExpYeild: 75
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
@@ -57,7 +65,11 @@ MonoBehaviour:
   speedG: 3
   luckG: 3
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
+  - {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+  - {fileID: 11400000, guid: b71df68d1b4f1ae449bd2194554a3dd8, type: 2}
+  - {fileID: 11400000, guid: dfbbb08f5a339b94c808ed7ae8124e29, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

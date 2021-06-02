@@ -18,6 +18,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 1
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -46,6 +47,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -74,6 +76,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2071, y: 126}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -102,6 +105,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 1
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 126}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -130,6 +134,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 1
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2175, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -158,6 +163,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -186,6 +192,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -214,6 +221,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -240,8 +248,9 @@ MonoBehaviour:
   - logic: 0
     eventType: 1
     funcName: 
-    simultaenous: 1
+    simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -271,6 +280,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -299,6 +309,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -327,6 +338,7 @@ MonoBehaviour:
     funcName: START_BATTLE
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2455, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -355,6 +367,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -383,6 +396,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -411,6 +425,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -439,6 +454,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -467,6 +483,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -496,6 +513,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -524,6 +542,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -552,6 +571,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -580,6 +600,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -608,6 +629,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -618,7 +640,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: I will entrust you with the power of Haniel.
+    string0: You shall be the one to face these two.
     string1: Gabriel
     posX: 0
     posY: 0
@@ -636,6 +658,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -665,6 +688,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -694,6 +718,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -722,34 +747,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 2172, y: 75}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: Rebecca, do not let us down.
-    string1: Gabriel
-    posX: 0
-    posY: 0
-    float0: 2
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -778,6 +776,7 @@ MonoBehaviour:
     funcName: START_BATTLE
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 1, g: 1, b: 1, a: 1}
@@ -802,12 +801,13 @@ MonoBehaviour:
     logicType: 0
     timelineAsset: {fileID: 0}
   - logic: 0
-    eventType: 25
+    eventType: 0
     funcName: START_BATTLE
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
-    pos: {x: 2172, y: 75}
+    pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
     int0: 0
     int1: 0
@@ -834,6 +834,7 @@ MonoBehaviour:
     funcName: START_BATTLE
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 1, g: 1, b: 1, a: 0}
@@ -862,6 +863,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -890,6 +892,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -918,6 +921,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -928,7 +932,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan looked at Sebastian in confusion.
+    string0: Evan looked at Sebastian in confusion, but both quickly went into battle..
     string1: 
     posX: 0
     posY: 0
@@ -946,6 +950,7 @@ MonoBehaviour:
     funcName: START_BATTLE
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 2172, y: 75}
     colour: {r: 0, g: 0, b: 0, a: 0}

@@ -18,6 +18,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -42,10 +43,40 @@ MonoBehaviour:
     logicType: 0
     timelineAsset: {fileID: 0}
   - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ralph
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 1.5
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
     eventType: 1
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -57,7 +88,7 @@ MonoBehaviour:
     boolean1: 0
     boolean2: 0
     string0: I hope they don't find me.
-    string1: Boy's voice
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -74,6 +105,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -85,10 +117,39 @@ MonoBehaviour:
     boolean1: 0
     boolean2: 0
     string0: ...!
-    string1: Boy's voice
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 1.5
     float1: 0
     stringList: []
     dialogueChoices: []
@@ -102,6 +163,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -112,7 +174,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: What's wrong?
+    string0: It's Ralph! From before!
     string1: Chloe
     posX: 0
     posY: 0
@@ -130,6 +192,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -140,8 +203,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: No! Don't-
-    string1: Boy's voice
+    string0: No! Don't!
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -158,6 +221,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -168,8 +232,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Are you okay?
-    string1: Chloe
+    string0: Oh... it's you guys. Did you stop the rally from before?
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -186,6 +250,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -196,8 +261,66 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Don't take me to Micheal! Rebecca!
-    string1: Boy's voice
+    string0: Yeah!
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Rebecca
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 1.5
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Are you a girl named Rebecca by any chance?
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -214,6 +337,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -224,7 +348,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: 'Ralph? Is that you? '
+    string0: Ralph? What are you doing here? You're going to get captured!
     string1: Rebecca
     posX: 0
     posY: 0
@@ -242,6 +366,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -252,8 +377,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Hold on now, we don't work for him!
-    string1: Sebastian
+    string0: I have memories of you, yet I don't know who you are.
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -270,6 +395,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -280,8 +406,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Oh thank god!
-    string1: Boy
+    string0: That's odd, you're in the same class as me.
+    string1: Rebecca
     posX: 0
     posY: 0
     float0: 0
@@ -298,6 +424,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -308,35 +435,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: It's interesting how you mentioned Micheal, since we just met him
-    string1: Sebastian
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: He seems to be putting us in a competition.
+    string0: We can do the reminiscing after this, we've got to find those two angels
+      and put a stop to them.
     string1: Chloe
     posX: 0
     posY: 0
@@ -354,6 +454,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -364,8 +465,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Oh no... I must stop them! Please take me with you!
-    string1: Boy
+    string0: Right. We must stop them before they kidnap me.
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -382,6 +483,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -392,8 +494,9 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: I'm Ralph by the way.
-    string1: Ralplh
+    string0: I'm willing to help you guys out, although I don't have a spirit - I
+      do have magical powers.
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -410,10 +513,11 @@ MonoBehaviour:
     funcName: ADD_PARTY_MEMBER
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 18
+    int0: 25
     int1: 0
     int2: 0
     tpPoint: 0
@@ -438,6 +542,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -462,10 +567,185 @@ MonoBehaviour:
     logicType: 0
     timelineAsset: {fileID: 0}
   - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: This whole spirit jargon is getting more confusing...
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 1.5
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 13
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 25
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ralph
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 25
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Party Group
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 13
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 5
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
     eventType: 7
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -494,6 +774,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}

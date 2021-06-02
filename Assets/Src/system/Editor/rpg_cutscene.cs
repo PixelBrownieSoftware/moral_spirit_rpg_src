@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using MagnumFoundation2.Objects;
+using MagnumFoundation2Editor;
 
-public class rpg_cutscene : MagnumFoundation2Editor.ed_event
+[CustomEditor(typeof(ev_script), true)]
+public partial class rpg_cutscene : ed_event
 {
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
+        Debug.Log("gggg");
     }
 
     public new void OnEnable()
@@ -16,6 +19,7 @@ public class rpg_cutscene : MagnumFoundation2Editor.ed_event
 
     public override void DrawCustomEvents(string evType, ref Rect rect, ref SerializedProperty element, ref float sep)
     {
+        base.DrawCustomEvents(evType, ref rect, ref element, ref sep);
         switch (evType)
         {
             case "REMOVE_PARTY_MEMBER":
@@ -31,6 +35,11 @@ public class rpg_cutscene : MagnumFoundation2Editor.ed_event
             case "START_BATTLE":
                 DrawFeild(ref rect, element, "scrObj", "Group name", 100, ref sep);
                 break;
+                /*
+            case "BIG_TEXT":
+                DrawFeild(ref rect, element, "scrObj", "Group name", 100, ref sep);
+                break;
+                */
         }
     }
 }

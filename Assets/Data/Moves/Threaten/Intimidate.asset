@@ -16,27 +16,36 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 0
+  cost: 17
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
-  element: 0
-  action_type: 0
-  moveType: 0
+  infoDescription: The user asserts their dominance over their target.
+  element: 8
+  action_type: 3
+  moveType: 3
   target: 0
-  power: 0
+  power: 12
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 85
-  str_inc: 0
-  vit_inc: 0
-  dex_inc: 0
+  str_inc: 0.3
+  vit_inc: 0.4
+  dex_inc: 0.3
   luc_inc: 0
   agi_inc: 0
-  gut_inc: 0
+  gut_inc: 0.3
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 8
+  dex_req: 7
+  vit_req: 0
+  agi_req: 0
+  gut_req: 6
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0
-  statusMoveType: 0
+  statusMoveType: 5

@@ -6,7 +6,9 @@ using System;
 [CreateAssetMenu]
 public class BattleCharacterData : ScriptableObject
 {
+    public string shortName;
     public charAI[] characterAI;
+    public int turnIcons = 1;
 
     public Sprite[] characterAnims;
 
@@ -53,7 +55,7 @@ public class BattleCharacterData : ScriptableObject
 
     public bool inBattle = true;
 
-    public List<o_battleChar.move_learn> moveDatabase = new List<o_battleChar.move_learn>();
+    public List<s_move> moveDatabase = new List<s_move>();
     public List<s_move> currentMoves = new List<s_move>();
     public STATUS_EFFECT currentStatus = STATUS_EFFECT.NONE;
 

@@ -68,12 +68,13 @@
     <Compile Include="Assets\Src\character\o_tresure.cs" />
     <Compile Include="Assets\Src\system\Menus\button\s_statusButton.cs" />
     <Compile Include="Assets\Src\system\s_battleEngine.cs" />
-    <Compile Include="Assets\Src\system\Menus\battle\s_targetMenu.cs" />
+    <Compile Include="Assets\Src\system\Menus\battle\s_battletargetMenu.cs" />
     <Compile Include="Assets\Src\system\rpg_item.cs" />
     <Compile Include="Assets\Src\system\rpg_mainmenu.cs" />
     <Compile Include="Assets\MISC\unusedsrc.cs" />
     <Compile Include="Assets\s_analyzeStats.cs" />
     <Compile Include="Assets\Src\system\Menus\s_targetMenu.cs" />
+    <Compile Include="Assets\Src\system\Menus\battle\s_battleAnalyze.cs" />
     <Compile Include="Assets\Src\misc\s_trippyBG.cs" />
     <Compile Include="Assets\Src\misc\u_encounter.cs" />
     <Compile Include="Assets\Src\system\u_vendor.cs" />
@@ -93,9 +94,10 @@
     <Compile Include="Assets\Src\system\s_inventory.cs" />
     <Compile Include="Assets\Src\system\s_moveanim.cs" />
     <Compile Include="Assets\Src\system\Menus\button\s_skillButton.cs" />
+    <Compile Include="Assets\Src\character\o_healPoint.cs" />
     <Compile Include="Assets\Src\character\c_enemy.cs" />
     <Compile Include="Assets\Src\system\Menus\s_skillsMenu.cs" />
-    <Compile Include="Assets\Src\character\o_healPoint.cs" />
+    <Compile Include="Assets\Src\system\Menus\s_statReq.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Data\Characters\Enemies\Legacy\Hunky_punk.txt" />

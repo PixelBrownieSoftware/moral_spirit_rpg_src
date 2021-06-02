@@ -18,6 +18,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -46,6 +47,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -74,6 +76,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -102,6 +105,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -130,6 +134,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -158,6 +163,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -186,6 +192,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 1}
@@ -214,6 +221,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 3794, y: 2960}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -242,6 +250,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -270,6 +279,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -298,6 +308,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -327,6 +338,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -355,6 +367,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -384,6 +397,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -413,6 +427,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -442,6 +457,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -470,6 +486,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 1}
@@ -498,6 +515,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -526,6 +544,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -554,6 +573,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 3935, y: 2676}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -582,6 +602,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -610,6 +631,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -640,6 +662,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -669,6 +692,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -697,6 +721,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 1}
@@ -725,6 +750,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -753,6 +779,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -781,6 +808,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 3915, y: 2531}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -809,6 +837,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -837,6 +866,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -865,6 +895,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -893,6 +924,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -921,6 +953,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -950,6 +983,7 @@ MonoBehaviour:
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -974,349 +1008,11 @@ MonoBehaviour:
     logicType: 0
     timelineAsset: {fileID: 0}
   - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: BEEP BEEP!
-    string1: Evan's mobile phone
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: 'Evan answered the call. '
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: "Hey, it\u2019s Chloe."
-    string1: Familiar female voice
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: ...!
-    string1: Evan
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: "Sorry, I couldn\u2019t message you this past week. It wasn\u2019t work.
-      I have been feeling ill this past week. I kept seeing these hallucinations
-      of these mythical creatures. "
-    string1: Chloe
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: "I am at Saint Parkinson\u2019s Hospital now. "
-    string1: Chloe
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: ...
-    string1: Evan
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: Evan reassured her that he will be there as soon as possible.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: Thank you hon!
-    string1: Chloe
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: Chloe's now gettin' those spirit fevers? This keeps getting worse and
-      worse!
-    string1: Sebastian
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: We'd better make sure she dosen't cause trouble like those childeren!
-    string1: Sebastian
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: Evan agreed.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
     eventType: 13
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 1}
@@ -1341,21 +1037,51 @@ MonoBehaviour:
     logicType: 0
     timelineAsset: {fileID: 0}
   - logic: 0
-    eventType: 19
+    eventType: 7
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 3
+    int1: 0
+    int2: 0
+    tpPoint: 100
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: story
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: adee0d170f57abd48abbf0c42d5cae68, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 24
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
     int0: 0
     int1: 0
     int2: 0
-    tpPoint: 0
+    tpPoint: 100
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan agreed.
+    string0: city
     string1: 
     posX: 0
     posY: 0

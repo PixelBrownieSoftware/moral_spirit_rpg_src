@@ -12,21 +12,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Gang Boy
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+    moveName: {fileID: 11400000, guid: 5319d7adb7e1b3a43aefef5bfde09318, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: a75f37df80b0d8f49a462c4a24146bcd, type: 2}
+    moveName: {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: a7a933f7d27ee8b4ebc86887cc56aa4e, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: fc0631d18b6ab8c43bf55eeedbf81797, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
   characterAnims: []
   front: {fileID: 6140219172232408187, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
   back: {fileID: 0}
@@ -57,17 +105,24 @@ MonoBehaviour:
   speedG: 5
   luckG: 3
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: 5319d7adb7e1b3a43aefef5bfde09318, type: 2}
+  - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
+  - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
+  - {fileID: 11400000, guid: a7a933f7d27ee8b4ebc86887cc56aa4e, type: 2}
+  - {fileID: 11400000, guid: fc0631d18b6ab8c43bf55eeedbf81797, type: 2}
+  - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
+  - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
   - 1
+  - 0.54
+  - 0.5
   - 1
   - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 0.82
+  - 2.21
   - 1
   - 1
   - 1
@@ -76,11 +131,11 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
+  - 1.5
+  - 1.45
+  - 0.52
   - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 2.07
   money: 0
   itemDrop: []
   relationships: []

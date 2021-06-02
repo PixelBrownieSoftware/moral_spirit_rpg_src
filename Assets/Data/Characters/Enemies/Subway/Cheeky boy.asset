@@ -12,21 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Cheeky boy
   m_EditorClassIdentifier: 
+  shortName: Ch.Boy
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 6
+  - turnCounters: 0
+    conditions: 6
     element: 0
     healthPercentage: 0.5
     name: 
     moveName: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
     onParty: 1
+    number1: 0
+    number2: 0
     isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0.5
+    name: 
+    moveName: {fileID: 11400000, guid: 07af2dbdd1c9a114b84f4382c9cba7de, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0.5
+    name: 
+    moveName: {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
   characterAnims:
   - {fileID: 101998949037462375, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
   front: {fileID: 4464594796766934591, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
@@ -59,10 +87,13 @@ MonoBehaviour:
   luckG: 3
   inBattle: 1
   moveDatabase:
-  - move: {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
-    level: 0
+  - {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
+  - {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
+  - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+  - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
+  - {fileID: 11400000, guid: 07af2dbdd1c9a114b84f4382c9cba7de, type: 2}
+  - {fileID: 11400000, guid: a756c77d80d9eb14ca80557509a8e831, type: 2}
+  - {fileID: 11400000, guid: beb4aa0dbbb75284f84787b6dececefe, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -87,5 +118,7 @@ MonoBehaviour:
   - 1.67
   - 1
   money: 0
-  itemDrop: []
+  itemDrop:
+  - {fileID: 11400000, guid: 5da244c7592379547af91aa32172273e, type: 2}
+  - {fileID: 11400000, guid: 5da244c7592379547af91aa32172273e, type: 2}
   relationships: []

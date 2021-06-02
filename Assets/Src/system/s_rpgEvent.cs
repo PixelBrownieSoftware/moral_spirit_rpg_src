@@ -48,6 +48,10 @@ public class s_rpgEvent : s_triggerhandler
     s_battlesyst bs;
     public static s_rpgEvent rpgEv;
     public Text bigTxt;
+    public static bool _inBattle = false;
+    delegate void disableBattle();
+    disableBattle db;
+    public Text continueTxt;
 
     public new void Awake()
     {
@@ -55,8 +59,9 @@ public class s_rpgEvent : s_triggerhandler
         textBox.gameObject.SetActive(false);
         base.Awake();
         rpgEv = this;
+        evEnd = EndEvent;
     }
-
+    
     public override void CreateData()
     {
         base.CreateData();
@@ -76,12 +81,17 @@ public class s_rpgEvent : s_triggerhandler
         }
     }
 
+    public void EndEvent() {
+        if(!_inBattle)
+            s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
+    }
 
     public override IEnumerator EventPlay(ev_details current_ev)
     {
         switch ((EVENT_TYPES)current_ev.eventType)
         {
             default:
+                s_menuhandler.GetInstance().SwitchMenu("EMPTY");
                 yield return StartCoroutine(base.EventPlay(current_ev));
                 break;
 
@@ -90,11 +100,16 @@ public class s_rpgEvent : s_triggerhandler
 
                 switch (current_ev.funcName) {
                     case "START_BATTLE":
+                        _inBattle = true;
                         bs = GetComponent<s_battlesyst>();
                         pointer = -1;
                         doingEvents = false;
                         player.rendererObj.color = Color.clear;
-
+                        /*
+                        s_camera.cam.ZoomCamera(10, 250);
+                        MagnumFoundation2.System.Core.s_soundmanager.GetInstance().PlaySound("encounter");
+                        yield return StartCoroutine(Fade(Color.black));
+                        */
                         rpg_globals.gl.SwitchToBattle((enemy_group)current_ev.scrObj);
                         break;
 
@@ -104,23 +119,46 @@ public class s_rpgEvent : s_triggerhandler
                             rpg_globals.gl.AddMemeber(bcd, current_ev.int0);
                         break;
 
+                    case "INCREASE_ES_LIMIT":
+                        rpg_globals.gl.extraSkillAmount += current_ev.int0;
+                        break;
+
                     case "BIG_TEXT":
-                        bigTxt.text = current_ev.string0;
-                        print(current_ev.string0);
-                        bigTxt.color = Color.clear;
-                        float a = 0;
-                        while (bigTxt.color != Color.white) {
-                            bigTxt.color = Color.Lerp(bigTxt.color, Color.white, a);
-                            a += Time.deltaTime;
+                        if (isSkipping)
+                        {
+                            bigTxt.color = Color.clear;
                             yield return new WaitForSeconds(Time.deltaTime);
                         }
-                        a = 0;
-                        yield return new WaitForSeconds(current_ev.float0);
-                        while (bigTxt.color != Color.clear)
+                        else
                         {
-                            bigTxt.color = Color.Lerp(bigTxt.color, Color.clear, a);
-                            a += Time.deltaTime;
-                            yield return new WaitForSeconds(Time.deltaTime);
+                            bigTxt.text = current_ev.string0;
+                            print(current_ev.string0);
+                            bigTxt.color = Color.clear;
+                            float a = 0;
+                            while (bigTxt.color != Color.white)
+                            {
+                                bigTxt.color = Color.Lerp(bigTxt.color, Color.white, a);
+                                a += Time.deltaTime;
+                                yield return new WaitForSeconds(Time.deltaTime * 1.75f);
+                            }
+                            a = 0;
+                            float t = 0;
+                            continueTxt.text = "Press " + rpg_globals.GetKeyPref("select").ToString() + " to continue.";
+                            while (!Input.GetKeyDown(rpg_globals.GetKeyPref("select")))
+                            {
+                                t = Mathf.Sin(a);
+                                a += Time.deltaTime * 2.5f;
+                                continueTxt.color = Color.Lerp(Color.white, Color.clear, t);
+                                yield return new WaitForSeconds(Time.deltaTime);
+                            }
+                            continueTxt.color = Color.clear;
+                            a = 0;
+                            while (bigTxt.color != Color.clear)
+                            {
+                                bigTxt.color = Color.Lerp(bigTxt.color, Color.clear, a);
+                                a += Time.deltaTime;
+                                yield return new WaitForSeconds(Time.deltaTime);
+                            }
                         }
                         break;
                 }

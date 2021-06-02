@@ -12,49 +12,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Male Professor
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: c74c4f2a9ca716f468ec05bafedc5083, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: e138a43a28bd6dc44b6a1a2166dc847d, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
     onParty: 1
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 1
   characterAnims: []
   front: {fileID: 0}
   back: {fileID: 0}
   isPartyChar: 0
   level: 41
   exp: 0
-  expToNextLevel: 0
+  expToNextLevel: 55
   baseExpYeild: 0
   maxHitPoints: 0
   couragePoints: 0
@@ -78,17 +95,7 @@ MonoBehaviour:
   speedG: 2
   luckG: 0
   inBattle: 1
-  moveDatabase:
-  - move: {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: c74c4f2a9ca716f468ec05bafedc5083, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: e138a43a28bd6dc44b6a1a2166dc847d, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
-    level: 0
+  moveDatabase: []
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

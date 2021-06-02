@@ -12,21 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Cheeky girl
   m_EditorClassIdentifier: 
+  shortName: Ch.Girl
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 6
+  - turnCounters: 0
+    conditions: 6
     element: 0
     healthPercentage: 0.59
     name: 
     moveName: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
     onParty: 1
+    number1: 0
+    number2: 0
     isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0.59
+    name: 
+    moveName: {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
   characterAnims:
   - {fileID: 21300000, guid: 5ca0158afc923c44a8be0b42466ca2c1, type: 3}
   front: {fileID: -5428665518763133480, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
@@ -59,10 +77,11 @@ MonoBehaviour:
   luckG: 3
   inBattle: 1
   moveDatabase:
-  - move: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
-    level: 0
+  - {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+  - {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
+  - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+  - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
+  - {fileID: 11400000, guid: a388c78515dfe3142bb9b51e31789dce, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -72,7 +91,7 @@ MonoBehaviour:
   - 1
   - 1
   - 1
-  - 1
+  - 0.12
   - 1
   - 1
   - 1
@@ -82,8 +101,8 @@ MonoBehaviour:
   actionTypeCharts:
   - 1
   - 0.67
-  - 2.26
-  - 1
+  - 1.8
+  - 2.01
   - 1
   - 1
   money: 0

@@ -4,13 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1450148641465261668
-    second: battleSprites2_0
+    second: man_teacher
   - first:
       213: 9121403135921029393
-    second: battleSprites2_1
+    second: diligent_man
   - first:
       213: 6042372742930579777
-    second: battleSprites2_2
+    second: diligient girl
   - first:
       213: 3237912956273490859
     second: battleSprites2_3
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: battleSprites2_0
+      name: man_teacher
       rect:
         serializedVersion: 2
         x: 140
@@ -111,7 +111,7 @@ TextureImporter:
         width: 41
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,7 +124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleSprites2_1
+      name: diligent_man
       rect:
         serializedVersion: 2
         x: 188
@@ -132,7 +132,7 @@ TextureImporter:
         width: 45
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,7 +145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleSprites2_2
+      name: diligient girl
       rect:
         serializedVersion: 2
         x: 102
@@ -153,7 +153,7 @@ TextureImporter:
         width: 37
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,7 +174,7 @@ TextureImporter:
         width: 39
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

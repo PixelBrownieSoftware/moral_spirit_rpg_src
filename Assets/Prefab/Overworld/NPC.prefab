@@ -101,7 +101,7 @@ MonoBehaviour:
   terminalSpeedOrigin: 120
   gravity: 0
   rbody2d: {fileID: 0}
-  rendererObj: {fileID: 0}
+  rendererObj: {fileID: 4211951435891965692}
   useCondition: 0
   disspearOnConditionTrue: 0
   logicType: 0
@@ -113,6 +113,8 @@ MonoBehaviour:
   switchB: 0
   switchC: 0
   switchD: 0
+  conditions: []
+  eventScript: {fileID: 0}
   targets: []
   isInvicible: 0
   dashDivider: 2.5

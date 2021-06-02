@@ -46,7 +46,7 @@ public class s_dmg : MonoBehaviour
         rendTXTBk = textBK.GetComponent<MeshRenderer>();
     }
 
-    public void PlayAnim(int dmg, HIT_FX_TYPE pt)
+    public void PlayAnim(string dmg, HIT_FX_TYPE pt)
     {
         anim.enabled = true;
         isDone = false;

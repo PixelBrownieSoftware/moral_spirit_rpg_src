@@ -9,15 +9,21 @@ public class s_targetButton : s_button
 {
     public o_battleChar battleCharButton;
     public enum TARGET_TYPE {
-        BATTLE,
-        OPTIONAL_BATTLE,
-        DEPLOY,
-        SWITCH
+        BATTLE
     }
     public TARGET_TYPE targType;
+    public s_move mov;
 
     public Slider HPSlider;
     public Slider SPSlider;
+
+    public Image weaknessIcon;
+
+    public Sprite normDmg;
+    public Sprite weakDmg;
+    public Sprite resDmg;
+
+    public bool isAll = false;
 
     protected override void OnHover()
     {
@@ -27,11 +33,7 @@ public class s_targetButton : s_button
             case TARGET_TYPE.BATTLE:
                 print("HEY");
                 s_soundmanager.GetInstance().PlaySound("cursor_move");
-                s_camera.cam.SetTargPos(battleCharButton.transform.position);
-                break;
-
-            case TARGET_TYPE.OPTIONAL_BATTLE:
-                //s_battleEngine.engineSingleton.
+                //s_camera.cam.SetTargPos(battleCharButton.transform.position);
                 break;
         }
     }
@@ -47,6 +49,53 @@ public class s_targetButton : s_button
 
             HPSlider.value = HP;
             SPSlider.value = SP;
+            transform.position = Camera.main.WorldToScreenPoint(battleCharButton.transform.position);
+            if (mov.element != ELEMENT.UNKNOWN) {
+                switch (mov.moveType) {
+                    case MOVE_TYPE.PHYSICAL:
+                    case MOVE_TYPE.SPECIAL:
+
+                        if (battleCharButton.elementTypeCharts[(int)mov.element] >= 2)
+                        {
+                            weaknessIcon.sprite = weakDmg;
+                        }
+                        else if (battleCharButton.elementTypeCharts[(int)mov.element] > 0 &&
+                            battleCharButton.elementTypeCharts[(int)mov.element] < 2)
+                        {
+                            weaknessIcon.sprite = normDmg;
+                        }
+                        else if (battleCharButton.elementTypeCharts[(int)mov.element] <= 0)
+                        {
+                            weaknessIcon.sprite = resDmg;
+                        }
+                        if (battleCharButton.hitPoints <= 0)
+                        {
+                            weaknessIcon.sprite = normDmg;
+                        }
+                        break;
+
+                    case MOVE_TYPE.TALK:
+
+                        if (battleCharButton.actionTypeCharts[(int)mov.action_type] >= 2)
+                        {
+                            weaknessIcon.sprite = weakDmg;
+                        }
+                        else if (battleCharButton.actionTypeCharts[(int)mov.action_type] > 0 &&
+                            battleCharButton.actionTypeCharts[(int)mov.action_type] < 2)
+                        {
+                            weaknessIcon.sprite = normDmg;
+                        }
+                        else if (battleCharButton.actionTypeCharts[(int)mov.action_type] <= 0)
+                        {
+                            weaknessIcon.sprite = resDmg;
+                        }
+                        if (battleCharButton.hitPoints <= 0 || battleCharButton.skillPoints <= 0)
+                        {
+                            weaknessIcon.sprite = normDmg;
+                        }
+                        break;
+                }
+            }
         }
     }
 
@@ -54,13 +103,28 @@ public class s_targetButton : s_button
     {
         switch (targType) {
             case TARGET_TYPE.BATTLE:
-                //s_battleEngine.engineSingleton.SelectTarget(battleCharButton);
+                switch (mov.moveType) {
+                    case MOVE_TYPE.PHYSICAL:
+                        if (s_battlesyst.GetInstance().currentCharacter.hitPoints <= mov.cost) {
+
+                            return;
+                        }
+                            break;
+                    case MOVE_TYPE.SPECIAL:
+                    case MOVE_TYPE.TALK:
+                    case MOVE_TYPE.STATUS:
+                        if (s_battlesyst.GetInstance().currentCharacter.skillPoints < mov.cost)
+                        {
+                            return;
+                        }
+                        break;
+                }
+                if (isAll)
+                    s_battlesyst.GetInstance().SelectTarget(mov);
+                else
+                    s_battlesyst.GetInstance().SelectTarget(battleCharButton, mov);
                 s_menuhandler.GetInstance().SwitchMenu("EMPTY");
                 s_soundmanager.GetInstance().PlaySound("selectOption");
-                break;
-
-            case TARGET_TYPE.OPTIONAL_BATTLE:
-                //s_battleEngine.engineSingleton.
                 break;
         }
     }

@@ -14,17 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMultiHit: 0
   isFixed: 0
+  onSelf: 0
   onTeam: 0
-  cost: 3
+  cost: 15
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user utters offensive terms at the target.
   element: 0
   action_type: 3
   moveType: 3
   target: 0
-  power: 9
+  power: 18
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 85
@@ -33,8 +35,16 @@ MonoBehaviour:
   dex_inc: 0
   luc_inc: 0
   agi_inc: 0
-  gut_inc: 0.4
+  gut_inc: 1
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 0
+  dex_req: 0
+  vit_req: 0
+  agi_req: 0
+  gut_req: 0
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

@@ -16,16 +16,16 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 0
+  cost: 24
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
   infoDescription: 
-  element: 0
+  element: 3
   action_type: 0
-  moveType: 0
+  moveType: 1
   target: 0
-  power: 0
+  power: 27
   animation: []
   moveRequirements: []
   accuracy: 85
@@ -36,6 +36,13 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  canLearn: 1
+  str_req: 8
+  dex_req: 13
+  vit_req: 5
+  agi_req: 0
+  gut_req: 10
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

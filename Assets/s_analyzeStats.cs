@@ -44,7 +44,10 @@ public class s_analyzeStats : MonoBehaviour
 
     public void SetText() {
         gameObject.SetActive(true);
-        nameChar.text = battleChar.name;
+        if(battleChar.data.shortName == "")
+            nameChar.text = battleChar.name;
+        else
+            nameChar.text = battleChar.data.shortName;
         SetTextTo(battleChar.attackBuff, ref str);
         SetTextTo(battleChar.defenceBuff, ref def);
         SetTextTo(battleChar.intelligenceBuff, ref dex);

@@ -14,17 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMultiHit: 0
   isFixed: 0
+  onSelf: 0
   onTeam: 0
-  cost: 0
+  cost: 10
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
   infoDescription: 
-  element: 0
+  element: 1
   action_type: 0
   moveType: 0
   target: 0
-  power: 0
+  power: 25
   animation: []
   moveRequirements: []
   accuracy: 85
@@ -34,6 +35,14 @@ MonoBehaviour:
   luc_inc: 0
   agi_inc: 0
   gut_inc: 0
+  buffUser: 0
+  canLearn: 1
+  str_req: 7
+  dex_req: 2
+  vit_req: 0
+  agi_req: 4
+  gut_req: 0
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

@@ -12,9 +12,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Woman teacher
   m_EditorClassIdentifier: 
-  characterAI: []
+  shortName: 
+  characterAI:
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: e74fc6a0e9fc4a547baf8746969eb484, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: b71df68d1b4f1ae449bd2194554a3dd8, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 6
+    element: 0
+    healthPercentage: 0.35
+    name: 
+    moveName: {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 1
+  turnIcons: 1
   characterAnims: []
-  front: {fileID: -4402627653049701587, guid: 004e7d5e4e8a80d4e83b33c1bb4ae75e, type: 3}
+  front: {fileID: 3237912956273490859, guid: ce00c4e86cd0fd54e94f908a61ce5638, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 1
@@ -43,7 +105,13 @@ MonoBehaviour:
   speedG: 2
   luckG: 3
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+  - {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
+  - {fileID: 11400000, guid: e74fc6a0e9fc4a547baf8746969eb484, type: 2}
+  - {fileID: 11400000, guid: b71df68d1b4f1ae449bd2194554a3dd8, type: 2}
+  - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+  - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

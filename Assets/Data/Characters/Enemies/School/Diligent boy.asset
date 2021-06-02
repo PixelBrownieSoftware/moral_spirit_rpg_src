@@ -12,23 +12,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Diligent boy
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 8
-    element: 0
-    healthPercentage: 0.5
-    name: 
-    moveName: {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
-    onParty: 0
-    isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
+    moveName: {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 42504cfee2eb1394f87add32b7be60ee, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
   characterAnims: []
-  front: {fileID: 5899511935908729651, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  front: {fileID: 9121403135921029393, guid: ce00c4e86cd0fd54e94f908a61ce5638, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 1
@@ -57,7 +105,13 @@ MonoBehaviour:
   speedG: 4
   luckG: 3
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
+  - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+  - {fileID: 11400000, guid: 42504cfee2eb1394f87add32b7be60ee, type: 2}
+  - {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
+  - {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
+  - {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

@@ -12,24 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Aggressive girl
   m_EditorClassIdentifier: 
+  shortName: Agr.Girl
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 78825537f771e324fa344eb6a59ef795, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: d4ed4d1fc82e80046b6466bcc79d3ade, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 1
   characterAnims:
   - {fileID: 6140219172232408187, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
-  front: {fileID: 101998949037462375, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  front: {fileID: -3500756917684149753, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 7
@@ -59,16 +67,20 @@ MonoBehaviour:
   luckG: 3
   inBattle: 1
   moveDatabase:
-  - move: {fileID: 11400000, guid: 82ee26c8a77254d45b04c96ffb5d4dcf, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
-    level: 0
+  - {fileID: 11400000, guid: 78825537f771e324fa344eb6a59ef795, type: 2}
+  - {fileID: 11400000, guid: d4ed4d1fc82e80046b6466bcc79d3ade, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
+  - {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+  - {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
+  - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+  - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
   - 1
   - 1
-  - 1
+  - 2
   - 1
   - 1
   - 1
@@ -83,9 +95,10 @@ MonoBehaviour:
   - 1
   - 0.75
   - 2
-  - -0.53
+  - 0.9
   - 1
   - 1
   money: 0
-  itemDrop: []
+  itemDrop:
+  - {fileID: 11400000, guid: ad06269c1122c6143bd74b377fbdd857, type: 2}
   relationships: []

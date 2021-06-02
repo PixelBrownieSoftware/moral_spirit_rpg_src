@@ -155,7 +155,7 @@ MonoBehaviour:
   _Z_offset: 0
   Z_floor: 0
   collision: {fileID: 5377334526248026893}
-  terminalSpeedOrigin: 80
+  terminalSpeedOrigin: 130
   gravity: 0
   rbody2d: {fileID: 5377334526248026894}
   rendererObj: {fileID: 5377334524901402689}
@@ -170,6 +170,8 @@ MonoBehaviour:
   switchB: 0
   switchC: 0
   switchD: 0
+  conditions: []
+  eventScript: {fileID: 0}
   targets: []
   isInvicible: 0
   dashDivider: 2.5
@@ -193,7 +195,7 @@ MonoBehaviour:
   dashdelay: 0
   offsetCOL: {x: 0, y: 0, z: 0}
   AI: 0
-  control: 0
+  control: 1
   faction: 
 --- !u!61 &5377334526248026893
 BoxCollider2D:

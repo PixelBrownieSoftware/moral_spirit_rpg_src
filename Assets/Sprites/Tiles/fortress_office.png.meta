@@ -5,6 +5,42 @@ TextureImporter:
   - first:
       213: -8214074591645499880
     second: fortress_office_0
+  - first:
+      213: -4414657156825828970
+    second: fortress_office_1
+  - first:
+      213: 5462236277580922822
+    second: fortress_office_2
+  - first:
+      213: 7595187702535680485
+    second: fortress_office_3
+  - first:
+      213: 1969538722071665910
+    second: fortress_office_4
+  - first:
+      213: -3491419150670418989
+    second: fortress_office_5
+  - first:
+      213: 9135967295968705511
+    second: fortress_office_6
+  - first:
+      213: 8939691720520504024
+    second: fortress_office_7
+  - first:
+      213: 6632264852114840864
+    second: fortress_office_8
+  - first:
+      213: 5588713248607685851
+    second: fortress_office_9
+  - first:
+      213: 9021387630774146674
+    second: fortress_office_10
+  - first:
+      213: -1686156773791409728
+    second: fortress_office_11
+  - first:
+      213: 2646986517539856074
+    second: fortress_office_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,6 +146,258 @@ TextureImporter:
       bones: []
       spriteID: 81e786ecdaeb10e80800000000000000
       internalID: -8214074591645499880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691b24aa4bcfbb2c0800000000000000
+      internalID: -4414657156825828970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 3
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf767c44f2cdcb40800000000000000
+      internalID: 5462236277580922822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 3
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1fd0479f6876960800000000000000
+      internalID: 7595187702535680485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 29
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc557c5805355b10800000000000000
+      internalID: 1969538722071665910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 55
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db2b42e7ccfb8fc0800000000000000
+      internalID: -3491419150670418989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 55
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebfccbe9d979ce70800000000000000
+      internalID: 9135967295968705511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_7
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 29
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2102b514a201c70800000000000000
+      internalID: 8939691720520504024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 29
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d1d966eb98a0c50800000000000000
+      internalID: 6632264852114840864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 55
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcc7ced6191f8d40800000000000000
+      internalID: 5588713248607685851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 89
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2765569b048623d70800000000000000
+      internalID: 9021387630774146674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 86
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c95b8e09519998e0800000000000000
+      internalID: -1686156773791409728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortress_office_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace163f963cfbb420800000000000000
+      internalID: 2646986517539856074
       vertices: []
       indices: 
       edges: []

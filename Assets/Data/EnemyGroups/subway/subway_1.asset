@@ -19,3 +19,7 @@ MonoBehaviour:
   maxLevel: 2
   minLevel: 1
   fixedLevel: 
+  isFixedLevel: 0
+  battleEvents: []
+  allRelations: 0
+  isFleeable: 1

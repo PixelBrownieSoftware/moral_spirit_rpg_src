@@ -36,6 +36,13 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  canLearn: 0
+  str_req: 0
+  dex_req: 0
+  vit_req: 0
+  agi_req: 0
+  gut_req: 0
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

@@ -2,9 +2,6 @@
 using UnityEngine;
 using UnityEditor;
 
-
-
-
 [CustomEditor(typeof(rpg_globals))]
 public class ed_rpgGlobals : Editor
 {

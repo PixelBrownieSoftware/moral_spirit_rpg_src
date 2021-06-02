@@ -15,10 +15,21 @@ MonoBehaviour:
   endEvent: {fileID: 11400000, guid: 11068811bb6dc5c4d9c878f162718811, type: 2}
   enemies:
   - {fileID: 11400000, guid: c709c3c6b517198458aff1e01e82b194, type: 2}
-  - {fileID: 11400000, guid: 549ccc0845d52cc4085852aa19308d82, type: 2}
+  - {fileID: 11400000, guid: e3d6ac933ee8e4f4888768e4f0d5d004, type: 2}
   maxLevel: 2
   minLevel: 2
   fixedLevel: 
   isFixedLevel: 0
+  battleEvents:
+  - eventScript: {fileID: 11400000, guid: 2208cc9b44853dc40980615e9b1e0b0c, type: 2}
+    battleCond: 2
+    battleCheckCond: 0
+    enabled: 1
+    int0: 0
+  - eventScript: {fileID: 11400000, guid: cedc323da675ab440969829c1258475c, type: 2}
+    battleCond: 2
+    battleCheckCond: 0
+    enabled: 1
+    int0: 1
   allRelations: 1
   isFleeable: 0

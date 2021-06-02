@@ -29,6 +29,12 @@ TextureImporter:
   - first:
       213: 5663939382051619170
     second: evan_animation_8
+  - first:
+      213: -5436009849836716376
+    second: evan_animation_9
+  - first:
+      213: -1729500001322363306
+    second: evan_animation_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,7 +113,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +128,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
-        y: 434
+        y: 432
         width: 28
         height: 61
       alignment: 0
@@ -142,7 +148,7 @@ TextureImporter:
       name: evan_animation_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 116
         y: 429
         width: 33
         height: 70
@@ -163,8 +169,8 @@ TextureImporter:
       name: evan_animation_2
       rect:
         serializedVersion: 2
-        x: 118
-        y: 434
+        x: 14
+        y: 345
         width: 28
         height: 61
       alignment: 0
@@ -184,8 +190,8 @@ TextureImporter:
       name: evan_animation_3
       rect:
         serializedVersion: 2
-        x: 11
-        y: 342
+        x: 65
+        y: 343
         width: 33
         height: 70
       alignment: 0
@@ -205,7 +211,7 @@ TextureImporter:
       name: evan_animation_4
       rect:
         serializedVersion: 2
-        x: 66
+        x: 119
         y: 346
         width: 29
         height: 66
@@ -226,8 +232,8 @@ TextureImporter:
       name: evan_animation_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 347
+        x: 12
+        y: 260
         width: 27
         height: 63
       alignment: 0
@@ -247,8 +253,8 @@ TextureImporter:
       name: evan_animation_6
       rect:
         serializedVersion: 2
-        x: 5
-        y: 257
+        x: 60
+        y: 256
         width: 38
         height: 70
       alignment: 0
@@ -268,8 +274,8 @@ TextureImporter:
       name: evan_animation_7
       rect:
         serializedVersion: 2
-        x: 111
-        y: 254
+        x: 164
+        y: 255
         width: 39
         height: 72
       alignment: 0
@@ -289,7 +295,7 @@ TextureImporter:
       name: evan_animation_8
       rect:
         serializedVersion: 2
-        x: 62
+        x: 117
         y: 255
         width: 27
         height: 71

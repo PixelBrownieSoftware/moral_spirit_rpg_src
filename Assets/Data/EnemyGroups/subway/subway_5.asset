@@ -16,10 +16,10 @@ MonoBehaviour:
   enemies:
   - {fileID: 11400000, guid: a5f32c1c148e6a647a8a555a11c5a4a4, type: 2}
   - {fileID: 11400000, guid: e3d6ac933ee8e4f4888768e4f0d5d004, type: 2}
-  maxLevel: 4
-  minLevel: 2
+  maxLevel: 7
+  minLevel: 6
   fixedLevel: 
   isFixedLevel: 0
-  allRelations: 1
+  battleEvents: []
+  allRelations: 0
   isFleeable: 1
-  relationships: []

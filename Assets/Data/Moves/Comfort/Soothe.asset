@@ -16,33 +16,59 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 0
+  cost: 6
   affectedBySilence: 0
   multiTech: 0
-  actionDescription: tried to gently speak to the target.
-  infoDescription: 
+  actionDescription: 
+  infoDescription: The user gently speaks to the target to reassure them.
   element: 0
   action_type: 1
   moveType: 3
   target: 0
-  power: 10
+  power: 7
+  preAnim: []
   animation:
-  - duration: 0
+  - duration: 0.15
+    image: {fileID: 0}
+    name: soothe
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.2
+    image: {fileID: 0}
+    name: soothe
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 5
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.6
     image: {fileID: 0}
     name: 
     position: {x: 0, y: 0}
+    camMode: 0
     type: 1
     pos: 0
     anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
-  str_inc: 0.1
-  vit_inc: 0.1
+  str_inc: 0.2
+  vit_inc: 0.2
   dex_inc: 0
   luc_inc: 0
   agi_inc: 0
   gut_inc: 0.1
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 0
+  dex_req: 4
+  vit_req: 2
+  agi_req: 0
+  gut_req: 3
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

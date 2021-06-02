@@ -96,7 +96,8 @@ public enum STATUS_MOVE_TYPE
     HEAL_STAMINA,
     BUFF,
     DEBUFF,
-    REVIVE
+    REVIVE,
+    CUSTOM
 }
 
 [System.Serializable]
@@ -116,14 +117,28 @@ public class charAI
         TARGET_PARTY_HP_LOWEST,
         TARGET_PARTY_HP_HIGHEST,
         TARGET_PARTY_LEVEL,
-        ON_TURN
+        ON_TURN,
+        SELF_HP_LOWER,
+        SELF_HP_HIGHER,
+        SELF_SP_HIGHER,
+        SELF_SP_LOWER,
     }
+    public enum TURN_COUNTER
+    {
+        NONE,
+        TURN_COUNTER_EQU,
+        ROUND_COUNTER_EQU,
+        ROUND_TURN_COUNTER_EQU,
+    }
+    public TURN_COUNTER turnCounters;
     public CONDITIONS conditions;
     public ELEMENT element;
     public float healthPercentage;
     public string name;
     public s_move moveName;
     public bool onParty;
+    public int number1;
+    public int number2;
     public bool isImportant = false;    //This would be done first if the condition is met
 }
 
@@ -150,6 +165,7 @@ public class o_battleCharSaveData {
 
     public bool inBattle = true;
     public List<string> currentMoves = new List<string>();
+    public List<string> extraMoves = new List<string>();
     public STATUS_EFFECT currentStatus = STATUS_EFFECT.NONE;
 }
 
@@ -238,10 +254,12 @@ public class o_battleChar : MonoBehaviour
     public float meterSpeed;
     const float meterSpeedDefault = 6.5f;
 
-    public bool isGuarding = false;
+    public int guardPoints = 0;
 
     public List<move_learn> moveDatabase = new List<move_learn>();
     public charAI[] characterAI;
+    public int turnNumber = 0;
+    public int roundNumber = 0;
 
     public s_move currentMove;
     public rpg_item itemUsed;
@@ -261,7 +279,7 @@ public class o_battleChar : MonoBehaviour
     public int statusDur { get { return statusLast; } }
 
     public float[] elementTypeCharts = new float[11] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };   //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown 
-    public float[] actionTypeCharts = new float[5] { 1, 1, 1, 1, 1 };    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
+    public float[] actionTypeCharts = new float[6] { 1, 1, 1, 1, 1, 1 };    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
 
     public SpriteRenderer rend;
     public Sprite[] sprites;
@@ -368,14 +386,6 @@ public class o_battleChar : MonoBehaviour
         hitPointMeter = hitPoints;
     }
 
-    public void MeterSpeed()
-    {
-        if (isGuarding)
-            meterSpeed = meterSpeedDefault * 1.7f;
-        else
-            meterSpeed = meterSpeedDefault;
-    }
-
     public void OnTurnStuff() {
         if (statusCooldown > 0) {
             statusCooldown--;
@@ -419,11 +429,11 @@ public class o_battleChar : MonoBehaviour
             switch (currentStatus)
             {
                 default:
-                    rend.color = Color.white;
+                    //rend.color = Color.white;
                     break;
 
                 case STATUS_EFFECT.POISON:
-                    rend.color = Color.magenta;
+                    //rend.color = Color.magenta;
                     break;
             }
         }
@@ -466,14 +476,22 @@ public class o_battleChar : MonoBehaviour
         }
         if (!mov.isFixed)
         {
-            int guardModifier = isGuarding ? 1 : 0;
             switch (mov.moveType)
             {
                 default:
-                    movePow = (int)(mov.power * 
-                        (((move.user.level + 1) / 15) +
-                        (float)(move.user.getNetAttack / (float)(getNetDefence + guardModifier))) *
-                        elementTypeCharts[(int)mov.element]);
+                    if (mov.element != ELEMENT.UNKNOWN)
+                    {
+                        movePow = (int)(mov.power *
+                            (((move.user.level + 1) / 15) +
+                            (float)(move.user.getNetAttack / (float)(getNetDefence + guardPoints))) *
+                            elementTypeCharts[(int)mov.element]);
+                    }
+                    else
+                    {
+                        movePow = (int)(mov.power *
+                            (((move.user.level + 1) / 15) +
+                            (float)(move.user.getNetAttack / (float)(getNetDefence + guardPoints))));
+                    }
                     /*
                     movePow = (int)(
                          (mov.power *
@@ -488,10 +506,19 @@ public class o_battleChar : MonoBehaviour
                 //Magic takes all intelligence and relies on a mixture of physical defence and intelligence
 
                 case MOVE_TYPE.SPECIAL:
-                    movePow = (int)(mov.power *
+                    if (mov.element != ELEMENT.UNKNOWN)
+                    {
+                        movePow = (int)(mov.power *
                         (((move.user.level + 1) / 15) +
-                        (float)(move.user.getNetIntellgence / (float)(getNetDefence + guardModifier))) *
+                        (float)(move.user.getNetIntellgence / (float)(getNetDefence + guardPoints))) *
                         elementTypeCharts[(int)mov.element]);
+                    }
+                    else
+                    {
+                        movePow = (int)(mov.power *
+                        (((move.user.level + 1) / 15) +
+                        (float)(move.user.getNetIntellgence / (float)(getNetDefence + guardPoints))));
+                    }
                     break;
 
                 case MOVE_TYPE.STATUS:
@@ -499,6 +526,10 @@ public class o_battleChar : MonoBehaviour
                     {
                         case STATUS_MOVE_TYPE.HEAL:
                             movePow = (int)((float)mov.power * (float)(move.user.getNetIntellgence / 4));
+                            break;
+
+                        case STATUS_MOVE_TYPE.HEAL_STAMINA:
+                            movePow = mov.power + move.user.level;
                             break;
                     }
                     break;
@@ -518,6 +549,15 @@ public class o_battleChar : MonoBehaviour
         return movePow;
     }
 
+    /*
+    
+        
+        switch (mov.moveType) {
+            case MOVE_TYPE.PHYSICAL:
+            case MOVE_TYPE.SPECIAL:
+                guardPoints--;
+                break;
+        }
 
     public int DoDamage(ref s_battleAction move)
     {
@@ -573,17 +613,19 @@ public class o_battleChar : MonoBehaviour
             skillPoints -= movePow;
         } else
         {
-            if (isGuarding)
-            {
-                couragePoints += 2.5f;
-                hitPoints -= Mathf.RoundToInt(movePow / 2);
-            }
-            else
-                hitPoints -= movePow;
+            hitPoints -= movePow;
             hitPoints = Mathf.Clamp(hitPoints, 0, maxHitPoints);
+        }
+        switch (mov.moveType) {
+            case MOVE_TYPE.PHYSICAL:
+            case MOVE_TYPE.SPECIAL:
+                guardPoints--;
+                break;
         }
         return movePow;
     }
+    */
+
     public int CalculateExp(o_battleChar character, int partyMemCount)
     {
         float lvl = (character.level / level);

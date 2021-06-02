@@ -12,21 +12,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Rowdy Girl
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 78825537f771e324fa344eb6a59ef795, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: a7a933f7d27ee8b4ebc86887cc56aa4e, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: baf2a279b30d44a4abeced655be2c150, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
   characterAnims: []
   front: {fileID: 7435701977175634043, guid: a5e5704622cf7094ebc1399455c41f7e, type: 3}
   back: {fileID: 0}
@@ -57,7 +95,13 @@ MonoBehaviour:
   speedG: 3
   luckG: 3
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: 78825537f771e324fa344eb6a59ef795, type: 2}
+  - {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+  - {fileID: 11400000, guid: a7a933f7d27ee8b4ebc86887cc56aa4e, type: 2}
+  - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+  - {fileID: 11400000, guid: baf2a279b30d44a4abeced655be2c150, type: 2}
+  - {fileID: 11400000, guid: 0faca192d2b64334884e2336bbedf5a3, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

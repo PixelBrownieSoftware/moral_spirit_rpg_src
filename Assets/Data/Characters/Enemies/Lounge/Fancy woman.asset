@@ -12,35 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Fancy woman
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: a756c77d80d9eb14ca80557509a8e831, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 2ee0d9618f790a14f89f9905a812bd20, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 1
   characterAnims: []
   front: {fileID: -7433917049176664399, guid: b7a1c4952b27a95439399b40d419c2bb, type: 3}
   back: {fileID: 0}
@@ -48,7 +62,7 @@ MonoBehaviour:
   level: 1
   exp: 0
   expToNextLevel: 0
-  baseExpYeild: 0
+  baseExpYeild: 65
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0

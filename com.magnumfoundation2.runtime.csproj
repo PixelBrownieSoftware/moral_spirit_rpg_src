@@ -71,6 +71,7 @@
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\Objects\ev_script.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Menus\s_menucontroller.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_intro.cs" />
+    <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_sceneTrans.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_camera.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Core\s_triggerhandler.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\Objects\o_character.cs" />

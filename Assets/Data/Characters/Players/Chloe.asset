@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Chloe
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI: []
+  turnIcons: 1
   characterAnims: []
   front: {fileID: 0}
   back: {fileID: -9141494762117073498, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
@@ -30,7 +32,7 @@ MonoBehaviour:
   defenceB: 3
   intelligenceB: 4
   gutsB: 5
-  speedB: 3
+  speedB: 4
   luckB: 5
   maxSkillPointsGMax: 7
   maxSkillPointsGMin: 3
@@ -44,20 +46,9 @@ MonoBehaviour:
   luckG: 7
   inBattle: 1
   moveDatabase:
-  - move: {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
-    level: 0
-  - move: {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
-    level: 15
-  - move: {fileID: 11400000, guid: aa8e4e174ffe499488677f8b150643f5, type: 2}
-    level: 15
-  - move: {fileID: 11400000, guid: 5da7ac288f76789488ab1cb584427bf7, type: 2}
-    level: 15
-  - move: {fileID: 11400000, guid: 32cc9df09dd33e348b1b03abc891d0fa, type: 2}
-    level: 15
+  - {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
+  - {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+  - {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
   currentMoves:
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}

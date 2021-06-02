@@ -12,49 +12,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Singer
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 150ee1bc1f4e09c4f83a9d88b7886737, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 84df61ece6c28d04097e849fef64ea69, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: a39eba41293e0074bb0901e2ee9bcfa7, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: e138a43a28bd6dc44b6a1a2166dc847d, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 6
+  - turnCounters: 0
+    conditions: 6
     element: 0
     healthPercentage: 0.342
     name: 
     moveName: {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
     onParty: 1
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 1
   characterAnims: []
   front: {fileID: 3560260847169969822, guid: b7a1c4952b27a95439399b40d419c2bb, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 28
   exp: 0
-  expToNextLevel: 0
+  expToNextLevel: 85
   baseExpYeild: 0
   maxHitPoints: 0
   couragePoints: 0

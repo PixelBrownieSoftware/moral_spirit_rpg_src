@@ -13,6 +13,8 @@ using MagnumFoundation2.Objects;
 public class RPG_save : dat_save
 {
     public o_battleCharSaveData[] partyMembers;
+    public int extraSkillAmount;
+    public string[] extraSkills;
 
     [System.Serializable]
     public struct sav_item {
@@ -30,7 +32,7 @@ public class RPG_save : dat_save
     {
         List<o_battleCharSaveData> pMembers = new List<o_battleCharSaveData>();
         int i = 0;
-
+        extraSkillAmount = rpg_globals.gl.extraSkillAmount;
         foreach (o_battleCharData da in partyMembers) {
             o_battleCharSaveData pm = new o_battleCharSaveData();
             pm.level = da.level;
@@ -56,6 +58,10 @@ public class RPG_save : dat_save
             foreach (s_move m in da.currentMoves) {
                 pm.currentMoves.Add(m.name);
             }
+            foreach (s_move m in da.extra_skills)
+            {
+                pm.extraMoves.Add(m.name);
+            }
 
             pMembers.Add(pm);
             i++;
@@ -75,6 +81,7 @@ public class RPG_save : dat_save
         List<o_battleCharSaveData> pMembers = new List<o_battleCharSaveData>();
         int i = 0;
 
+        extraSkillAmount = rpg_globals.gl.extraSkillAmount;
         foreach (o_battleCharData da in partyMembers)
         {
             o_battleCharSaveData pm = new o_battleCharSaveData();
@@ -102,6 +109,10 @@ public class RPG_save : dat_save
             foreach (s_move m in da.currentMoves)
             {
                 pm.currentMoves.Add(m.name);
+            }
+            foreach (s_move m in da.extra_skills)
+            {
+                pm.extraMoves.Add(m.name);
             }
 
             pMembers.Add(pm);
@@ -237,13 +248,21 @@ public class rpg_globals : s_globals
     public override void StartStuff()
     {
         base.StartStuff();
-
+        s_camera.cam.SetPlayerFocus(player.gameObject);
         if (s_mainmenu.isload)
         {
             RPG_save sav = (RPG_save)s_mainmenu.save;
             foreach (o_battleCharSaveData s in sav.partyMembers)
             {
                 AddMemeber(s);
+            }
+            extraSkillAmount = sav.extraSkillAmount;
+            if (sav.extraSkills != null)
+            {
+                foreach (string it in sav.extraSkills)
+                {
+                    extraSkills.Add(moveDatabase.Find(x=> x.name == it));
+                }
             }
             if (sav.savedItems != null)
             {
@@ -256,9 +275,19 @@ public class rpg_globals : s_globals
         else
         {
             ///Add in evan
+            AddItem(GetItem("Bottled water"), 5);
+            AddItem(GetItem("Demon drink"), 2);
             AddMemeber(firstCharacter, 1);
         }
         s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
+    }
+
+    public override void ClearAllThings()
+    {
+        base.ClearAllThings();
+        partyMembers.Clear();
+        inventory.Clear();
+        extraSkills.Clear();
     }
 
     new void Awake()
@@ -294,12 +323,12 @@ public class rpg_globals : s_globals
     }
 
     public void ShowPrompt() {
-        promptTextObj.text = GetKeyPref("select").ToString() + " to open.";
-        promptObj.gameObject.SetActive(true);
+        //promptTextObj.text = GetKeyPref("select").ToString() + " to open.";
+        //promptObj.gameObject.SetActive(true);
     }
     public void HidePrompt()
     {
-        promptObj.gameObject.SetActive(false);
+        //promptObj.gameObject.SetActive(false);
     }
 
     public rpg_item GetItem(string n)
@@ -343,13 +372,7 @@ public class rpg_globals : s_globals
             newCharacter.inBattle = true;
 
             newCharacter.currentMoves = new List<s_move>();
-
-            foreach (o_battleChar.move_learn mov in data.moveDatabase)
-            {
-                if (mov.level <= level)
-                    newCharacter.currentMoves.Add(mov.move);
-            }
-
+            
             for (int i = 1; i < level; i++)
             {
                 if (i % data.attackG == 0)
@@ -368,6 +391,17 @@ public class rpg_globals : s_globals
                 tempHP += UnityEngine.Random.Range(data.maxHitPointsGMin, data.maxHitPointsGMax);
                 tempSP += UnityEngine.Random.Range(data.maxSkillPointsGMin, data.maxSkillPointsGMax);
             }
+
+            foreach (s_move mov in data.moveDatabase)
+            {
+                if (mov.str_req <= tempStr
+                    && mov.vit_req <= tempVit
+                    && mov.dex_req <= tempDx
+                    && mov.agi_req <= tempAg
+                    && mov.gut_req <= tempGut
+                    )
+                    newCharacter.currentMoves.Add(mov);
+            }
             newCharacter.hitPoints = newCharacter.maxHitPoints = tempHP;
             newCharacter.skillPoints = newCharacter.maxSkillPoints = tempSP;
 
@@ -384,7 +418,7 @@ public class rpg_globals : s_globals
 
     public void AddMemeber(o_battleCharSaveData saveDat)
     {
-        print(saveDat.name);
+        //print(saveDat.name);
         BattleCharacterData data = dataCharacters.Find(x => x.name == saveDat.name);
         o_battleCharData newCharacter = new o_battleCharData();
         {
@@ -403,10 +437,19 @@ public class rpg_globals : s_globals
 
             newCharacter.currentMoves = new List<s_move>();
 
-            foreach (o_battleChar.move_learn mov in data.moveDatabase)
+            foreach (s_move mov in data.moveDatabase)
             {
-                if (mov.level <= saveDat.level)
-                    newCharacter.currentMoves.Add(mov.move);
+                if (mov.str_req <= tempStr
+                    && mov.vit_req <= tempVit
+                    && mov.dex_req <= tempDx
+                    && mov.agi_req <= tempAg
+                    && mov.gut_req <= tempGut) {
+                    newCharacter.currentMoves.Add(mov);
+                }
+            }
+            foreach (string mov in saveDat.extraMoves)
+            {
+                    newCharacter.extra_skills.Add(moveDatabase.Find(x => x.name == mov));
             }
 
             for (int i = 1; i < saveDat.level; i++)
@@ -438,6 +481,8 @@ public class rpg_globals : s_globals
             newCharacter.speed = tempAg;
             newCharacter.guts = tempGut;
             newCharacter.luck = tempLuc;
+
+            newCharacter.exp = saveDat.exp;
         }
         newCharacter.dataSrc = data;
         partyMembers.Add(newCharacter);
@@ -516,12 +561,15 @@ public class rpg_globals : s_globals
             battleStarter = null;
         }
         GameState = RPG_STATE.OVERWORLD;
-        s_camera.cam.SetPlayer(player);
+        s_camera.cam.SetPlayer(player.gameObject);
+        s_camera.cam.cameraMode = s_camera.CAMERA_MODE.CHARACTER_FOCUS;
         player.control = true;
         player.rendererObj.color = Color.white;
         if(enc != null)
             enc.DestroyAllEnemies();
         StartCoroutine(Fade(false));
+        s_rpgEvent._inBattle = false;
+        s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
     }
 
     public IEnumerator BattleTransition(enemy_group enemy)
@@ -567,6 +615,9 @@ public class rpg_globals : s_globals
 
     public void PositionEnemies(int quantity)
     {
+        for (int i = 0; i < quantity; i++) {
+            enemySlots[i].rend.color = Color.white;
+        }
         switch (quantity)
         {
             case 1:
@@ -577,22 +628,32 @@ public class rpg_globals : s_globals
                 enemySlots[1].transform.position = new Vector3(45, enemySlots[1].transform.position.y);
                 break;
             case 3:
-                enemySlots[0].transform.position = new Vector3(-45, enemySlots[0].transform.position.y);
-                enemySlots[1].transform.position = new Vector3(45, enemySlots[1].transform.position.y);
-                enemySlots[2].transform.position = new Vector3(95, enemySlots[2].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-87, enemySlots[0].transform.position.y);
+                enemySlots[1].transform.position = new Vector3(28, enemySlots[1].transform.position.y);
+                enemySlots[2].transform.position = new Vector3(145, enemySlots[2].transform.position.y);
                 break;
 
             case 4:
-                enemySlots[0].transform.position = new Vector3(-45, enemySlots[0].transform.position.y);
-                enemySlots[1].transform.position = new Vector3(45, enemySlots[1].transform.position.y);
-                enemySlots[2].transform.position = new Vector3(95, enemySlots[1].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-152, enemySlots[0].transform.position.y);
+                enemySlots[1].transform.position = new Vector3(-50, enemySlots[1].transform.position.y);
+                enemySlots[2].transform.position = new Vector3(47, enemySlots[2].transform.position.y);
+                enemySlots[3].transform.position = new Vector3(135, enemySlots[3].transform.position.y);
+                break;
+
+            case 5:
+                enemySlots[0].transform.position = new Vector3(-130, enemySlots[0].transform.position.y);
+                enemySlots[1].transform.position = new Vector3(-50, enemySlots[1].transform.position.y);
+                enemySlots[2].transform.position = new Vector3(40, enemySlots[2].transform.position.y);
+                enemySlots[3].transform.position = new Vector3(95, enemySlots[3].transform.position.y);
+                enemySlots[4].transform.position = new Vector3(175, enemySlots[4].transform.position.y);
                 break;
         }
     }
 
     public void SwitchToBattle(enemy_group groupEnemy)
     {
-        print(groupEnemy.name);
+        //print(groupEnemy.name);
+        s_camera.cam.SetZoom();
         s_camera.cam.SetPlayer(null);
         player.control = false;
         player.direction = Vector2.zero;
@@ -618,8 +679,11 @@ public class rpg_globals : s_globals
             playerSlots[i].guts = bc.guts;
             playerSlots[i].speed = bc.speed;
             playerSlots[i].attack = bc.attack;
-            playerSlots[i].actionTypeCharts = bc.dataSrc.actionTypeCharts;
-            playerSlots[i].elementTypeCharts = bc.dataSrc.elementTypeCharts;
+            //playerSlots[i].actionTypeCharts = bc.dataSrc.actionTypeCharts;
+            Array.Copy(bc.dataSrc.actionTypeCharts , playerSlots[i].actionTypeCharts, playerSlots[i].actionTypeCharts.Length);
+            Array.Copy(bc.dataSrc.elementTypeCharts, playerSlots[i].elementTypeCharts, playerSlots[i].elementTypeCharts.Length);
+            
+            //playerSlots[i].elementTypeCharts = bc.dataSrc.elementTypeCharts;
             playerSlots[i].moveDatabase = bc.moveDatabase;
             playerSlots[i].data = bc.dataSrc;
             /*
@@ -632,6 +696,10 @@ public class rpg_globals : s_globals
             */
             playerSlots[i].skillMoves = new List<s_move>();
             foreach (s_move ml in bc.currentMoves)
+            {
+                AddMove(ref playerSlots[i], ml);
+            }
+            foreach (s_move ml in bc.extra_skills)
             {
                 AddMove(ref playerSlots[i], ml);
             }
@@ -664,10 +732,15 @@ public class rpg_globals : s_globals
         {
             o_battleChar bc = enemySlots[i];
             bc.skillMoves = new List<s_move>();
-            foreach (o_battleChar.move_learn ml in bc.moveDatabase)
+            foreach (s_move mov in bc.data.moveDatabase)
             {
-                if(bc.level >= ml.level)
-                    AddMove(ref bc, ml.move);
+                if (mov.str_req <= bc.attack
+                    && mov.vit_req <= bc.defence
+                    && mov.dex_req <= bc.intelligence
+                    && mov.agi_req <= bc.speed
+                    && mov.gut_req <= bc.guts
+                    )
+                    AddMove(ref bc, mov);
             }
             battleSystem.allCharacters.Add(bc);
             battleSystem.oppositionCharacterTurnQueue.Enqueue(bc);
@@ -701,7 +774,7 @@ public class rpg_globals : s_globals
         battleSystem.roundNum = 0;
         battleSystem.enemyGroup = groupEnemy;
         battleSystem.pressTurn = battleSystem.players.Count;
-        battleSystem.OnBattleEvents = groupEnemy.battleEvents;
+        
         GameState = RPG_STATE.BATTLE;
         battleSystem.isActive = true;
         overworldScene.gameObject.SetActive(false);
@@ -764,9 +837,10 @@ public class rpg_globals : s_globals
         charObj.guts = tempGut;
         charObj.attack = tempStr;
         charObj.speed = tempAg;
-        charObj.actionTypeCharts = enem.actionTypeCharts;
-        charObj.elementTypeCharts = enem.elementTypeCharts;
-        charObj.moveDatabase = enem.moveDatabase;
+        charObj.data = enem;
+        Array.Copy(enem.actionTypeCharts, charObj.actionTypeCharts, charObj.actionTypeCharts.Length);
+        Array.Copy(enem.elementTypeCharts, charObj.elementTypeCharts, charObj.elementTypeCharts.Length);
+        //charObj.moveDatabase = enem.moveDatabase;
         charObj.spareDrops = enem.itemDrop.ToArray();
         charObj.characterAI = enem.characterAI;
     }
@@ -793,8 +867,15 @@ public class rpg_globals : s_globals
         sav.currentmap = currentMapName;
         print(objectStates.Count);
         sav.trigStates = objectStates;
-        //sav.floatVariables = dvF;
-        //sav.intVariables = dvI;
+        {
+            int ind = 0;
+            sav.extraSkills = new string[extraSkills.Count];
+            foreach (s_move str in extraSkills)
+            {
+                sav.extraSkills[ind] = str.name;
+                ind++;
+            }
+        }
 
         /*s
         new dat_globalflags(GlobalFlags), (int)player.health, (int)player.maxHealth, lev.mapDat.name,  
@@ -851,6 +932,14 @@ public class rpg_globals : s_globals
         {
             rpg_globals.gl.inventory[it]--;
         }
+    }
+
+    public Dictionary<rpg_item, int> GetInventory() {
+        Dictionary<rpg_item, int> inv = new Dictionary<rpg_item, int>();
+        foreach (KeyValuePair<string, int> it in inventory) {
+            inv.Add(GetItem(it.Key), it.Value);
+        }
+        return inv;
     }
 
     public void HealParty() {

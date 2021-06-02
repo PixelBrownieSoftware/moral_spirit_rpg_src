@@ -14,17 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMultiHit: 0
   isFixed: 0
+  onSelf: 0
   onTeam: 0
-  cost: 0
+  cost: 3
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user gives a rather unpleasant look at the target.
   element: 8
   action_type: 3
   moveType: 3
   target: 0
-  power: 7
+  power: 6
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 85
@@ -35,6 +37,14 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 2
+  dex_req: 7
+  vit_req: 0
+  agi_req: 0
+  gut_req: 5
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

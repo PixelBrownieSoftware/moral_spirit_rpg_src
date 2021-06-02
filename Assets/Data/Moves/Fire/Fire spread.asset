@@ -20,17 +20,19 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user blasts fire at all targets.
   element: 2
   action_type: 0
   moveType: 1
   target: 2
-  power: 4
+  power: 3
+  preAnim: []
   animation:
   - duration: 0.1
     image: {fileID: 0}
     name: fireFX
     position: {x: 0, y: 0}
+    camMode: 0
     type: 3
     pos: 0
     anim: {fileID: 0}
@@ -38,6 +40,7 @@ MonoBehaviour:
     image: {fileID: 0}
     name: fireFX
     position: {x: 0, y: 0}
+    camMode: 0
     type: 1
     pos: 0
     anim: {fileID: 0}
@@ -50,6 +53,14 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 0
+  dex_req: 5
+  vit_req: 0
+  agi_req: 0
+  gut_req: 3
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

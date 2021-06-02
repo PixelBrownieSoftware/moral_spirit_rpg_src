@@ -16,16 +16,18 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 0
+  cost: 4
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user tries to end the conflict with the target using consciece
+    arguments.
   element: 0
   action_type: 5
   moveType: 3
   target: 0
   power: 8
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 85
@@ -36,6 +38,14 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  canLearn: 1
+  excludeUser: 0
+  str_req: 0
+  dex_req: 6
+  vit_req: 3
+  agi_req: 0
+  gut_req: 4
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

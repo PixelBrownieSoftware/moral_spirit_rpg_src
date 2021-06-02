@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMultiHit: 0
   isFixed: 0
+  onSelf: 0
   onTeam: 0
   cost: 25
   affectedBySilence: 0
@@ -25,15 +26,32 @@ MonoBehaviour:
   moveType: 1
   target: 0
   power: 45
+  preAnim: []
   animation:
   - duration: 0
     image: {fileID: 0}
     name: 
     position: {x: 0, y: 0}
+    camMode: 0
     type: 1
     pos: 0
     anim: {fileID: 0}
   moveRequirements: []
+  accuracy: 85
+  str_inc: 0
+  vit_inc: 0
+  dex_inc: 0
+  luc_inc: 0
+  agi_inc: 0
+  gut_inc: 0
+  buffUser: 0
+  canLearn: 1
+  str_req: 6
+  dex_req: 12
+  vit_req: 6
+  agi_req: 4
+  gut_req: 6
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

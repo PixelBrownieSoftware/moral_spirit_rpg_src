@@ -27,6 +27,7 @@ public class s_move : ScriptableObject
     public MOVE_TYPE moveType;     //Action moves may contain this, most will be set to none
     public TARGET_MOVE_TYPE target;
     public int power;
+    public s_moveAnim[] preAnim;  //The move's animation that plays when it is excecuted
     public s_moveAnim[] animation;  //The move's animation that plays when it is excecuted
     public string[] moveRequirements; //The move requirements for multiTechs
     public int accuracy = 85;
@@ -38,6 +39,16 @@ public class s_move : ScriptableObject
     public float agi_inc;
     public float gut_inc;
     public bool buffUser = false;
+    public bool canLearn = true;
+    public bool excludeUser = false;
+
+    public int str_req;
+    public int dex_req;
+    public int vit_req;
+    public int agi_req;
+    public int gut_req;
+
+    public string customFx;
 
     public s_statusEffectChance statusEffectChances;
     public STATUS_MOVE_TYPE statusMoveType;
@@ -59,8 +70,11 @@ public class s_move : ScriptableObject
             IMAGE,
             CALCUATION,
             INFLICT_STATUS,
-            ANIMATION
+            ANIMATION,
+            CAMERA,
+            SOUND
         };
+        public MagnumFoundation2.System.s_camera.CAMERA_MODE camMode;
         public ANIM_TYPE type;
         public enum MOVEPOSTION
         {
@@ -68,7 +82,8 @@ public class s_move : ScriptableObject
             FIXED,
             ALL_SAME_TIME,
             ALL_LEFT_TO_RIGHT,
-            ALL_RIGHT_TO_LEFT
+            ALL_RIGHT_TO_LEFT,
+            ON_USER
         }
         public MOVEPOSTION pos;
         public RuntimeAnimatorController anim;

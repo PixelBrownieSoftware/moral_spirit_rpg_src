@@ -12,29 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Gabriel
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI:
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 74a895e6164ccfd4aba7ec9763d58847, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
-  - conditions: 0
+  - turnCounters: 0
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 92cad6400fa6963499008438ca41dc85, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
     isImportant: 0
+  turnIcons: 2
   characterAnims: []
-  front: {fileID: 0}
+  front: {fileID: -7593777287308456034, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 50
   exp: 0
   expToNextLevel: 0
-  baseExpYeild: 0
+  baseExpYeild: 100
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0

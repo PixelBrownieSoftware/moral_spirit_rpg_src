@@ -105,17 +105,25 @@ public class ed_characterdat : Editor
 
     public void GenerateMovesFromAI(charAI[] ai) {
         foreach (charAI a in ai) {
-            data.moveDatabase.Add(new o_battleChar.move_learn(0, a.moveName));
+            data.moveDatabase.Add(a.moveName);
         }
     }
 
-    public void GenerateAIFromMoves(List<o_battleChar.move_learn> moves)
+    public void GenerateAIFromMoves(List<s_move> moves)
     {
         List<charAI> aiList = new List<charAI>();
-        foreach (o_battleChar.move_learn a in moves)
+        foreach (s_move a in moves)
         {
             charAI cha = new charAI();
-            cha.moveName = a.move;
+            cha.moveName = a;
+            if (a.onTeam) {
+                cha.onParty = true;
+                if (a.statusMoveType == STATUS_MOVE_TYPE.HEAL) {
+                    cha.isImportant = true;
+                    cha.conditions = charAI.CONDITIONS.USER_PARTY_HP_LOWER;
+                    cha.healthPercentage = 0.35f;
+                }
+            }
             aiList.Add(cha);
         }
         data.characterAI = aiList.ToArray();
@@ -886,16 +894,15 @@ public class ed_characterdat : Editor
 
                     if (data.moveDatabase == null)
                     {
-                        data.moveDatabase = new System.Collections.Generic.List<o_battleChar.move_learn>();
+                        data.moveDatabase = new System.Collections.Generic.List<s_move>();
                     }
                     else
                     {
                         for (int i = 0; i < data.moveDatabase.Count; i++)
                         {
                             EditorGUILayout.BeginHorizontal();
-                            data.moveDatabase[i].move = EditorGUILayout.ObjectField(data.moveDatabase[i].move, typeof(s_move), false) as s_move;
+                            data.moveDatabase[i] = EditorGUILayout.ObjectField(data.moveDatabase[i], typeof(s_move), false) as s_move;
                             EditorGUILayout.LabelField(" learn at level: ");
-                            data.moveDatabase[i].level = EditorGUILayout.IntField(data.moveDatabase[i].level);
                             if (GUILayout.Button("Delete"))
                             {
                                 data.moveDatabase.RemoveAt(i);
@@ -906,7 +913,7 @@ public class ed_characterdat : Editor
                         }
                         if (GUILayout.Button("Add new Move"))
                         {
-                            data.moveDatabase.Add(new o_battleChar.move_learn(0, null));
+                            data.moveDatabase.Add(new s_move());
                         }
                     }
                     break;
@@ -1111,10 +1118,13 @@ public class ed_characterdat : Editor
                     //bo.characterAI[];
                     if (data.characterAI != null)
                     {
+                        //data.characterAI = EditorGUILayout.PropertyField(data.characterAI);
                         foreach (charAI ai in data.characterAI)
                         {
 
                             EditorGUILayout.Space();
+                            EditorGUILayout.LabelField("Important");
+                            ai.isImportant = EditorGUILayout.Toggle(ai.isImportant);
                             ai.conditions = (charAI.CONDITIONS)EditorGUILayout.EnumPopup(ai.conditions);
                             switch (ai.conditions)
                             {
@@ -1127,9 +1137,12 @@ public class ed_characterdat : Editor
 
                                     for (int i = 0; i < data.moveDatabase.Count; i++)
                                     {
-                                        if (GUILayout.Button(data.moveDatabase[i].move.name))
+                                        if (data.moveDatabase[i] != null)
                                         {
-                                            ai.moveName = data.moveDatabase[i].move;
+                                            if (GUILayout.Button(data.moveDatabase[i].name))
+                                            {
+                                                ai.moveName = data.moveDatabase[i];
+                                            }
                                         }
                                     }
                                     EditorGUILayout.LabelField("On Party member?");
@@ -1164,23 +1177,66 @@ public class ed_characterdat : Editor
                                     EditorGUILayout.LabelField("On Party member?");
                                     ai.onParty = EditorGUILayout.Toggle(ai.onParty);
                                     break;
+
+                                case charAI.CONDITIONS.SELF_HP_HIGHER:
+                                    EditorGUILayout.LabelField("If the user's health is higher than " + ai.healthPercentage * 100 + "%, use ");
+
+                                    ai.moveName = EditorGUILayout.ObjectField(ai.moveName, typeof(s_move), false) as s_move;
+                                    ai.healthPercentage = EditorGUILayout.Slider(ai.healthPercentage, 0, 1);
+                                    EditorGUILayout.LabelField("On Party member?");
+                                    ai.onParty = EditorGUILayout.Toggle(ai.onParty);
+                                    break;
+
+                                case charAI.CONDITIONS.SELF_SP_LOWER:
+                                    EditorGUILayout.LabelField("If the user's stamina is higher than " + ai.healthPercentage * 100 + "%, use ");
+
+                                    ai.moveName = EditorGUILayout.ObjectField(ai.moveName, typeof(s_move), false) as s_move;
+                                    ai.healthPercentage = EditorGUILayout.Slider(ai.healthPercentage, 0, 1);
+                                    EditorGUILayout.LabelField("On Party member?");
+                                    ai.onParty = EditorGUILayout.Toggle(ai.onParty);
+                                    break;
+
+                                case charAI.CONDITIONS.SELF_HP_LOWER:
+                                    EditorGUILayout.LabelField("If the user's health is higher than " + ai.healthPercentage * 100 + "%, use ");
+
+                                    ai.moveName = EditorGUILayout.ObjectField(ai.moveName, typeof(s_move), false) as s_move;
+                                    ai.healthPercentage = EditorGUILayout.Slider(ai.healthPercentage, 0, 1);
+                                    EditorGUILayout.LabelField("On Party member?");
+                                    ai.onParty = EditorGUILayout.Toggle(ai.onParty);
+                                    break;
+
+                                case charAI.CONDITIONS.SELF_SP_HIGHER:
+                                    EditorGUILayout.LabelField("If the user's stamina is higher than " + ai.healthPercentage * 100 + "%, use ");
+
+                                    ai.moveName = EditorGUILayout.ObjectField(ai.moveName, typeof(s_move), false) as s_move;
+                                    ai.healthPercentage = EditorGUILayout.Slider(ai.healthPercentage, 0, 1);
+                                    EditorGUILayout.LabelField("On Party member?");
+                                    ai.onParty = EditorGUILayout.Toggle(ai.onParty);
+                                    break;
+                            }
+                            EditorGUILayout.LabelField("Always use [NO MOVE SELECTED]");
+                            ai.turnCounters = (charAI.TURN_COUNTER)EditorGUILayout.EnumPopup(ai.turnCounters);
+                            switch (ai.turnCounters) {
+                                case charAI.TURN_COUNTER.TURN_COUNTER_EQU:
+                                    EditorGUILayout.LabelField("Turn counter");
+                                    ai.number1 = EditorGUILayout.IntField(ai.number1);
+                                    break;
+
+                                case charAI.TURN_COUNTER.ROUND_COUNTER_EQU:
+                                    EditorGUILayout.LabelField("Round counter");
+                                    ai.number2 = EditorGUILayout.IntField(ai.number2);
+                                    break;
+
+                                case charAI.TURN_COUNTER.ROUND_TURN_COUNTER_EQU:
+                                    EditorGUILayout.LabelField("Turn counter");
+                                    ai.number1 = EditorGUILayout.IntField(ai.number1);
+                                    EditorGUILayout.Space();
+                                    EditorGUILayout.LabelField("Round counter");
+                                    ai.number2 = EditorGUILayout.IntField(ai.number2);
+                                    break;
                             }
                             EditorGUILayout.Space();
                         }
-                        /*
-                        switch (ai.conditions)
-                        {
-
-                            case charAI.CONDITIONS.TARGET_PARTY_HP:
-                                break;
-                        }
-                        */
-                    }
-
-                    charAILeng = EditorGUILayout.IntField(charAILeng);
-                    if (GUILayout.Button("New AI"))
-                    {
-                        data.characterAI = new charAI[charAILeng];
                     }
                     break;
                 #endregion
