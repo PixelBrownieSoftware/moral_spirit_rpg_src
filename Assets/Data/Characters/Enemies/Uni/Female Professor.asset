@@ -46,7 +46,7 @@ MonoBehaviour:
     isImportant: 0
   turnIcons: 1
   characterAnims: []
-  front: {fileID: 0}
+  front: {fileID: -5587670364187922967, guid: 65ed1238b6563de4ab3951138e474e39, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 42
@@ -75,18 +75,21 @@ MonoBehaviour:
   speedG: 3
   luckG: 0
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
+  - {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
+  - {fileID: 11400000, guid: 5da7ac288f76789488ab1cb584427bf7, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
   - 1
   - 1
+  - 2
   - 1
   - 1
   - 1
-  - 1
-  - 1
-  - 1
+  - 0.75
+  - 0.75
   - 1
   - 1
   - 1
@@ -94,11 +97,11 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
+  - 0.68
+  - 0.47
   - 1
   - 1
-  - 1
-  - 1
-  - 1
+  - 2
   money: 0
   itemDrop: []
   relationships: []

@@ -76,7 +76,7 @@ MonoBehaviour:
     isImportant: 0
   turnIcons: 1
   characterAnims: []
-  front: {fileID: 21300000, guid: 95aa6baebbff69346ba11ee4ea306a66, type: 3}
+  front: {fileID: 3175668958045735353, guid: 65ed1238b6563de4ab3951138e474e39, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 1
@@ -108,6 +108,12 @@ MonoBehaviour:
   moveDatabase:
   - {fileID: 11400000, guid: 5da7ac288f76789488ab1cb584427bf7, type: 2}
   - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
+  - {fileID: 11400000, guid: e138a43a28bd6dc44b6a1a2166dc847d, type: 2}
+  - {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
+  - {fileID: 11400000, guid: f39db7da0925a704ba7549c921a2ba49, type: 2}
+  - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+  - {fileID: 11400000, guid: cfb8dee8d3ea1494aa6e92d75d568366, type: 2}
+  - {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

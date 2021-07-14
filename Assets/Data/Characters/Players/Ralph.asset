@@ -19,7 +19,7 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: 2524039414847310335, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
   isPartyChar: 0
-  level: 100
+  level: 1
   exp: 0
   expToNextLevel: 0
   baseExpYeild: 0
@@ -28,11 +28,11 @@ MonoBehaviour:
   maxSkillPoints: 0
   maxSkillPointsB: 18
   maxHitPointsB: 21
-  attackB: 4
-  defenceB: 4
-  intelligenceB: 5
-  gutsB: 4
-  speedB: 3
+  attackB: 3
+  defenceB: 3
+  intelligenceB: 4
+  gutsB: 2
+  speedB: 5
   luckB: 4
   maxSkillPointsGMax: 3
   maxSkillPointsGMin: 2
@@ -50,6 +50,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
   - {fileID: 11400000, guid: 16ecd52d7b24f414bb02766b434d0a9c, type: 2}
   - {fileID: 11400000, guid: 55314ed72f07e344d8240d12b43d86bc, type: 2}
+  - {fileID: 11400000, guid: c73a6f5b52d3290429d7edcb7fae1ac9, type: 2}
+  - {fileID: 11400000, guid: 07af2dbdd1c9a114b84f4382c9cba7de, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -61,7 +63,7 @@ MonoBehaviour:
   - 2
   - 2
   - 0
-  - 0.6
+  - 0.45
   - 1
   - 0.3
   - 1

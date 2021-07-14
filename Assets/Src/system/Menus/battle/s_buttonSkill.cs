@@ -9,8 +9,7 @@ public class s_buttonSkill : s_button
 {
     public s_battleMenu BMenu;
     public s_move moveButton;
-    public rpg_item itemButton;
-    public Image element; 
+    public Image element;
     public enum SKILL_TYPE {
         BATTLE,
         GROUP_SELECT
@@ -86,7 +85,7 @@ public class s_buttonSkill : s_button
             }
             else {
                 txt.color = Color.black;
-                txt.text = itemButton.name + " - " + itemCount;
+                txt.text = moveButton.name + " - " + itemCount;
             }
         }
     }
@@ -102,8 +101,8 @@ public class s_buttonSkill : s_button
         s_move m = null;
         if (item)
         {
-            m = itemButton.action;
-            rpg_globals.gl.UseItem(itemButton.name);
+            m = moveButton;
+            rpg_globals.gl.UseItem(moveButton.name);
         }
         else
         {

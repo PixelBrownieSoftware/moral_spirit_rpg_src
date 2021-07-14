@@ -18,10 +18,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e95397fb2a081184cb9b1303f99cbed6, type: 2}
   - {fileID: 11400000, guid: 9ad5b38a5fc90884391f3d3657906407, type: 2}
   - {fileID: 11400000, guid: e95397fb2a081184cb9b1303f99cbed6, type: 2}
-  maxLevel: 36
-  minLevel: 40
+  maxLevel: 26
+  minLevel: 30
   fixedLevel: 
   isFixedLevel: 0
+  battleEvents: []
   allRelations: 0
   isFleeable: 1
-  relationships: []

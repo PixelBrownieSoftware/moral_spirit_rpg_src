@@ -34,6 +34,36 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: c73a6f5b52d3290429d7edcb7fae1ac9, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 18
+    element: 0
+    healthPercentage: 0.35
+    name: 
+    moveName: {fileID: 11400000, guid: 660312bea42799e45904537c96f5e9a2, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 1
   turnIcons: 2
   characterAnims: []
   front: {fileID: -7593777287308456034, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
@@ -65,7 +95,12 @@ MonoBehaviour:
   speedG: 3
   luckG: 3
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: 74a895e6164ccfd4aba7ec9763d58847, type: 2}
+  - {fileID: 11400000, guid: 92cad6400fa6963499008438ca41dc85, type: 2}
+  - {fileID: 11400000, guid: c73a6f5b52d3290429d7edcb7fae1ac9, type: 2}
+  - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
+  - {fileID: 11400000, guid: 660312bea42799e45904537c96f5e9a2, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

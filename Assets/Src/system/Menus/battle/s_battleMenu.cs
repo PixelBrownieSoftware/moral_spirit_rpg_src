@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class s_battleMenu : s_menucontroller
 {
     public List<s_move> rpgSkills = new List<s_move>();
-    public Dictionary<rpg_item, int> items = new Dictionary<rpg_item, int>();
+    public Dictionary<s_move, int> items = new Dictionary<s_move, int>();
     public Text moveDescription;
 
     public Color strColour;
@@ -31,6 +31,7 @@ public class s_battleMenu : s_menucontroller
     public Color threatColour;
     public Color comfortColour;
     public Color flirtColour;
+    public Color reservedColour;
     public Color playfulColour;
 
     public Sprite fire_picture;
@@ -51,8 +52,10 @@ public class s_battleMenu : s_menucontroller
     public Sprite comfort_picture;
     public Sprite flirt_picture;
     public Sprite playful_picture;
+    public Sprite reserved_picture;
 
     public Sprite heal_picture;
+    public Sprite heal_stamina_picture;
     public Sprite support_picture;
 
     public bool isItem = false;
@@ -148,6 +151,10 @@ public class s_battleMenu : s_menucontroller
 
             case ACTION_TYPE.FLIRT:
                 actionT = ReturnColouredText(actionT, flirtColour);
+                break;
+
+            case ACTION_TYPE.RESERVED:
+                actionT = ReturnColouredText(actionT, reservedColour);
                 break;
         }
 
@@ -485,7 +492,6 @@ public class s_battleMenu : s_menucontroller
         base.OnOpen();
         ResetButton();
         //List<s_move> rpgSkills = s_battleEngine.engineSingleton.currentCharacter.currentMoves;
-        print(rpgSkills.Count);
         if (!isItem)
         {
             for (int i = 0; i < rpgSkills.Count; i++)
@@ -500,67 +506,105 @@ public class s_battleMenu : s_menucontroller
                 switch (sb.moveButton.element)
                 {
                     case ELEMENT.NORMAL:
+                        sb.buttonTex.color = strikeColour;
                         draw = strike_picture;
                         break;
                     case ELEMENT.PEIRCE:
+                        sb.buttonTex.color = peirceColour;
                         draw = perice_picture;
                         break;
                     case ELEMENT.FIRE:
+                        sb.buttonTex.color = fireColour;
                         draw = fire_picture;
                         break;
                     case ELEMENT.ICE:
+                        sb.buttonTex.color = iceColour;
                         draw = ice_picture;
                         break;
                     case ELEMENT.ELECTRIC:
+                        sb.buttonTex.color = electricColour;
                         draw = electric_picture;
                         break;
                     case ELEMENT.FORCE:
+                        sb.buttonTex.color = forceColour;
                         draw = force_picture;
                         break;
                     case ELEMENT.EARTH:
+                        sb.buttonTex.color = earthColour;
                         draw = earth_picture;
                         break;
                     case ELEMENT.LIGHT:
+                        sb.buttonTex.color = lightColour;
                         draw = light_picture;
                         break;
+                    case ELEMENT.DARK:
+                        sb.buttonTex.color = darkColour;
+                        draw = dark_picture;
+                        break;
                     case ELEMENT.PSYCHIC:
+                        sb.buttonTex.color = psychicColour;
                         draw = psychic_picture;
                         break;
                     case ELEMENT.WIND:
+                        sb.buttonTex.color = windColour;
                         draw = wind_picture;
                         break;
                 }
                 switch (sb.moveButton.action_type)
                 {
                     case ACTION_TYPE.FLIRT:
+                        sb.buttonTex.color = flirtColour;
                         draw = flirt_picture;
                         break;
 
                     case ACTION_TYPE.PLAYFUL:
+                        sb.buttonTex.color = playfulColour;
                         draw = playful_picture;
                         break;
 
                     case ACTION_TYPE.THREAT:
+                        sb.buttonTex.color = threatColour;
                         draw = threat_picture;
                         break;
 
                     case ACTION_TYPE.COMFORT:
+                        sb.buttonTex.color = comfortColour;
                         draw = comfort_picture;
                         break;
+
+                    case ACTION_TYPE.RESERVED:
+                        sb.buttonTex.color = reservedColour;
+                        draw = reserved_picture;
+                        break;
                 }
+                sb.buttonTex.color += new Color(0.3f, 0.3f, 0.3f);
                 if (sb.moveButton.moveType == MOVE_TYPE.STATUS) {
-                    draw = support_picture;
+
+                    sb.buttonTex.color = Color.white;
+                    switch (sb.moveButton.statusMoveType) {
+                        case STATUS_MOVE_TYPE.HEAL:
+                            draw = heal_picture;
+                            break;
+
+                        case STATUS_MOVE_TYPE.HEAL_STAMINA:
+                            draw = heal_stamina_picture;
+                            break;
+
+                        default:
+                            draw = support_picture;
+                            break;
+                    }
                 }
                 sb.element.sprite = draw;
             }
         }
         else {
             int ind = 0;
-            foreach (KeyValuePair<rpg_item, int> it in items) {
+            foreach (KeyValuePair<s_move, int> it in items) {
                 if (it.Value == 0)
                     continue;
                 s_buttonSkill sb = GetButton<s_buttonSkill>(ind);
-                sb.itemButton = it.Key;
+                sb.moveButton = it.Key;
                 sb.itemCount = it.Value;
                 sb.item = true;
                 ind++;

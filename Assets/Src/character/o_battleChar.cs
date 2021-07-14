@@ -7,33 +7,6 @@ using UnityEngine;
 /// Elements: Fire, Ice, Wind, Electric, Psychic, Light, Dark, Normal, Strike, ??? (nothing is weak, immune or strong aginst this type)
 /// Act types: Comfort, Playful, Threat, Flirt, Intellect. 
 /// </summary>
-/*
-public enum ARCANA
-{
-    FOOL,
-    MAGICIAN,
-    PREIST,
-    EMPRESS,
-    EMPORER,
-    HEIROPHANT,
-    LOVERS,
-    CHARIOT,
-    JUSTICE,
-    HERMIT,
-    FORTUNE,
-    STRENGTH,
-    HANGED,
-    DEATH,
-    TEMPERANCE,
-    DEVIL,
-    TOWER,
-    STAR,
-    MOON,
-    SUN,
-    JUDGEMENT,
-    WORLD
-}
-*/
 public enum ELEMENT
 {
     UNKNOWN = -1,
@@ -122,6 +95,10 @@ public class charAI
         SELF_HP_HIGHER,
         SELF_SP_HIGHER,
         SELF_SP_LOWER,
+        USER_PARTY_SP_HIGHER,
+        USER_PARTY_SP_LOWER,
+        USER_PARTY_HP_LOWEST,
+        USER_PARTY_HP_HIGHEST
     }
     public enum TURN_COUNTER
     {
@@ -242,14 +219,12 @@ public class o_battleChar : MonoBehaviour
     public int intelligence;
     public int guts;
     public int speed;
-    public int luck;
 
     public float attackBuff;
     public float defenceBuff;
     public float intelligenceBuff;
     public float gutsBuff;
     public float speedBuff;
-    public float luckBuff;
 
     public float meterSpeed;
     const float meterSpeedDefault = 6.5f;
@@ -292,6 +267,8 @@ public class o_battleChar : MonoBehaviour
     float animSpeed;
     float animPT;
 
+    const float buffMultiplier = 3.5f;
+
     public float getNetAttack {
         get
         {
@@ -304,7 +281,7 @@ public class o_battleChar : MonoBehaviour
                     attackModifier = -1.25f;
                     break;
             }
-            float total = attack + attackBuff + attackModifier;
+            float total = attack + (attackBuff * buffMultiplier) + attackModifier;
             if (total < 0)
                 return 0.3f;
             return total;
@@ -327,19 +304,10 @@ public class o_battleChar : MonoBehaviour
                     defenceModifier = -1.95f;
                     break;
             }
-            float total = defence + defenceBuff + defenceModifier;
+            float total = defence + (defenceBuff * buffMultiplier) + defenceModifier;
             if (total < 0)
                 return 0.3f;
             return total;
-        }
-    }
-    public float getNetLuck
-    {
-        get
-        {
-            if (luckBuff > luck)
-                return 1;
-            return luck + luckBuff;
         }
     }
     public float getNetIntellgence
@@ -348,16 +316,16 @@ public class o_battleChar : MonoBehaviour
         {
             if (intelligenceBuff > intelligence)
                 return 1;
-            return intelligence + intelligenceBuff;
+            return intelligence + (intelligenceBuff * buffMultiplier);
         }
     }
     public float getNetGuts
     {
         get
         {
-            if (gutsBuff > guts)
+            if ((gutsBuff * 1.8f) > guts)
                 return 1;
-            return guts + gutsBuff;
+            return guts + (gutsBuff * buffMultiplier);
         }
     }
     public float getNetSpeed
@@ -366,7 +334,7 @@ public class o_battleChar : MonoBehaviour
         {
             if (speedBuff > speed)
                 return 1;
-            return speed + speedBuff;
+            return speed + (speedBuff * buffMultiplier);
         }
     }
     public bool ableToGetStatus {
@@ -483,14 +451,14 @@ public class o_battleChar : MonoBehaviour
                     {
                         movePow = (int)(mov.power *
                             (((move.user.level + 1) / 15) +
-                            (float)(move.user.getNetAttack / (float)(getNetDefence + guardPoints))) *
+                            (float)(GetElementDamage(move) / (float)(getNetDefence + guardPoints))) *
                             elementTypeCharts[(int)mov.element]);
                     }
                     else
                     {
                         movePow = (int)(mov.power *
                             (((move.user.level + 1) / 15) +
-                            (float)(move.user.getNetAttack / (float)(getNetDefence + guardPoints))));
+                            (float)(GetElementDamage(move) / (float)(getNetDefence + guardPoints))));
                     }
                     /*
                     movePow = (int)(
@@ -510,7 +478,7 @@ public class o_battleChar : MonoBehaviour
                     {
                         movePow = (int)(mov.power *
                         (((move.user.level + 1) / 15) +
-                        (float)(move.user.getNetIntellgence / (float)(getNetDefence + guardPoints))) *
+                        (float)(GetElementDamage(move) / (float)(getNetDefence + guardPoints))) *
                         elementTypeCharts[(int)mov.element]);
                     }
                     else
@@ -538,15 +506,129 @@ public class o_battleChar : MonoBehaviour
                 case MOVE_TYPE.TALK:
                     movePow = (int)(
                         (mov.power * 
-                        (((move.user.level + 1) / 16) + ((float)move.user.getNetIntellgence / (float)getNetGuts))) *
-                        elementTypeCharts[(int)mov.element] *
-                        actionTypeCharts[(int)mov.action_type]);
+                        (((move.user.level + 1) / 16) + (GetElementDamage(move) / (float)getNetGuts))) *
+                        (elementTypeCharts[(int)mov.element] / 3) *
+                        (actionTypeCharts[(int)mov.action_type]) / 1.5f) ;
                     break;
             }
         } else {
             return mov.power;
         }
         return movePow;
+    }
+
+    public float GetElementDamage(s_battleAction move ) {
+
+        float elementFormula = 0;
+        float talkFormula = 0;
+
+        float baseStat = 0;
+
+        switch (move.move.moveType) {
+            case MOVE_TYPE.PHYSICAL:
+                baseStat = move.user.getNetAttack;
+                break;
+
+            case MOVE_TYPE.SPECIAL:
+            case MOVE_TYPE.TALK:
+                baseStat = move.user.getNetIntellgence;
+                break;
+        }
+
+        switch (move.move.element)
+        {
+            case ELEMENT.FORCE:
+                elementFormula = 
+                    (move.user.getNetIntellgence / 3) +
+                    (move.user.getNetSpeed / 1.5f);
+                break;
+
+            case ELEMENT.PEIRCE:
+                elementFormula = (move.user.getNetAttack / 2);
+                break;
+
+            case ELEMENT.FIRE:
+                elementFormula = move.user.getNetGuts / 5;
+                break;
+
+            case ELEMENT.ICE:
+                elementFormula = move.user.getNetAttack / 2;
+                break;
+
+            case ELEMENT.WIND:
+                elementFormula = (move.user.getNetSpeed / 1.2f);
+                break;
+
+            case ELEMENT.ELECTRIC:
+                elementFormula =
+                    (move.user.getNetSpeed / 5) +
+                    (move.user.getNetIntellgence / 2);
+                break;
+
+            case ELEMENT.EARTH:
+                elementFormula =
+                    (move.user.getNetDefence / 3) +
+                    (move.user.getNetAttack / 1.6f);
+                break;
+
+            case ELEMENT.PSYCHIC:
+                elementFormula = (move.user.getNetIntellgence / 1.85f);
+                break;
+
+            case ELEMENT.LIGHT:
+                elementFormula =
+                    (move.user.getNetIntellgence / 3) +
+                    (move.user.getNetGuts / 3);
+                break;
+
+            case ELEMENT.DARK:
+                elementFormula =
+                    (move.user.getNetIntellgence / 3) +
+                    (move.user.getNetAttack / 3);
+                break;
+        }
+
+        switch (move.move.action_type)
+        {
+            case ACTION_TYPE.COMFORT:
+                talkFormula = (move.user.getNetGuts / 4);
+                break;
+
+            case ACTION_TYPE.THREAT:
+                talkFormula = (move.user.getNetAttack);
+                break;
+
+            case ACTION_TYPE.RESERVED:
+                talkFormula = (move.user.getNetIntellgence / 4);
+                break;
+
+            case ACTION_TYPE.PLAYFUL:
+                talkFormula = 
+                    (move.user.getNetSpeed / 4) +
+                    (move.user.getNetAttack / 4);
+                break;
+
+            case ACTION_TYPE.FLIRT:
+                talkFormula = 
+                    (move.user.getNetAttack / 4) +
+                    (move.user.getNetGuts / 3);
+                break;
+        }
+        print(elementFormula);
+
+        float total = 0;
+        switch (move.move.moveType)
+        {
+            case MOVE_TYPE.SPECIAL:
+            case MOVE_TYPE.PHYSICAL:
+                total = baseStat + (elementFormula / 1.75f);
+                break;
+
+            case MOVE_TYPE.TALK:
+                total = baseStat + (elementFormula / 2.5f) + (talkFormula);
+                break;
+        }
+        return total;
     }
 
     /*

@@ -31,7 +31,6 @@ public class s_targetButton : s_button
         switch (targType)
         {
             case TARGET_TYPE.BATTLE:
-                print("HEY");
                 s_soundmanager.GetInstance().PlaySound("cursor_move");
                 //s_camera.cam.SetTargPos(battleCharButton.transform.position);
                 break;

@@ -63,7 +63,6 @@ public class s_rpgbutton : s_button
 
             case "guard":
                 s_soundmanager.GetInstance().PlaySound("selectOption");
-                //s_battlesyst.GetInstanfce().Guard();
                 s_battlesyst.GetInstance().SelectTarget(s_battlesyst.GetInstance().guardMove);
                 s_menuhandler.GetInstance().SwitchMenu("EMPTY");
                 break;

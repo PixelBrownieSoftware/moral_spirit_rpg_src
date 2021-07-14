@@ -22,3 +22,4 @@ MonoBehaviour:
   battleEvents: []
   allRelations: 1
   isFleeable: 0
+  songName: face_the_truth

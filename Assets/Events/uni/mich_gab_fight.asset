@@ -96,7 +96,7 @@ MonoBehaviour:
     stringList: []
     dialogueChoices: []
     intList: 
-    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    scrObj: {fileID: 11400000, guid: b57794a3919375e489ea1d7392097ab6, type: 2}
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}

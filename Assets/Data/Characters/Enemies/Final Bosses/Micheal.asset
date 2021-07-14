@@ -19,7 +19,7 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: e138a43a28bd6dc44b6a1a2166dc847d, type: 2}
+    moveName: {fileID: 11400000, guid: 42fedf82923192a4db4b6e50b4d8a97c, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: d5fd53203103c7643ba7fe3cf34bf5f3, type: 2}
+    moveName: {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -39,7 +39,27 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 5da7ac288f76789488ab1cb584427bf7, type: 2}
+    moveName: {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 6
+    element: 0
+    healthPercentage: 0.35
+    name: 
+    moveName: {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: cda91f69a509f5945b1a191ebadb29d4, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -49,7 +69,7 @@ MonoBehaviour:
   front: {fileID: -8050505381868735831, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
-  level: 1
+  level: 52
   exp: 0
   expToNextLevel: 0
   baseExpYeild: 100
@@ -80,6 +100,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+  - {fileID: 11400000, guid: cda91f69a509f5945b1a191ebadb29d4, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

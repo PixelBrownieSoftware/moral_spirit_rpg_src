@@ -38,8 +38,9 @@ MonoBehaviour:
   gut_inc: 0
   buffUser: 0
   canLearn: 1
+  excludeUser: 0
   str_req: 3
-  dex_req: 7
+  dex_req: 9
   vit_req: 0
   agi_req: 0
   gut_req: 5

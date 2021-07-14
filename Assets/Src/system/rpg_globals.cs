@@ -146,8 +146,8 @@ public class rpg_globals : s_globals
     public Image fadeFX;
     public Image overworldMenuBox;
     public Dictionary<string, int> inventory;
-    public List<rpg_item> inventoryData = new List<rpg_item>();
-    public rpg_item[] allItems;
+    //public List<rpg_item> inventoryData = new List<rpg_item>();
+    public s_move[] allItems;
     public Text characterStats;
 
     public enum RPG_STATE
@@ -275,8 +275,8 @@ public class rpg_globals : s_globals
         else
         {
             ///Add in evan
-            AddItem(GetItem("Bottled water"), 5);
-            AddItem(GetItem("Demon drink"), 2);
+            AddItem("Bottled water", 5);
+            AddItem("Demon drink", 2);
             AddMemeber(firstCharacter, 1);
         }
         s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
@@ -331,9 +331,9 @@ public class rpg_globals : s_globals
         //promptObj.gameObject.SetActive(false);
     }
 
-    public rpg_item GetItem(string n)
+    public s_move GetItem(string n)
     {
-        foreach (rpg_item it in inventoryData)
+        foreach (var it in allItems)
         {
             if (n == it.name)
                 return it;
@@ -530,6 +530,7 @@ public class rpg_globals : s_globals
 
     public void SwitchToOverworld()
     {
+        s_BGM.GetInstance().StopSong();
         ///Replacing old player data with new data
         foreach (o_battleChar plObj in playerSlots)
         {
@@ -577,6 +578,7 @@ public class rpg_globals : s_globals
         //Fade stuff
         Time.timeScale = 0;
         player.control = false;
+        s_soundmanager.GetInstance().PlaySound("encounter");
         yield return StartCoroutine(Fade(true));
         yield return new WaitForSecondsRealtime(0.5f);
         Time.timeScale = 1;
@@ -605,7 +607,7 @@ public class rpg_globals : s_globals
             character.hitPoints = 1;
         else
             character.hitPoints = bc.hitPoints;
-        print("HP: " + character.hitPoints);
+       // print("HP: " + character.hitPoints);
         if (character.hitPoints > character.maxHitPoints)
             character.hitPoints = character.maxHitPoints;
         character.maxHitPoints = bc.maxHitPoints;
@@ -641,11 +643,20 @@ public class rpg_globals : s_globals
                 break;
 
             case 5:
-                enemySlots[0].transform.position = new Vector3(-130, enemySlots[0].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-150, enemySlots[0].transform.position.y);
                 enemySlots[1].transform.position = new Vector3(-50, enemySlots[1].transform.position.y);
                 enemySlots[2].transform.position = new Vector3(40, enemySlots[2].transform.position.y);
                 enemySlots[3].transform.position = new Vector3(95, enemySlots[3].transform.position.y);
                 enemySlots[4].transform.position = new Vector3(175, enemySlots[4].transform.position.y);
+                break;
+
+            case 6:
+                enemySlots[0].transform.position = new Vector3(-170, enemySlots[0].transform.position.y);
+                enemySlots[1].transform.position = new Vector3(-95, enemySlots[1].transform.position.y);
+                enemySlots[2].transform.position = new Vector3(-10, enemySlots[2].transform.position.y);
+                enemySlots[3].transform.position = new Vector3(95, enemySlots[3].transform.position.y);
+                enemySlots[4].transform.position = new Vector3(175, enemySlots[4].transform.position.y);
+                enemySlots[5].transform.position = new Vector3(225, enemySlots[5].transform.position.y);
                 break;
         }
     }
@@ -934,13 +945,14 @@ public class rpg_globals : s_globals
         }
     }
 
-    public Dictionary<rpg_item, int> GetInventory() {
-        Dictionary<rpg_item, int> inv = new Dictionary<rpg_item, int>();
+    public Dictionary<s_move, int> GetInventory() {
+        Dictionary<s_move, int> inv = new Dictionary<s_move, int>();
         foreach (KeyValuePair<string, int> it in inventory) {
             inv.Add(GetItem(it.Key), it.Value);
         }
         return inv;
     }
+
 
     public void HealParty() {
         foreach (o_battleCharData bc in partyMembers) {
@@ -1081,6 +1093,7 @@ public class rpg_globals : s_globals
                             itemsMenu.gameObject.SetActive(true);
                             menuChoice = Mathf.Clamp(menuChoice, 0, inventory.Count - 1);
 
+                            /*
                             //This lists the stuff that will be presented in the inventory and the ammount
                             //Tried tuples, but that failed so I'm doing a much more crude but easier option
 
@@ -1136,6 +1149,7 @@ public class rpg_globals : s_globals
                                     }
                                 }
                             }
+                            */
                             characterStats.text = "";
 
                             characterStats.text +=

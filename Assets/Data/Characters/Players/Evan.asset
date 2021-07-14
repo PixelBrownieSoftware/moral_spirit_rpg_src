@@ -20,14 +20,14 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
   isPartyChar: 0
-  level: 100
+  level: 1
   exp: 0
   expToNextLevel: 0
   baseExpYeild: 0
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 12
+  maxSkillPointsB: 8
   maxHitPointsB: 26
   attackB: 4
   defenceB: 4
@@ -38,7 +38,7 @@ MonoBehaviour:
   maxSkillPointsGMax: 3
   maxSkillPointsGMin: 1
   maxHitPointsGMax: 5
-  maxHitPointsGMin: 3
+  maxHitPointsGMin: 4
   attackG: 3
   defenceG: 2
   intelligenceG: 4

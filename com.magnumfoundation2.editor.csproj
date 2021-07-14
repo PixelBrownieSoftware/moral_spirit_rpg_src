@@ -56,6 +56,7 @@
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Editor\ed_trigLink.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Editor\ed_trig.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Editor\ed_event.cs" />
+    <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Editor\ed_scr2HTML.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Editor\com.magnumfoundation2.editor.asmdef" />

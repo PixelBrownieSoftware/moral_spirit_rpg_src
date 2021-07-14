@@ -70,6 +70,7 @@
     <Compile Include="Assets\Src\system\s_battleEngine.cs" />
     <Compile Include="Assets\Src\system\Menus\battle\s_battletargetMenu.cs" />
     <Compile Include="Assets\Src\system\rpg_item.cs" />
+    <Compile Include="Assets\s_BGM.cs" />
     <Compile Include="Assets\Src\system\rpg_mainmenu.cs" />
     <Compile Include="Assets\MISC\unusedsrc.cs" />
     <Compile Include="Assets\s_analyzeStats.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Src\system\s_rpgEvent.cs" />
     <Compile Include="Assets\Src\system\Menus\s_itemsMenu.cs" />
     <Compile Include="Assets\Src\system\Menus\battle\s_targetButton.cs" />
+    <Compile Include="Assets\Src\system\Menus\s_statReq.cs" />
     <Compile Include="Assets\s_menuGui.cs" />
     <Compile Include="Assets\Src\system\s_rpgloader.cs" />
     <Compile Include="Assets\Src\system\enemy_group.cs" />
@@ -97,7 +99,7 @@
     <Compile Include="Assets\Src\character\o_healPoint.cs" />
     <Compile Include="Assets\Src\character\c_enemy.cs" />
     <Compile Include="Assets\Src\system\Menus\s_skillsMenu.cs" />
-    <Compile Include="Assets\Src\system\Menus\s_statReq.cs" />
+    <Compile Include="Assets\Src\misc\s_MSScriptToHTMl.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Data\Characters\Enemies\Legacy\Hunky_punk.txt" />

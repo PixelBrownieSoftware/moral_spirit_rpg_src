@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: Egotistical woman
   m_EditorClassIdentifier: 
-  characterAI: []
+  shortName: 
+  characterAI:
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
   characterAnims: []
   front: {fileID: 0}
   back: {fileID: 0}
@@ -24,26 +36,27 @@ MonoBehaviour:
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 0
-  maxHitPointsB: 0
-  attackB: 0
-  defenceB: 0
-  intelligenceB: 0
-  gutsB: 0
-  speedB: 0
+  maxSkillPointsB: 11
+  maxHitPointsB: 8
+  attackB: 3
+  defenceB: 2
+  intelligenceB: 3
+  gutsB: 3
+  speedB: 2
   luckB: 0
-  maxSkillPointsGMax: 0
-  maxSkillPointsGMin: 0
-  maxHitPointsGMax: 0
-  maxHitPointsGMin: 0
-  attackG: 0
-  defenceG: 0
-  intelligenceG: 0
-  gutsG: 0
-  speedG: 0
+  maxSkillPointsGMax: 4
+  maxSkillPointsGMin: 2
+  maxHitPointsGMax: 3
+  maxHitPointsGMin: 3
+  attackG: 2
+  defenceG: 2
+  intelligenceG: 2
+  gutsG: 3
+  speedG: 3
   luckG: 0
   inBattle: 1
-  moveDatabase: []
+  moveDatabase:
+  - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -52,21 +65,21 @@ MonoBehaviour:
   - 1
   - 1
   - 1
+  - 2.08
   - 1
   - 1
-  - 1
-  - 1
+  - 0.84
   - 1
   - 1
   - 1
   - 1
   actionTypeCharts:
   - 1
+  - 0.78
+  - 1.61
   - 1
   - 1
-  - 1
-  - 1
-  - 1
+  - 2.18
   money: 0
   itemDrop: []
   relationships: []

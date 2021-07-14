@@ -16,10 +16,11 @@ MonoBehaviour:
   enemies:
   - {fileID: 11400000, guid: 55307863b9a77794786d8f7536760b83, type: 2}
   - {fileID: 11400000, guid: 25eb17ca41ef7cd419480a0c0d6aa8a6, type: 2}
-  maxLevel: 55
-  minLevel: 55
+  maxLevel: 45
+  minLevel: 45
   fixedLevel: 
   isFixedLevel: 0
   battleEvents: []
   allRelations: 1
   isFleeable: 0
+  songName: rise_up_to_the_truth

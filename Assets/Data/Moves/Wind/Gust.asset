@@ -25,8 +25,25 @@ MonoBehaviour:
   action_type: 0
   moveType: 1
   target: 0
-  power: 4
-  animation: []
+  power: 6
+  preAnim: []
+  animation:
+  - duration: 0.4
+    image: {fileID: 0}
+    name: windFX
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0
+    image: {fileID: 0}
+    name: 
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
   str_inc: 0
@@ -37,6 +54,7 @@ MonoBehaviour:
   gut_inc: 0
   buffUser: 0
   canLearn: 1
+  excludeUser: 0
   str_req: 0
   dex_req: 4
   vit_req: 0

@@ -16,6 +16,5 @@ public class enemy_group : ScriptableObject
 
     public bool allRelations = false;
     public bool isFleeable = true;
-
-
+    public string songName = "spirit_match";
 }

@@ -4338,6 +4338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: MainMenu
   txt: {fileID: 83118132}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!114 &83118135
 MonoBehaviour:
@@ -6862,6 +6863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: BattleMenuSkillsItemsGUI
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
 --- !u!114 &128457195
 MonoBehaviour:
@@ -8374,6 +8376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: BattleMainMenu
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
 --- !u!114 &160511781
 MonoBehaviour:
@@ -8749,6 +8752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 0}
   buttonT: spare
@@ -13694,6 +13698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 1964538738}
   buttonT: turnPageB
@@ -21663,6 +21668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: MainMenu
   txt: {fileID: 364754321}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!114 &364754321 stripped
 MonoBehaviour:
@@ -22683,6 +22689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: BattleAnalyze
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
 --- !u!114 &377721682
 MonoBehaviour:
@@ -23805,6 +23812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 0}
   buttonT: pass
@@ -27971,6 +27979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: MainMenu
   txt: {fileID: 1400580294}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!114 &486999020
 MonoBehaviour:
@@ -28250,6 +28259,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496860088}
   m_CullTransparentMesh: 0
+--- !u!1 &499637101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499637102}
+  - component: {fileID: 499637103}
+  m_Layer: 0
+  m_Name: Script2HTML
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499637102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499637101}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499637103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499637101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0490641d07874ed47acd00a0f40c7526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scripts:
+  - context: The main character (Evan) is dreaming
+    script: {fileID: 11400000, guid: e39b63425cf01a2429ce551ed08043dc, type: 2}
+  - context: Evan wakes up in his apartment.
+    script: {fileID: 11400000, guid: 0e3919586cbebcd43ba1436ee2bc09ab, type: 2}
+  - context: Evan arrives at the park to see his freind Sebastian, a young girl appears
+      later on.
+    script: {fileID: 11400000, guid: f8dc177cbeae0e64bb6837c87a73b5c3, type: 2}
+  - context: After the fight against Rebecca
+    script: {fileID: 11400000, guid: bb9a01c58f8a5d546825037c6868745c, type: 2}
+  - context: Optional conversation with Sebastian
+    script: {fileID: 11400000, guid: fdcdf58940d041b4789b99fe129bf786, type: 2}
+  - context: Evan and Sebastian enter the subway, they are then stopped by two teenage
+      childeren. They engage in a battle.
+    script: {fileID: 11400000, guid: caca0afbf3b87d844b168b884e33ef7b, type: 2}
+  - context: Evan and Sebastian make it to one end of the subway, they see Rebecca
+      and later a tall angel appears.
+    script: {fileID: 11400000, guid: 1642d09ddd7e6fb478cabfc2db9c2130, type: 2}
+  - context: After Rebecca is defeated
+    script: {fileID: 11400000, guid: 4a7878f71ff8f604eb5d101d4dc7ec67, type: 2}
+  - context: Evan and Sebastian enter a resturant to eat after the battle.
+    script: {fileID: 11400000, guid: 4dad68bd1fa29df4a902c4487aa6cac3, type: 2}
+  - context: Evan and Sebastian return to their home town, only to find a young boy.
+    script: {fileID: 11400000, guid: 6b797d1cf98b463468516fcb502c8949, type: 2}
+  - context: Optional conversation with Sebastian
+    script: {fileID: 11400000, guid: af1d06926cb2b324892f0c28694316db, type: 2}
+  - context: The duo meet Evan's longtime girlfreind Chloe at the park.
+    script: {fileID: 11400000, guid: ef3190b3edfe74b4bbe9231ad4c83ad5, type: 2}
+  - context: The trio investigate the rally and fight the leader of the rally, with
+      Rebecca reluctantly joining the party.
+    script: {fileID: 11400000, guid: 5c8de725783b0c741af9962966b23ebe, type: 2}
+  - context: After Bill is defeated.
+    script: {fileID: 11400000, guid: 1cc4b85635ef4cb479f2a58af3fa043c, type: 2}
+  - context: Optional conversation with Chloe
+    script: {fileID: 11400000, guid: 201316665fb96f04484e417d45d1789b, type: 2}
+  - context: Optional conversation with Sebastian
+    script: {fileID: 11400000, guid: 8d64a9cca52dbc44b8901acf92a5704c, type: 2}
+  - context: Optional conversation with Rebecca
+    script: {fileID: 11400000, guid: 83079ea79c8359c46a81d0fe1e6370bd, type: 2}
+  - context: The quad arrive at Rebecca's school, they see Ralph from earlier.
+    script: {fileID: 11400000, guid: 95031c17a627c3f49ad02d09bd680446, type: 2}
+  - context: The 5 arrive at the school headmaster Mr. Lovewell. He also is part
+      of Micheal's cult. The party fight him.
+    script: {fileID: 11400000, guid: 7830c96759a5ba147b1e925f8e24f75c, type: 2}
+  - context: After Mr Lovewell's defeat.
+    script: {fileID: 11400000, guid: 813f93b052faad0499931053bc3d3fdb, type: 2}
+  - context: The party get into the University and finally find Micheal and Gabriel,
+      they challenge them to a fight.
+    script: {fileID: 11400000, guid: dcd7c5f3fd71e7c428a9e29f3c79d137, type: 2}
+  - context: After Micheal and Gabriel are defeated.
+    script: {fileID: 11400000, guid: 509a66343550dea4b96ca0ee8bd96545, type: 2}
+  - context: The party go into the University hospital, where they see a bedridden
+      boy.
+    script: {fileID: 11400000, guid: 4953d2f8e62eae040bcf8b152f712b8c, type: 2}
+  - context: After the party defeats Abaddon
+    script: {fileID: 11400000, guid: 4077e88a33b0eb643be414060236d722, type: 2}
+  scriptName: Moral spirit script
 --- !u!1001 &500050005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29090,6 +29199,7 @@ MonoBehaviour:
   speedProg: 0
   speedProgInc: 0.15
   camWithMouseOffset: 0
+  alwaysRunning: 1
   cameraMode: 0
 --- !u!20 &519420031
 Camera:
@@ -35349,19 +35459,20 @@ MonoBehaviour:
   gutColour: {r: 0.29932436, g: 0.754717, b: 0.26699895, a: 1}
   fireColour: {r: 1, g: 0.41951597, b: 0, a: 1}
   iceColour: {r: 0, g: 0.8979106, b: 1, a: 1}
-  electricColour: {r: 0.97885394, g: 1, b: 0, a: 1}
+  electricColour: {r: 1, g: 1, b: 0, a: 1}
   windColour: {r: 0, g: 1, b: 0.38457632, a: 1}
   earthColour: {r: 0.6132076, g: 0.42795816, b: 0.26321647, a: 1}
   psychicColour: {r: 1, g: 0, b: 0.8780918, a: 1}
-  darkColour: {r: 0.2698326, g: 0.24158953, b: 0.5754717, a: 1}
-  lightColour: {r: 1, g: 0.9967474, b: 0.759434, a: 0}
-  strikeColour: {r: 0.46471882, g: 0.4811321, b: 0.41985583, a: 1}
-  forceColour: {r: 0.5566038, g: 0.18115878, b: 0.31892833, a: 1}
+  darkColour: {r: 0.40516832, g: 0.3737985, b: 0.754717, a: 1}
+  lightColour: {r: 0.990566, g: 0.9834424, b: 0.55602527, a: 1}
+  strikeColour: {r: 0.53942686, g: 0.5471698, b: 0.5187789, a: 1}
+  forceColour: {r: 0.754717, g: 0.17443931, b: 0.33343938, a: 1}
   peirceColour: {r: 0.621173, g: 0.82154375, b: 0.9339623, a: 1}
-  threatColour: {r: 0.49056602, g: 0, b: 0.087271616, a: 1}
-  comfortColour: {r: 0.24154504, g: 0.8679245, b: 0.31840417, a: 1}
+  threatColour: {r: 0.8962264, g: 0.24270615, b: 0.21560161, a: 1}
+  comfortColour: {r: 0.4462538, g: 0.8666667, b: 0.24313724, a: 1}
   flirtColour: {r: 0.9770077, g: 0.6273585, b: 1, a: 1}
-  playfulColour: {r: 0.627451, g: 0.9090713, b: 1, a: 1}
+  reservedColour: {r: 0.30980393, g: 0.5529412, b: 0.5372549, a: 1}
+  playfulColour: {r: 0.50787646, g: 0.8451047, b: 0.9528302, a: 1}
   fire_picture: {fileID: -5391307981071726051, guid: bd0622903c69c7643b8f877e5588e4d6,
     type: 3}
   water_picture: {fileID: 0}
@@ -35394,7 +35505,11 @@ MonoBehaviour:
     type: 3}
   playful_picture: {fileID: 423605440508702846, guid: bd0622903c69c7643b8f877e5588e4d6,
     type: 3}
+  reserved_picture: {fileID: 6535756550885404928, guid: bd0622903c69c7643b8f877e5588e4d6,
+    type: 3}
   heal_picture: {fileID: -6123155731546979588, guid: bd0622903c69c7643b8f877e5588e4d6,
+    type: 3}
+  heal_stamina_picture: {fileID: -2165821876479576607, guid: bd0622903c69c7643b8f877e5588e4d6,
     type: 3}
   support_picture: {fileID: -830853010422553840, guid: bd0622903c69c7643b8f877e5588e4d6,
     type: 3}
@@ -39806,6 +39921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: MainMenu
   txt: {fileID: 698114863}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!1001 &698940889
 PrefabInstance:
@@ -40166,8 +40282,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a99573aef2fbe6b41b20950a246b094d, type: 3}
   - {fileID: 8300000, guid: 685ed392b4ac6174ba96427a3c0d5da7, type: 3}
   - {fileID: 8300000, guid: 3c5fdcf0044499741b36429cc9a495d2, type: 3}
-  - {fileID: 8300000, guid: ba64149e27ec6464ab202ed0af82f53e, type: 3}
-  - {fileID: 8300000, guid: b42fe757a5b78da4b879a2b830cb737f, type: 3}
   - {fileID: 8300000, guid: ca2d50e3078d9864bb322edc109f8fe2, type: 3}
   - {fileID: 8300000, guid: 58611bf7dd5305946960f028e9d4bc8b, type: 3}
   - {fileID: 8300000, guid: 066381d9c513ff642b41f86fe2c7e516, type: 3}
@@ -40188,13 +40302,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d20a986d09ec4c44a8ca451f1124c73e, type: 3}
   - {fileID: 8300000, guid: b13c4ae033be58f478c4a8c750c5c982, type: 3}
   - {fileID: 8300000, guid: 1e4f8d9aea08c4843bc4a1f238c06011, type: 3}
-  - {fileID: 8300000, guid: e9b585ba7293d18408d9dadd9c25b8e7, type: 3}
   - {fileID: 8300000, guid: c401780733d732c42ad907bc71e6f38b, type: 3}
   - {fileID: 8300000, guid: d489ae920ad2f934899b53131f4b799f, type: 3}
   - {fileID: 8300000, guid: 1c3ae4ed63150a54884223bd2a7748f1, type: 3}
   - {fileID: 8300000, guid: 22597a5ce37837f449691b54e0f1c326, type: 3}
   - {fileID: 8300000, guid: 41a904c3301aaff46ac00c5656cdeaeb, type: 3}
   - {fileID: 8300000, guid: bf54eb0f4d0c5e04d9398eb3fab0ec04, type: 3}
+  - {fileID: 8300000, guid: ab11d1c9bdf39f04e8ac8aeb3d1f8889, type: 3}
+  - {fileID: 8300000, guid: 8af5b158e4604aa49a2a6fe29a0050fb, type: 3}
+  - {fileID: 8300000, guid: c9fbc63da16b1174d9c74d9b5f1bcc87, type: 3}
+  - {fileID: 8300000, guid: 710e82aa9bccee347af02aeee87e5fe8, type: 3}
+  - {fileID: 8300000, guid: c7bb891499451a742ae76271c33ac7e2, type: 3}
+  - {fileID: 8300000, guid: 4562900a8d07d5746aef464956970057, type: 3}
 --- !u!1 &705817803
 GameObject:
   m_ObjectHideFlags: 0
@@ -51214,6 +51333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: TargetExtraSkills
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!1 &925303037
 GameObject:
@@ -52548,6 +52668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 948611100}
+  - component: {fileID: 948611101}
   m_Layer: 0
   m_Name: BGM
   m_TagString: Untagged
@@ -52569,6 +52690,20 @@ Transform:
   m_Father: {fileID: 2045320895}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &948611101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948611099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb08abd7989f549b0adfbe3d531c71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  src: {fileID: 704098237}
 --- !u!1 &949723015
 GameObject:
   m_ObjectHideFlags: 0
@@ -52840,13 +52975,11 @@ MonoBehaviour:
   intelligence: 11
   guts: 0
   speed: 45
-  luck: 0
   attackBuff: 0
   defenceBuff: 0
   intelligenceBuff: 0
   gutsBuff: 0
   speedBuff: 0
-  luckBuff: 0
   meterSpeed: 0
   guardPoints: 0
   moveDatabase: []
@@ -58565,6 +58698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: TargetExtraSkills
   txt: {fileID: 1056439798}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!1001 &1058399703
 PrefabInstance:
@@ -61455,6 +61589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: BattleMenuSkillsItemsGUI
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 1964538738}
   buttonT: item
@@ -65663,6 +65798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 0}
   buttonT: guard
@@ -67644,6 +67780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: MainMenu
   txt: {fileID: 1211301210}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!114 &1211301213
 MonoBehaviour:
@@ -73872,6 +74009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 1964538738}
   buttonT: turnPageF
@@ -77606,6 +77744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 1
   backButton: {fileID: 0}
   buttonT: skillMenu
@@ -93824,6 +93963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 0}
   buttonT: run
@@ -97860,6 +98000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: BattleMenuTarget
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 1964538738}
   buttonT: fight
@@ -106167,13 +106308,11 @@ MonoBehaviour:
   intelligence: 11
   guts: 0
   speed: 45
-  luck: 0
   attackBuff: 0
   defenceBuff: 0
   intelligenceBuff: 0
   gutsBuff: 0
   speedBuff: 0
-  luckBuff: 0
   meterSpeed: 0
   guardPoints: 0
   moveDatabase:
@@ -106978,6 +107117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
 --- !u!114 &1964538739
 MonoBehaviour:
@@ -108209,6 +108349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: SkillsMenu
   txt: {fileID: 1976472386}
+  buttonTex: {fileID: 0}
   isPause: 1
 --- !u!114 &1976472386 stripped
 MonoBehaviour:
@@ -111973,14 +112114,13 @@ MonoBehaviour:
   objectStates: []
   fadeFX: {fileID: 17913468}
   overworldMenuBox: {fileID: 822844767}
-  inventoryData:
-  - {fileID: 11400000, guid: ad06269c1122c6143bd74b377fbdd857, type: 2}
-  - {fileID: 11400000, guid: 5da244c7592379547af91aa32172273e, type: 2}
-  - {fileID: 11400000, guid: c7bf881b05ddbbe46a06afb8c78f4c3a, type: 2}
-  - {fileID: 11400000, guid: 371c9bf0e4a17d148997f67be0730290, type: 2}
-  - {fileID: 11400000, guid: ffe1f92f6efac2145b4150754f648174, type: 2}
-  - {fileID: 11400000, guid: 4c00e92793de2304990acfcef6e11d24, type: 2}
-  allItems: []
+  allItems:
+  - {fileID: 11400000, guid: 961f491df58b95c49ad1d745e4977c7a, type: 2}
+  - {fileID: 11400000, guid: b6196b715ec1ec942bf1d7feb40fb0a7, type: 2}
+  - {fileID: 11400000, guid: 784c4d3601e51a841857415fd9f25a1d, type: 2}
+  - {fileID: 11400000, guid: 96a3860ba26f60345aab60b2cadde0e0, type: 2}
+  - {fileID: 11400000, guid: 32f8db9349138d84f9336f015f953c71, type: 2}
+  - {fileID: 11400000, guid: 660312bea42799e45904537c96f5e9a2, type: 2}
   characterStats: {fileID: 1555515133}
   menuChoice: 0
   GameState: 0
@@ -114312,6 +114452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: BattleMenuSkillsItemsGUI
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 0
   backButton: {fileID: 1964538738}
   buttonT: skill
@@ -117383,13 +117524,11 @@ MonoBehaviour:
   intelligence: 5
   guts: 0
   speed: 42
-  luck: 0
   attackBuff: 0
   defenceBuff: 0
   intelligenceBuff: 0
   gutsBuff: 0
   speedBuff: 0
-  luckBuff: 0
   meterSpeed: 0
   guardPoints: 0
   moveDatabase:
@@ -117747,13 +117886,11 @@ MonoBehaviour:
   intelligence: 11
   guts: 0
   speed: 45
-  luck: 0
   attackBuff: 0
   defenceBuff: 0
   intelligenceBuff: 0
   gutsBuff: 0
   speedBuff: 0
-  luckBuff: 0
   meterSpeed: 0
   guardPoints: 0
   moveDatabase:
@@ -117840,13 +117977,11 @@ MonoBehaviour:
   intelligence: 11
   guts: 0
   speed: 45
-  luck: 0
   attackBuff: 0
   defenceBuff: 0
   intelligenceBuff: 0
   gutsBuff: 0
   speedBuff: 0
-  luckBuff: 0
   meterSpeed: 0
   guardPoints: 0
   moveDatabase:

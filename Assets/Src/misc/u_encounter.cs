@@ -11,6 +11,7 @@ public class u_encounter : s_object
     public GameObject[] enemies;
     public s_object selobj;
     public bool destroyEnemies = true;
+    bool _triggered = false;
 
     public void DestroyAllEnemies()
     {
@@ -54,8 +55,12 @@ public class u_encounter : s_object
                     {
                         if (!ch.AI && ch.control)
                         {
-                            rpg_globals.gl.enc = this;
-                            StartCoroutine(GotoBattle());
+                            if (!_triggered)
+                            {
+                                _triggered = true;
+                                rpg_globals.gl.enc = this;
+                                StartCoroutine(GotoBattle());
+                            }
                         }
                     }
                 }

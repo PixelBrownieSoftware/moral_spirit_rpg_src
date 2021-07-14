@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 15
+  cost: 45
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 0
   moveType: 0
   target: 0
-  power: 28
+  power: 22
   preAnim: []
   animation: []
   moveRequirements: []
@@ -37,9 +37,10 @@ MonoBehaviour:
   agi_inc: 0.1
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
   excludeUser: 0
-  str_req: 9
+  str_req: 13
   dex_req: 8
   vit_req: 6
   agi_req: 0

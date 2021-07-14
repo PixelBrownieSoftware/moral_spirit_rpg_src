@@ -129,10 +129,10 @@ public class s_skillsMenu : s_menucontroller
             case BTN_TYPE.ITEM:
                 foreach (KeyValuePair<string, int> it in rpg_globals.gl.inventory)
                 {
-                    rpg_item item = rpg_globals.gl.GetItem(it.Key);
+                    s_move item = rpg_globals.gl.GetItem(it.Key);
                     GetButton<s_skillButton>(ind).gameObject.SetActive(true);
                     GetButton<s_skillButton>(ind).txt.text = it.Key + " - " + it.Value;
-                    GetButton<s_skillButton>(ind).item = item;
+                    GetButton<s_skillButton>(ind).move = item;
                     GetButton<s_skillButton>(ind).BUTTON_TYPE = s_skillButton.BTN_TYPE.ITEM;
                     ind++;
                 }

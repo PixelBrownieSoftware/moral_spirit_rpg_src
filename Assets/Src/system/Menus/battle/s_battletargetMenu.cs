@@ -41,6 +41,7 @@ public class s_battletargetMenu : s_menucontroller
                 }
                 break;
 
+            case TARGET_MOVE_TYPE.RANDOM:
             case TARGET_MOVE_TYPE.ALL:
                 for (int i = 0; i < bcs.Count; i++)
                 {

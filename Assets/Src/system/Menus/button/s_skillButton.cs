@@ -7,7 +7,6 @@ using MagnumFoundation2;
 public class s_skillButton : s_button
 {
     public s_move move;
-    public rpg_item item;
     public Image img;
     public Image skillButtonImg;
     public Text cost;
@@ -285,8 +284,7 @@ public class s_skillButton : s_button
                     break;
 
                 case BTN_TYPE.ITEM:
-                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").move = item.action;
-                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").item = item;
+                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").move = move;
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").isItem = true;
                     
                     break;

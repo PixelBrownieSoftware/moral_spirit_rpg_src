@@ -22,7 +22,7 @@ MonoBehaviour:
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 15
+    int0: 45
     int1: 0
     int2: 0
     tpPoint: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 15
+    int0: 45
     int1: 0
     int2: 0
     tpPoint: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 15
+    int0: 45
     int1: 0
     int2: 0
     tpPoint: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 15
+    int0: 45
     int1: 0
     int2: 0
     tpPoint: 0

@@ -74,6 +74,57 @@ TextureImporter:
   - first:
       213: -317031212520038642
     second: fxsAnim_1
+  - first:
+      213: -1131236302488406717
+    second: fxsAnim_2
+  - first:
+      213: -5118211134205596227
+    second: fxsAnim_4
+  - first:
+      213: 3898166074345542201
+    second: fxsAnim_5
+  - first:
+      213: -2272166565924356819
+    second: fxsAnim_7
+  - first:
+      213: 6702498261273243573
+    second: fxsAnim_11
+  - first:
+      213: -50197816212952692
+    second: fxsAnim_12
+  - first:
+      213: 6295089432098550393
+    second: fxsAnim_13
+  - first:
+      213: -2743312305599139749
+    second: fxsAnim_14
+  - first:
+      213: -4986395807182408792
+    second: fxsAnim_15
+  - first:
+      213: 6800143715519071477
+    second: fxsAnim_16
+  - first:
+      213: -1912304363855594364
+    second: fxsAnim_17
+  - first:
+      213: 1408541076399831197
+    second: fxsAnim_34
+  - first:
+      213: 7656935757073847545
+    second: fxsAnim_35
+  - first:
+      213: -6690257381326155130
+    second: fxsAnim_37
+  - first:
+      213: 5563449771561734098
+    second: fxsAnim_38
+  - first:
+      213: -5428377895464419761
+    second: fxsAnim_39
+  - first:
+      213: 4683542989559870868
+    second: fxsAnim_40
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,12 +217,12 @@ TextureImporter:
       name: fxsAnim_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 467
-        width: 31
-        height: 28
+        x: 0
+        y: 447
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +238,12 @@ TextureImporter:
       name: fxsAnim_3
       rect:
         serializedVersion: 2
-        x: 235
-        y: 454
-        width: 58
-        height: 51
+        x: 225
+        y: 447
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,12 +259,12 @@ TextureImporter:
       name: fxsAnim_6
       rect:
         serializedVersion: 2
-        x: 312
-        y: 450
-        width: 58
-        height: 51
+        x: 0
+        y: 382
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +280,12 @@ TextureImporter:
       name: fxsAnim_8
       rect:
         serializedVersion: 2
-        x: 375
-        y: 461
+        x: 150
+        y: 382
         width: 75
-        height: 31
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +301,12 @@ TextureImporter:
       name: fxsAnim_9
       rect:
         serializedVersion: 2
-        x: 97
-        y: 465
-        width: 29
-        height: 25
+        x: 225
+        y: 382
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +322,12 @@ TextureImporter:
       name: fxsAnim_10
       rect:
         serializedVersion: 2
-        x: 169
-        y: 464
-        width: 27
-        height: 21
+        x: 300
+        y: 382
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,11 +344,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 409
+        y: 252
         width: 75
-        height: 8
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +364,12 @@ TextureImporter:
       name: fxsAnim_19
       rect:
         serializedVersion: 2
-        x: 150
-        y: 396
+        x: 75
+        y: 252
         width: 75
-        height: 31
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,12 +385,12 @@ TextureImporter:
       name: fxsAnim_20
       rect:
         serializedVersion: 2
-        x: 263
-        y: 413
-        width: 4
-        height: 5
+        x: 150
+        y: 252
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,12 +406,12 @@ TextureImporter:
       name: fxsAnim_21
       rect:
         serializedVersion: 2
-        x: 324
-        y: 399
-        width: 39
-        height: 30
+        x: 225
+        y: 252
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -376,12 +427,12 @@ TextureImporter:
       name: fxsAnim_22
       rect:
         serializedVersion: 2
-        x: 403
-        y: 397
-        width: 37
-        height: 33
+        x: 300
+        y: 252
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,12 +448,12 @@ TextureImporter:
       name: fxsAnim_23
       rect:
         serializedVersion: 2
-        x: 75
-        y: 405
+        x: 375
+        y: 252
         width: 75
-        height: 7
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -418,12 +469,12 @@ TextureImporter:
       name: fxsAnim_24
       rect:
         serializedVersion: 2
-        x: 28
-        y: 333
-        width: 37
-        height: 38
+        x: 0
+        y: 187
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -439,12 +490,12 @@ TextureImporter:
       name: fxsAnim_25
       rect:
         serializedVersion: 2
-        x: 100
-        y: 333
-        width: 42
-        height: 35
+        x: 75
+        y: 187
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -460,12 +511,12 @@ TextureImporter:
       name: fxsAnim_26
       rect:
         serializedVersion: 2
-        x: 170
-        y: 342
-        width: 25
-        height: 23
+        x: 150
+        y: 187
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,12 +532,12 @@ TextureImporter:
       name: fxsAnim_27
       rect:
         serializedVersion: 2
-        x: 251
-        y: 341
-        width: 19
-        height: 23
+        x: 225
+        y: 187
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -502,12 +553,12 @@ TextureImporter:
       name: fxsAnim_28
       rect:
         serializedVersion: 2
-        x: 316
-        y: 330
-        width: 44
-        height: 33
+        x: 300
+        y: 187
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -523,12 +574,12 @@ TextureImporter:
       name: fxsAnim_29
       rect:
         serializedVersion: 2
-        x: 388
-        y: 335
-        width: 47
-        height: 46
+        x: 375
+        y: 187
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -544,12 +595,12 @@ TextureImporter:
       name: fxsAnim_30
       rect:
         serializedVersion: 2
-        x: 25
-        y: 257
-        width: 38
-        height: 48
+        x: 0
+        y: 122
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -565,12 +616,12 @@ TextureImporter:
       name: fxsAnim_31
       rect:
         serializedVersion: 2
-        x: 101
-        y: 253
-        width: 45
-        height: 39
+        x: 75
+        y: 122
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -586,12 +637,12 @@ TextureImporter:
       name: fxsAnim_32
       rect:
         serializedVersion: 2
-        x: 161
-        y: 253
-        width: 56
-        height: 52
+        x: 150
+        y: 122
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -607,12 +658,12 @@ TextureImporter:
       name: fxsAnim_33
       rect:
         serializedVersion: 2
-        x: 244
-        y: 282
-        width: 55
-        height: 28
+        x: 225
+        y: 122
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -628,12 +679,12 @@ TextureImporter:
       name: fxsAnim_36
       rect:
         serializedVersion: 2
-        x: 317
-        y: 258
-        width: 52
-        height: 45
+        x: 0
+        y: 57
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -649,12 +700,12 @@ TextureImporter:
       name: fxsAnim_1
       rect:
         serializedVersion: 2
-        x: 85
-        y: 136
-        width: 43
-        height: 42
+        x: 75
+        y: 447
+        width: 75
+        height: 65
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -662,6 +713,363 @@ TextureImporter:
       bones: []
       spriteID: e0f180bbacda99bf0800000000000000
       internalID: -317031212520038642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 447
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345f621939a0d40f0800000000000000
+      internalID: -1131236302488406717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 447
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbde934471678f8b0800000000000000
+      internalID: -5118211134205596227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 447
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93258d82461191630800000000000000
+      internalID: 3898166074345542201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_7
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 382
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d3f87fb84a770e0800000000000000
+      internalID: -2272166565924356819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 382
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf6dd248ae040d50800000000000000
+      internalID: 6702498261273243573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 317
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8960242a59ad4ff0800000000000000
+      internalID: -50197816212952692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_13
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 317
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972bc855c76ac5750800000000000000
+      internalID: 6295089432098550393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 317
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b503ec42efbcde9d0800000000000000
+      internalID: -2743312305599139749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 317
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a33563be63cccab0800000000000000
+      internalID: -4986395807182408792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 317
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f48e193ea6fe5e50800000000000000
+      internalID: 6800143715519071477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_17
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 317
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c35f910512675e0800000000000000
+      internalID: -1912304363855594364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_34
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 122
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98bb5e65a42c8310800000000000000
+      internalID: 1408541076399831197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_35
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 122
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f49f5cb086e24a60800000000000000
+      internalID: 7656935757073847545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_37
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 57
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6829e12bb5e6723a0800000000000000
+      internalID: -6690257381326155130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_38
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 57
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df4aaf3718553d40800000000000000
+      internalID: 5563449771561734098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_39
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 57
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4eb24a90178aa4b0800000000000000
+      internalID: -5428377895464419761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_40
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 57
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495bcf6d8894ff040800000000000000
+      internalID: 4683542989559870868
       vertices: []
       indices: 
       edges: []

@@ -26,6 +26,7 @@ MonoBehaviour:
   moveType: 0
   target: 0
   power: 25
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 45
@@ -36,7 +37,9 @@ MonoBehaviour:
   agi_inc: 1.2
   gut_inc: 0
   buffUser: 1
+  buffTarget: 0
   canLearn: 1
+  excludeUser: 0
   str_req: 10
   dex_req: 9
   vit_req: 0

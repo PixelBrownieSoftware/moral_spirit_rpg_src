@@ -74,7 +74,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,7 +86,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,9 +100,9 @@ TextureImporter:
       name: Gabriel_battle
       rect:
         serializedVersion: 2
-        x: 157
-        y: 61
-        width: 88
+        x: 136
+        y: 39
+        width: 119
         height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -121,9 +121,9 @@ TextureImporter:
       name: Micheal_battle
       rect:
         serializedVersion: 2
-        x: 49
-        y: 66
-        width: 99
+        x: 7
+        y: 59
+        width: 117
         height: 179
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

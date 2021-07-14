@@ -39,6 +39,7 @@ public class s_move : ScriptableObject
     public float agi_inc;
     public float gut_inc;
     public bool buffUser = false;
+    public bool buffTarget = true;
     public bool canLearn = true;
     public bool excludeUser = false;
 

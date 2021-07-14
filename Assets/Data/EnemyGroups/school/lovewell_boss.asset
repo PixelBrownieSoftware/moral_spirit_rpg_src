@@ -23,6 +23,7 @@ MonoBehaviour:
   minLevel: 0
   fixedLevel: 17000000170000001c0000001700000017000000
   isFixedLevel: 1
+  battleEvents: []
   allRelations: 1
   isFleeable: 0
-  relationships: []
+  songName: rise_up_to_the_truth

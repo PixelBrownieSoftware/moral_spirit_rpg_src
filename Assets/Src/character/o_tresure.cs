@@ -7,7 +7,7 @@ using MagnumFoundation2.System.Core;
 
 public class o_tresure : s_object
 {
-    public rpg_item item;
+    public s_move item;
     public int amount;
 
     public Sprite Open;
@@ -32,7 +32,7 @@ public class o_tresure : s_object
             {
                 if (Input.GetKeyDown(s_globals.GetKeyPref("select")))
                 {
-                    rpg_globals.gl.AddItem(item, amount);
+                    rpg_globals.gl.AddItem(item.name, amount);
                     switchA = true;
                     print(name);
                     s_globals.globalSingle.AddTriggerState(new triggerState(name, gameObject.scene.name, switchA));

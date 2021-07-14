@@ -151,10 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 4404406816565925614}
+  buttonTex: {fileID: 3059651328700500472}
   isPause: 1
   BMenu: {fileID: 0}
   moveButton: {fileID: 0}
-  itemButton: {fileID: 0}
   element: {fileID: 842064510291622715}
   typeOfButton: 0
   item: 0
@@ -387,9 +387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 0}
+  buttonTex: {fileID: 0}
   isPause: 1
   move: {fileID: 0}
-  item: {fileID: 0}
   img: {fileID: 0}
   skillButtonImg: {fileID: 0}
   cost: {fileID: 0}

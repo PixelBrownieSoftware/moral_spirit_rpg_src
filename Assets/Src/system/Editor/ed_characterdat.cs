@@ -123,6 +123,12 @@ public class ed_characterdat : Editor
                     cha.conditions = charAI.CONDITIONS.USER_PARTY_HP_LOWER;
                     cha.healthPercentage = 0.35f;
                 }
+                if (a.statusMoveType == STATUS_MOVE_TYPE.HEAL_STAMINA)
+                {
+                    cha.isImportant = true;
+                    cha.conditions = charAI.CONDITIONS.USER_PARTY_SP_LOWER;
+                    cha.healthPercentage = 0.35f;
+                }
             }
             aiList.Add(cha);
         }

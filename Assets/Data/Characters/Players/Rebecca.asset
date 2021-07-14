@@ -78,9 +78,10 @@ MonoBehaviour:
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
-  - {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
   - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
   - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
+  - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
+  - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

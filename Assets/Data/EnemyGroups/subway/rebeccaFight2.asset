@@ -20,8 +20,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a5f32c1c148e6a647a8a555a11c5a4a4, type: 2}
   maxLevel: 0
   minLevel: 0
-  fixedLevel: 090000000f0000000900000009000000
+  fixedLevel: 090000000c0000000900000009000000
   isFixedLevel: 1
   battleEvents: []
   allRelations: 1
   isFleeable: 0
+  songName: rise_up_to_the_truth

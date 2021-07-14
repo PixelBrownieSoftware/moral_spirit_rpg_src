@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: 3237912956273490859
     second: battleSprites2_3
+  - first:
+      213: -4885674937542824996
+    second: ego_woman
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -182,6 +185,27 @@ TextureImporter:
       bones: []
       spriteID: babf054bda06fec20800000000000000
       internalID: 3237912956273490859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ego_woman
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 10
+        width: 39
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb2bbb9788923cb0800000000000000
+      internalID: -4885674937542824996
       vertices: []
       indices: 
       edges: []
