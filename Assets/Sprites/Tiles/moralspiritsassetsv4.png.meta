@@ -26,6 +26,18 @@ TextureImporter:
   - first:
       213: 515818876579288485
     second: moralspiritsassetsv4_7
+  - first:
+      213: 385036827713411544
+    second: moralspiritsassetsv4_8
+  - first:
+      213: 6478067544945396
+    second: moralspiritsassetsv4_9
+  - first:
+      213: -7029456475650614983
+    second: moralspiritsassetsv4_10
+  - first:
+      213: -6854231978364218652
+    second: moralspiritsassetsv4_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,7 +132,7 @@ TextureImporter:
         serializedVersion: 2
         x: 178
         y: 96
-        width: 47
+        width: 46
         height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -139,10 +151,10 @@ TextureImporter:
       name: moralspiritsassetsv4_1
       rect:
         serializedVersion: 2
-        x: 238
-        y: 139
-        width: 27
-        height: 46
+        x: 239
+        y: 138
+        width: 25
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,7 +219,7 @@ TextureImporter:
         width: 61
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +240,7 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +261,7 @@ TextureImporter:
         width: 19
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +282,7 @@ TextureImporter:
         width: 20
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,6 +290,90 @@ TextureImporter:
       bones: []
       spriteID: 5a513fa098e882700800000000000000
       internalID: 515818876579288485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moralspiritsassetsv4_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 18
+        width: 63
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d91d4d64fce75500800000000000000
+      internalID: 385036827713411544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moralspiritsassetsv4_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 132
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2f8d2a4c3071000800000000000000
+      internalID: 6478067544945396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moralspiritsassetsv4_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 152
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93996cc349a527e90800000000000000
+      internalID: -7029456475650614983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moralspiritsassetsv4_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 140
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e25a79b450e0e0a0800000000000000
+      internalID: -6854231978364218652
       vertices: []
       indices: 
       edges: []

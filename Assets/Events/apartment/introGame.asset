@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: introGame
   m_EditorClassIdentifier: 
+  objectReferences: []
   elements:
   - logic: 0
     eventType: 3
@@ -42,6 +43,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 13
     funcName: 
@@ -71,8 +73,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -87,7 +90,7 @@ MonoBehaviour:
     boolean: 1
     boolean1: 0
     boolean2: 0
-    string0: Barrington, Frestone, England - 17th September 2018
+    string0: Barrington, Frestone, England - September 2018
     string1: 
     posX: 0
     posY: 0
@@ -100,6 +103,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 13
     funcName: 
@@ -129,6 +133,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -158,6 +163,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 18
     funcName: 
@@ -187,6 +193,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -217,6 +224,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -246,6 +254,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -263,7 +272,7 @@ MonoBehaviour:
     boolean1: 0
     boolean2: 0
     string0: In other news, there have been increasingly common rumours of people
-      expereincing strange dreams.
+      experiencing strange dreams.
     string1: Radio
     posX: 0
     posY: 0
@@ -276,6 +285,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -305,6 +315,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -334,6 +345,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -363,6 +375,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 18
     funcName: 
@@ -392,6 +405,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -421,6 +435,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -450,6 +465,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -479,6 +495,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -508,6 +525,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -537,6 +555,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 3
     funcName: 
@@ -566,6 +585,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 7
     funcName: 
@@ -595,3 +615,4 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}

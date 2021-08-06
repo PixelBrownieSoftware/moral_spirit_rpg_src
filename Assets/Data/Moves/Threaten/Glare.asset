@@ -28,9 +28,8 @@ MonoBehaviour:
   power: 4
   preAnim: []
   animation:
-  - duration: 0.1
-    image: {fileID: -6889746252388766713, guid: c0ae559712d84384786fe7afbf30a0fb,
-      type: 3}
+  - duration: 0.28
+    image: {fileID: 0}
     name: glare
     position: {x: 0, y: 0}
     camMode: 0
@@ -47,13 +46,14 @@ MonoBehaviour:
     anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
-  str_inc: 0.2
-  vit_inc: 0.2
+  str_inc: 0.35
+  vit_inc: 0
   dex_inc: 0
   luc_inc: 0
-  agi_inc: 0
+  agi_inc: 0.2
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
   excludeUser: 0
   str_req: 4

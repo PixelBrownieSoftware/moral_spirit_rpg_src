@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
   m_Name: DUMMY
   m_EditorClassIdentifier: 
+  shortName: 
   characterAI: []
+  turnIcons: 1
   characterAnims: []
   front: {fileID: 0}
   back: {fileID: 0}
   isPartyChar: 0
-  level: 16
+  level: 1
   exp: 0
   expToNextLevel: 0
   baseExpYeild: 0

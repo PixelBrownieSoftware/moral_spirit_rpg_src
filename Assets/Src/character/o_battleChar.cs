@@ -171,7 +171,6 @@ public class o_battleCharData
     public int intelligence;
     public int guts;
     public int speed;
-    public int luck;
     
     public bool inBattle = true;
 
@@ -241,10 +240,11 @@ public class o_battleChar : MonoBehaviour
     public o_battleChar targetCharacter;
 
     public rpg_item[] defeatDrops;
-    public rpg_item[] spareDrops;
+    public s_move[] spareDrops;
     public float moneySpare;
 
     public List<s_move> skillMoves;
+    public List<s_move> extra_skills;
     public int CurrentMoveNum;
 
     public MOVE_TYPE move_typ;
@@ -267,7 +267,7 @@ public class o_battleChar : MonoBehaviour
     float animSpeed;
     float animPT;
 
-    const float buffMultiplier = 3.5f;
+    const float buffMultiplier = 1.15f;
 
     public float getNetAttack {
         get
@@ -305,7 +305,7 @@ public class o_battleChar : MonoBehaviour
                     break;
             }
             float total = defence + (defenceBuff * buffMultiplier) + defenceModifier;
-            if (total < 0)
+            if (total <= 0)
                 return 0.3f;
             return total;
         }
@@ -314,18 +314,20 @@ public class o_battleChar : MonoBehaviour
     {
         get
         {
-            if (intelligenceBuff > intelligence)
-                return 1;
-            return intelligence + (intelligenceBuff * buffMultiplier);
+            float total =  intelligence + (intelligenceBuff * buffMultiplier);
+            if (total <= 0)
+                return 0.3f;
+            return total;
         }
     }
     public float getNetGuts
     {
         get
         {
-            if ((gutsBuff * 1.8f) > guts)
-                return 1;
-            return guts + (gutsBuff * buffMultiplier);
+            float total = guts + (gutsBuff * buffMultiplier);
+            if (total <= 0)
+                return 0.5f;
+            return total;
         }
     }
     public float getNetSpeed
@@ -335,6 +337,14 @@ public class o_battleChar : MonoBehaviour
             if (speedBuff > speed)
                 return 1;
             return speed + (speedBuff * buffMultiplier);
+        }
+    }
+    public List<s_move> allSkills {
+        get {
+            List<s_move> allSkill = new List<s_move>();
+            allSkill.AddRange(skillMoves);
+            allSkill.AddRange(extra_skills);
+            return allSkill;
         }
     }
     public bool ableToGetStatus {
@@ -405,6 +415,12 @@ public class o_battleChar : MonoBehaviour
                     break;
             }
         }
+
+        attackBuff = Mathf.Clamp(attackBuff, -3,3);
+        defenceBuff = Mathf.Clamp(defenceBuff, -3,3);
+        speedBuff = Mathf.Clamp(speedBuff, -3,3);
+        intelligenceBuff = Mathf.Clamp(intelligenceBuff, -3,3);
+        gutsBuff = Mathf.Clamp(gutsBuff, -3,3);
 
         if (animations != null)
         {
@@ -614,7 +630,7 @@ public class o_battleChar : MonoBehaviour
                     (move.user.getNetGuts / 3);
                 break;
         }
-        print(elementFormula);
+        //print(elementFormula);
 
         float total = 0;
         switch (move.move.moveType)

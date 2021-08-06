@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMultiHit: 0
   isFixed: 0
+  onSelf: 0
   onTeam: 1
   cost: 16
   affectedBySilence: 0
@@ -25,8 +26,42 @@ MonoBehaviour:
   moveType: 2
   target: 0
   power: 36
-  animation: []
+  preAnim: []
+  animation:
+  - duration: 0.3
+    image: {fileID: 0}
+    name: heal_light_fx
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.3
+    image: {fileID: 0}
+    name: heal_light_fx
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
   moveRequirements: []
+  accuracy: 85
+  str_inc: 0
+  vit_inc: 0
+  dex_inc: 0
+  luc_inc: 0
+  agi_inc: 0
+  gut_inc: 0
+  buffUser: 0
+  buffTarget: 1
+  canLearn: 1
+  excludeUser: 0
+  str_req: 0
+  dex_req: 0
+  vit_req: 0
+  agi_req: 0
+  gut_req: 0
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

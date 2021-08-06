@@ -23,6 +23,7 @@ public class s_targetButton : s_button
     public Sprite weakDmg;
     public Sprite resDmg;
 
+    public bool isItem = false;
     public bool isAll = false;
 
     protected override void OnHover()
@@ -123,6 +124,8 @@ public class s_targetButton : s_button
                 else
                     s_battlesyst.GetInstance().SelectTarget(battleCharButton, mov);
                 s_menuhandler.GetInstance().SwitchMenu("EMPTY");
+                if(isItem)
+                    rpg_globals.gl.UseItem(mov.name);
                 s_soundmanager.GetInstance().PlaySound("selectOption");
                 break;
         }

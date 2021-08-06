@@ -76,7 +76,7 @@ MonoBehaviour:
     isImportant: 0
   turnIcons: 1
   characterAnims: []
-  front: {fileID: 4464594796766934591, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
+  front: {fileID: 9046916614972136775, guid: 65ed1238b6563de4ab3951138e474e39, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
   level: 10

@@ -17,10 +17,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 549ccc0845d52cc4085852aa19308d82, type: 2}
   - {fileID: 11400000, guid: c709c3c6b517198458aff1e01e82b194, type: 2}
   - {fileID: 11400000, guid: a5f32c1c148e6a647a8a555a11c5a4a4, type: 2}
-  maxLevel: 5
-  minLevel: 5
+  maxLevel: 3
+  minLevel: 3
   fixedLevel: 
   isFixedLevel: 0
   battleEvents: []
   allRelations: 1
   isFleeable: 0
+  songName: spirit_match

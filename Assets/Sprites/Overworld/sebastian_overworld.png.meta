@@ -14,6 +14,39 @@ TextureImporter:
   - first:
       213: -2492164180346980534
     second: sebastian_overworld_3
+  - first:
+      213: -3424709834743711777
+    second: sebastian_overworld_4
+  - first:
+      213: -4559534473872986270
+    second: sebastian_overworld_5
+  - first:
+      213: 6293257508081977156
+    second: sebastian_overworld_6
+  - first:
+      213: 4367110754431208475
+    second: sebastian_overworld_7
+  - first:
+      213: -4599046097828150836
+    second: sebastian_overworld_8
+  - first:
+      213: 3817878441289837733
+    second: sebastian_overworld_9
+  - first:
+      213: 2112013569661097140
+    second: sebastian_overworld_10
+  - first:
+      213: 2622665866390556263
+    second: sebastian_overworld_11
+  - first:
+      213: 8929400334192698081
+    second: sebastian_overworld_12
+  - first:
+      213: 9152983351040099536
+    second: sebastian_overworld_13
+  - first:
+      213: 3558007178893839403
+    second: sebastian_overworld_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,6 +100,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -78,7 +113,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -90,7 +125,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,10 +151,10 @@ TextureImporter:
       name: sebastian_overworld_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 29
-        height: 63
+        x: 0
+        y: 186
+        width: 35
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,10 +172,10 @@ TextureImporter:
       name: sebastian_overworld_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 3
-        width: 27
-        height: 63
+        x: 35
+        y: 186
+        width: 35
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +193,10 @@ TextureImporter:
       name: sebastian_overworld_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 3
-        width: 26
-        height: 63
+        x: 70
+        y: 186
+        width: 35
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,10 +214,10 @@ TextureImporter:
       name: sebastian_overworld_3
       rect:
         serializedVersion: 2
-        x: 114
-        y: 3
-        width: 15
-        height: 63
+        x: 105
+        y: 186
+        width: 35
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,6 +227,237 @@ TextureImporter:
       bones: []
       spriteID: a47377cc1ed0a6dd0800000000000000
       internalID: -2492164180346980534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 186
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd77059dc8cf870d0800000000000000
+      internalID: -3424709834743711777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 186
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f27afad8749b0c0800000000000000
+      internalID: -4559534473872986270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 186
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44749494c54265750800000000000000
+      internalID: 6293257508081977156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c09acd7181b9c30800000000000000
+      internalID: 4367110754431208475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 116
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc18e49d0f7ec20c0800000000000000
+      internalID: -4599046097828150836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 116
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ace3b0e634dbf430800000000000000
+      internalID: 3817878441289837733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 116
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b45474d6216f4d10800000000000000
+      internalID: 2112013569661097140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 116
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e40c2c5b4956420800000000000000
+      internalID: 2622665866390556263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 116
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e26fc04b4a9beb70800000000000000
+      internalID: 8929400334192698081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 116
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d44fc9fcdde50f70800000000000000
+      internalID: 9152983351040099536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sebastian_overworld_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cc1469da4906130800000000000000
+      internalID: 3558007178893839403
       vertices: []
       indices: 
       edges: []

@@ -28,12 +28,12 @@ MonoBehaviour:
   power: 5
   preAnim: []
   animation:
-  - duration: 0
+  - duration: 0.2
     image: {fileID: 21300004, guid: 0af0f5f722738d74fa55b6eb87cc63a0, type: 3}
-    name: 
+    name: joke
     position: {x: 0, y: 0}
     camMode: 0
-    type: 0
+    type: 3
     pos: 0
     anim: {fileID: 0}
   - duration: 0
@@ -47,12 +47,13 @@ MonoBehaviour:
   moveRequirements: []
   accuracy: 85
   str_inc: 0
-  vit_inc: 0.1
+  vit_inc: 0
   dex_inc: 0
   luc_inc: 0
   agi_inc: 0
-  gut_inc: 0.2
+  gut_inc: 0.4
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
   excludeUser: 0
   str_req: 0

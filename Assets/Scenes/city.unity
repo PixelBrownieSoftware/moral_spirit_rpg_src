@@ -14183,6 +14183,7 @@ MonoBehaviour:
   eventScript: {fileID: 0}
   mapSize: {x: 0, y: 0}
   allChacacters: []
+  BGM: {fileID: 8300000, guid: eba4520d9966b3440a4877bc0cd331ef, type: 3}
   pointA: {fileID: 1887826598}
   pointB: {fileID: 525388190}
   pointC: {fileID: 803507588}
@@ -96429,7 +96430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853226909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4061, y: 442, z: 0}
+  m_LocalPosition: {x: 4021.3, y: 415, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1308493654}

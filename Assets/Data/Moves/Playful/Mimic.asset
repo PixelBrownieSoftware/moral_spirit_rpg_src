@@ -27,7 +27,23 @@ MonoBehaviour:
   target: 0
   power: 32
   preAnim: []
-  animation: []
+  animation:
+  - duration: 0.2
+    image: {fileID: 0}
+    name: joke
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0
+    image: {fileID: 0}
+    name: joke
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
   str_inc: 0.1
@@ -37,6 +53,7 @@ MonoBehaviour:
   agi_inc: 0.2
   gut_inc: 0.4
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
   excludeUser: 0
   str_req: 9

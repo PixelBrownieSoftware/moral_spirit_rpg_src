@@ -7,7 +7,7 @@ TextureImporter:
     second: battleSprites_0
   - first:
       213: 5899511935908729651
-    second: battleSprites_1
+    second: rebecca_battle
   - first:
       213: 4464594796766934591
     second: cheeky boy
@@ -19,7 +19,7 @@ TextureImporter:
     second: aggressive boy
   - first:
       213: 1827840151334956389
-    second: battleSprites_5
+    second: gang_boy
   - first:
       213: -5428665518763133480
     second: Cheeky girl
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleSprites_1
+      name: rebecca_battle
       rect:
         serializedVersion: 2
         x: 74
@@ -223,7 +223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleSprites_5
+      name: gang_boy
       rect:
         serializedVersion: 2
         x: 309

@@ -48,13 +48,15 @@ public class s_dmg : MonoBehaviour
 
     public void PlayAnim(string dmg, HIT_FX_TYPE pt)
     {
+        rendTXT.transform.localScale = new Vector3(1, 1, 1);
+        rendTXTBk.transform.localScale = new Vector3(1, 1, 1);
         anim.enabled = true;
         isDone = false;
         switch (pt)
         {
             default:
-                rendTXT.sortingOrder = 11;
-                rendTXTBk.sortingOrder = 10;
+                rendTXT.sortingOrder = 18;
+                rendTXTBk.sortingOrder = 17;
                 rendTXT.enabled = true;
                 rendTXTBk.enabled = true;
                 text.text = "" + dmg;

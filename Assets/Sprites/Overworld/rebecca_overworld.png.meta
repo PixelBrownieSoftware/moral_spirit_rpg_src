@@ -5,6 +5,48 @@ TextureImporter:
   - first:
       213: 6112244477377299887
     second: rebecca_overworld_0
+  - first:
+      213: -955035075648647689
+    second: rebecca_overworld_1
+  - first:
+      213: -8165092550502574233
+    second: rebecca_overworld_2
+  - first:
+      213: 5965144114733959955
+    second: rebecca_overworld_3
+  - first:
+      213: 8252967455984322076
+    second: rebecca_overworld_4
+  - first:
+      213: 5144811880224900437
+    second: rebecca_overworld_5
+  - first:
+      213: -8309388055896900914
+    second: rebecca_overworld_6
+  - first:
+      213: 7192804306438224872
+    second: rebecca_overworld_7
+  - first:
+      213: -307387360094446609
+    second: rebecca_overworld_8
+  - first:
+      213: 8212700916331359841
+    second: rebecca_overworld_9
+  - first:
+      213: 3087433592254656176
+    second: rebecca_overworld_10
+  - first:
+      213: 4596534629206939624
+    second: rebecca_overworld_11
+  - first:
+      213: 3870830265034606279
+    second: rebecca_overworld_12
+  - first:
+      213: 1915487305609504717
+    second: rebecca_overworld_13
+  - first:
+      213: 1517353752412673555
+    second: rebecca_overworld_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,6 +100,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -69,7 +113,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -81,7 +125,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,10 +139,10 @@ TextureImporter:
       name: rebecca_overworld_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 9
-        width: 23
-        height: 58
+        x: 0
+        y: 189
+        width: 33
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,6 +152,300 @@ TextureImporter:
       bones: []
       spriteID: fa5ca66d7fd03d450800000000000000
       internalID: 6112244477377299887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 189
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd8cef98a80fb2f0800000000000000
+      internalID: -955035075648647689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 189
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7671b19f593cfae80800000000000000
+      internalID: -8165092550502574233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 189
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bcab8b7f278c250800000000000000
+      internalID: 5965144114733959955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 189
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c160ec4dc2e688270800000000000000
+      internalID: 8252967455984322076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 189
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555c30d852b066740800000000000000
+      internalID: 5144811880224900437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 189
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca3463969f1fac80800000000000000
+      internalID: -8309388055896900914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb76285869f1d360800000000000000
+      internalID: 7192804306438224872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 122
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb102913d0fbbbf0800000000000000
+      internalID: -307387360094446609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 122
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ea47c78ff59f170800000000000000
+      internalID: 8212700916331359841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_10
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 122
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be62f58e74c8da20800000000000000
+      internalID: 3087433592254656176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 122
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e759ab44eb2acf30800000000000000
+      internalID: 4596534629206939624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_12
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 122
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c608351e93f7b530800000000000000
+      internalID: 3870830265034606279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 122
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7ef964e8d259a10800000000000000
+      internalID: 1915487305609504717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rebecca_overworld_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316d923d239be0510800000000000000
+      internalID: 1517353752412673555
       vertices: []
       indices: 
       edges: []

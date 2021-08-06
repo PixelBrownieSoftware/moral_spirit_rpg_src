@@ -18,7 +18,7 @@ public class rpg_mainmenu : s_mainmenu
 
     public void Start() {
 
-        _keyList = new string[7] { "left", "right", "up", "down", "back", "select", "menu" };
+        _keyList = new string[7] { "left", "right", "up", "down", "back", "select", "dash" };
 
     }
 

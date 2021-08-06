@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365276688923316914}
   - component: {fileID: 6936055300564943991}
+  - component: {fileID: 4418004306006138626}
   m_Layer: 12
   m_Name: spriteObj
   m_TagString: Untagged
@@ -83,6 +84,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4418004306006138626
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551441397593211651}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 77ffb2930cce01a4c9a472e400b73ad6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5116798286514783874
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +205,7 @@ MonoBehaviour:
   gravity: 0
   rbody2d: {fileID: 0}
   rendererObj: {fileID: 6936055300564943991}
+  animHand: {fileID: 4418004306006138626}
   useCondition: 0
   disspearOnConditionTrue: 0
   logicType: 0
@@ -201,7 +222,7 @@ MonoBehaviour:
   targets: []
   isInvicible: 0
   dashDivider: 2.5
-  detailedAnim: 0
+  detailedAnim: 1
   direction: {x: 0, y: 0}
   dashDirection: {x: 0, y: 0}
   collisionLayer:
@@ -220,6 +241,6 @@ MonoBehaviour:
   dashdelayStart: 0
   dashdelay: 0
   offsetCOL: {x: 0, y: 0, z: 0}
-  AI: 0
+  AI: 1
   control: 1
   faction: 

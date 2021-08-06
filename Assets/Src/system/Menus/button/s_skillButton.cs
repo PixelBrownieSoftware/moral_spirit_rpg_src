@@ -281,12 +281,16 @@ public class s_skillButton : s_button
                 case BTN_TYPE.SKILL:
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").move = move;
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").isItem = false;
+                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").targType = s_targetMenu.TARGET_TYPE.SKILL;
+                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").backButton.buttonType = "SkillsMenu";
                     break;
 
                 case BTN_TYPE.ITEM:
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").move = move;
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").isItem = true;
-                    
+                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").targType = s_targetMenu.TARGET_TYPE.RECOVERY;
+                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").backButton.buttonType = "ItemsMenu";
+                    s_menuhandler.GetInstance().SwitchMenu("TargetMenu");
                     break;
             }
             base.OnButtonClicked();

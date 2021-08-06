@@ -7,6 +7,7 @@ public class s_targetMenu : s_menucontroller
     public s_move move;
     public rpg_item item;
     public bool isItem = false;
+    public s_button backButton;
 
     public enum TARGET_TYPE {
         RECOVERY,
@@ -18,9 +19,9 @@ public class s_targetMenu : s_menucontroller
     public override void OnOpen()
     {
         base.OnOpen();
-        List<o_battleCharData> bcs = rpg_globals.gl.partyMembers;
         int ind = 0;
         ResetButton();
+        List<o_battleCharData> bcs = rpg_globals.gl.partyMembers;
         switch (targType)
         {
             case TARGET_TYPE.SKILL:
@@ -58,12 +59,14 @@ public class s_targetMenu : s_menucontroller
                     if (isItem)
                     {
                         GetButton<s_targCharButton>(ind).targType = s_targCharButton.BTN_TYPE.ITEM;
-                        GetButton<s_targCharButton>(ind).mov = item.action;
+                        GetButton<s_targCharButton>(ind).mov = move;
+                        GetButton<s_targCharButton>(ind).battleChar = bcD;
                         GetButton<s_targCharButton>(ind).itemName = item.name;
                     }
                     else
                     {
                         GetButton<s_targCharButton>(ind).targType = s_targCharButton.BTN_TYPE.SKILL_USE;
+                        GetButton<s_targCharButton>(ind).battleChar = bcD;
                         GetButton<s_targCharButton>(ind).mov = move;
                     }
 

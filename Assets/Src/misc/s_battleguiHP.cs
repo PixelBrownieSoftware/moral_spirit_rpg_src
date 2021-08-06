@@ -13,4 +13,5 @@ public class s_battleguiHP : MonoBehaviour
     public Image img;
     public GameObject guard;
     public Text guardPTS;
+    public Text guardPTSS;
 }

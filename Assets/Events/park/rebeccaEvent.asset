@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: rebeccaEvent
   m_EditorClassIdentifier: 
+  objectReferences:
+  - Player
+  - Sebastian
   elements:
   - logic: 0
     eventType: 3
@@ -42,6 +45,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 0
     funcName: START_BATTLE
@@ -71,6 +75,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -100,6 +105,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -129,6 +135,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -159,6 +166,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 0
     funcName: START_BATTLE
@@ -188,6 +196,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -217,6 +226,97 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: 
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: b069225d658b74740899e89dbc46d31f, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: 
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: b069225d658b74740899e89dbc46d31f, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 18
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: 
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0.2
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: b069225d658b74740899e89dbc46d31f, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -246,6 +346,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -276,6 +377,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -305,6 +407,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -323,7 +426,7 @@ MonoBehaviour:
     boolean2: 0
     string0: You see, we have spirits. And our master Gabriel the angel has told
       us to look inward and ascend to heaven. I sense in both of you that he has
-      callen your souls.
+      called your souls.
     string1: Rebecca
     posX: 0
     posY: 0
@@ -336,6 +439,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -365,6 +469,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -381,9 +486,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: You okay? I don't think angels exist in real life... or at least this
-      world. Don't they reside in heaven or something?
-    string1: Sebastian
+    string0: Evan told Rebecca his doubts about angels.
+    string1: 
     posX: 0
     posY: 0
     float0: 0
@@ -395,9 +499,10 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 1
-    funcName: 
+    eventType: 38
+    funcName: START_BATTLE
     simultaenous: 0
     simlutaneousDelay: 0
     camMode: 0
@@ -408,11 +513,11 @@ MonoBehaviour:
     int1: 0
     int2: 0
     tpPoint: 0
-    boolean: 0
+    boolean: 1
     boolean1: 0
     boolean2: 0
-    string0: 'Hahaha! '
-    string1: Sebastian
+    string0: 
+    string1: 
     posX: 0
     posY: 0
     float0: 0
@@ -420,10 +525,11 @@ MonoBehaviour:
     stringList: []
     dialogueChoices: []
     intList: 
-    scrObj: {fileID: 0}
+    scrObj: {fileID: 11400000, guid: b069225d658b74740899e89dbc46d31f, type: 2}
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -440,7 +546,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: It's no joke! Stop laughing! Stop!
+    string0: What do you mean? They do exist! It's just you adults in your boring
+      world.
     string1: Rebecca
     posX: 0
     posY: 0
@@ -453,6 +560,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 38
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: 
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: b069225d658b74740899e89dbc46d31f, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 8300000, guid: 1c912ce3e8ee1ca42bcd1889d61a333e, type: 3}
   - logic: 0
     eventType: 1
     funcName: 
@@ -469,7 +607,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: 'STOP! '
+    string0: I'm going to prove it to you ignorant people!
     string1: Rebecca
     posX: 0
     posY: 0
@@ -482,6 +620,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -498,7 +637,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Woah, there! Take it easy!
+    string0: Woah, there! Take it easy! We're just-
     string1: Sebastian
     posX: 0
     posY: 0
@@ -511,6 +650,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -540,6 +680,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -569,6 +710,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: START_BATTLE
@@ -598,6 +740,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 4
     funcName: START_BATTLE
@@ -627,6 +770,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -657,6 +801,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 4
     funcName: START_BATTLE
@@ -686,6 +831,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -716,6 +862,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -732,7 +879,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: How nice, but you two won't beat me! I've got more expereince than you!
+    string0: How nice, but you two won't beat me! I've got more experience than you!
     string1: Rebecca
     posX: 0
     posY: 0
@@ -745,6 +892,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 6
     funcName: ADD_PARTY_MEMBER
@@ -774,6 +922,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 6
     funcName: START_BATTLE
@@ -803,3 +952,4 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}

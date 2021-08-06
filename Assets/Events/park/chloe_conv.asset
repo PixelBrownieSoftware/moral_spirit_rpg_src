@@ -43,3 +43,471 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: She must have had a hard time trying to rival against Bill.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: But that dosen't matter, she's with us, and we can keep her safe.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Evan asked Chloe about her abscence.
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah, I know - I missed you, you missed me and things.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I had this strange dream about some voice, it sounded like a preacher.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Although I can't remember it too well, they said something about the
+      heavens.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: You told me you had something similar, didn't you?
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Evan responded.
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: After I woke up, my head started to ache.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: But I went to work, but I couldn't focus on my tasks. I asked my employer
+      to take sick leave.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I spent 2 weeks in isolation. It was horrible... *sniff*
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Evan reassured Chloe and hugged her.
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I didn't know what to do! People were going to think that I was crazy.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: But now everyone seems to have it, and I don't think I'm crazy for beleiving
+      in this weird spirit stuff.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: It's funny that Micheal and Gabriel are waiting for us in some secondary
+      school or college.
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Why would they want us to be there of all places?
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}

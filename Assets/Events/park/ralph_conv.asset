@@ -29,8 +29,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: I don't know why Micheal and Gabriel would want us to go to some dance
-      club.
+    string0: ' Micheal and Gabriel would want us to go to your university.'
     string1: Ralph
     posX: 0
     posY: 0
@@ -59,8 +58,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Although, I do have some memory of being there with some freinds and
-      seeing a singer.
+    string0: Although, I do remember being in a hospital of sorts there.
     string1: Ralph
     posX: 0
     posY: 0

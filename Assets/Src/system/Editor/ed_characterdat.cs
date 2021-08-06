@@ -62,6 +62,9 @@ public class ed_characterdat : Editor
     ACTION_TYPE actionSliderSelector = ACTION_TYPE.NONE;
     string directoryMove;
     string element;
+    int levelChar = 1;
+    const float maxStatGrowthRate = 0.95f;
+    const float minStatGrowthRate = 0.1f;
 
     public int ChangeStat(ref int stat1)
     {
@@ -134,6 +137,15 @@ public class ed_characterdat : Editor
         }
         data.characterAI = aiList.ToArray();
     }
+
+    public bool EligibleForIncrease(int lev,float growthStat) {
+        float statInc = lev * growthStat;
+        float prevStatInc = (lev - 1) * growthStat;
+        if (Mathf.Floor(statInc) > Mathf.Floor(prevStatInc))
+            return true;
+        return false;
+    }
+
     public override void OnInspectorGUI()
     {
         data = (BattleCharacterData)target;
@@ -164,7 +176,7 @@ public class ed_characterdat : Editor
                     EditorGUILayout.LabelField("Simulated stats based on level");
                     EditorGUILayout.Space();
                     EditorGUILayout.LabelField("Name: " + data.name);
-                    data.level = (int)EditorGUILayout.Slider(data.level, 1, 100);
+                    levelChar = (int)EditorGUILayout.Slider(levelChar, 1, 60);
                     {
                         int tempHPMin = data.maxHitPointsB;
                         int tempSPMin = data.maxSkillPointsB;
@@ -175,19 +187,18 @@ public class ed_characterdat : Editor
                         int tempDx = data.intelligenceB;
                         int tempAg = data.speedB;
                         int tempGut = data.gutsB;
-                        int tempLuc = data.luckB;
 
-                        for (int i = 1; i < data.level; i++)
+                        for (int i = 1; i < levelChar; i++)
                         {
-                            if (i % data.attackG == 0)
+                            if (EligibleForIncrease(i ,data.attackG))
                                 tempStr++;
-                            if (i % data.defenceG == 0)
+                            if (EligibleForIncrease(i, data.defenceG))
                                 tempVit++;
-                            if (i % data.intelligenceG == 0)
+                            if (EligibleForIncrease(i, data.intelligenceG))
                                 tempDx++;
-                            if (i % data.speedG == 0)
+                            if (EligibleForIncrease(i, data.speedG))
                                 tempAg++;
-                            if (i % data.gutsG == 0)
+                            if (EligibleForIncrease(i, data.gutsG))
                                 tempGut++;
                             //if (i % data.luckG == 0)
                             //   tempLuc++;
@@ -202,12 +213,60 @@ public class ed_characterdat : Editor
                         }
                         EditorGUILayout.LabelField("Health (HP): " + tempHPMin + " - " + tempHPMax);
                         EditorGUILayout.LabelField("Stamina (SP): " + tempSPMin + " - " + tempSPMax);
-                        EditorGUILayout.LabelField("Strength: " + tempStr);
-                        EditorGUILayout.LabelField("Vitality: " + tempVit);
-                        EditorGUILayout.LabelField("Dexterity: " + tempDx);
-                        EditorGUILayout.LabelField("Agilty: " + tempAg);
-                        EditorGUILayout.LabelField("Guts: " + tempGut);
-                        EditorGUILayout.LabelField("Luck: " + tempLuc);
+                        {
+                            char bar = '❚';
+                            #region STRENGTH
+                            {
+                                string br = "";
+                                for (int i = 0; i < tempStr; i++)
+                                {
+                                    br += bar;
+                                }
+                                EditorGUILayout.LabelField("Str: " + tempStr + " " + br);
+                            }
+                            #endregion
+                            #region VITALITY
+                            {
+                                string br = "";
+                                for (int i = 0; i < tempVit; i++)
+                                {
+                                    br += bar;
+                                }
+                                EditorGUILayout.LabelField("Vit: " + tempVit + " " + br);
+                            }
+                            #endregion
+                            #region AGILITY
+                            {
+                                string br = "";
+                                for (int i = 0; i < tempAg; i++)
+                                {
+                                    br += bar;
+                                }
+                                EditorGUILayout.LabelField("Agi: " + tempAg + " " + br);
+                            }
+                            #endregion
+                            #region DEXTERITY
+                            {
+                                string br = "";
+                                for (int i = 0; i < tempDx; i++)
+                                {
+                                    br += bar;
+                                }
+                                EditorGUILayout.LabelField("Dex: " + tempDx + " " + br);
+                            }
+                            #endregion
+                            #region GUTS
+                            {
+                                string br = "";
+                                for (int i = 0; i < tempGut; i++)
+                                {
+                                    br += bar;
+                                }
+                                EditorGUILayout.LabelField("Gut: " + tempGut + " " + br);
+                            }
+                            #endregion
+                        }
+                        //EditorGUILayout.LabelField("Luck: " + tempLuc);
                     }
                     break;
                 #endregion
@@ -215,206 +274,7 @@ public class ed_characterdat : Editor
                 #region STATS
                 case 1:
                     #region STAT DISTRIBUTION STUFF
-                    stat_dist = (STAT_DIST_TYPE)EditorGUILayout.EnumPopup("Stat distribution", stat_dist);
-                    if (GUILayout.Button("Generate Stat distribution"))
-                    {
-                        switch (stat_dist)
-                        {
-
-                            case STAT_DIST_TYPE.EQU:
-                                data.maxHitPointsB = Random.Range(15, 25);
-                                data.maxHitPointsGMax = Random.Range(4, 6);
-                                data.maxHitPointsGMin = Random.Range(1, 4);
-
-                                data.maxSkillPointsB = Random.Range(7, 15);
-                                data.maxSkillPointsGMax = Random.Range(3, 5);
-                                data.maxSkillPointsGMin = Random.Range(2, 3);
-
-                                data.attackB = Random.Range(1, 4);
-                                data.defenceB = Random.Range(1, 4);
-                                data.intelligenceB = Random.Range(1, 4);
-                                data.gutsB = Random.Range(1, 4);
-                                data.speedB = Random.Range(1, 4);
-                                data.luckB = Random.Range(1, 4);
-
-                                data.attackG = Random.Range(2, 4);
-                                data.defenceG = Random.Range(2, 4);
-                                data.intelligenceG = Random.Range(2, 4);
-                                data.gutsG = Random.Range(2, 4);
-                                data.speedG = Random.Range(2, 4);
-                                data.luckG = Random.Range(2, 4);
-                                break;
-
-                            case STAT_DIST_TYPE.STR:
-                                data.maxHitPointsB = Random.Range(18, 26);
-                                data.maxHitPointsGMax = Random.Range(4, 6);
-                                data.maxHitPointsGMin = Random.Range(1, 4);
-
-                                data.maxSkillPointsB = Random.Range(7, 15);
-                                data.maxSkillPointsGMax = Random.Range(3, 5);
-                                data.maxSkillPointsGMin = Random.Range(2, 3);
-
-                                data.attackB = Random.Range(4, 6);
-                                data.defenceB = Random.Range(1, 3);
-                                data.intelligenceB = Random.Range(1, 3);
-                                data.gutsB = Random.Range(1, 3);
-                                data.speedB = Random.Range(1, 3);
-                                data.luckB = Random.Range(1, 3);
-
-                                data.attackG = Random.Range(2, 3);
-                                data.defenceG = Random.Range(2, 4);
-                                data.intelligenceG = Random.Range(2, 4);
-                                data.gutsG = Random.Range(2, 4);
-                                data.speedG = Random.Range(2, 4);
-                                data.luckG = Random.Range(2, 4);
-                                break;
-
-                            case STAT_DIST_TYPE.MAG:
-                                data.maxHitPointsB = Random.Range(18, 26);
-                                data.maxHitPointsGMax = Random.Range(3, 6);
-                                data.maxHitPointsGMin = Random.Range(1, 3);
-
-                                data.maxSkillPointsB = Random.Range(16, 35);
-                                data.maxSkillPointsGMax = Random.Range(4, 7);
-                                data.maxSkillPointsGMin = Random.Range(1, 4);
-
-                                data.attackB = Random.Range(1, 3);
-                                data.defenceB = Random.Range(1, 3);
-                                data.intelligenceB = Random.Range(4, 6);
-                                data.gutsB = Random.Range(1, 3);
-                                data.speedB = Random.Range(1, 3);
-                                data.luckB = Random.Range(1, 3);
-
-                                data.attackG = Random.Range(2, 4);
-                                data.defenceG = Random.Range(2, 4);
-                                data.intelligenceG = Random.Range(2, 3);
-                                data.gutsG = Random.Range(2, 4);
-                                data.speedG = Random.Range(2, 4);
-                                data.luckG = Random.Range(2, 4);
-                                break;
-
-                            case STAT_DIST_TYPE.DEF:
-                                data.maxHitPointsB = Random.Range(18, 26);
-                                data.maxHitPointsGMax = Random.Range(4, 6);
-                                data.maxHitPointsGMin = Random.Range(1, 4);
-
-                                data.maxSkillPointsB = Random.Range(7, 15);
-                                data.maxSkillPointsGMax = Random.Range(3, 5);
-                                data.maxSkillPointsGMin = Random.Range(2, 3);
-
-                                data.attackB = Random.Range(1, 3);
-                                data.defenceB = Random.Range(4, 6);
-                                data.intelligenceB = Random.Range(1, 3);
-                                data.gutsB = Random.Range(2, 3);
-                                data.speedB = Random.Range(1, 3);
-                                data.luckB = Random.Range(1, 3);
-
-                                data.attackG = Random.Range(1, 4);
-                                data.defenceG = Random.Range(1, 3);
-                                data.intelligenceG = Random.Range(1, 4);
-                                data.gutsG = Random.Range(1, 4);
-                                data.speedG = Random.Range(1, 4);
-                                data.luckG = Random.Range(1, 4);
-                                break;
-
-                            case STAT_DIST_TYPE.MAG_DEF:
-                                data.maxHitPointsB = Random.Range(14, 26);
-                                data.maxHitPointsGMax = Random.Range(3, 5);
-                                data.maxHitPointsGMin = Random.Range(1, 3);
-
-                                data.maxSkillPointsB = Random.Range(21, 37);
-                                data.maxSkillPointsGMax = Random.Range(4, 7);
-                                data.maxSkillPointsGMin = Random.Range(3, 4);
-
-                                data.attackB = Random.Range(1, 3);
-                                data.defenceB = Random.Range(3, 5);
-                                data.intelligenceB = Random.Range(3, 5);
-                                data.gutsB = Random.Range(1, 3);
-                                data.speedB = Random.Range(1, 3);
-                                data.luckB = Random.Range(1, 3);
-
-                                data.attackG = Random.Range(1, 4);
-                                data.defenceG = Random.Range(1, 3);
-                                data.intelligenceG = Random.Range(1, 3);
-                                data.gutsG = Random.Range(1, 4);
-                                data.speedG = Random.Range(1, 4);
-                                data.luckG = Random.Range(1, 4);
-                                break;
-
-                            case STAT_DIST_TYPE.STR_DEF:
-                                data.maxHitPointsB = Random.Range(14, 26);
-                                data.maxHitPointsGMax = Random.Range(3, 5);
-                                data.maxHitPointsGMin = Random.Range(1, 3);
-
-                                data.maxSkillPointsB = Random.Range(21, 37);
-                                data.maxSkillPointsGMax = Random.Range(4, 7);
-                                data.maxSkillPointsGMin = Random.Range(3, 4);
-
-                                data.attackB = Random.Range(3, 5);
-                                data.defenceB = Random.Range(3, 5);
-                                data.intelligenceB = Random.Range(1, 3);
-                                data.gutsB = Random.Range(1, 3);
-                                data.speedB = Random.Range(1, 3);
-                                data.luckB = Random.Range(1, 3);
-
-                                data.attackG = Random.Range(1, 3);
-                                data.defenceG = Random.Range(1, 3);
-                                data.intelligenceG = Random.Range(1, 4);
-                                data.gutsG = Random.Range(1, 4);
-                                data.speedG = Random.Range(1, 4);
-                                data.luckG = Random.Range(1, 4);
-                                break;
-
-                            case STAT_DIST_TYPE.GUT_DEF:
-                                data.maxHitPointsB = Random.Range(19, 26);
-                                data.maxHitPointsGMax = Random.Range(4, 6);
-                                data.maxHitPointsGMin = Random.Range(1, 4);
-
-                                data.maxSkillPointsB = Random.Range(12, 18);
-                                data.maxSkillPointsGMax = Random.Range(3, 5);
-                                data.maxSkillPointsGMin = Random.Range(2, 3);
-
-                                data.attackB = Random.Range(1, 3);
-                                data.defenceB = Random.Range(3, 5);
-                                data.intelligenceB = Random.Range(1, 3);
-                                data.gutsB = Random.Range(3, 5);
-                                data.speedB = Random.Range(1, 3);
-                                data.luckB = Random.Range(1, 3);
-
-                                data.attackG = Random.Range(1, 4);
-                                data.defenceG = Random.Range(1, 3);
-                                data.intelligenceG = Random.Range(1, 4);
-                                data.gutsG = Random.Range(1, 3);
-                                data.speedG = Random.Range(1, 4);
-                                data.luckG = Random.Range(1, 4);
-                                break;
-
-                            case STAT_DIST_TYPE.DEF_SPD:
-                                data.maxHitPointsB = Random.Range(19, 26);
-                                data.maxHitPointsGMax = Random.Range(4, 6);
-                                data.maxHitPointsGMin = Random.Range(1, 4);
-
-                                data.maxSkillPointsB = Random.Range(12, 18);
-                                data.maxSkillPointsGMax = Random.Range(3, 5);
-                                data.maxSkillPointsGMin = Random.Range(2, 3);
-
-                                data.attackB = Random.Range(1, 3);
-                                data.defenceB = Random.Range(3, 5);
-                                data.intelligenceB = Random.Range(1, 3);
-                                data.gutsB = Random.Range(1, 3);
-                                data.speedB = Random.Range(3, 5);
-                                data.luckB = Random.Range(1, 3);
-
-                                data.attackG = Random.Range(1, 4);
-                                data.defenceG = Random.Range(1, 3);
-                                data.intelligenceG = Random.Range(1, 4);
-                                data.gutsG = Random.Range(1, 4);
-                                data.speedG = Random.Range(1, 3);
-                                data.luckG = Random.Range(1, 4);
-                                break;
-                        }
-                    }
-
+                    
                     #region STAT VARIABLES
                     Vector2Int BSvlowBoundPTS = new Vector2Int(4, 9);
                     Vector2Int BSlowBoundPTS = new Vector2Int(6, 12);
@@ -440,11 +300,11 @@ public class ed_characterdat : Editor
                     Vector2Int highBoundB = new Vector2Int(3, 5);
                     Vector2Int vhighBoundB = new Vector2Int(4, 6);
 
-                    Vector2Int vlowBoundG = new Vector2Int(4, 5);
-                    Vector2Int lowBoundG = new Vector2Int(3, 5);
-                    Vector2Int avgBoundG = new Vector2Int(2, 4);
-                    Vector2Int highBoundG = new Vector2Int(2, 3);
-                    Vector2Int vhighBoundG = new Vector2Int(1, 2);
+                    Vector2 vlowBoundG = new Vector2(0.1f, 0.25f);
+                    Vector2 lowBoundG = new Vector2(0.15f, 0.35f);
+                    Vector2 avgBoundG = new Vector2(0.3f, 0.55f);
+                    Vector2 highBoundG = new Vector2(0.45f, 0.75f);
+                    Vector2 vhighBoundG = new Vector2(0.65f, 0.95f);
                     #endregion
 
                     EditorGUILayout.LabelField("Base stats");
@@ -464,9 +324,8 @@ public class ed_characterdat : Editor
                     vitDistG = (STAT_DIST_AMOUNT)EditorGUILayout.EnumPopup("Vitality growth distribution", vitDistG);
                     agilDistG = (STAT_DIST_AMOUNT)EditorGUILayout.EnumPopup("Agility growth distribution", agilDistG);
                     gutDistG = (STAT_DIST_AMOUNT)EditorGUILayout.EnumPopup("Gut growth distribution", gutDistG);
-
-
-                    if (GUILayout.Button("Generate Stat distribution2"))
+                    
+                    if (GUILayout.Button("Generate Stat distribution"))
                     {
                         #region HP
                         switch (hpDist)
@@ -637,31 +496,48 @@ public class ed_characterdat : Editor
                         #region STRENGTH
                         {
                             int statB = 0;
-                            int statG = 0;
+                            float statG = 0;
                             switch (strDist)
                             {
                                 case STAT_DIST_AMOUNT.VERY_LOW:
                                     statB = Random.Range(vlowBoundB.x, vlowBoundB.y);
-                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.LOW:
                                     statB = Random.Range(lowBoundB.x, lowBoundB.y);
-                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.AVERAGE:
                                     statB = Random.Range(avgBoundB.x, avgBoundB.y);
-                                    statG = Random.Range(avgBoundB.x, avgBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.HIGH:
                                     statB = Random.Range(highBoundB.x, highBoundB.y);
-                                    statG = Random.Range(highBoundG.x, highBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statB = Random.Range(vhighBoundB.x, vhighBoundB.y);
+                                    break;
+                            }
+                            switch (strDistG)
+                            {
+                                case STAT_DIST_AMOUNT.VERY_LOW:
+                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.LOW:
+                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.AVERAGE:
+                                    statG = Random.Range(avgBoundG.x, avgBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.HIGH:
+                                    statG = Random.Range(highBoundG.x, highBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statG = Random.Range(vhighBoundG.x, vhighBoundG.y);
                                     break;
                             }
@@ -673,31 +549,48 @@ public class ed_characterdat : Editor
                         #region VITALITY
                         {
                             int statB = 0;
-                            int statG = 0;
-                            switch (strDist)
+                            float statG = 0;
+                            switch (vitDist)
                             {
                                 case STAT_DIST_AMOUNT.VERY_LOW:
                                     statB = Random.Range(vlowBoundB.x, vlowBoundB.y);
-                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.LOW:
                                     statB = Random.Range(lowBoundB.x, lowBoundB.y);
-                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.AVERAGE:
                                     statB = Random.Range(avgBoundB.x, avgBoundB.y);
-                                    statG = Random.Range(avgBoundB.x, avgBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.HIGH:
                                     statB = Random.Range(highBoundB.x, highBoundB.y);
-                                    statG = Random.Range(highBoundG.x, highBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statB = Random.Range(vhighBoundB.x, vhighBoundB.y);
+                                    break;
+                            }
+                            switch (vitDistG)
+                            {
+                                case STAT_DIST_AMOUNT.VERY_LOW:
+                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.LOW:
+                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.AVERAGE:
+                                    statG = Random.Range(avgBoundG.x, avgBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.HIGH:
+                                    statG = Random.Range(highBoundG.x, highBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statG = Random.Range(vhighBoundG.x, vhighBoundG.y);
                                     break;
                             }
@@ -709,31 +602,47 @@ public class ed_characterdat : Editor
                         #region DEXTERITY
                         {
                             int statB = 0;
-                            int statG = 0;
-                            switch (strDist)
-                            {
+                            float statG = 0;
+                            switch (dexDist) {
                                 case STAT_DIST_AMOUNT.VERY_LOW:
                                     statB = Random.Range(vlowBoundB.x, vlowBoundB.y);
-                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.LOW:
                                     statB = Random.Range(lowBoundB.x, lowBoundB.y);
-                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.AVERAGE:
                                     statB = Random.Range(avgBoundB.x, avgBoundB.y);
-                                    statG = Random.Range(avgBoundB.x, avgBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.HIGH:
                                     statB = Random.Range(highBoundB.x, highBoundB.y);
-                                    statG = Random.Range(highBoundG.x, highBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statB = Random.Range(vhighBoundB.x, vhighBoundB.y);
+                                    break;
+                            }
+                            switch (dexDistG)
+                            {
+                                case STAT_DIST_AMOUNT.VERY_LOW:
+                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.LOW:
+                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.AVERAGE:
+                                    statG = Random.Range(avgBoundG.x, avgBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.HIGH:
+                                    statG = Random.Range(highBoundG.x, highBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statG = Random.Range(vhighBoundG.x, vhighBoundG.y);
                                     break;
                             }
@@ -745,31 +654,47 @@ public class ed_characterdat : Editor
                         #region AGILITY
                         {
                             int statB = 0;
-                            int statG = 0;
-                            switch (strDist)
-                            {
+                            float statG = 0;
+                            switch (agilDist) {
                                 case STAT_DIST_AMOUNT.VERY_LOW:
                                     statB = Random.Range(vlowBoundB.x, vlowBoundB.y);
-                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.LOW:
                                     statB = Random.Range(lowBoundB.x, lowBoundB.y);
-                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.AVERAGE:
                                     statB = Random.Range(avgBoundB.x, avgBoundB.y);
-                                    statG = Random.Range(avgBoundB.x, avgBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.HIGH:
                                     statB = Random.Range(highBoundB.x, highBoundB.y);
-                                    statG = Random.Range(highBoundG.x, highBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statB = Random.Range(vhighBoundB.x, vhighBoundB.y);
+                                    break;
+                            }
+                            switch (agilDistG)
+                            {
+                                case STAT_DIST_AMOUNT.VERY_LOW:
+                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.LOW:
+                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.AVERAGE:
+                                    statG = Random.Range(avgBoundG.x, avgBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.HIGH:
+                                    statG = Random.Range(highBoundG.x, highBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statG = Random.Range(vhighBoundG.x, vhighBoundG.y);
                                     break;
                             }
@@ -781,31 +706,48 @@ public class ed_characterdat : Editor
                         #region GUTS
                         {
                             int statB = 0;
-                            int statG = 0;
-                            switch (strDist)
+                            float statG = 0;
+                            switch (gutDist)
                             {
                                 case STAT_DIST_AMOUNT.VERY_LOW:
                                     statB = Random.Range(vlowBoundB.x, vlowBoundB.y);
-                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.LOW:
                                     statB = Random.Range(lowBoundB.x, lowBoundB.y);
-                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.AVERAGE:
                                     statB = Random.Range(avgBoundB.x, avgBoundB.y);
-                                    statG = Random.Range(avgBoundB.x, avgBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.HIGH:
                                     statB = Random.Range(highBoundB.x, highBoundB.y);
-                                    statG = Random.Range(highBoundG.x, highBoundG.y);
                                     break;
 
                                 case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statB = Random.Range(vhighBoundB.x, vhighBoundB.y);
+                                    break;
+                            }
+                            switch (gutDistG)
+                            {
+                                case STAT_DIST_AMOUNT.VERY_LOW:
+                                    statG = Random.Range(vlowBoundG.x, vlowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.LOW:
+                                    statG = Random.Range(lowBoundG.x, lowBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.AVERAGE:
+                                    statG = Random.Range(avgBoundG.x, avgBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.HIGH:
+                                    statG = Random.Range(highBoundG.x, highBoundG.y);
+                                    break;
+
+                                case STAT_DIST_AMOUNT.VERY_HIGH:
                                     statG = Random.Range(vhighBoundG.x, vhighBoundG.y);
                                     break;
                             }
@@ -844,38 +786,33 @@ public class ed_characterdat : Editor
                     EditorGUILayout.LabelField("Strength: ");
                     data.attackB = EditorGUILayout.IntField(data.attackB);
                     EditorGUILayout.LabelField("Growth turns: ");
-                    data.attackG = EditorGUILayout.IntField(data.attackG);
+                    data.attackG = EditorGUILayout.Slider(data.attackG, minStatGrowthRate, maxStatGrowthRate);
                     EditorGUILayout.Space();
 
                     EditorGUILayout.LabelField("Vitality: ");
                     data.defenceB = EditorGUILayout.IntField(data.defenceB);
                     EditorGUILayout.LabelField("Growth turns: ");
-                    data.defenceG = EditorGUILayout.IntField(data.defenceG);
+                    data.defenceG = EditorGUILayout.Slider(data.defenceG, minStatGrowthRate, maxStatGrowthRate);
                     EditorGUILayout.Space();
 
                     EditorGUILayout.LabelField("Dexterity: ");
                     data.intelligenceB = EditorGUILayout.IntField(data.intelligenceB);
                     EditorGUILayout.LabelField("Growth turns: ");
-                    data.intelligenceG = EditorGUILayout.IntField(data.intelligenceG);
+                    data.intelligenceG = EditorGUILayout.Slider(data.intelligenceG, minStatGrowthRate, maxStatGrowthRate);
                     EditorGUILayout.Space();
 
                     EditorGUILayout.LabelField("Agility: ");
                     data.speedB = EditorGUILayout.IntField(data.speedB);
                     EditorGUILayout.LabelField("Growth turns: ");
-                    data.speedG = EditorGUILayout.IntField(data.speedG);
+                    data.speedG = EditorGUILayout.Slider(data.speedG, minStatGrowthRate, maxStatGrowthRate);
                     EditorGUILayout.Space();
 
                     EditorGUILayout.LabelField("Guts: ");
                     data.gutsB = EditorGUILayout.IntField(data.gutsB);
                     EditorGUILayout.LabelField("Growth turns: ");
-                    data.gutsG = EditorGUILayout.IntField(data.gutsG);
+                    data.gutsG = EditorGUILayout.Slider(data.gutsG, minStatGrowthRate, maxStatGrowthRate);
                     EditorGUILayout.Space();
-
-                    EditorGUILayout.LabelField("Luck: ");
-                    data.luckB = EditorGUILayout.IntField(data.luckB);
-                    EditorGUILayout.LabelField("Growth turns: ");
-                    data.luckG = EditorGUILayout.IntField(data.luckG);
-                    EditorGUILayout.Space();
+                    
                     EditorGUILayout.Space();
                     EditorGUILayout.LabelField("Base experience: ");
                     data.baseExpYeild = EditorGUILayout.FloatField(data.baseExpYeild);

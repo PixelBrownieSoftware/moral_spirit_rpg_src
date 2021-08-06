@@ -125,6 +125,15 @@ TextureImporter:
   - first:
       213: 4683542989559870868
     second: fxsAnim_40
+  - first:
+      213: -5342568263885798801
+    second: fxsAnim_41
+  - first:
+      213: 2543285918124402667
+    second: fxsAnim_42
+  - first:
+      213: -9219004332005764478
+    second: fxsAnim_43
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -191,7 +200,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -203,7 +212,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -259,8 +268,8 @@ TextureImporter:
       name: fxsAnim_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 382
+        x: 450
+        y: 447
         width: 75
         height: 65
       alignment: 0
@@ -280,8 +289,8 @@ TextureImporter:
       name: fxsAnim_8
       rect:
         serializedVersion: 2
-        x: 150
-        y: 382
+        x: 600
+        y: 447
         width: 75
         height: 65
       alignment: 0
@@ -301,8 +310,8 @@ TextureImporter:
       name: fxsAnim_9
       rect:
         serializedVersion: 2
-        x: 225
-        y: 382
+        x: 675
+        y: 447
         width: 75
         height: 65
       alignment: 0
@@ -322,8 +331,8 @@ TextureImporter:
       name: fxsAnim_10
       rect:
         serializedVersion: 2
-        x: 300
-        y: 382
+        x: 750
+        y: 447
         width: 75
         height: 65
       alignment: 0
@@ -343,8 +352,8 @@ TextureImporter:
       name: fxsAnim_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 252
+        x: 375
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -364,8 +373,8 @@ TextureImporter:
       name: fxsAnim_19
       rect:
         serializedVersion: 2
-        x: 75
-        y: 252
+        x: 450
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -385,8 +394,8 @@ TextureImporter:
       name: fxsAnim_20
       rect:
         serializedVersion: 2
-        x: 150
-        y: 252
+        x: 525
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -406,8 +415,8 @@ TextureImporter:
       name: fxsAnim_21
       rect:
         serializedVersion: 2
-        x: 225
-        y: 252
+        x: 600
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -427,8 +436,8 @@ TextureImporter:
       name: fxsAnim_22
       rect:
         serializedVersion: 2
-        x: 300
-        y: 252
+        x: 675
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -448,8 +457,8 @@ TextureImporter:
       name: fxsAnim_23
       rect:
         serializedVersion: 2
-        x: 375
-        y: 252
+        x: 750
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -469,8 +478,8 @@ TextureImporter:
       name: fxsAnim_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 187
+        x: 825
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -490,8 +499,8 @@ TextureImporter:
       name: fxsAnim_25
       rect:
         serializedVersion: 2
-        x: 75
-        y: 187
+        x: 900
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -511,8 +520,8 @@ TextureImporter:
       name: fxsAnim_26
       rect:
         serializedVersion: 2
-        x: 150
-        y: 187
+        x: 0
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -532,8 +541,8 @@ TextureImporter:
       name: fxsAnim_27
       rect:
         serializedVersion: 2
-        x: 225
-        y: 187
+        x: 75
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -553,8 +562,8 @@ TextureImporter:
       name: fxsAnim_28
       rect:
         serializedVersion: 2
-        x: 300
-        y: 187
+        x: 150
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -574,8 +583,8 @@ TextureImporter:
       name: fxsAnim_29
       rect:
         serializedVersion: 2
-        x: 375
-        y: 187
+        x: 225
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -595,8 +604,8 @@ TextureImporter:
       name: fxsAnim_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 122
+        x: 300
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -616,8 +625,8 @@ TextureImporter:
       name: fxsAnim_31
       rect:
         serializedVersion: 2
-        x: 75
-        y: 122
+        x: 375
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -637,8 +646,8 @@ TextureImporter:
       name: fxsAnim_32
       rect:
         serializedVersion: 2
-        x: 150
-        y: 122
+        x: 450
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -658,8 +667,8 @@ TextureImporter:
       name: fxsAnim_33
       rect:
         serializedVersion: 2
-        x: 225
-        y: 122
+        x: 525
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -679,8 +688,8 @@ TextureImporter:
       name: fxsAnim_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 57
+        x: 750
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -784,8 +793,8 @@ TextureImporter:
       name: fxsAnim_7
       rect:
         serializedVersion: 2
-        x: 75
-        y: 382
+        x: 525
+        y: 447
         width: 75
         height: 65
       alignment: 0
@@ -805,8 +814,8 @@ TextureImporter:
       name: fxsAnim_11
       rect:
         serializedVersion: 2
-        x: 375
-        y: 382
+        x: 825
+        y: 447
         width: 75
         height: 65
       alignment: 0
@@ -826,8 +835,8 @@ TextureImporter:
       name: fxsAnim_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 317
+        x: 900
+        y: 447
         width: 75
         height: 65
       alignment: 0
@@ -847,8 +856,8 @@ TextureImporter:
       name: fxsAnim_13
       rect:
         serializedVersion: 2
-        x: 75
-        y: 317
+        x: 0
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -868,8 +877,8 @@ TextureImporter:
       name: fxsAnim_14
       rect:
         serializedVersion: 2
-        x: 150
-        y: 317
+        x: 75
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -889,8 +898,8 @@ TextureImporter:
       name: fxsAnim_15
       rect:
         serializedVersion: 2
-        x: 225
-        y: 317
+        x: 150
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -910,8 +919,8 @@ TextureImporter:
       name: fxsAnim_16
       rect:
         serializedVersion: 2
-        x: 300
-        y: 317
+        x: 225
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -931,8 +940,8 @@ TextureImporter:
       name: fxsAnim_17
       rect:
         serializedVersion: 2
-        x: 375
-        y: 317
+        x: 300
+        y: 382
         width: 75
         height: 65
       alignment: 0
@@ -952,8 +961,8 @@ TextureImporter:
       name: fxsAnim_34
       rect:
         serializedVersion: 2
-        x: 300
-        y: 122
+        x: 600
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -973,8 +982,8 @@ TextureImporter:
       name: fxsAnim_35
       rect:
         serializedVersion: 2
-        x: 375
-        y: 122
+        x: 675
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -994,8 +1003,8 @@ TextureImporter:
       name: fxsAnim_37
       rect:
         serializedVersion: 2
-        x: 75
-        y: 57
+        x: 825
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -1015,8 +1024,8 @@ TextureImporter:
       name: fxsAnim_38
       rect:
         serializedVersion: 2
-        x: 150
-        y: 57
+        x: 900
+        y: 317
         width: 75
         height: 65
       alignment: 0
@@ -1036,8 +1045,8 @@ TextureImporter:
       name: fxsAnim_39
       rect:
         serializedVersion: 2
-        x: 225
-        y: 57
+        x: 0
+        y: 252
         width: 75
         height: 65
       alignment: 0
@@ -1057,8 +1066,8 @@ TextureImporter:
       name: fxsAnim_40
       rect:
         serializedVersion: 2
-        x: 300
-        y: 57
+        x: 75
+        y: 252
         width: 75
         height: 65
       alignment: 0
@@ -1070,6 +1079,69 @@ TextureImporter:
       bones: []
       spriteID: 495bcf6d8894ff040800000000000000
       internalID: 4683542989559870868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_41
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 252
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62cfca58726bd5b0800000000000000
+      internalID: -5342568263885798801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_42
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 252
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7ee0051119b4320800000000000000
+      internalID: 2543285918124402667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fxsAnim_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 252
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282520887648f0080800000000000000
+      internalID: -9219004332005764478
       vertices: []
       indices: 
       edges: []

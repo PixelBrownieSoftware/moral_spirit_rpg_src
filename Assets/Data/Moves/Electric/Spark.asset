@@ -28,6 +28,14 @@ MonoBehaviour:
   power: 4
   preAnim: []
   animation:
+  - duration: 0.2
+    image: {fileID: 0}
+    name: sparkFX
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
   - duration: 0
     image: {fileID: 0}
     name: 
@@ -45,6 +53,7 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
   excludeUser: 0
   str_req: 0

@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -8424650988016965155
     second: gabriel_micheal_overworld_1
+  - first:
+      213: 2376128521021239579
+    second: peast_overworld
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +108,7 @@ TextureImporter:
         width: 50
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +129,7 @@ TextureImporter:
         width: 49
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +137,27 @@ TextureImporter:
       bones: []
       spriteID: dd9ea96ef80a51b80800000000000000
       internalID: -8424650988016965155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peast_overworld
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 29
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b113524fc44b9f020800000000000000
+      internalID: 2376128521021239579
       vertices: []
       indices: 
       edges: []

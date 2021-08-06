@@ -20,9 +20,6 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
   isPartyChar: 0
-  level: 1
-  exp: 0
-  expToNextLevel: 0
   baseExpYeild: 0
   maxHitPoints: 0
   couragePoints: 0
@@ -30,21 +27,19 @@ MonoBehaviour:
   maxSkillPointsB: 8
   maxHitPointsB: 26
   attackB: 4
-  defenceB: 4
+  defenceB: 5
   intelligenceB: 3
   gutsB: 4
-  speedB: 3
-  luckB: 5
+  speedB: 2
   maxSkillPointsGMax: 3
   maxSkillPointsGMin: 1
   maxHitPointsGMax: 5
   maxHitPointsGMin: 4
-  attackG: 3
-  defenceG: 2
-  intelligenceG: 4
-  gutsG: 3
-  speedG: 4
-  luckG: 5
+  attackG: 0.512
+  defenceG: 0.623
+  intelligenceG: 0.355
+  gutsG: 0.413
+  speedG: 0.321
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: 50be62d9a3130454dae34bbe0897af9d, type: 2}
@@ -66,7 +61,7 @@ MonoBehaviour:
   - 1
   - 1
   - 1
-  - 1
+  - 0.6
   - 1
   actionTypeCharts:
   - 1

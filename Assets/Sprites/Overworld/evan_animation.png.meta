@@ -35,6 +35,18 @@ TextureImporter:
   - first:
       213: -1729500001322363306
     second: evan_animation_10
+  - first:
+      213: -3790531063110270196
+    second: evan_animation_11
+  - first:
+      213: 6787641573334948946
+    second: evan_animation_12
+  - first:
+      213: 5555183124842015946
+    second: evan_animation_13
+  - first:
+      213: -670518994268269912
+    second: evan_animation_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,10 +139,10 @@ TextureImporter:
       name: evan_animation_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 432
-        width: 28
-        height: 61
+        x: 0
+        y: 425
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,10 +160,10 @@ TextureImporter:
       name: evan_animation_1
       rect:
         serializedVersion: 2
-        x: 116
-        y: 429
-        width: 33
-        height: 70
+        x: 53
+        y: 425
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +181,10 @@ TextureImporter:
       name: evan_animation_2
       rect:
         serializedVersion: 2
-        x: 14
-        y: 345
-        width: 28
-        height: 61
+        x: 106
+        y: 425
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +202,10 @@ TextureImporter:
       name: evan_animation_3
       rect:
         serializedVersion: 2
-        x: 65
-        y: 343
-        width: 33
-        height: 70
+        x: 159
+        y: 425
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +223,10 @@ TextureImporter:
       name: evan_animation_4
       rect:
         serializedVersion: 2
-        x: 119
-        y: 346
-        width: 29
-        height: 66
+        x: 0
+        y: 338
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +244,10 @@ TextureImporter:
       name: evan_animation_5
       rect:
         serializedVersion: 2
-        x: 12
-        y: 260
-        width: 27
-        height: 63
+        x: 53
+        y: 338
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +265,10 @@ TextureImporter:
       name: evan_animation_6
       rect:
         serializedVersion: 2
-        x: 60
-        y: 256
-        width: 38
-        height: 70
+        x: 106
+        y: 338
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +286,10 @@ TextureImporter:
       name: evan_animation_7
       rect:
         serializedVersion: 2
-        x: 164
-        y: 255
-        width: 39
-        height: 72
+        x: 159
+        y: 338
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +307,10 @@ TextureImporter:
       name: evan_animation_8
       rect:
         serializedVersion: 2
-        x: 117
-        y: 255
-        width: 27
-        height: 71
+        x: 0
+        y: 251
+        width: 53
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,6 +320,132 @@ TextureImporter:
       bones: []
       spriteID: 2614880fbda5a9e40800000000000000
       internalID: 5663939382051619170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evan_animation_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 251
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae35f0c7d96f84b0800000000000000
+      internalID: -5436009849836716376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evan_animation_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 251
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656942e79e49ff7e0800000000000000
+      internalID: -1729500001322363306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evan_animation_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 251
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c038a39c414556bc0800000000000000
+      internalID: -3790531063110270196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evan_animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c9d496c0c823e50800000000000000
+      internalID: 6787641573334948946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evan_animation_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 164
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acce3729e99f71d40800000000000000
+      internalID: 5555183124842015946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evan_animation_14
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 164
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2dc7bf686d1b6f0800000000000000
+      internalID: -670518994268269912
       vertices: []
       indices: 
       edges: []

@@ -23,3 +23,4 @@ MonoBehaviour:
   battleEvents: []
   allRelations: 0
   isFleeable: 1
+  songName: spirit_match

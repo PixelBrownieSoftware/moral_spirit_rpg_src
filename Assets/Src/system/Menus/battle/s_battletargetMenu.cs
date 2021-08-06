@@ -16,6 +16,7 @@ public class s_battletargetMenu : s_menucontroller
     public s_move mov;
     
     public List<o_battleChar> bcs = new List<o_battleChar>();
+    public bool isItem = false;
 
     public override void OnOpen()
     {
@@ -33,6 +34,7 @@ public class s_battletargetMenu : s_menucontroller
                         continue;
                     }
                     tg = GetButton<s_targetButton>(i);
+                    tg.isItem = isItem;
                     tg.isAll = false;
                     tg.mov = mov;
                     tg.battleCharButton = bcs[i];
@@ -51,6 +53,7 @@ public class s_battletargetMenu : s_menucontroller
                         continue;
                     }
                     tg = GetButton<s_targetButton>(i);
+                    tg.isItem = isItem;
                     tg.isAll = true;
                     tg.mov = mov;
                     tg.transform.position = Camera.main.WorldToScreenPoint(bcs[i].transform.position);

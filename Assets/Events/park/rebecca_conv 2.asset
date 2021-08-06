@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
+  m_Name: rebecca_conv 2
+  m_EditorClassIdentifier: 
+  elements:
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: If these two think you are so worthy, then why don't they come to you?
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Do they honestly think they can put up this silly "Yoohoo! I'm over
+      here! Catch me if you can!" act?
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: We're not primary school kids you know!
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Um... sorry, I lost it there...
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Thanks for listening to me rant, Evan.
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Evan put his hand on Rebecca's shoulder and smiled.
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: You seem to always know what to do in situations like this.
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: No wonder Chloe goes crazy for you.
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}

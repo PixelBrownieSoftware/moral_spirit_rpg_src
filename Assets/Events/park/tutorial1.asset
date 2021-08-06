@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: tutorial1
   m_EditorClassIdentifier: 
+  objectReferences: []
   elements:
   - logic: 0
-    eventType: 13
+    eventType: 1
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
     camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0.7176471}
+    colour: {r: 0, g: 0, b: 0, a: 0}
     int0: 0
     int1: 0
     int2: 0
@@ -29,8 +30,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: When all of them are gone, it's the enemy's turn.
-    string1: 
+    string0: I'm going to make you regret this!
+    string1: Rebecca
     posX: 0
     posY: 0
     float0: 0
@@ -42,8 +43,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 1
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -58,96 +60,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: The icons on the top left on the scren dictate how many turns your party
-      has.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 2.5
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 6
-    funcName: BIG_TEXT
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: Each turn a character takes will use up one of these icons.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 2.5
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 6
-    funcName: BIG_TEXT
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: When all of them are gone, it's the enemy's turn.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 2.5
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-  - logic: 0
-    eventType: 13
-    funcName: BIG_TEXT
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: When all of them are gone, it's the enemy's turn.
-    string1: 
+    string0: Hey, Evan...
+    string1: Sebastian
     posX: 0
     posY: 0
     float0: 0
@@ -159,3 +73,185 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: BIG_TEXT
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Hmm...?
+    string1: Evan
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: BIG_TEXT
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Do you think you can help me deal with her? She's getting really outta
+      controll.
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: BIG_TEXT
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Perhaps you could glare at her.
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: BIG_TEXT
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Or... I dunno - tackle her.
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: BIG_TEXT
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I'll try to joke with her if I can.
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 10
+    funcName: BIG_TEXT
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: I'll try to joke with her if I can.
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}

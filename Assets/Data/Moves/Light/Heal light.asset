@@ -26,19 +26,22 @@ MonoBehaviour:
   moveType: 2
   target: 0
   power: 15
+  preAnim: []
   animation:
-  - duration: 0.2
+  - duration: 0.22
     image: {fileID: -1398132742003509683, guid: 3ece68a7c2beec84b87f25a23c7453d7,
       type: 3}
-    name: 
+    name: heal_light_fx
     position: {x: 0, y: 0}
-    type: 0
+    camMode: 0
+    type: 3
     pos: 0
     anim: {fileID: 0}
   - duration: 0
     image: {fileID: 0}
     name: 
     position: {x: 0, y: 0}
+    camMode: 0
     type: 1
     pos: 0
     anim: {fileID: 0}
@@ -51,7 +54,9 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
+  excludeUser: 0
   str_req: 0
   dex_req: 5
   vit_req: 3

@@ -179,7 +179,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -317031212520038642, guid: 94b1fad8e283a504eab97589c564d4df,
+      value: {fileID: -9201479614076895701, guid: 94b1fad8e283a504eab97589c564d4df,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -221,7 +221,7 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     pptrCurveMapping:
-    - {fileID: -317031212520038642, guid: 94b1fad8e283a504eab97589c564d4df, type: 3}
+    - {fileID: -9201479614076895701, guid: 94b1fad8e283a504eab97589c564d4df, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -650,6 +650,14 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.31666666
+    functionName: PlaySound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 22597a5ce37837f449691b54e0f1c326,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.0833334
     functionName: StopAnimation
     data: 

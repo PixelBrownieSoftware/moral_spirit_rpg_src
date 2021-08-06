@@ -28,6 +28,7 @@ public class u_encounter : s_object
 
     IEnumerator GotoBattle()
     {
+        StartCoroutine(s_BGM.GetInstance().FadeOutMusic(1.5f));
         s_camera.cam.ZoomCamera(10, 125);
         MagnumFoundation2.System.Core.s_soundmanager.GetInstance().PlaySound("encounter");
         yield return StartCoroutine(s_triggerhandler.trigSingleton.Fade(Color.black));
@@ -57,8 +58,12 @@ public class u_encounter : s_object
                         {
                             if (!_triggered)
                             {
+                                s_menuhandler.GetInstance().SwitchMenu("EMPTY");
                                 _triggered = true;
                                 rpg_globals.gl.enc = this;
+                                ch.control = false;
+                                s_globals.allowPause = false;
+                                ch.CHARACTER_STATE = o_character.CHARACTER_STATES.STATE_IDLE;
                                 StartCoroutine(GotoBattle());
                             }
                         }

@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6aa7109b6963a46850a45af304b7a3, type: 3}
   m_Name: peast_fight
   m_EditorClassIdentifier: 
-  endEvent: {fileID: 0}
+  endEvent: {fileID: 11400000, guid: e93df371b67d6cd42bf011df21b8d2d0, type: 2}
   enemies:
   - {fileID: 11400000, guid: d23af5f4169b5df40bf463940a61417b, type: 2}
   maxLevel: 0
   minLevel: 0
-  fixedLevel: 32000000
+  fixedLevel: 1e000000
   isFixedLevel: 1
+  battleEvents: []
   allRelations: 0
   isFleeable: 0
-  relationships: []
+  songName: rise_up_to_the_truth

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MagnumFoundation2.System.Core;
 
 public class s_targCharButton : s_button
 {
@@ -26,11 +27,13 @@ public class s_targCharButton : s_button
                     case STATUS_MOVE_TYPE.HEAL:
                         battleChar.hitPoints += mov.power;
                         battleChar.hitPoints = Mathf.Clamp(battleChar.hitPoints, 0, battleChar.maxHitPoints);
+                        s_soundmanager.GetInstance().PlaySound("healsound2");
                         break;
 
                     case STATUS_MOVE_TYPE.HEAL_STAMINA:
                         battleChar.skillPoints += mov.power;
                         battleChar.skillPoints = Mathf.Clamp(battleChar.skillPoints, 0, battleChar.maxSkillPoints);
+                        s_soundmanager.GetInstance().PlaySound("spHealSound");
                         break;
                 }
                 break;
@@ -52,7 +55,7 @@ public class s_targCharButton : s_button
                 s_menuhandler.GetInstance().GetMenu<s_skillsMenu>("ExtraSkillsMenu").target = battleChar;
                 break;
         }
-        base.OnButtonClicked();
+       // base.OnButtonClicked();
     }
 
     private void Update()

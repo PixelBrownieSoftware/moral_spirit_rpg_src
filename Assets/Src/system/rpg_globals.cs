@@ -7,7 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Collections;
 using MagnumFoundation2.System;
 using MagnumFoundation2.System.Core;
-using MagnumFoundation2.Objects;
+using MagnumFoundation2;
 
 [System.Serializable]
 public class RPG_save : dat_save
@@ -41,7 +41,6 @@ public class RPG_save : dat_save
             pm.defence = da.defence;
             pm.intelligence = da.intelligence;
             pm.guts = da.guts;
-            pm.luck = da.luck;
             pm.speed = da.speed;
 
             pm.level = da.level;
@@ -92,7 +91,6 @@ public class RPG_save : dat_save
             pm.defence = da.defence;
             pm.intelligence = da.intelligence;
             pm.guts = da.guts;
-            pm.luck = da.luck;
             pm.speed = da.speed;
 
             pm.level = da.level;
@@ -134,7 +132,6 @@ public class RPG_save : dat_save
     {
     }
 }
-
 
 /// <summary>
 /// To store the game's battle data like enemies
@@ -223,7 +220,6 @@ public class rpg_globals : s_globals
     //All the saved character databases
 
     //The move that is being edited
-    //[HideInInspector]
     public s_move currentMove;
     //The enemy group that is being edited
     public enemy_group currentGroup;
@@ -290,6 +286,18 @@ public class rpg_globals : s_globals
         extraSkills.Clear();
     }
 
+    public override void Pause()
+    {
+        base.Pause();
+        s_menuhandler.GetInstance().SwitchMenu("EMPTY");
+    }
+
+    public override void Resume()
+    {
+        base.Resume();
+        s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
+    }
+
     new void Awake()
     {
         if (gl == null)
@@ -340,20 +348,7 @@ public class rpg_globals : s_globals
         }
         return null;
     }
-
-    /*
-    public List<o_battleCharData> GetCharacterData()
-    {
-        List<o_battleCharData> chd = new List<o_battleCharData>();
-        foreach (TextAsset ta in characterDatabaseJson)
-        {
-            o_battleCharData g = JsonUtility.FromJson<o_battleCharData>(ta.text);
-            chd.Add(g);
-        }
-        return chd;
-    }
-    */
-
+    
     public void AddMemeber(BattleCharacterData data, int level)
     {
         o_battleCharData newCharacter = new o_battleCharData();
@@ -367,7 +362,6 @@ public class rpg_globals : s_globals
             int tempDx = data.intelligenceB;
             int tempAg = data.speedB;
             int tempGut = data.gutsB;
-            int tempLuc = data.luckB;
 
             newCharacter.inBattle = true;
 
@@ -385,8 +379,6 @@ public class rpg_globals : s_globals
                     tempAg++;
                 if (i % data.gutsG == 0)
                     tempGut++;
-                if (i % data.luckG == 0)
-                    tempLuc++;
 
                 tempHP += UnityEngine.Random.Range(data.maxHitPointsGMin, data.maxHitPointsGMax);
                 tempSP += UnityEngine.Random.Range(data.maxSkillPointsGMin, data.maxSkillPointsGMax);
@@ -394,6 +386,10 @@ public class rpg_globals : s_globals
 
             foreach (s_move mov in data.moveDatabase)
             {
+                if (!EnableDebug && GetItem(mov.name))
+                {
+                    continue;
+                }
                 if (mov.str_req <= tempStr
                     && mov.vit_req <= tempVit
                     && mov.dex_req <= tempDx
@@ -410,7 +406,6 @@ public class rpg_globals : s_globals
             newCharacter.intelligence = tempDx;
             newCharacter.speed = tempAg;
             newCharacter.guts = tempGut;
-            newCharacter.luck = tempLuc;
         }
         newCharacter.dataSrc = data;
         partyMembers.Add(newCharacter);
@@ -431,56 +426,29 @@ public class rpg_globals : s_globals
             int tempDx = data.intelligenceB;
             int tempAg = data.speedB;
             int tempGut = data.gutsB;
-            int tempLuc = data.luckB;
 
             newCharacter.inBattle = true;
 
             newCharacter.currentMoves = new List<s_move>();
 
-            foreach (s_move mov in data.moveDatabase)
+            foreach (string mov in saveDat.currentMoves)
             {
-                if (mov.str_req <= tempStr
-                    && mov.vit_req <= tempVit
-                    && mov.dex_req <= tempDx
-                    && mov.agi_req <= tempAg
-                    && mov.gut_req <= tempGut) {
-                    newCharacter.currentMoves.Add(mov);
-                }
+                newCharacter.currentMoves.Add(moveDatabase.Find(x => x.name == mov));
             }
             foreach (string mov in saveDat.extraMoves)
             {
                     newCharacter.extra_skills.Add(moveDatabase.Find(x => x.name == mov));
             }
-
-            for (int i = 1; i < saveDat.level; i++)
-            {
-                if (i % data.attackG == 0)
-                    tempStr++;
-                if (i % data.defenceG == 0)
-                    tempVit++;
-                if (i % data.intelligenceG == 0)
-                    tempDx++;
-                if (i % data.speedG == 0)
-                    tempAg++;
-                if (i % data.gutsG == 0)
-                    tempGut++;
-                if (i % data.luckG == 0)
-                    tempLuc++;
-
-                tempHP += UnityEngine.Random.Range(data.maxHitPointsGMin, data.maxHitPointsGMax);
-                tempSP += UnityEngine.Random.Range(data.maxSkillPointsGMin, data.maxSkillPointsGMax);
-            }
-            newCharacter.maxHitPoints = tempHP;
-            newCharacter.maxSkillPoints = tempSP;
+            newCharacter.maxHitPoints = saveDat.maxHitPoints;
+            newCharacter.maxSkillPoints = saveDat.maxSkillPoints;
             newCharacter.hitPoints = saveDat.hitPoints;
             newCharacter.skillPoints = saveDat.skillPoints;
 
-            newCharacter.attack = tempStr;
-            newCharacter.defence = tempVit;
-            newCharacter.intelligence = tempDx;
-            newCharacter.speed = tempAg;
-            newCharacter.guts = tempGut;
-            newCharacter.luck = tempLuc;
+            newCharacter.attack = saveDat.attack;
+            newCharacter.defence = saveDat.defence;
+            newCharacter.intelligence = saveDat.intelligence;
+            newCharacter.speed = saveDat.speed;
+            newCharacter.guts = saveDat.guts;
 
             newCharacter.exp = saveDat.exp;
         }
@@ -528,9 +496,11 @@ public class rpg_globals : s_globals
 
     }
 
-    public void SwitchToOverworld()
+    public void SwitchToOverworld(bool enablePl)
     {
-        s_BGM.GetInstance().StopSong();
+        s_mapholder mapEvHolder = FindObjectOfType<s_mapholder>();
+        StartCoroutine(s_BGM.GetInstance().FadeInMusic(mapEvHolder.BGM));
+        //
         ///Replacing old player data with new data
         foreach (o_battleChar plObj in playerSlots)
         {
@@ -564,12 +534,14 @@ public class rpg_globals : s_globals
         GameState = RPG_STATE.OVERWORLD;
         s_camera.cam.SetPlayer(player.gameObject);
         s_camera.cam.cameraMode = s_camera.CAMERA_MODE.CHARACTER_FOCUS;
-        player.control = true;
+        player.control = enablePl;
         player.rendererObj.color = Color.white;
         if(enc != null)
             enc.DestroyAllEnemies();
         StartCoroutine(Fade(false));
         s_rpgEvent._inBattle = false;
+        allowPause = true;
+        UnPauseAllObjects();
         s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
     }
 
@@ -589,6 +561,7 @@ public class rpg_globals : s_globals
 
     public void SwitchToBattle(c_enemy enemy)
     {
+        allowPause = false;
         s_menuhandler.GetInstance().SwitchMenu("EMPTY");
         battleStarter = enemy;
         StartCoroutine(BattleTransition(enemy.enemyGroup));
@@ -607,6 +580,7 @@ public class rpg_globals : s_globals
             character.hitPoints = 1;
         else
             character.hitPoints = bc.hitPoints;
+        character.currentMoves = bc.skillMoves;
        // print("HP: " + character.hitPoints);
         if (character.hitPoints > character.maxHitPoints)
             character.hitPoints = character.maxHitPoints;
@@ -664,6 +638,7 @@ public class rpg_globals : s_globals
     public void SwitchToBattle(enemy_group groupEnemy)
     {
         //print(groupEnemy.name);
+        allowPause = false;
         s_camera.cam.SetZoom();
         s_camera.cam.SetPlayer(null);
         player.control = false;
@@ -678,6 +653,7 @@ public class rpg_globals : s_globals
         {
             o_battleCharData bc = charactersInBattle[i];
             playerSlots[i].skillMoves = new List<s_move>();
+            playerSlots[i].extra_skills = new List<s_move>();
             playerSlots[i].name = bc.name;
             playerSlots[i].level = bc.level;
             playerSlots[i].baseExpYeild = bc.baseExpYeild;
@@ -712,7 +688,7 @@ public class rpg_globals : s_globals
             }
             foreach (s_move ml in bc.extra_skills)
             {
-                AddMove(ref playerSlots[i], ml);
+                AddExtraMove(ref playerSlots[i], ml);
             }
 
             battleSystem.players.Add(playerSlots[i]);
@@ -788,8 +764,9 @@ public class rpg_globals : s_globals
         
         GameState = RPG_STATE.BATTLE;
         battleSystem.isActive = true;
-        overworldScene.gameObject.SetActive(false);
-        battleScene.gameObject.SetActive(true);
+        PauseAllObjects();
+        //overworldScene.SetActive(false);
+        battleScene.SetActive(true);
         battleSystem.StartBattleRoutine();
         //battleSystem.UpdatePlayerMeterPos();
 
@@ -806,7 +783,6 @@ public class rpg_globals : s_globals
         int tempDx = enem.intelligenceB;
         int tempAg = enem.speedB;
         int tempGut = enem.gutsB;
-        int tempLuc = enem.luckB;
 
         for (int i = 1; i < tempLvl; i++)
         {
@@ -856,6 +832,10 @@ public class rpg_globals : s_globals
         charObj.characterAI = enem.characterAI;
     }
 
+    public void AddExtraMove(ref o_battleChar character, s_move move)
+    {
+        character.extra_skills.Add(move);
+    }
     public void AddMove(ref o_battleChar character, s_move move)
     {
         character.skillMoves.Add(move);
@@ -952,8 +932,7 @@ public class rpg_globals : s_globals
         }
         return inv;
     }
-
-
+    
     public void HealParty() {
         foreach (o_battleCharData bc in partyMembers) {
             bc.hitPoints = bc.maxHitPoints;
@@ -962,20 +941,79 @@ public class rpg_globals : s_globals
 
     public new void Update()
     {
+        base.Update();
         if (overworldScene == null)
             overworldScene = GameObject.Find(currentlevelname);
 
-        base.Update();
         if (isMainGame)
         {
             switch (GameState)
             {
                 case RPG_STATE.OVERWORLD:
                     battleSystem.isActive = false;
-                    battleScene.gameObject.SetActive(false);
-                    if (overworldScene != null)
-                        overworldScene.gameObject.SetActive(true);
+                    battleScene.SetActive(false);
+                    //if (overworldScene != null)
+                    //overworldScene.SetActive(true);
+                    switch (MenuState)
+                    {
+                        case RPG_MENU_STATE.OFF:
+                            characterStats.text = "";
+                            itemsMenu.gameObject.SetActive(false);
+                            statsMenu.gameObject.SetActive(false);
+                            overworldMenuBox.gameObject.SetActive(false);
+                            targetHealer.gameObject.SetActive(false);
+                            userHealer.gameObject.SetActive(false);
+                            if (menuAble)
+                            {
+                            }
+                            break;
 
+                        case RPG_MENU_STATE.MENU:
+                            Time.timeScale = 0;
+                            StatusButton.gameObject.SetActive(true);
+                            ItemsButton.gameObject.SetActive(true);
+
+                            overworldMenuBox.gameObject.SetActive(true);
+                            menuChoice = Mathf.Clamp(menuChoice, 0, 1);
+
+                            characterStats.text = "" + "\n";
+
+                            if (menuChoice == 0)
+                                StatusButton.color = Color.yellow;
+                            else
+                                StatusButton.color = Color.white;
+
+                            if (menuChoice == 1)
+                                ItemsButton.color = Color.yellow;
+                            else
+                                ItemsButton.color = Color.white;
+
+                            if (Input.GetKeyDown(GetKeyPref("select")))
+                            {
+                                switch (menuChoice)
+                                {
+                                    case 0:
+                                        MenuState = RPG_MENU_STATE.STATUS;
+                                        break;
+                                    case 1:
+                                        MenuState = RPG_MENU_STATE.ITEMS;
+                                        break;
+                                }
+                                StatusButton.gameObject.SetActive(false);
+                                ItemsButton.gameObject.SetActive(false);
+                            }
+
+                            if (Input.GetKeyDown(GetKeyPref("back")))
+                            {
+                                Time.timeScale = 1;
+                                StatusButton.gameObject.SetActive(false);
+                                ItemsButton.gameObject.SetActive(false);
+                                MenuState = RPG_MENU_STATE.OFF;
+                            }
+                            break;
+                            
+                    }
+                    /*
                     if (Input.GetKeyDown(GetKeyPref("left")))
                     {
                         menuChoice--;
@@ -996,14 +1034,6 @@ public class rpg_globals : s_globals
                             userHealer.gameObject.SetActive(false);
                             if (menuAble)
                             {
-                                /*
-                                if (Input.GetKeyDown(GetKeyPref("menu")))
-                                {
-                                    //Pause();
-                                    Time.timeScale = 0;
-                                    MenuState = RPG_MENU_STATE.MENU;
-                                }
-                                */
                             }
                             break;
 
@@ -1092,8 +1122,7 @@ public class rpg_globals : s_globals
                         case RPG_MENU_STATE.ITEMS:
                             itemsMenu.gameObject.SetActive(true);
                             menuChoice = Mathf.Clamp(menuChoice, 0, inventory.Count - 1);
-
-                            /*
+                            
                             //This lists the stuff that will be presented in the inventory and the ammount
                             //Tried tuples, but that failed so I'm doing a much more crude but easier option
 
@@ -1149,7 +1178,6 @@ public class rpg_globals : s_globals
                                     }
                                 }
                             }
-                            */
                             characterStats.text = "";
 
                             characterStats.text +=
@@ -1211,7 +1239,6 @@ public class rpg_globals : s_globals
                         case RPG_MENU_STATE.SKILLS:
                             if (currentPartyMemberSelection != null)
                             {
-                                /*
                                 characterStats.text = "";
                                 cur = partyMembers[0];
                                 for (int i = 0; i < cur.moveDatabase.Count; i++)
@@ -1226,7 +1253,6 @@ public class rpg_globals : s_globals
                                         characterStats.text +="\n";
                                     }
                                 }
-                                */
                             }
                             //characterStats.text += "X to exit" + " \n";
 
@@ -1285,6 +1311,7 @@ public class rpg_globals : s_globals
                             }
                             break;
                     }
+                    */
                     break;
 
             }
@@ -1311,3 +1338,16 @@ public class rpg_globals : s_globals
 
     }
 }
+
+/*
+public List<o_battleCharData> GetCharacterData()
+{
+    List<o_battleCharData> chd = new List<o_battleCharData>();
+    foreach (TextAsset ta in characterDatabaseJson)
+    {
+        o_battleCharData g = JsonUtility.FromJson<o_battleCharData>(ta.text);
+        chd.Add(g);
+    }
+    return chd;
+}
+*/

@@ -17,9 +17,6 @@ public class BattleCharacterData : ScriptableObject
 
     public bool isPartyChar;
 
-    public int level;
-    public int exp;     //The expereince that the character has
-    public int expToNextLevel; // The experience that the character needs to get to the next level
     public float baseExpYeild;    //The expereince that the character gives multiplied by its level
 
     public int maxHitPoints;
@@ -35,7 +32,6 @@ public class BattleCharacterData : ScriptableObject
     public int intelligenceB = 1;
     public int gutsB = 1;
     public int speedB = 1;
-    public int luckB = 1;
 
     /// Determines the growth of certain stats per turn
 
@@ -46,12 +42,11 @@ public class BattleCharacterData : ScriptableObject
     public int maxHitPointsGMax;
     public int maxHitPointsGMin;
 
-    public int attackG = 1;
-    public int defenceG = 1;
-    public int intelligenceG = 1;
-    public int gutsG = 1;
-    public int speedG = 1;
-    public int luckG = 1;
+    public float attackG = 1;
+    public float defenceG = 1;
+    public float intelligenceG = 1;
+    public float gutsG = 1;
+    public float speedG = 1;
 
     public bool inBattle = true;
 
@@ -62,7 +57,7 @@ public class BattleCharacterData : ScriptableObject
     public float[] elementTypeCharts = new float[13] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };   //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown 
     public float[] actionTypeCharts = new float[6] { 1, 1, 1, 1, 1 ,1};    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
     public float money;
-    public List<rpg_item> itemDrop;
+    public List<s_move> itemDrop;
 
     //The characters that this one has relationships with prevent this one from being negotated 
     public BattleCharacterData[] relationships;

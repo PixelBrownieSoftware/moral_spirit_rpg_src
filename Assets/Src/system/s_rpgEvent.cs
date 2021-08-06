@@ -47,11 +47,9 @@ public class s_rpgEvent : s_triggerhandler
     rpg_globals rg;
     s_battlesyst bs;
     public static s_rpgEvent rpgEv;
-    public Text bigTxt;
     public static bool _inBattle = false;
     delegate void disableBattle();
     disableBattle db;
-    public Text continueTxt;
 
     public new void Awake()
     {
@@ -85,6 +83,17 @@ public class s_rpgEvent : s_triggerhandler
         if(!_inBattle)
             s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
     }
+    IEnumerator GotoBattle(enemy_group group)
+    {
+        StartCoroutine(s_BGM.GetInstance().FadeOutMusic(2f));
+        yield return new WaitForSeconds(0.6f);
+        s_camera.cam.ZoomCamera(10, 125);
+        MagnumFoundation2.System.Core.s_soundmanager.GetInstance().PlaySound("encounter");
+        yield return StartCoroutine(s_triggerhandler.trigSingleton.Fade(Color.black));
+        yield return new WaitForSeconds(0.6f);
+
+        rpg_globals.gl.SwitchToBattle(group);
+    }
 
     public override IEnumerator EventPlay(ev_details current_ev)
     {
@@ -110,7 +119,8 @@ public class s_rpgEvent : s_triggerhandler
                         MagnumFoundation2.System.Core.s_soundmanager.GetInstance().PlaySound("encounter");
                         yield return StartCoroutine(Fade(Color.black));
                         */
-                        rpg_globals.gl.SwitchToBattle((enemy_group)current_ev.scrObj);
+
+                        yield return StartCoroutine(GotoBattle((enemy_group)current_ev.scrObj));
                         break;
 
                     case "ADD_PARTY_MEMBER":

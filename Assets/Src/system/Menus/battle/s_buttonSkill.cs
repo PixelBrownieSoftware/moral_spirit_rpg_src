@@ -92,17 +92,19 @@ public class s_buttonSkill : s_button
 
     protected override void OnHover()
     {
-        BMenu.SetDescription(moveButton);
+        if(BMenu != null)
+            BMenu.SetDescription(moveButton);
         base.OnHover();
     }
 
     protected override void OnButtonClicked()
     {
         s_move m = null;
+        s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>
+                        ("BattleMenuTarget").isItem = item;
         if (item)
         {
             m = moveButton;
-            rpg_globals.gl.UseItem(moveButton.name);
         }
         else
         {

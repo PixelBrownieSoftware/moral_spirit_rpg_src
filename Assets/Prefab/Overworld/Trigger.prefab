@@ -53,6 +53,7 @@ MonoBehaviour:
   gravity: 0
   rbody2d: {fileID: 0}
   rendererObj: {fileID: 0}
+  animHand: {fileID: 0}
   useCondition: 0
   disspearOnConditionTrue: 0
   logicType: 0
@@ -60,15 +61,21 @@ MonoBehaviour:
   conditionNum: 0
   isHover: 0
   grounded: 1
+  switchA: 0
+  switchB: 0
+  switchC: 0
+  switchD: 0
+  conditions: []
+  eventScript: {fileID: 0}
+  TRIGGER_T: 0
   layer:
     serializedVersion: 2
     m_Bits: 0
-  colider: {fileID: 0}
-  TRIGGER_T: 0
+  colider: {fileID: 8330379300617570690}
   isactive: 0
   charac: {fileID: 0}
   callstatic: 0
-  eventScript: {fileID: 0}
+  triggerLink: {fileID: 0}
   characters: []
   ev_num: 0
   destroyOnTouch: 0

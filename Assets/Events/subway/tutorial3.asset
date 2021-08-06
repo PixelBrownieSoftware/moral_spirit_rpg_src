@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: tutorial3
   m_EditorClassIdentifier: 
+  objectReferences: []
   elements:
   - logic: 0
     eventType: 13
@@ -42,8 +43,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -71,8 +73,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -101,8 +104,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -131,8 +135,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -160,8 +165,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -190,8 +196,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -220,8 +227,9 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
-    eventType: 6
+    eventType: 36
     funcName: BIG_TEXT
     simultaenous: 0
     simlutaneousDelay: 0
@@ -250,6 +258,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 13
     funcName: BIG_TEXT
@@ -279,3 +288,4 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}

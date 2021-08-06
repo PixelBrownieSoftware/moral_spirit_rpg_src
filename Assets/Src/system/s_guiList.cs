@@ -21,7 +21,7 @@ public class s_guiList : MonoBehaviour
             amount = Mathf.Clamp(amount, 0, items.Length);
             for (int i = 0; i < items.Length; i++)
             {
-                if (i > amount)
+                if (i >= amount)
                 {
                     items[i].gameObject.SetActive(false);
                 }

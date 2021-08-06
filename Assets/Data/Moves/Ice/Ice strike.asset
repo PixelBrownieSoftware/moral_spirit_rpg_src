@@ -37,11 +37,12 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
   excludeUser: 0
-  str_req: 7
-  dex_req: 5
-  vit_req: 0
+  str_req: 8
+  dex_req: 0
+  vit_req: 3
   agi_req: 0
   gut_req: 0
   customFx: 

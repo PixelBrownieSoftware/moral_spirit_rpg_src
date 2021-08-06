@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using MagnumFoundation2.Objects;
+using MagnumFoundation2.System.Core;
 
-public class c_player : o_overworlC
+public class c_player : o_character
 {
-    Animator anim;
+    public GameObject thought;
+    public Text thoughtText;
+    public bool showThought = false;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -16,92 +21,80 @@ public class c_player : o_overworlC
         DisableAttack();
         Initialize();
         base.Start();
-        anim = SpriteObj.GetComponent<Animator>();
     }
+
+    private new void Update()
+    {
+        base.Update();
+        o_trigger c = IfTouchingGetCol<o_trigger>(collision);
+        u_save s = IfTouchingGetCol<u_save>(collision);
+        o_tresure tr = IfTouchingGetCol<o_tresure>(collision);
+        
+        if (c != null)
+        {
+            if (c.TRIGGER_T == TRIGGER_TYPE.CONTACT_INPUT)
+            {
+                showThought = true;
+            }
+            else
+            {
+                showThought = false;
+            }
+        }
+        else if (s != null)
+        {
+            showThought = true;
+        }
+        else if (tr != null)
+        {
+            showThought = true;
+        }
+        else
+        {
+            showThought = false;
+        }
+
+        if (showThought)
+        {
+            thought.SetActive(true);
+            thoughtText.text = s_globals.GetKeyPref("select").ToString();
+        }
+        else
+        {
+            thought.SetActive(false);
+            thoughtText.text = "";
+        }
+
+    }
+
     public override void PlayerControl()
     {
+        if (Input.GetKey(s_globals.GetKeyPref("dash")))
+        {
+            terminalspd = terminalSpeedOrigin * 1.5f;
+        }
+        else
+        {
+            terminalspd = terminalSpeedOrigin;
+        }
         switch (CHARACTER_STATE)
         {
             case CHARACTER_STATES.STATE_IDLE:
-
-                // SetAnimation("test", true);
-
-                AnimDirection("idle");
                 if (ArrowKeyControl())
                 {
                     CHARACTER_STATE = CHARACTER_STATES.STATE_MOVING;
                 }
-
-                /*
-                if (Input.GetMouseButtonDown(1))
-                {
-                    StartCoroutine(Attack(weapons[selected_weapon_num]));
-                }
-                if (Input.GetKeyDown(s_globals.i["jump"]))
-                {
-                    Jump(1.95f);
-                }
-                */
-
                 break;
 
             case CHARACTER_STATES.STATE_MOVING:
-                if (control)
+
+                if (!ArrowKeyControl())
                 {
-                    AnimDirection("walk");
-                    //charAnimation.SetAnimation("test2", true);
-
-                    if (!ArrowKeyControl())
-                    {
-                        CHARACTER_STATE = CHARACTER_STATES.STATE_IDLE;
-                    }
-                    
+                    CHARACTER_STATE = CHARACTER_STATES.STATE_IDLE;
                 }
-
                 break;
-
         }
-    }
-    public void AnimDirection(string animName)
-    {
-        int verticalDir = (int)direction.y;
-        int horizontalDir = (int)direction.x;
-
-        if (verticalDir == -1 && horizontalDir == 0)
-            SetAnimation(animName + "_d", true);
-        else if (verticalDir == 1 && horizontalDir == 0)
-            SetAnimation(animName + "_u", true);
-        else if (horizontalDir == -1 && verticalDir == 1 ||
-            horizontalDir == -1 && verticalDir == -1 || horizontalDir == -1)
-        {
-            rendererObj.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            SetAnimation(animName + "_s", true);
-        }
-        else if (horizontalDir == 1 && verticalDir == 1 ||
-            horizontalDir == 1 && verticalDir == -1 || horizontalDir == 1)
-        {
-            rendererObj.transform.rotation = Quaternion.Euler(new Vector3(0, -180, 0));
-            SetAnimation(animName + "_s", true);
-        }
+        AnimMove();
     }
 
-    public new void Update()
-    {
-        base.Update();
-        o_tresure col = IfTouchingGetCol<o_tresure>(collision);
-        if (col != null)
-        {
-            print("K");
-            //rpg_globals.gl.ShowPrompt();
-        }
-        else
-        {
-            //rpg_globals.gl.HidePrompt();
-        }
-    }
-
-    new private void FixedUpdate()
-    {
-        base.FixedUpdate();
-    }
 }

@@ -61,6 +61,7 @@
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_mainmenu.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\Objects\o_generic.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Core\s_mapholder.cs" />
+    <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Core\s_BGM.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Menus\s_menuswitcher.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\Objects\o_trigger.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Menus\s_menuhandler.cs" />
@@ -69,13 +70,13 @@
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_object.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Menus\s_button.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\Objects\ev_script.cs" />
+    <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_eventsToHTML.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Menus\s_menucontroller.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_intro.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_sceneTrans.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_camera.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\Core\s_triggerhandler.cs" />
     <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\Objects\o_character.cs" />
-    <Compile Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\System\s_eventsToHTML.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="C:\Users\hamza\Own Games\Unity\Test projects\Magnum foundation 2 playground\Packages\Magnum Foundation 2\Runtime\com.magnumfoundation2.asmdef" />

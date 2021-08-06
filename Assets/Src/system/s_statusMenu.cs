@@ -28,6 +28,9 @@ public class s_statusMenu : s_menucontroller
     public Text spText;
     public Text expText;
 
+    public s_elementalWeaknessGUI[] elementalAffinities;
+    public s_elementalWeaknessGUI[] talkAffinities;
+
     public void SetChar(ref o_battleCharData cha) {
         currentChar = cha;
     }
@@ -76,6 +79,13 @@ public class s_statusMenu : s_menucontroller
             dxText.text = "" + currentChar.intelligence;
             agiText.text = "" + currentChar.speed;
             gutText.text = "" + currentChar.guts;
+            foreach (var g in elementalAffinities) {
+                g.SetToDat(currentChar);
+            }
+            foreach (var g in talkAffinities)
+            {
+                g.SetToDat(currentChar);
+            }
         }
     }
 }

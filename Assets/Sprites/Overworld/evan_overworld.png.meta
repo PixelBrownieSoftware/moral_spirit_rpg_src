@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -5259534930199518631
     second: evan_overworld_idle
+  - first:
+      213: -3869907463604295706
+    second: evan_overworld_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,6 +61,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -120,6 +125,27 @@ TextureImporter:
       bones: []
       spriteID: 1a73ff74aa40e8046b5cfec94a8ab8d6
       internalID: -5259534930199518631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evan_overworld_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 109
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7ab3e5aa35b4ac0800000000000000
+      internalID: -3869907463604295706
       vertices: []
       indices: 
       edges: []

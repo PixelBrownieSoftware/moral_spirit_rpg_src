@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MagnumFoundation2.Objects;
+using MagnumFoundation2.System.Core;
 
 [System.Serializable]
 public class s_bEvent
@@ -79,8 +80,10 @@ public class c_enemy : o_overworlC
         {
             if (!touched)
             {
+                StartCoroutine(s_BGM.GetInstance().FadeOutMusic(1.5f));
                 touched = true;
                 c.control = false;
+                s_globals.allowPause = false;
                 c.CHARACTER_STATE = CHARACTER_STATES.STATE_IDLE;
                 rpg_globals.gl.SwitchToBattle(this);
             }

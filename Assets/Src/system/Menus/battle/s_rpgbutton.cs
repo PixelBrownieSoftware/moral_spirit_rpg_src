@@ -28,7 +28,6 @@ public class s_rpgbutton : s_button
                 s_menuhandler.GetInstance().SwitchMenu("TargetMenu");
                 s_soundmanager.GetInstance().PlaySound("selectOption");
                 */
-                backButton.buttonType = "BattleMainMenu";
                 s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>
                 ("BattleMenuTarget").bcs = new List<o_battleChar>();
                 foreach (o_battleChar bc in s_battlesyst.GetInstance().opposition)
@@ -40,13 +39,14 @@ public class s_rpgbutton : s_button
                 }
                 s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>
                 ("BattleMenuTarget").mov = s_battlesyst.GetInstance().normalAttack;
+                backButton.buttonType = "BattleMainMenu";
                 base.OnButtonClicked();
                 break;
 
             case "skill":
                 backButton.buttonType = "BattleMainMenu";
                 s_menuhandler.GetInstance().GetMenu<s_battleMenu>("BattleMenuSkillsItemsGUI").rpgSkills = 
-                    s_battlesyst.GetInstance().currentCharacter.skillMoves;
+                    s_battlesyst.GetInstance().currentCharacter.allSkills;
                 s_menuhandler.GetInstance().GetMenu<s_battleMenu>("BattleMenuSkillsItemsGUI").isItem = false;
                 s_menuhandler.GetInstance().SwitchMenu("BattleMenuSkillsItemsGUI");
                 s_soundmanager.GetInstance().PlaySound("selectOption");
