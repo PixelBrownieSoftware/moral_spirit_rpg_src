@@ -13,7 +13,77 @@ MonoBehaviour:
   m_Name: Ralph
   m_EditorClassIdentifier: 
   shortName: 
-  characterAI: []
+  characterAI:
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 542d1352cbf6b314f8afae59fd2972eb, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 6
+    element: 0
+    healthPercentage: 0.35
+    name: 
+    moveName: {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 16ecd52d7b24f414bb02766b434d0a9c, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 55314ed72f07e344d8240d12b43d86bc, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: c73a6f5b52d3290429d7edcb7fae1ac9, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 07af2dbdd1c9a114b84f4382c9cba7de, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 74e51401a0a3d5f4596caa7bfb61e28f, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims: []
   front: {fileID: 0}
@@ -34,7 +104,7 @@ MonoBehaviour:
   maxSkillPointsGMin: 2
   maxHitPointsGMax: 4
   maxHitPointsGMin: 2
-  attackG: 0.438
+  attackG: 0.533
   defenceG: 0.506
   intelligenceG: 0.51
   gutsG: 0.487
@@ -47,6 +117,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 55314ed72f07e344d8240d12b43d86bc, type: 2}
   - {fileID: 11400000, guid: c73a6f5b52d3290429d7edcb7fae1ac9, type: 2}
   - {fileID: 11400000, guid: 07af2dbdd1c9a114b84f4382c9cba7de, type: 2}
+  - {fileID: 11400000, guid: 74e51401a0a3d5f4596caa7bfb61e28f, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -65,11 +136,14 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
+  - 1.53
   - 1
-  - 0.65
-  - 2.06
-  - 1.2
-  - 0.65
+  - 2.2
+  - 1
+  - 1
+  - 1
+  - 0
+  - 2
   money: 0
   itemDrop: []
   relationships: []

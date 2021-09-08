@@ -8,6 +8,8 @@ public class s_mainBattleMenu : s_menucontroller
     public override void OnOpen()
     {
         base.OnOpen();
+        buttons[0].gameObject.SetActive(false);
+        buttons[6].gameObject.SetActive(false);
         if (rpg_globals.gl.inventory.Count > 0)
         {
             buttons[2].gameObject.SetActive(true);
@@ -15,6 +17,7 @@ public class s_mainBattleMenu : s_menucontroller
         else {
             buttons[2].gameObject.SetActive(false);
         }
+        /*
         bool spareButtonOn = false;
 
         if (s_battlesyst.GetInstance().enemyGroup.allRelations)
@@ -43,6 +46,7 @@ public class s_mainBattleMenu : s_menucontroller
             buttons[6].gameObject.SetActive(true);
         else
             buttons[6].gameObject.SetActive(false);
+        */
 
         if (s_battlesyst.GetInstance().enemyGroup.isFleeable)
             buttons[7].gameObject.SetActive(true);

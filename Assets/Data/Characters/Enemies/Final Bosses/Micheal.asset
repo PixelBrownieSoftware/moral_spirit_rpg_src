@@ -15,6 +15,16 @@ MonoBehaviour:
   shortName: 
   characterAI:
   - turnCounters: 0
+    conditions: 12
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 3
+    isImportant: 0
+  - turnCounters: 0
     conditions: 0
     element: 0
     healthPercentage: 0
@@ -69,31 +79,26 @@ MonoBehaviour:
   front: {fileID: -8050505381868735831, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
   back: {fileID: 0}
   isPartyChar: 0
-  level: 52
-  exp: 0
-  expToNextLevel: 0
   baseExpYeild: 100
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 35
-  maxHitPointsB: 68
-  attackB: 7
-  defenceB: 5
+  maxSkillPointsB: 38
+  maxHitPointsB: 34
+  attackB: 2
+  defenceB: 4
   intelligenceB: 5
-  gutsB: 5
-  speedB: 5
-  luckB: 5
-  maxSkillPointsGMax: 8
-  maxSkillPointsGMin: 5
-  maxHitPointsGMax: 8
-  maxHitPointsGMin: 5
-  attackG: 4
-  defenceG: 3
-  intelligenceG: 3
-  gutsG: 3
-  speedG: 3
-  luckG: 3
+  gutsB: 2
+  speedB: 3
+  maxSkillPointsGMax: 7
+  maxSkillPointsGMin: 4
+  maxHitPointsGMax: 6
+  maxHitPointsGMin: 4
+  attackG: 0.4661406
+  defenceG: 0.36713362
+  intelligenceG: 0.6664006
+  gutsG: 0.8544446
+  speedG: 0.3337646
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: 42fedf82923192a4db4b6e50b4d8a97c, type: 2}
@@ -101,18 +106,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
   - {fileID: 11400000, guid: cda91f69a509f5945b1a191ebadb29d4, type: 2}
+  - {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 0.36
+  - 0.74
+  - -1.38
+  - -0.44
+  - 2.05
+  - 1.63
+  - 1.58
+  - 0.17
+  - 2.01
   - 1
   - 1
   - 1

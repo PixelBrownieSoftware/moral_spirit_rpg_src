@@ -21,11 +21,11 @@ MonoBehaviour:
   multiTech: 0
   actionDescription: 
   infoDescription: 
-  element: 6
-  action_type: 0
-  moveType: 1
+  element: 0
+  action_type: 6
+  moveType: 3
   target: 0
-  power: 6
+  power: 7
   preAnim: []
   animation:
   - duration: 0.23

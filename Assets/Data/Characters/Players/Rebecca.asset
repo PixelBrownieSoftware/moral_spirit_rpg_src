@@ -65,11 +65,11 @@ MonoBehaviour:
     number2: 0
     isImportant: 0
   - turnCounters: 0
-    conditions: 18
+    conditions: 0
     element: 0
-    healthPercentage: 0.35
+    healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: b6196b715ec1ec942bf1d7feb40fb0a7, type: 2}
+    moveName: {fileID: 11400000, guid: 108abd6973a0f0d4d962675d5eb37d0c, type: 2}
     onParty: 1
     number1: 0
     number2: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   maxHitPointsGMin: 2
   attackG: 0.289
   defenceG: 0.254
-  intelligenceG: 0.845
+  intelligenceG: 0.758
   gutsG: 0.237
   speedG: 0.517
   inBattle: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
   - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
   - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
-  - {fileID: 11400000, guid: b6196b715ec1ec942bf1d7feb40fb0a7, type: 2}
+  - {fileID: 11400000, guid: 108abd6973a0f0d4d962675d5eb37d0c, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -126,9 +126,12 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 1.2
-  - 2.06
-  - 1.21
+  - 1
+  - 2.2
+  - 1
+  - 1
+  - 1
+  - 0.59
   - 1
   - 1
   money: 0.15

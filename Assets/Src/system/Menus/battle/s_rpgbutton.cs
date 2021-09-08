@@ -76,6 +76,11 @@ public class s_rpgbutton : s_button
                 s_soundmanager.GetInstance().PlaySound("selectOption");
                 break;
 
+            case "analyze":
+                s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>("BattleMenuTarget").skillType = s_battletargetMenu.SKILL_TYPE.ANALYZE_TEAM_OR_PARTY;
+                base.OnButtonClicked();
+                break;
+
             case "spare":
                 s_battlesyst.GetInstance().CurrentBattleEngineState = BATTLE_ENGINE_STATE.NEGOTIATE_MENU;
                 s_menuhandler.GetInstance().SwitchMenu("EMPTY");

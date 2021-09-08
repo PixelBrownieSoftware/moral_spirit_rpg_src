@@ -28,6 +28,9 @@ public class u_encounter : s_object
 
     IEnumerator GotoBattle()
     {
+        rpg_globals.GetInstance().player.CHARACTER_STATE = o_character.CHARACTER_STATES.STATE_IDLE;
+        rpg_globals.GetInstance().player.AnimMove();
+
         StartCoroutine(s_BGM.GetInstance().FadeOutMusic(1.5f));
         s_camera.cam.ZoomCamera(10, 125);
         MagnumFoundation2.System.Core.s_soundmanager.GetInstance().PlaySound("encounter");

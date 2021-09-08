@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6aa7109b6963a46850a45af304b7a3, type: 3}
   m_Name: mich_gab_boss
   m_EditorClassIdentifier: 
-  endEvent: {fileID: 0}
+  endEvent: {fileID: 11400000, guid: 509a66343550dea4b96ca0ee8bd96545, type: 2}
   enemies:
   - {fileID: 11400000, guid: 55307863b9a77794786d8f7536760b83, type: 2}
   - {fileID: 11400000, guid: 25eb17ca41ef7cd419480a0c0d6aa8a6, type: 2}

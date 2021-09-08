@@ -53,9 +53,10 @@ public class s_targCharButton : s_button
             case BTN_TYPE.ASSIGN_SKILL:
 
                 s_menuhandler.GetInstance().GetMenu<s_skillsMenu>("ExtraSkillsMenu").target = battleChar;
+                base.OnButtonClicked();
                 break;
         }
-       // base.OnButtonClicked();
+       // 
     }
 
     private void Update()

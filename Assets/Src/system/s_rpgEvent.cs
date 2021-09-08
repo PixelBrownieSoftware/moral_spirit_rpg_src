@@ -123,6 +123,18 @@ public class s_rpgEvent : s_triggerhandler
                         yield return StartCoroutine(GotoBattle((enemy_group)current_ev.scrObj));
                         break;
 
+                    case "SET_EXTRA_SKILLS":
+                        s_menuhandler.GetInstance().SwitchMenu("TargetExtraSkills");
+                        string oldBack = s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetExtraSkills").backButton.buttonType;
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetExtraSkills").backButton.isPause = false;
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetExtraSkills").backButton.buttonType = "EMPTY";
+                        while (s_menuhandler.GetInstance().GetCurrentMenuName() != "EMPTY") {
+                            yield return new WaitForSeconds(Time.deltaTime);
+                        }
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetExtraSkills").backButton.isPause = true;
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetExtraSkills").backButton.buttonType = oldBack;
+                        break;
+
                     case "ADD_PARTY_MEMBER":
                         BattleCharacterData bcd = current_ev.scrObj as BattleCharacterData;
                         if (rpg_globals.gl.partyMembers.Find(x => x.name == bcd.name) == null)

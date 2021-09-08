@@ -30,7 +30,10 @@ public enum ACTION_TYPE
     PLAYFUL,
     THREAT,
     FLIRT,
-    RESERVED
+    RESERVED,
+    PSYCHIC,
+    LIGHT,
+    DARK
 }
 public enum STATUS_EFFECT
 {
@@ -254,7 +257,7 @@ public class o_battleChar : MonoBehaviour
     public int statusDur { get { return statusLast; } }
 
     public float[] elementTypeCharts = new float[11] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };   //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown 
-    public float[] actionTypeCharts = new float[6] { 1, 1, 1, 1, 1, 1 };    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
+    public float[] actionTypeCharts = new float[8] { 1, 1, 1, 1, 1, 1, 1, 1 };    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
 
     public SpriteRenderer rend;
     public Sprite[] sprites;
@@ -267,22 +270,11 @@ public class o_battleChar : MonoBehaviour
     float animSpeed;
     float animPT;
 
-    const float buffMultiplier = 1.15f;
-
     public float getNetAttack {
         get
         {
-            float attackModifier = 0;   //You get this from status effects
-            switch (currentStatus) {
-                case STATUS_EFFECT.PARALYZED:
-                    attackModifier = -.75f;
-                    break;
-                case STATUS_EFFECT.POISON:
-                    attackModifier = -1.25f;
-                    break;
-            }
-            float total = attack + (attackBuff * buffMultiplier) + attackModifier;
-            if (total < 0)
+            float total = attack + attackBuff;
+            if (total <= 0)
                 return 0.3f;
             return total;
         }
@@ -291,20 +283,7 @@ public class o_battleChar : MonoBehaviour
     {
         get
         {
-            float defenceModifier = 0;   //You get this from status effects
-            switch (currentStatus)
-            {
-                case STATUS_EFFECT.PARALYZED:
-                    defenceModifier = -2f;
-                    break;
-                case STATUS_EFFECT.POISON:
-                    defenceModifier = -1.25f;
-                    break;
-                case STATUS_EFFECT.SLEEP:
-                    defenceModifier = -1.95f;
-                    break;
-            }
-            float total = defence + (defenceBuff * buffMultiplier) + defenceModifier;
+            float total = defence + defenceBuff;
             if (total <= 0)
                 return 0.3f;
             return total;
@@ -314,7 +293,7 @@ public class o_battleChar : MonoBehaviour
     {
         get
         {
-            float total =  intelligence + (intelligenceBuff * buffMultiplier);
+            float total =  intelligence + intelligenceBuff;
             if (total <= 0)
                 return 0.3f;
             return total;
@@ -324,9 +303,9 @@ public class o_battleChar : MonoBehaviour
     {
         get
         {
-            float total = guts + (gutsBuff * buffMultiplier);
+            float total = guts + gutsBuff;
             if (total <= 0)
-                return 0.5f;
+                return 1f;
             return total;
         }
     }
@@ -334,9 +313,10 @@ public class o_battleChar : MonoBehaviour
     {
         get
         {
-            if (speedBuff > speed)
-                return 1;
-            return speed + (speedBuff * buffMultiplier);
+            float total = speed + speedBuff;
+            if (total <= 0)
+                return 1f;
+            return total;
         }
     }
     public List<s_move> allSkills {
@@ -513,7 +493,7 @@ public class o_battleChar : MonoBehaviour
                             break;
 
                         case STATUS_MOVE_TYPE.HEAL_STAMINA:
-                            movePow = mov.power + move.user.level;
+                            movePow = mov.power + (move.user.level / 2);
                             break;
                     }
                     break;
@@ -521,10 +501,9 @@ public class o_battleChar : MonoBehaviour
                 //Talking's effectivenes relies on the guts of the defender
                 case MOVE_TYPE.TALK:
                     movePow = (int)(
-                        (mov.power * 
-                        (((move.user.level + 1) / 16) + (GetElementDamage(move) / (float)getNetGuts))) *
-                        (elementTypeCharts[(int)mov.element] / 3) *
-                        (actionTypeCharts[(int)mov.action_type]) / 1.5f) ;
+                        ((mov.power * 
+                        (((move.user.level + 1) ) / 25.5f) + (GetTalkMoveDamage(move) / (float)GetTalkMoveDefence(move)))) *
+                        (actionTypeCharts[(int)mov.action_type])) ;
                     break;
             }
         } else {
@@ -542,7 +521,7 @@ public class o_battleChar : MonoBehaviour
 
         switch (move.move.moveType) {
             case MOVE_TYPE.PHYSICAL:
-                baseStat = move.user.getNetAttack;
+                baseStat = move.user.getNetAttack ;
                 break;
 
             case MOVE_TYPE.SPECIAL:
@@ -554,13 +533,13 @@ public class o_battleChar : MonoBehaviour
         switch (move.move.element)
         {
             case ELEMENT.FORCE:
-                elementFormula = 
-                    (move.user.getNetIntellgence / 3) +
-                    (move.user.getNetSpeed / 1.5f);
+                elementFormula = (move.user.getNetAttack / 1.8f);
                 break;
 
             case ELEMENT.PEIRCE:
-                elementFormula = (move.user.getNetAttack / 2);
+                elementFormula = 
+                    (move.user.getNetAttack / 2.5f) +
+                    (move.user.getNetSpeed / 2.5f);
                 break;
 
             case ELEMENT.FIRE:
@@ -568,11 +547,13 @@ public class o_battleChar : MonoBehaviour
                 break;
 
             case ELEMENT.ICE:
-                elementFormula = move.user.getNetAttack / 2;
+                elementFormula = move.user.getNetAttack / 2.25f;
                 break;
 
             case ELEMENT.WIND:
-                elementFormula = (move.user.getNetSpeed / 1.2f);
+                elementFormula =
+                    (move.user.getNetIntellgence / 3) +
+                    (move.user.getNetSpeed / 1.5f);
                 break;
 
             case ELEMENT.ELECTRIC:
@@ -607,7 +588,7 @@ public class o_battleChar : MonoBehaviour
         switch (move.move.action_type)
         {
             case ACTION_TYPE.COMFORT:
-                talkFormula = (move.user.getNetGuts / 4);
+                talkFormula = (move.user.getNetGuts / 1.5f);
                 break;
 
             case ACTION_TYPE.THREAT:
@@ -615,19 +596,19 @@ public class o_battleChar : MonoBehaviour
                 break;
 
             case ACTION_TYPE.RESERVED:
-                talkFormula = (move.user.getNetIntellgence / 4);
+                talkFormula = (move.user.getNetIntellgence / 1.7F);
                 break;
 
             case ACTION_TYPE.PLAYFUL:
                 talkFormula = 
-                    (move.user.getNetSpeed / 4) +
-                    (move.user.getNetAttack / 4);
+                    (move.user.getNetSpeed / 2.5f) +
+                    (move.user.getNetGuts / 2);
                 break;
 
             case ACTION_TYPE.FLIRT:
                 talkFormula = 
-                    (move.user.getNetAttack / 4) +
-                    (move.user.getNetGuts / 3);
+                    (move.user.getNetAttack / 2.1F) +
+                    (move.user.getNetGuts / 1.5f);
                 break;
         }
         //print(elementFormula);
@@ -637,19 +618,87 @@ public class o_battleChar : MonoBehaviour
         {
             case MOVE_TYPE.SPECIAL:
             case MOVE_TYPE.PHYSICAL:
-                total = baseStat + (elementFormula / 1.75f);
+                total = baseStat + (elementFormula / 1.85f);
                 break;
 
             case MOVE_TYPE.TALK:
-                total = baseStat + (elementFormula / 2.5f) + (talkFormula);
+                total = baseStat + (elementFormula / 2.25f) + (talkFormula);
                 break;
         }
         return total;
     }
 
-    /*
-    
+    public float GetTalkMoveDefence(s_battleAction move)
+    {
+        float talkFormula = 0;
+
+        switch (move.move.action_type)
+        {
+            case ACTION_TYPE.COMFORT:
+                talkFormula = (getNetGuts / 1.5f);
+                break;
+
+            case ACTION_TYPE.THREAT:
+                talkFormula = (getNetGuts / 1.5f) +(getNetDefence / 1.5f);
+                break;
+
+            case ACTION_TYPE.RESERVED:
+                talkFormula = (getNetIntellgence / 1.7F) + (getNetGuts / 1.5f);
+                break;
+
+            default:
+                talkFormula = getNetGuts;
+                break;
+        }
+        return talkFormula;
+    }
+    public float GetTalkMoveDamage(s_battleAction move)
+    {
         
+        float talkFormula = 0;
+        
+        switch (move.move.action_type)
+        {
+            case ACTION_TYPE.COMFORT:
+                talkFormula = (move.user.getNetGuts / 1.5f);
+                break;
+
+            case ACTION_TYPE.THREAT:
+                talkFormula = (move.user.getNetAttack / 1.5f);
+                break;
+
+            case ACTION_TYPE.RESERVED:
+                talkFormula = (move.user.getNetIntellgence / 1.7F);
+                break;
+
+            case ACTION_TYPE.PLAYFUL:
+                talkFormula =
+                    (move.user.getNetSpeed / 2.5f) +
+                    (move.user.getNetGuts / 2);
+                break;
+
+            case ACTION_TYPE.FLIRT:
+                talkFormula =
+                    (move.user.getNetAttack / 2.1F) +
+                    (move.user.getNetGuts / 1.5f);
+                break;
+
+            case ACTION_TYPE.PSYCHIC:
+                talkFormula = (move.user.getNetIntellgence / 1.85f);
+                break;
+
+            case ACTION_TYPE.DARK:
+                talkFormula =
+                    (move.user.getNetIntellgence / 3) +
+                    (move.user.getNetAttack / 3);
+                break;
+        }
+        //print(elementFormula);
+        
+        return talkFormula;
+    }
+
+    /*
         switch (mov.moveType) {
             case MOVE_TYPE.PHYSICAL:
             case MOVE_TYPE.SPECIAL:

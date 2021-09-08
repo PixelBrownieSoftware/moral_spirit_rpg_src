@@ -16,12 +16,12 @@ public class u_save : s_object
         base.Update();
 
         c_player p = IfTouchingGetCol<c_player>(trigger);
+        //print(p);
         if (p != null)
         {
             if (Input.GetKeyDown(s_globals.GetKeyPref("select")))
             {
                 rpg_globals.gl.HealParty();
-                s_soundmanager.GetInstance().PlaySound("healSound");
                 s_rpgEvent.rpgEv.JumpToEvent(saveScript);
             }
         }

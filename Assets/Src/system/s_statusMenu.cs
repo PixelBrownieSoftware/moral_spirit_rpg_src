@@ -79,9 +79,11 @@ public class s_statusMenu : s_menucontroller
             dxText.text = "" + currentChar.intelligence;
             agiText.text = "" + currentChar.speed;
             gutText.text = "" + currentChar.guts;
+            /*
             foreach (var g in elementalAffinities) {
                 g.SetToDat(currentChar);
             }
+            */
             foreach (var g in talkAffinities)
             {
                 g.SetToDat(currentChar);

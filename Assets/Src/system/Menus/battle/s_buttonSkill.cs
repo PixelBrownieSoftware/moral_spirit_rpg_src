@@ -38,7 +38,7 @@ public class s_buttonSkill : s_button
                                 txt.color = Color.red;
                             else
                                 txt.color = Color.black;
-                            txt.text = moveButton.name + " - " + Mathf.RoundToInt(((float)moveButton.cost / 100) * bc.maxHitPoints) + " HP";
+                            txt.text = moveButton.name + " - " + moveButton.cost + " HP";
                             break;
 
                         case MOVE_TYPE.TALK:
@@ -66,11 +66,11 @@ public class s_buttonSkill : s_button
 
                                     case STATUS_MOVE_TYPE.HEAL_STAMINA:
 
-                                        if (bc.hitPoints <= ((float)(moveButton.cost / 100) * bc.maxHitPoints))
+                                        if (bc.hitPoints <= moveButton.cost)
                                             txt.color = Color.red;
                                         else
                                             txt.color = Color.black;
-                                        txt.text = moveButton.name + " - " + Mathf.RoundToInt(((float)moveButton.cost / 100) * bc.maxHitPoints) + " HP";
+                                        txt.text = moveButton.name + " - " + moveButton.cost + " HP";
                                         break;
                                 }
                             }
@@ -155,6 +155,7 @@ public class s_buttonSkill : s_button
         switch (typeOfButton)
         {
             case SKILL_TYPE.BATTLE:
+                s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>("BattleMenuTarget").skillType = s_battletargetMenu.SKILL_TYPE.BATTLE;
                 if (m.onTeam)
                 {
                     if (m.onSelf)

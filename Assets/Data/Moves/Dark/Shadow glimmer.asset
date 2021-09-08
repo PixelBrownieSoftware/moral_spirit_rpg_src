@@ -21,24 +21,32 @@ MonoBehaviour:
   multiTech: 0
   actionDescription: 
   infoDescription: 
-  element: 8
-  action_type: 0
-  moveType: 1
+  element: 0
+  action_type: 8
+  moveType: 3
   target: 2
   power: 15
   preAnim: []
-  animation: []
+  animation:
+  - duration: 0
+    image: {fileID: 0}
+    name: 
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
-  str_inc: 0.2
-  vit_inc: 0.2
-  dex_inc: 0.3
-  luc_inc: 0.2
-  agi_inc: 0.2
-  gut_inc: 0.2
+  str_inc: 0
+  vit_inc: 0
+  dex_inc: 0
+  luc_inc: 0
+  agi_inc: 0
+  gut_inc: 0
   buffUser: 0
   buffTarget: 1
-  canLearn: 1
+  canLearn: 0
   excludeUser: 0
   str_req: 0
   dex_req: 0

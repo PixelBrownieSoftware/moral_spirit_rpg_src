@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7752378364190685461}
   - component: {fileID: 7826458015889034102}
   - component: {fileID: 1917080107728621220}
-  - component: {fileID: 7992178754726629931}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -135,48 +134,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7992178754726629931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112673991784219999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc49fec59f3b69648ba1848cca461993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonType: 
-  txt: {fileID: 0}
-  isPause: 1
-  move: {fileID: 0}
-  item: {fileID: 0}
-  img: {fileID: 0}
-  skillButtonImg: {fileID: 0}
-  cost: {fileID: 0}
-  usable: 0
-  taken: 0
-  fire_picture: {fileID: 0}
-  water_picture: {fileID: 0}
-  ice_picture: {fileID: 0}
-  electric_picture: {fileID: 0}
-  wind_picture: {fileID: 0}
-  earth_picture: {fileID: 0}
-  dark_picture: {fileID: 0}
-  light_picture: {fileID: 0}
-  poison_picture: {fileID: 0}
-  psychic_picture: {fileID: 0}
-  strike_picture: {fileID: 0}
-  force_picture: {fileID: 0}
-  perice_picture: {fileID: 0}
-  threaten_picture: {fileID: 0}
-  flirt_picture: {fileID: 0}
-  comfort_picture: {fileID: 0}
-  playful_picture: {fileID: 0}
-  heal_picture: {fileID: 0}
-  support_picture: {fileID: 0}
-  BUTTON_TYPE: 0
 --- !u!1 &2001183749422651387
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +147,6 @@ GameObject:
   - component: {fileID: 5344689356423492901}
   - component: {fileID: 7373119084283246098}
   - component: {fileID: 786227268600280620}
-  - component: {fileID: 8295812768594126354}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -312,48 +268,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8295812768594126354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001183749422651387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc49fec59f3b69648ba1848cca461993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonType: 
-  txt: {fileID: 0}
-  isPause: 1
-  move: {fileID: 0}
-  item: {fileID: 0}
-  img: {fileID: 0}
-  skillButtonImg: {fileID: 0}
-  cost: {fileID: 0}
-  usable: 0
-  taken: 0
-  fire_picture: {fileID: 0}
-  water_picture: {fileID: 0}
-  ice_picture: {fileID: 0}
-  electric_picture: {fileID: 0}
-  wind_picture: {fileID: 0}
-  earth_picture: {fileID: 0}
-  dark_picture: {fileID: 0}
-  light_picture: {fileID: 0}
-  poison_picture: {fileID: 0}
-  psychic_picture: {fileID: 0}
-  strike_picture: {fileID: 0}
-  force_picture: {fileID: 0}
-  perice_picture: {fileID: 0}
-  threaten_picture: {fileID: 0}
-  flirt_picture: {fileID: 0}
-  comfort_picture: {fileID: 0}
-  playful_picture: {fileID: 0}
-  heal_picture: {fileID: 0}
-  support_picture: {fileID: 0}
-  BUTTON_TYPE: 0
 --- !u!1 &6820101311501323380
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,9 +579,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 6712050729334330560}
+  buttonTex: {fileID: 0}
   isPause: 1
   move: {fileID: 0}
-  item: {fileID: 0}
   img: {fileID: 7752378364190685461}
   skillButtonImg: {fileID: 5353784442451758038}
   cost: {fileID: 6592002696396253827}
@@ -702,6 +616,8 @@ MonoBehaviour:
   flirt_picture: {fileID: 2844923009556453745, guid: bd0622903c69c7643b8f877e5588e4d6,
     type: 3}
   comfort_picture: {fileID: 5190090530299845402, guid: bd0622903c69c7643b8f877e5588e4d6,
+    type: 3}
+  reserved_picture: {fileID: 6535756550885404928, guid: bd0622903c69c7643b8f877e5588e4d6,
     type: 3}
   playful_picture: {fileID: 423605440508702846, guid: bd0622903c69c7643b8f877e5588e4d6,
     type: 3}

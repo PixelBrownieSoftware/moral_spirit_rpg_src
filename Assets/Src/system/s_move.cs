@@ -32,12 +32,13 @@ public class s_move : ScriptableObject
     public string[] moveRequirements; //The move requirements for multiTechs
     public int accuracy = 85;
 
-    public float str_inc;
-    public float vit_inc;
-    public float dex_inc;
-    public float luc_inc;
-    public float agi_inc;
-    public float gut_inc;
+    public int str_inc;
+    public int vit_inc;
+    public int dex_inc;
+    public int luc_inc;
+    public int agi_inc;
+    public int gut_inc;
+
     public bool buffUser = false;
     public bool buffTarget = true;
     public bool canLearn = true;

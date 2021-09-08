@@ -51,8 +51,8 @@ MonoBehaviour:
   vit_inc: 0
   dex_inc: 0
   luc_inc: 0
-  agi_inc: 0
-  gut_inc: 0.85
+  agi_inc: 2
+  gut_inc: 2
   buffUser: 0
   buffTarget: 1
   canLearn: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
   dex_req: 5
   vit_req: 0
   agi_req: 0
-  gut_req: 3
+  gut_req: 6
   customFx: 
   statusEffectChances:
     statusEffectChance: 0

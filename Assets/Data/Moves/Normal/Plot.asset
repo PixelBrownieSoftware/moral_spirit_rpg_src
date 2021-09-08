@@ -30,13 +30,14 @@ MonoBehaviour:
   animation: []
   moveRequirements: []
   accuracy: 85
-  str_inc: 0.2
+  str_inc: 0
   vit_inc: 0
-  dex_inc: 0.65
+  dex_inc: 1
   luc_inc: 0
-  agi_inc: 0.15
+  agi_inc: 0
   gut_inc: 0
   buffUser: 1
+  buffTarget: 1
   canLearn: 1
   excludeUser: 1
   str_req: 0

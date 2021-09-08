@@ -865,6 +865,7 @@ public class ed_characterdat : Editor
                 #region ELEMENTS
                 case 3:
 
+                    /*
                     elementSliderSelector = (ELEMENT)EditorGUILayout.EnumPopup(elementSliderSelector);
 
                     EditorGUILayout.BeginHorizontal();
@@ -971,6 +972,10 @@ public class ed_characterdat : Editor
 
                     }
                     EditorGUILayout.Space();
+                    */
+
+                    if (data.actionTypeCharts.Length < 9)
+                        data.actionTypeCharts = new float[9] { 1, 1, 1, 1, 1, 1, 1, 1, 1 };
 
                     actionSliderSelector = (ACTION_TYPE)EditorGUILayout.EnumPopup(actionSliderSelector);
                     if (actionSliderSelector != ACTION_TYPE.NONE)
@@ -998,29 +1003,34 @@ public class ed_characterdat : Editor
                                 element = "Reserved";
                                 break;
 
+                            case ACTION_TYPE.PSYCHIC:
+                                element = "Psychic";
+                                break;
+
+                            case ACTION_TYPE.DARK:
+                                element = "Dark";
+                                break;
+
                         }
                         EditorGUILayout.LabelField(element + ": ");
                         data.actionTypeCharts[(int)actionSliderSelector] = ChangeStatFloatSlider(ref data.actionTypeCharts[(int)actionSliderSelector], -1.9f, 2.9f);
                         EditorGUILayout.EndHorizontal();
                     }
-                    for (int i = 0; i < 6; i++)
+                    for (int i = 0; i < 9; i++)
                     {
                         ACTION_TYPE elemen = (ACTION_TYPE)i;
+                        if (elemen == ACTION_TYPE.NONE)
+                            continue;
                         string str = "";
 
                         switch (elemen)
                         {
-
                             case ACTION_TYPE.COMFORT:
                                 str = "Comfort";
                                 break;
 
                             case ACTION_TYPE.FLIRT:
                                 str = "Flirt";
-                                break;
-
-                            case ACTION_TYPE.RESERVED:
-                                str = "Reserved";
                                 break;
 
                             case ACTION_TYPE.PLAYFUL:
@@ -1030,8 +1040,23 @@ public class ed_characterdat : Editor
                             case ACTION_TYPE.THREAT:
                                 str = "Threat";
                                 break;
-                        }
 
+                            case ACTION_TYPE.RESERVED:
+                                str = "Reserved";
+                                break;
+
+                            case ACTION_TYPE.PSYCHIC:
+                                str = "Psychic";
+                                break;
+
+                            case ACTION_TYPE.LIGHT:
+                                str = "Light";
+                                break;
+
+                            case ACTION_TYPE.DARK:
+                                str = "Dark";
+                                break;
+                        }
                         ///NOTE THAT 
                         ///-0.000001 -> -1 IS REFLECT
                         ///-1.000001 -> -2 IS ABSORB

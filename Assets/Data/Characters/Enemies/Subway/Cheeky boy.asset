@@ -15,16 +15,6 @@ MonoBehaviour:
   shortName: Ch.Boy
   characterAI:
   - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
     conditions: 6
     element: 0
     healthPercentage: 0.35
@@ -115,7 +105,7 @@ MonoBehaviour:
   couragePoints: 0
   maxSkillPoints: 0
   maxSkillPointsB: 13
-  maxHitPointsB: 12
+  maxHitPointsB: 17
   attackB: 2
   defenceB: 3
   intelligenceB: 4
@@ -123,8 +113,8 @@ MonoBehaviour:
   speedB: 2
   maxSkillPointsGMax: 3
   maxSkillPointsGMin: 3
-  maxHitPointsGMax: 2
-  maxHitPointsGMin: 1
+  maxHitPointsGMax: 4
+  maxHitPointsGMin: 2
   attackG: 0.43314904
   defenceG: 0.36119008
   intelligenceG: 0.7428188
@@ -132,7 +122,6 @@ MonoBehaviour:
   speedG: 0.622
   inBattle: 1
   moveDatabase:
-  - {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
   - {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
   - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
   - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
@@ -159,10 +148,12 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 0.73
-  - 1.61
-  - 2.2
-  - 1.67
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   - 1
   money: 0
   itemDrop:

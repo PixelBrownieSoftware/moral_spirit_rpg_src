@@ -59,17 +59,17 @@ MonoBehaviour:
   intelligence: 3
   guts: 0
   speed: 15
-  luck: 0
   attackBuff: 0
   defenceBuff: 0
   intelligenceBuff: 0
   gutsBuff: 0
   speedBuff: 0
-  luckBuff: 0
   meterSpeed: 0
-  isGuarding: 0
+  guardPoints: 0
   moveDatabase: []
   characterAI: []
+  turnNumber: 0
+  roundNumber: 0
   currentMove: {fileID: 0}
   itemUsed: {fileID: 0}
   targetCharacter: {fileID: 0}
@@ -77,6 +77,7 @@ MonoBehaviour:
   spareDrops: []
   moneySpare: 0
   skillMoves: []
+  extra_skills: []
   CurrentMoveNum: 0
   move_typ: 0
   currentStatus: 0
@@ -92,6 +93,10 @@ MonoBehaviour:
   - 1
   - 1
   actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
   - 1
   - 1
   - 1

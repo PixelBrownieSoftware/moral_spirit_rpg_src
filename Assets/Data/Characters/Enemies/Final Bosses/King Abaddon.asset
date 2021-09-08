@@ -15,14 +15,14 @@ MonoBehaviour:
   shortName: 
   characterAI:
   - turnCounters: 3
-    conditions: 0
+    conditions: 12
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
     onParty: 0
     number1: 0
-    number2: 2
+    number2: 3
     isImportant: 1
   - turnCounters: 0
     conditions: 0
@@ -59,9 +59,6 @@ MonoBehaviour:
   front: {fileID: 21300000, guid: cce31dcb98ce61f44967aa2c50325b8a, type: 3}
   back: {fileID: 21300000, guid: cce31dcb98ce61f44967aa2c50325b8a, type: 3}
   isPartyChar: 0
-  level: 45
-  exp: 0
-  expToNextLevel: 0
   baseExpYeild: 0
   maxHitPoints: 0
   couragePoints: 0
@@ -73,17 +70,15 @@ MonoBehaviour:
   intelligenceB: 4
   gutsB: 5
   speedB: 4
-  luckB: 4
   maxSkillPointsGMax: 75
   maxSkillPointsGMin: 75
   maxHitPointsGMax: 45
   maxHitPointsGMin: 45
-  attackG: 3
-  defenceG: 3
-  intelligenceG: 3
-  gutsG: 3
-  speedG: 3
-  luckG: 3
+  attackG: 0.95
+  defenceG: 0.95
+  intelligenceG: 0.95
+  gutsG: 0.95
+  speedG: 0.95
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
@@ -108,11 +103,14 @@ MonoBehaviour:
   - -2
   actionTypeCharts:
   - 1
+  - 2.119
+  - 0.833
+  - -0.386
   - 1
+  - 2.081
   - 1
-  - 1
-  - 1
-  - 1
+  - -1.557
+  - 0
   money: 0
   itemDrop: []
   relationships: []

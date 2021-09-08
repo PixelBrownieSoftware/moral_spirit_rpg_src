@@ -4097,7 +4097,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1094698893204644229, guid: 516cdf6d6888636498a91c400f90c383,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7168,6 +7168,81 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1206966973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5913199517918744212, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: BattleBG
+      value: 
+      objectReference: {fileID: 21300000, guid: f08e26f0c263490499f0cdd382e6a469,
+        type: 3}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2550.9287
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -128.59517
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744213, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913199517918744214, guid: 50a3c24dc0503674b8336be6891620cc,
+        type: 3}
+      propertyPath: m_Name
+      value: BG_BATTLE (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 50a3c24dc0503674b8336be6891620cc, type: 3}
 --- !u!1 &1263416443
 GameObject:
   m_ObjectHideFlags: 0
@@ -7250,6 +7325,7 @@ MonoBehaviour:
   eventScript: {fileID: 0}
   mapSize: {x: 0, y: 0}
   allChacacters: []
+  BGM: {fileID: 0}
   pointA: {fileID: 555714346}
   pointB: {fileID: 0}
   pointC: {fileID: 0}
@@ -7518,5 +7594,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6840651389634426633, guid: 4e7d6aba75425d545bdedc3878bae171,
         type: 3}
+    - target: {fileID: 4211951435891965692, guid: d89d0dbabe072694d8b4e2cf709e77bc,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813039818041053168, guid: d89d0dbabe072694d8b4e2cf709e77bc,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d89d0dbabe072694d8b4e2cf709e77bc, type: 3}

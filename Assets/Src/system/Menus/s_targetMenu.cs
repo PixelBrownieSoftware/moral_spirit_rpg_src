@@ -61,7 +61,7 @@ public class s_targetMenu : s_menucontroller
                         GetButton<s_targCharButton>(ind).targType = s_targCharButton.BTN_TYPE.ITEM;
                         GetButton<s_targCharButton>(ind).mov = move;
                         GetButton<s_targCharButton>(ind).battleChar = bcD;
-                        GetButton<s_targCharButton>(ind).itemName = item.name;
+                        GetButton<s_targCharButton>(ind).itemName = move.name;
                     }
                     else
                     {

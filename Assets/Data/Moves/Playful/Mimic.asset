@@ -46,12 +46,12 @@ MonoBehaviour:
     anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
-  str_inc: 0.1
+  str_inc: 0
   vit_inc: 0
-  dex_inc: 0.2
+  dex_inc: 1
   luc_inc: 0
-  agi_inc: 0.2
-  gut_inc: 0.4
+  agi_inc: 0
+  gut_inc: 0
   buffUser: 0
   buffTarget: 1
   canLearn: 1

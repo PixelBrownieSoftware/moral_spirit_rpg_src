@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: toBossArea
   m_EditorClassIdentifier: 
+  objectReferences: []
   elements:
   - logic: 0
     eventType: 24
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -25,7 +27,7 @@ MonoBehaviour:
     int1: 0
     int2: 0
     tpPoint: 97
-    boolean: 0
+    boolean: 1
     boolean1: 0
     boolean2: 0
     string0: park_b
@@ -41,3 +43,4 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}

@@ -9,7 +9,10 @@ public class s_targetButton : s_button
 {
     public o_battleChar battleCharButton;
     public enum TARGET_TYPE {
-        BATTLE
+        BATTLE,
+        ANALYZE_TEAM_SELECT_PLAYERS,
+        ANALYZE_TEAM_SELECT_ENEMIES,
+        ANALYZE
     }
     public TARGET_TYPE targType;
     public s_move mov;
@@ -22,9 +25,11 @@ public class s_targetButton : s_button
     public Sprite normDmg;
     public Sprite weakDmg;
     public Sprite resDmg;
+    public Sprite unkDmg;
 
     public bool isItem = false;
     public bool isAll = false;
+    RPG_battleMemory memory;
 
     protected override void OnHover()
     {
@@ -36,6 +41,16 @@ public class s_targetButton : s_button
                 //s_camera.cam.SetTargPos(battleCharButton.transform.position);
                 break;
         }
+    }
+
+    public void GetMemory(o_battleChar bc)
+    {
+        memory = rpg_globals.GetInstance().GetComponent<rpg_globals>().GetBattleMemory(bc);
+    }
+
+    public void GetMemory()
+    {
+        memory = rpg_globals.GetInstance().GetComponent<rpg_globals>().GetBattleMemory(battleCharButton);
     }
 
     private void Update()
@@ -50,51 +65,86 @@ public class s_targetButton : s_button
             HPSlider.value = HP;
             SPSlider.value = SP;
             transform.position = Camera.main.WorldToScreenPoint(battleCharButton.transform.position);
-            if (mov.element != ELEMENT.UNKNOWN) {
-                switch (mov.moveType) {
-                    case MOVE_TYPE.PHYSICAL:
-                    case MOVE_TYPE.SPECIAL:
+            switch (targType) {
+                default:
+                    if (mov.element != ELEMENT.UNKNOWN)
+                    {
+                        weaknessIcon.color = Color.white;
+                        switch (mov.moveType)
+                        {
+                            case MOVE_TYPE.PHYSICAL:
+                            case MOVE_TYPE.SPECIAL:
+                                if (memory.knownElementAffinites[(int)mov.element])
+                                {
+                                    if (battleCharButton.elementTypeCharts[(int)mov.element] >= 2)
+                                    {
+                                        weaknessIcon.sprite = weakDmg;
+                                    }
+                                    else if (battleCharButton.elementTypeCharts[(int)mov.element] > 0 &&
+                                        battleCharButton.elementTypeCharts[(int)mov.element] < 2)
+                                    {
+                                        weaknessIcon.sprite = normDmg;
+                                    }
+                                    else if (battleCharButton.elementTypeCharts[(int)mov.element] <= 0)
+                                    {
+                                        weaknessIcon.sprite = resDmg;
+                                    }
+                                    if (battleCharButton.hitPoints <= 0)
+                                    {
+                                        weaknessIcon.sprite = normDmg;
+                                    }
+                                }
+                                else {
 
-                        if (battleCharButton.elementTypeCharts[(int)mov.element] >= 2)
-                        {
-                            weaknessIcon.sprite = weakDmg;
-                        }
-                        else if (battleCharButton.elementTypeCharts[(int)mov.element] > 0 &&
-                            battleCharButton.elementTypeCharts[(int)mov.element] < 2)
-                        {
-                            weaknessIcon.sprite = normDmg;
-                        }
-                        else if (battleCharButton.elementTypeCharts[(int)mov.element] <= 0)
-                        {
-                            weaknessIcon.sprite = resDmg;
-                        }
-                        if (battleCharButton.hitPoints <= 0)
-                        {
-                            weaknessIcon.sprite = normDmg;
-                        }
-                        break;
+                                    weaknessIcon.sprite = unkDmg;
+                                }
+                                break;
 
-                    case MOVE_TYPE.TALK:
+                            case MOVE_TYPE.STATUS:
+                                weaknessIcon.sprite = null;
+                                break;
 
-                        if (battleCharButton.actionTypeCharts[(int)mov.action_type] >= 2)
-                        {
-                            weaknessIcon.sprite = weakDmg;
+                            case MOVE_TYPE.TALK:
+
+                                if (memory.knownTalkAffinites[(int)mov.action_type])
+                                {
+                                    if (battleCharButton.actionTypeCharts[(int)mov.action_type] >= 2)
+                                    {
+                                        weaknessIcon.sprite = weakDmg;
+                                    }
+                                    else if (battleCharButton.actionTypeCharts[(int)mov.action_type] > 0 &&
+                                        battleCharButton.actionTypeCharts[(int)mov.action_type] < 2)
+                                    {
+                                        weaknessIcon.sprite = normDmg;
+                                    }
+                                    else if (battleCharButton.actionTypeCharts[(int)mov.action_type] <= 0)
+                                    {
+                                        weaknessIcon.sprite = resDmg;
+                                    }
+                                    if (battleCharButton.hitPoints <= 0 || battleCharButton.skillPoints <= 0)
+                                    {
+                                        weaknessIcon.sprite = normDmg;
+                                    }
+                                }
+                                else {
+                                    weaknessIcon.sprite = unkDmg;
+                                }
+                                break;
                         }
-                        else if (battleCharButton.actionTypeCharts[(int)mov.action_type] > 0 &&
-                            battleCharButton.actionTypeCharts[(int)mov.action_type] < 2)
-                        {
-                            weaknessIcon.sprite = normDmg;
-                        }
-                        else if (battleCharButton.actionTypeCharts[(int)mov.action_type] <= 0)
-                        {
-                            weaknessIcon.sprite = resDmg;
-                        }
-                        if (battleCharButton.hitPoints <= 0 || battleCharButton.skillPoints <= 0)
-                        {
-                            weaknessIcon.sprite = normDmg;
-                        }
-                        break;
-                }
+                    }
+                    break;
+
+                case TARGET_TYPE.ANALYZE:
+                    weaknessIcon.color = Color.clear;
+                    buttonType = "BattleStatusMenu";
+                    weaknessIcon.sprite = null;
+                    break;
+                case TARGET_TYPE.ANALYZE_TEAM_SELECT_ENEMIES:
+                case TARGET_TYPE.ANALYZE_TEAM_SELECT_PLAYERS:
+                    buttonType = "BattleMenuTarget";
+                    weaknessIcon.color = Color.clear;
+                    weaknessIcon.sprite = null;
+                    break;
             }
         }
     }
@@ -102,6 +152,23 @@ public class s_targetButton : s_button
     protected override void OnButtonClicked()
     {
         switch (targType) {
+            case TARGET_TYPE.ANALYZE_TEAM_SELECT_ENEMIES:
+                s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>("BattleMenuTarget").bcs = s_battlesyst.GetInstance().opposition;
+                s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>("BattleMenuTarget").skillType = s_battletargetMenu.SKILL_TYPE.ANALYZE_TARGETS; 
+                base.OnButtonClicked();
+                break;
+
+            case TARGET_TYPE.ANALYZE_TEAM_SELECT_PLAYERS:
+                s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>("BattleMenuTarget").bcs = s_battlesyst.GetInstance().players;
+                s_menuhandler.GetInstance().GetMenu<s_battletargetMenu>("BattleMenuTarget").skillType = s_battletargetMenu.SKILL_TYPE.ANALYZE_TARGETS;
+                base.OnButtonClicked();
+                break;
+
+            case TARGET_TYPE.ANALYZE:
+                s_menuhandler.GetInstance().GetMenu<s_battleStatus>("BattleStatusMenu").character = battleCharButton;
+                base.OnButtonClicked();
+                break;
+
             case TARGET_TYPE.BATTLE:
                 switch (mov.moveType) {
                     case MOVE_TYPE.PHYSICAL:
@@ -112,10 +179,25 @@ public class s_targetButton : s_button
                             break;
                     case MOVE_TYPE.SPECIAL:
                     case MOVE_TYPE.TALK:
-                    case MOVE_TYPE.STATUS:
                         if (s_battlesyst.GetInstance().currentCharacter.skillPoints < mov.cost)
                         {
                             return;
+                        }
+                        break;
+                    case MOVE_TYPE.STATUS:
+                        switch (mov.statusMoveType) {
+                            case STATUS_MOVE_TYPE.HEAL_STAMINA:
+                                if (s_battlesyst.GetInstance().currentCharacter.hitPoints < mov.cost)
+                                {
+                                    return;
+                                }
+                                break;
+                            default:
+                                if (s_battlesyst.GetInstance().currentCharacter.skillPoints < mov.cost)
+                                {
+                                    return;
+                                }
+                                break;
                         }
                         break;
                 }

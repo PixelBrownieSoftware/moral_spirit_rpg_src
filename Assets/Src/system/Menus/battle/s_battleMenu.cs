@@ -603,10 +603,31 @@ public class s_battleMenu : s_menucontroller
             foreach (KeyValuePair<s_move, int> it in items) {
                 if (it.Value == 0)
                     continue;
+                Sprite draw = null;
                 s_buttonSkill sb = GetButton<s_buttonSkill>(ind);
                 sb.moveButton = it.Key;
                 sb.itemCount = it.Value;
                 sb.item = true;
+                if (sb.moveButton.moveType == MOVE_TYPE.STATUS)
+                {
+
+                    sb.buttonTex.color = Color.white;
+                    switch (sb.moveButton.statusMoveType)
+                    {
+                        case STATUS_MOVE_TYPE.HEAL:
+                            draw = heal_picture;
+                            break;
+
+                        case STATUS_MOVE_TYPE.HEAL_STAMINA:
+                            draw = heal_stamina_picture;
+                            break;
+
+                        default:
+                            draw = support_picture;
+                            break;
+                    }
+                }
+                sb.element.sprite = draw;
                 ind++;
             }
         }

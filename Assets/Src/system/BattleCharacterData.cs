@@ -55,7 +55,7 @@ public class BattleCharacterData : ScriptableObject
     public STATUS_EFFECT currentStatus = STATUS_EFFECT.NONE;
 
     public float[] elementTypeCharts = new float[13] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };   //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown 
-    public float[] actionTypeCharts = new float[6] { 1, 1, 1, 1, 1 ,1};    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
+    public float[] actionTypeCharts = new float[8] { 1, 1, 1, 1, 1 ,1, 1, 1};    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak)
     public float money;
     public List<s_move> itemDrop;
 

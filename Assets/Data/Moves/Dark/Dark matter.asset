@@ -21,9 +21,9 @@ MonoBehaviour:
   multiTech: 0
   actionDescription: 
   infoDescription: 
-  element: 8
-  action_type: 0
-  moveType: 1
+  element: 0
+  action_type: 8
+  moveType: 3
   target: 0
   power: 45
   preAnim: []
@@ -45,7 +45,9 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
+  excludeUser: 0
   str_req: 6
   dex_req: 12
   vit_req: 6

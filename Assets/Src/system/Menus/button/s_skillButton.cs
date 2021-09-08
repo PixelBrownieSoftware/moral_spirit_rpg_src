@@ -30,6 +30,7 @@ public class s_skillButton : s_button
     public Sprite threaten_picture;
     public Sprite flirt_picture;
     public Sprite comfort_picture;
+    public Sprite reserved_picture;
     public Sprite playful_picture;
 
     public Sprite heal_picture;
@@ -138,6 +139,10 @@ public class s_skillButton : s_button
 
                         case ACTION_TYPE.THREAT:
                             img.sprite = threaten_picture;
+                            break;
+
+                        case ACTION_TYPE.RESERVED:
+                            img.sprite = reserved_picture;
                             break;
                     }
                     break;
