@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9bea7acdd3f38a4c91abd9e9aeb81df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 2113648885}
   title: Title
   noIntro: 1
 --- !u!95 &2113648885

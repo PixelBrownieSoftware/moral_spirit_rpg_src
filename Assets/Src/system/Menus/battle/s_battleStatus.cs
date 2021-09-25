@@ -68,30 +68,13 @@ public class s_battleStatus : s_menucontroller
         nameChar.text = character.name + " - Level " + character.level;
 
         float health = ((float)character.hitPoints / (float)character.maxHitPoints) * 100;
-        float stamina = ((float)character.skillPoints / (float)character.maxSkillPoints) * 100f;
+        //float stamina = ((float)character.skillPoints / (float)character.maxSkillPoints) * 100f;
 
         hp.value = Mathf.Round(health);
-        sp.value = Mathf.Round(stamina);
-
-        string mSpVal = "?";
+        //sp.value = Mathf.Round(stamina);
+        
         string mHpVal = "?";
-        string spVal = "?";
         string hpVal = "?";
-        switch (character.maxSkillPoints.ToString().Length)
-        {
-            case 1:
-                mSpVal = "?";
-                break;
-            case 2:
-                mSpVal = "??";
-                break;
-            case 3:
-                mSpVal = "???";
-                break;
-            case 4:
-                mSpVal = "????";
-                break;
-        }
         switch (character.maxHitPoints.ToString().Length)
         {
             case 1:
@@ -105,22 +88,6 @@ public class s_battleStatus : s_menucontroller
                 break;
             case 4:
                 mHpVal = "????";
-                break;
-        }
-        
-        switch (character.skillPoints.ToString().Length)
-        {
-            case 1:
-                spVal = "?";
-                break;
-            case 2:
-                spVal = "??";
-                break;
-            case 3:
-                spVal = "???";
-                break;
-            case 4:
-                spVal = "????";
                 break;
         }
         switch (character.hitPoints.ToString().Length) {
@@ -141,11 +108,11 @@ public class s_battleStatus : s_menucontroller
         if (memory.encountered)
         {
             hpText.text = character.hitPoints + "/" + character.maxHitPoints;
-            spText.text = character.skillPoints + "/" + character.maxSkillPoints;
+            //spText.text = character.skillPoints + "/" + character.maxSkillPoints;
         }
         else {
             hpText.text = hpVal + "/" + mHpVal;
-            spText.text = spVal + "/" + mSpVal;
+            //spText.text = spVal + "/" + mSpVal;
         }
 
         str.amount = character.attack;

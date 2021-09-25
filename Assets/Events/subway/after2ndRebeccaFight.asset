@@ -12,7 +12,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: after2ndRebeccaFight
   m_EditorClassIdentifier: 
+  objectReferences:
+  - Gabriel
+  - Rebecca
+  - Player
   elements:
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: -1
+    jump: 0
+    pos: {x: 2272, y: 105}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 21
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 5
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -42,6 +136,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -71,6 +166,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 0
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 2267.3, y: 77}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 2
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: 
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -87,7 +213,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan tried to comfort Rebecca, but nothing worked.
+    string0: You tried to comfort Rebecca, but nothing worked.
     string1: 
     posX: 0
     posY: 0
@@ -100,6 +226,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0.04
+    float1: 120
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -129,6 +286,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -158,6 +316,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0.02
+    float1: 150
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -187,6 +376,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -216,6 +406,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -245,6 +436,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 1
+    simlutaneousDelay: 0
+    camMode: 3
+    jump: 0
+    pos: {x: 2267.3, y: 77}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0.02
+    float1: 170
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -274,6 +496,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -303,6 +526,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -332,6 +556,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 35
+    funcName: 
+    simultaenous: 1
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 1
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -361,6 +616,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -390,6 +646,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0.05
+    float1: 130
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -419,6 +706,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -448,6 +736,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -477,6 +766,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 1
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 1
+    float1: 80
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -506,6 +826,97 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 1
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 2
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0.05
+    float1: -1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 0
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 2070, y: 100}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 25
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 1
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -535,6 +946,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -564,6 +976,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -594,6 +1007,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -623,6 +1037,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -652,6 +1067,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -681,6 +1097,37 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 21
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -710,6 +1157,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 6
     funcName: INCREASE_ES_LIMIT
@@ -739,6 +1187,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 7
     funcName: 
@@ -768,6 +1217,7 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 24
     funcName: 
@@ -797,3 +1247,4 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}

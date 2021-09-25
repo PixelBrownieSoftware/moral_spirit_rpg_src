@@ -50,7 +50,7 @@ public class RPG_save : dat_save
             pm.hitPoints = da.hitPoints;
             pm.maxHitPoints = da.maxHitPoints;
 
-            pm.skillPoints = da.skillPoints;
+            //pm.skillPoints = 0;
             pm.maxSkillPoints = da.maxSkillPoints;
 
             pm.dataSrc = da.dataSrc.name;
@@ -100,7 +100,7 @@ public class RPG_save : dat_save
             pm.hitPoints = da.hitPoints;
             pm.maxHitPoints = da.maxHitPoints;
 
-            pm.skillPoints = da.skillPoints;
+            //pm.skillPoints = 0;
             pm.maxSkillPoints = da.maxSkillPoints;
 
             pm.dataSrc = da.dataSrc.name;
@@ -115,7 +115,7 @@ public class RPG_save : dat_save
             }
 
             pMembers.Add(pm);
-            Debug.Log(pm.name);
+            //Debug.Log(pm.name);
             i++;
         }
         this.partyMembers = pMembers.ToArray();
@@ -141,7 +141,7 @@ public class RPG_battleMemory {
     public bool encountered = false;
 
     public bool[] knownElementAffinites = new bool[12];
-    public bool[] knownTalkAffinites = new bool[6];
+    public bool[] knownTalkAffinites = new bool[10];
 }
 
 public class rpg_globals : s_globals
@@ -446,7 +446,7 @@ public class rpg_globals : s_globals
                     newCharacter.currentMoves.Add(mov);
             }
             newCharacter.hitPoints = newCharacter.maxHitPoints = tempHP;
-            newCharacter.skillPoints = newCharacter.maxSkillPoints = tempSP;
+            newCharacter.maxSkillPoints = tempSP;
 
             newCharacter.attack = tempStr;
             newCharacter.defence = tempVit;
@@ -489,7 +489,6 @@ public class rpg_globals : s_globals
             newCharacter.maxHitPoints = saveDat.maxHitPoints;
             newCharacter.maxSkillPoints = saveDat.maxSkillPoints;
             newCharacter.hitPoints = saveDat.hitPoints;
-            newCharacter.skillPoints = saveDat.skillPoints;
 
             newCharacter.attack = saveDat.attack;
             newCharacter.defence = saveDat.defence;
@@ -597,11 +596,12 @@ public class rpg_globals : s_globals
     public IEnumerator BattleTransition(enemy_group enemy)
     {
         //Fade stuff
+        allowPause = false;
         Time.timeScale = 0;
         player.control = false;
         s_soundmanager.GetInstance().PlaySound("encounter");
         yield return StartCoroutine(Fade(true));
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(0.65f);
         Time.timeScale = 1;
         s_camera.cam.SetPlayer(null);
         Camera.main.transform.position = new Vector3(0, 0, -10);
@@ -624,18 +624,17 @@ public class rpg_globals : s_globals
         character.attack = bc.attack;
         character.defence = bc.defence;
         character.guts = bc.guts;
+        character.speed = bc.speed;
         character.intelligence = bc.intelligence;
         if (bc.hitPoints <= 0)
             character.hitPoints = 1;
         else
             character.hitPoints = bc.hitPoints;
         character.currentMoves = bc.skillMoves;
-       // print("HP: " + character.hitPoints);
         if (character.hitPoints > character.maxHitPoints)
             character.hitPoints = character.maxHitPoints;
         character.maxHitPoints = bc.maxHitPoints;
         character.maxSkillPoints = bc.maxSkillPoints;
-        character.skillPoints = bc.skillPoints;
     }
 
     public void PositionEnemies(int quantity)
@@ -691,7 +690,6 @@ public class rpg_globals : s_globals
         s_camera.cam.SetZoom();
         s_camera.cam.SetPlayer(null);
         player.control = false;
-        player.direction = Vector2.zero;
         Camera.main.transform.position = new Vector3(0, 0, -10);
 
         List<o_battleCharData> charactersInBattle = new List<o_battleCharData>();
@@ -709,7 +707,7 @@ public class rpg_globals : s_globals
             playerSlots[i].maxHitPoints = bc.maxHitPoints;
             playerSlots[i].hitPoints = bc.hitPoints;
             playerSlots[i].maxSkillPoints = bc.maxSkillPoints;
-            playerSlots[i].skillPoints = bc.skillPoints;
+            //playerSlots[i].skillPoints = bc.maxSkillPoints/2;
             playerSlots[i].defence = bc.defence;
             playerSlots[i].intelligence = bc.intelligence;
             playerSlots[i].guts = bc.guts;
@@ -797,8 +795,6 @@ public class rpg_globals : s_globals
         if (!battleSystem.isActive)
         {
         }
-        ///TODO: ADD ENEMY
-        ///
 
         /*
         for (int i =0; i < enemy.enemyGroup.enemyNames.Length; i++)
@@ -848,8 +844,6 @@ public class rpg_globals : s_globals
                 tempAg++;
             if (s_battlesyst.EligibleForIncrease(i, enem.gutsG))
                 tempGut++;
-            //if (i % enem.luckG == 0)
-                //tempLuc++;
 
             tempHP += UnityEngine.Random.Range(enem.maxHitPointsGMin, enem.maxHitPointsGMax + 1);
             tempSP += UnityEngine.Random.Range(enem.maxSkillPointsGMin, enem.maxSkillPointsGMax + 1);
@@ -871,9 +865,9 @@ public class rpg_globals : s_globals
         charObj.baseExpYeild = enem.baseExpYeild;
         charObj.exp = enem.baseExpYeild;
         charObj.maxHitPoints = tempHP;
-        charObj.hitPoints = charObj.maxHitPoints;
+        charObj.hitPoints = tempHP;
         charObj.maxSkillPoints = tempSP;
-        charObj.skillPoints = charObj.maxSkillPoints;
+        //charObj.skillPoints = tempSP/2;
         charObj.defence = tempVit;
         charObj.intelligence = tempDx;
         charObj.guts = tempGut;

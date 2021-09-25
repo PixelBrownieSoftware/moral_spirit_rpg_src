@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 0
   moveType: 2
   target: 0
-  power: 20
+  power: 5
   preAnim: []
   animation:
   - duration: 0
@@ -45,6 +45,7 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 0
   excludeUser: 0
   str_req: 0

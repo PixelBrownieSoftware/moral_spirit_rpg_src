@@ -72,7 +72,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 6686065195478646928}
   - component: {fileID: 6686065195478646929}
   - component: {fileID: 6069101689802070015}
+  - component: {fileID: 3954446147951169444}
   m_Layer: 5
   m_Name: CharacterButtonStatus
   m_TagString: Untagged
@@ -147,9 +148,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1012306204855506950, guid: 516cdf6d6888636498a91c400f90c383,
-    type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1db2de565f7c076499839eca2a738ba7, type: 3}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 19.96
 --- !u!114 &6686065195478646929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +216,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonType: 
   txt: {fileID: 7646696427406589494}
+  buttonTex: {fileID: 0}
   isPause: 1
+  allowMenuPause: 0
   menu: {fileID: 0}
   character:
     dataSrc: {fileID: 0}
@@ -229,17 +231,28 @@ MonoBehaviour:
     baseExpYeild: 0
     hitPoints: 0
     maxHitPoints: 0
-    skillPoints: 0
     maxSkillPoints: 0
     attack: 0
     defence: 0
     intelligence: 0
     guts: 0
     speed: 0
-    luck: 0
     inBattle: 1
     moveDatabase: []
     currentMoves: []
     extra_skills: []
     currentStatus: 0
     money: 0
+--- !u!114 &3954446147951169444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6686065195478646943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []

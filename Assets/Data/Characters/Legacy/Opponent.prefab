@@ -45,20 +45,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relationships: []
-  level: 5
+  level: 0
   exp: 0
-  baseExpYeild: 25
+  baseExpYeild: 0
   hitPointMeter: 0
-  hitPoints: 150
-  maxHitPoints: 150
-  skillPoints: 90
+  hitPoints: 0
+  maxHitPoints: 0
+  skillPoints: 0
   couragePoints: 0
-  maxSkillPoints: 90
-  attack: 7
+  maxSkillPoints: 0
+  attack: 0
   defence: 0
-  intelligence: 3
+  intelligence: 0
   guts: 0
-  speed: 15
+  speed: 0
   attackBuff: 0
   defenceBuff: 0
   intelligenceBuff: 0
@@ -158,7 +158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 14
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -95,7 +95,7 @@ MonoBehaviour:
   couragePoints: 0
   maxSkillPoints: 0
   maxSkillPointsB: 9
-  maxHitPointsB: 11
+  maxHitPointsB: 21
   attackB: 3
   defenceB: 3
   intelligenceB: 2
@@ -103,8 +103,8 @@ MonoBehaviour:
   speedB: 2
   maxSkillPointsGMax: 2
   maxSkillPointsGMin: 2
-  maxHitPointsGMax: 3
-  maxHitPointsGMin: 1
+  maxHitPointsGMax: 5
+  maxHitPointsGMin: 3
   attackG: 0.54311043
   defenceG: 0.5031835
   intelligenceG: 0.4216537
@@ -116,7 +116,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
   - {fileID: 11400000, guid: a388c78515dfe3142bb9b51e31789dce, type: 2}
   - {fileID: 11400000, guid: beb4aa0dbbb75284f84787b6dececefe, type: 2}
-  - {fileID: 11400000, guid: 74e51401a0a3d5f4596caa7bfb61e28f, type: 2}
+  - {fileID: 11400000, guid: 5b53a0e2a2cf3cb4f94df758a3359e8b, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -135,13 +135,16 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 2
-  - 1.53
-  - -0.42
+  - 2.03
+  - 1.34
   - 1
   - 1
+  - 1.33
+  - 1
+  - 1.46
+  - -0.9
   money: 0.5
   itemDrop:
   - {fileID: 11400000, guid: 784c4d3601e51a841857415fd9f25a1d, type: 2}
-  - {fileID: 11400000, guid: 32f8db9349138d84f9336f015f953c71, type: 2}
   relationships: []
+  conservativeCP: 0.21

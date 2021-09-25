@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6aa7109b6963a46850a45af304b7a3, type: 3}
+  m_Name: subway_3b
+  m_EditorClassIdentifier: 
+  endEvent: {fileID: 0}
+  enemies:
+  - {fileID: 11400000, guid: e3d6ac933ee8e4f4888768e4f0d5d004, type: 2}
+  - {fileID: 11400000, guid: c709c3c6b517198458aff1e01e82b194, type: 2}
+  maxLevel: 7
+  minLevel: 5
+  fixedLevel: 
+  isFixedLevel: 0
+  battleEvents: []
+  allRelations: 0
+  isFleeable: 1
+  songName: spirit_match

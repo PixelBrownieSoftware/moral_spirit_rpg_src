@@ -132,7 +132,7 @@ public class o_battleCharSaveData {
 
     public int hitPoints;
     public int maxHitPoints;
-    public int skillPoints;
+    //public int skillPoints;
     public int maxSkillPoints;
 
     public int attack;
@@ -166,7 +166,7 @@ public class o_battleCharData
 
     public int hitPoints;
     public int maxHitPoints;
-    public int skillPoints;
+    //public int skillPoints;
     public int maxSkillPoints;
 
     public int attack;
@@ -212,7 +212,7 @@ public class o_battleChar : MonoBehaviour
 
     public int hitPoints;
     public int maxHitPoints;
-    public int skillPoints;
+    //public int skillPoints;
     public float couragePoints;     //Out of 100, used for talking and non-magic attacks
     public int maxSkillPoints;
 
@@ -232,7 +232,7 @@ public class o_battleChar : MonoBehaviour
     const float meterSpeedDefault = 6.5f;
 
     public int guardPoints = 0;
-
+    
     public List<move_learn> moveDatabase = new List<move_learn>();
     public charAI[] characterAI;
     public int turnNumber = 0;
@@ -257,7 +257,7 @@ public class o_battleChar : MonoBehaviour
     public int statusDur { get { return statusLast; } }
 
     public float[] elementTypeCharts = new float[11] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };   //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown 
-    public float[] actionTypeCharts = new float[8] { 1, 1, 1, 1, 1, 1, 1, 1 };    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
+    public float[] actionTypeCharts = new float[9] { 1, 1, 1, 1, 1, 1, 1, 1, 1 };    //-1 -> absorb, 0 -> immune, 1 -> normal, 2-> weak, 3 -> knockdown)
 
     public SpriteRenderer rend;
     public Sprite[] sprites;
@@ -396,11 +396,11 @@ public class o_battleChar : MonoBehaviour
             }
         }
 
-        attackBuff = Mathf.Clamp(attackBuff, -3,3);
-        defenceBuff = Mathf.Clamp(defenceBuff, -3,3);
-        speedBuff = Mathf.Clamp(speedBuff, -3,3);
-        intelligenceBuff = Mathf.Clamp(intelligenceBuff, -3,3);
-        gutsBuff = Mathf.Clamp(gutsBuff, -3,3);
+        attackBuff = Mathf.Clamp(attackBuff, -5,5);
+        defenceBuff = Mathf.Clamp(defenceBuff, -5,5);
+        speedBuff = Mathf.Clamp(speedBuff, -5,5);
+        intelligenceBuff = Mathf.Clamp(intelligenceBuff, -5,5);
+        gutsBuff = Mathf.Clamp(gutsBuff, -5,5);
 
         if (animations != null)
         {
@@ -502,7 +502,7 @@ public class o_battleChar : MonoBehaviour
                 case MOVE_TYPE.TALK:
                     movePow = (int)(
                         ((mov.power * 
-                        (((move.user.level + 1) ) / 25.5f) + (GetTalkMoveDamage(move) / (float)GetTalkMoveDefence(move)))) *
+                        (((move.user.level + 1) ) / 21.5f) + (GetTalkMoveDamage(move) / (float)GetTalkMoveDefence(move)))) *
                         (actionTypeCharts[(int)mov.action_type])) ;
                     break;
             }
@@ -634,12 +634,11 @@ public class o_battleChar : MonoBehaviour
 
         switch (move.move.action_type)
         {
-            case ACTION_TYPE.COMFORT:
-                talkFormula = (getNetGuts / 1.5f);
-                break;
-
             case ACTION_TYPE.THREAT:
-                talkFormula = (getNetGuts / 1.5f) +(getNetDefence / 1.5f);
+                talkFormula = (getNetGuts / 2.2f) +(getNetDefence / 3f);
+                break;
+            case ACTION_TYPE.PLAYFUL:
+                talkFormula = (getNetGuts / 1.6f) + (getNetSpeed / 1.6f);
                 break;
 
             case ACTION_TYPE.RESERVED:
@@ -650,6 +649,7 @@ public class o_battleChar : MonoBehaviour
                 talkFormula = getNetGuts;
                 break;
         }
+        print(name + " Stat: " + talkFormula);
         return talkFormula;
     }
     public float GetTalkMoveDamage(s_battleAction move)
@@ -660,21 +660,19 @@ public class o_battleChar : MonoBehaviour
         switch (move.move.action_type)
         {
             case ACTION_TYPE.COMFORT:
-                talkFormula = (move.user.getNetGuts / 1.5f);
+                talkFormula = move.user.getNetDefence;
                 break;
 
             case ACTION_TYPE.THREAT:
-                talkFormula = (move.user.getNetAttack / 1.5f);
+                talkFormula = move.user.getNetAttack;
                 break;
 
             case ACTION_TYPE.RESERVED:
-                talkFormula = (move.user.getNetIntellgence / 1.7F);
+                talkFormula = move.user.getNetIntellgence;
                 break;
 
             case ACTION_TYPE.PLAYFUL:
-                talkFormula =
-                    (move.user.getNetSpeed / 2.5f) +
-                    (move.user.getNetGuts / 2);
+                talkFormula = move.user.getNetSpeed;
                 break;
 
             case ACTION_TYPE.FLIRT:
@@ -684,102 +682,31 @@ public class o_battleChar : MonoBehaviour
                 break;
 
             case ACTION_TYPE.PSYCHIC:
-                talkFormula = (move.user.getNetIntellgence / 1.85f);
+                talkFormula = (move.user.getNetIntellgence / 1.85f) +
+                    (move.user.getNetGuts / 2);
                 break;
 
             case ACTION_TYPE.DARK:
                 talkFormula =
                     (move.user.getNetIntellgence / 3) +
-                    (move.user.getNetAttack / 3);
+                    (move.user.getNetAttack / 3) +
+                     (move.user.getNetGuts / 1.5f);
                 break;
         }
         //print(elementFormula);
-        
+
+        print(move.user.name + " Stat: " + talkFormula);
         return talkFormula;
     }
 
-    /*
-        switch (mov.moveType) {
-            case MOVE_TYPE.PHYSICAL:
-            case MOVE_TYPE.SPECIAL:
-                guardPoints--;
-                break;
-        }
-
-    public int DoDamage(ref s_battleAction move)
-    {
-        int movePow = 0;
-
-        s_move mov = null;
-
-        switch (move.type) {
-            case s_battleAction.MOVE_TYPE.MOVE:
-                mov = move.move;
-                break;
-
-            case s_battleAction.MOVE_TYPE.ITEM:
-                mov = move.item.action;
-                break;
-        }
-
-        switch (mov.moveType)
-        {
-            default:
-                movePow = (int)((mov.power * ((float)move.user.getNetAttack / (float)getNetDefence)) * elementTypeCharts[(int)mov.element]);
-                break;
-                
-                //Might do physical vs magic
-                //Physical takes 3/4 attack and 1/4 intelligence and relies on physical defence
-                //Magic takes all intelligence and relies on a mixture of physical defence and intelligence
-
-            case MOVE_TYPE.SPECIAL:
-                movePow = (int)((mov.power * ((float)move.user.getNetIntellgence / (float)getNetDefence) ) * elementTypeCharts[(int)mov.element]);
-                break;
-
-                //Talking's effectivenes relies on the guts of the defender
-            case MOVE_TYPE.TALK:
-                movePow = (int)(
-                    mov.power * 
-                    ((float)move.user.getNetIntellgence / (float)getNetGuts) * 
-                    elementTypeCharts[(int)mov.element] * 
-                    actionTypeCharts[(int)mov.action_type]);
-                break;
-        }
-
-        //If it is a healing move
-        if (mov.onTeam)
-        {
-            movePow = Mathf.RoundToInt(mov.power * intelligence);
-            hitPoints += movePow;
-            hitPoints = Mathf.Clamp(hitPoints, 0, maxHitPoints);
-            return movePow;
-        }
-
-        if (mov.moveType == MOVE_TYPE.TALK)
-        {
-            skillPoints -= movePow;
-        } else
-        {
-            hitPoints -= movePow;
-            hitPoints = Mathf.Clamp(hitPoints, 0, maxHitPoints);
-        }
-        switch (mov.moveType) {
-            case MOVE_TYPE.PHYSICAL:
-            case MOVE_TYPE.SPECIAL:
-                guardPoints--;
-                break;
-        }
-        return movePow;
-    }
-    */
-
-    public int CalculateExp(o_battleChar character, int partyMemCount)
+    public int CalculateExp(o_battleChar character)
     {
         float lvl = (character.level / level);
         print(lvl);
-        float final = (lvl * character.baseExpYeild) / partyMemCount;
+        float final = (lvl * character.baseExpYeild);
+        print(final);
 
-        return (int)final;
+        return Mathf.RoundToInt(final);
     }
     public int CalculateExp(o_battleChar character,float multiplier)
     {
@@ -805,3 +732,79 @@ public class o_battleChar : MonoBehaviour
     
 }
 
+
+
+/*
+    switch (mov.moveType) {
+        case MOVE_TYPE.PHYSICAL:
+        case MOVE_TYPE.SPECIAL:
+            guardPoints--;
+            break;
+    }
+
+public int DoDamage(ref s_battleAction move)
+{
+    int movePow = 0;
+
+    s_move mov = null;
+
+    switch (move.type) {
+        case s_battleAction.MOVE_TYPE.MOVE:
+            mov = move.move;
+            break;
+
+        case s_battleAction.MOVE_TYPE.ITEM:
+            mov = move.item.action;
+            break;
+    }
+
+    switch (mov.moveType)
+    {
+        default:
+            movePow = (int)((mov.power * ((float)move.user.getNetAttack / (float)getNetDefence)) * elementTypeCharts[(int)mov.element]);
+            break;
+
+            //Might do physical vs magic
+            //Physical takes 3/4 attack and 1/4 intelligence and relies on physical defence
+            //Magic takes all intelligence and relies on a mixture of physical defence and intelligence
+
+        case MOVE_TYPE.SPECIAL:
+            movePow = (int)((mov.power * ((float)move.user.getNetIntellgence / (float)getNetDefence) ) * elementTypeCharts[(int)mov.element]);
+            break;
+
+            //Talking's effectivenes relies on the guts of the defender
+        case MOVE_TYPE.TALK:
+            movePow = (int)(
+                mov.power * 
+                ((float)move.user.getNetIntellgence / (float)getNetGuts) * 
+                elementTypeCharts[(int)mov.element] * 
+                actionTypeCharts[(int)mov.action_type]);
+            break;
+    }
+
+    //If it is a healing move
+    if (mov.onTeam)
+    {
+        movePow = Mathf.RoundToInt(mov.power * intelligence);
+        hitPoints += movePow;
+        hitPoints = Mathf.Clamp(hitPoints, 0, maxHitPoints);
+        return movePow;
+    }
+
+    if (mov.moveType == MOVE_TYPE.TALK)
+    {
+        skillPoints -= movePow;
+    } else
+    {
+        hitPoints -= movePow;
+        hitPoints = Mathf.Clamp(hitPoints, 0, maxHitPoints);
+    }
+    switch (mov.moveType) {
+        case MOVE_TYPE.PHYSICAL:
+        case MOVE_TYPE.SPECIAL:
+            guardPoints--;
+            break;
+    }
+    return movePow;
+}
+*/

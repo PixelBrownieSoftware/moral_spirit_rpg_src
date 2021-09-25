@@ -18,9 +18,9 @@ public class s_guiHP : MonoBehaviour
             if (chara.maxHitPoints > 0)
             {
                 hp = (((float)chara.hitPoints / (float)chara.maxHitPoints) * 100);
-                sp = (((float)chara.skillPoints / (float)chara.maxSkillPoints) * 100);
+                //sp = (((float)chara.skillPoints / (float)chara.maxSkillPoints) * 100);
                 HP.value = hp;
-                SP.value = sp;
+                //SP.value = sp;
                 characterName.text = chara.name;
             }
         }

@@ -21,21 +21,31 @@ MonoBehaviour:
   multiTech: 0
   actionDescription: 
   infoDescription: 
-  element: 6
-  action_type: 0
-  moveType: 1
+  element: 0
+  action_type: 6
+  moveType: 3
   target: 2
   power: 23
+  preAnim: []
   animation: []
   moveRequirements: []
   accuracy: 85
-  str_inc: 0.1
-  vit_inc: 0.1
-  dex_inc: 0.1
-  luc_inc: 0.1
-  agi_inc: 0.1
-  gut_inc: 0.1
+  str_inc: 0
+  vit_inc: 0
+  dex_inc: 0
+  luc_inc: 0
+  agi_inc: 0
+  gut_inc: 0
   buffUser: 0
+  buffTarget: 1
+  canLearn: 1
+  excludeUser: 0
+  str_req: 0
+  dex_req: 0
+  vit_req: 0
+  agi_req: 0
+  gut_req: 0
+  customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0

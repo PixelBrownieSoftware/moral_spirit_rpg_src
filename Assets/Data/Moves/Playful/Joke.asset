@@ -25,11 +25,11 @@ MonoBehaviour:
   action_type: 2
   moveType: 3
   target: 0
-  power: 5
+  power: 6
   preAnim: []
   animation:
   - duration: 0.2
-    image: {fileID: 21300004, guid: 0af0f5f722738d74fa55b6eb87cc63a0, type: 3}
+    image: {fileID: 0}
     name: joke
     position: {x: 0, y: 0}
     camMode: 0
@@ -50,8 +50,8 @@ MonoBehaviour:
   vit_inc: 0
   dex_inc: 0
   luc_inc: 0
-  agi_inc: 1
-  gut_inc: 1
+  agi_inc: 0
+  gut_inc: 0
   buffUser: 0
   buffTarget: 1
   canLearn: 1
@@ -65,4 +65,4 @@ MonoBehaviour:
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0
-  statusMoveType: 5
+  statusMoveType: 0

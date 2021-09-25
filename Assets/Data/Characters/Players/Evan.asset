@@ -24,26 +24,29 @@ MonoBehaviour:
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 8
-  maxHitPointsB: 26
-  attackB: 4
-  defenceB: 5
+  maxSkillPointsB: 5
+  maxHitPointsB: 21
+  attackB: 3
+  defenceB: 4
   intelligenceB: 2
-  gutsB: 4
+  gutsB: 3
   speedB: 2
-  maxSkillPointsGMax: 3
+  maxSkillPointsGMax: 2
   maxSkillPointsGMin: 1
   maxHitPointsGMax: 5
   maxHitPointsGMin: 4
-  attackG: 0.512
-  defenceG: 0.623
+  attackG: 0.583
+  defenceG: 0.676
   intelligenceG: 0.355
-  gutsG: 0.413
+  gutsG: 0.443
   speedG: 0.321
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
-  - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+  - {fileID: 11400000, guid: beb4aa0dbbb75284f84787b6dececefe, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: 1f3eab8ed8d726b498f3df4301e42e78, type: 2}
+  - {fileID: 11400000, guid: 68473089e0a3cc844b0a4771779398a7, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -62,10 +65,10 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 1
+  - 2
   - 1
   - 0.67
-  - 2.04
+  - 0
   - 1
   - 1
   - 1
@@ -73,3 +76,4 @@ MonoBehaviour:
   money: 0
   itemDrop: []
   relationships: []
+  conservativeCP: 0.45

@@ -6,7 +6,8 @@ public enum TARGET_MOVE_TYPE
 {
     SINGLE,
     RANDOM,
-    ALL
+    ALL,
+    NONE = -1
 }
 
 [System.Serializable]

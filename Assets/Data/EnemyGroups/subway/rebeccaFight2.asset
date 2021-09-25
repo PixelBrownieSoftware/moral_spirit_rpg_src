@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endEvent: {fileID: 11400000, guid: 4a7878f71ff8f604eb5d101d4dc7ec67, type: 2}
   enemies:
-  - {fileID: 11400000, guid: e3d6ac933ee8e4f4888768e4f0d5d004, type: 2}
-  - {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
   - {fileID: 11400000, guid: c709c3c6b517198458aff1e01e82b194, type: 2}
+  - {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
   - {fileID: 11400000, guid: a5f32c1c148e6a647a8a555a11c5a4a4, type: 2}
   maxLevel: 0
   minLevel: 0
-  fixedLevel: 090000000c0000000900000009000000
+  fixedLevel: 0a0000000c0000000a000000
   isFixedLevel: 1
   battleEvents: []
   allRelations: 1

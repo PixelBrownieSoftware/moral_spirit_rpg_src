@@ -221,6 +221,7 @@ MonoBehaviour:
   switchD: 0
   conditions: []
   eventScript: {fileID: 0}
+  TRIGGER_T: 0
   graphic: {fileID: 0}
   issolid: 1
   layuer:

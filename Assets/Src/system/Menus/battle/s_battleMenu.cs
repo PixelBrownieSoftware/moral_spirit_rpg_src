@@ -100,6 +100,7 @@ public class s_battleMenu : s_menucontroller
         elementT = move.element.ToString();
         actionT = move.action_type.ToString();
 
+        /*
         switch (move.element) {
             case ELEMENT.FIRE:
                 elementT = ReturnColouredText(elementT, fireColour);
@@ -135,6 +136,7 @@ public class s_battleMenu : s_menucontroller
                 elementT = ReturnColouredText(elementT, peirceColour);
                 break;
         }
+        */
         switch (move.action_type)
         {
             case ACTION_TYPE.COMFORT:
@@ -156,6 +158,18 @@ public class s_battleMenu : s_menucontroller
             case ACTION_TYPE.RESERVED:
                 actionT = ReturnColouredText(actionT, reservedColour);
                 break;
+
+            case ACTION_TYPE.LIGHT:
+                actionT = ReturnColouredText(elementT, lightColour);
+                break;
+
+            case ACTION_TYPE.DARK:
+                actionT = ReturnColouredText(elementT, darkColour);
+                break;
+
+            case ACTION_TYPE.PSYCHIC:
+                actionT = ReturnColouredText(elementT, psychicColour);
+                break;
         }
 
         switch (move.moveType) {
@@ -172,25 +186,27 @@ public class s_battleMenu : s_menucontroller
                 break;
         }
 
-        #region INCREASE
-        switch (move.statusMoveType) {
+        #region BUFFS
+        switch (move.statusMoveType)
+        {
+            case STATUS_MOVE_TYPE.DEBUFF:
             case STATUS_MOVE_TYPE.BUFF:
                 //Dexterity
                 {
                     string letter = ReturnColouredText("dexterity", dexColour);
-                    if (move.dex_inc > 0 && move.dex_inc <= 0.35f)
+                    if (move.dex_inc > 0 && move.dex_inc <= 1)
                     {
                         smallInc.Add(letter);
                     }
-                    else if (move.dex_inc > 0.35f && move.dex_inc <= 0.8f)
+                    else if (move.dex_inc > 1 && move.dex_inc <= 2)
                     {
                         moderateInc.Add(letter);
                     }
-                    else if (move.dex_inc > 0.8f && move.dex_inc <= 1.5f)
+                    else if (move.dex_inc > 2 && move.dex_inc <= 3)
                     {
                         largeInc.Add(letter);
                     }
-                    else if (move.dex_inc > 1.5f)
+                    else if (move.dex_inc > 3)
                     {
                         sharpInc.Add(letter);
                     }
@@ -198,19 +214,19 @@ public class s_battleMenu : s_menucontroller
                 //Strength
                 {
                     string letter = ReturnColouredText("strength", strColour);
-                    if (move.str_inc > 0 && move.str_inc <= 0.35f)
+                    if (move.str_inc > 0 && move.str_inc <= 1)
                     {
                         smallInc.Add(letter);
                     }
-                    else if (move.str_inc > 0.35f && move.str_inc <= 0.8f)
+                    else if (move.str_inc > 1f && move.str_inc <= 2)
                     {
                         moderateInc.Add(letter);
                     }
-                    else if (move.str_inc > 0.8f && move.str_inc <= 1.5f)
+                    else if (move.str_inc > 2 && move.str_inc <= 3)
                     {
                         largeInc.Add(letter);
                     }
-                    else if (move.str_inc > 1.5f)
+                    else if (move.str_inc > 3)
                     {
                         sharpInc.Add(letter);
                     }
@@ -218,19 +234,19 @@ public class s_battleMenu : s_menucontroller
                 //Vitality
                 {
                     string letter = ReturnColouredText("vitality", vitColour);
-                    if (move.vit_inc > 0 && move.vit_inc <= 0.35f)
+                    if (move.vit_inc > 0 && move.vit_inc <= 1)
                     {
                         smallInc.Add(letter);
                     }
-                    else if (move.vit_inc > 0.35f && move.vit_inc <= 0.8f)
+                    else if (move.vit_inc > 1 && move.vit_inc <= 2)
                     {
                         moderateInc.Add(letter);
                     }
-                    else if (move.vit_inc > 0.8f && move.vit_inc <= 1.5f)
+                    else if (move.vit_inc > 2 && move.vit_inc <= 3)
                     {
                         largeInc.Add(letter);
                     }
-                    else if (move.vit_inc > 1.5f)
+                    else if (move.vit_inc > 3)
                     {
                         sharpInc.Add(letter);
                     }
@@ -238,19 +254,19 @@ public class s_battleMenu : s_menucontroller
                 //Guts
                 {
                     string letter = ReturnColouredText("guts", gutColour);
-                    if (move.gut_inc > 0 && move.gut_inc <= 0.35f)
+                    if (move.gut_inc > 0 && move.gut_inc <= 1)
                     {
                         smallInc.Add(letter);
                     }
-                    else if (move.gut_inc > 0.35f && move.gut_inc <= 0.8f)
+                    else if (move.gut_inc > 1 && move.gut_inc <= 2)
                     {
                         moderateInc.Add(letter);
                     }
-                    else if (move.gut_inc > 0.8f && move.gut_inc <= 1.5f)
+                    else if (move.gut_inc > 2 && move.gut_inc <= 3)
                     {
                         largeInc.Add(letter);
                     }
-                    else if (move.gut_inc > 1.5f)
+                    else if (move.gut_inc > 3)
                     {
                         sharpInc.Add(letter);
                     }
@@ -258,19 +274,19 @@ public class s_battleMenu : s_menucontroller
                 //Agility
                 {
                     string letter = ReturnColouredText("agility", agiColour);
-                    if (move.agi_inc > 0 && move.agi_inc <= 0.35f)
+                    if (move.agi_inc > 0 && move.agi_inc <= 1)
                     {
                         smallInc.Add(letter);
                     }
-                    else if (move.agi_inc > 0.35f && move.agi_inc <= 0.8f)
+                    else if (move.agi_inc > 1 && move.agi_inc <= 2)
                     {
                         moderateInc.Add(letter);
                     }
-                    else if (move.agi_inc > 0.8f && move.agi_inc <= 1.5f)
+                    else if (move.agi_inc > 2 && move.agi_inc <= 3)
                     {
                         largeInc.Add(letter);
                     }
-                    else if (move.agi_inc > 1.5f)
+                    else if (move.agi_inc > 3)
                     {
                         sharpInc.Add(letter);
                     }
@@ -278,114 +294,7 @@ public class s_battleMenu : s_menucontroller
                 break;
         }
         #endregion
-
-        #region DECREASE
-        switch (move.statusMoveType)
-        {
-            case STATUS_MOVE_TYPE.DEBUFF:
-                //Dexterity
-                {
-                    string letter = ReturnColouredText("dexterity", dexColour);
-                    if (move.dex_inc > 0 && move.dex_inc <= 0.35f)
-                    {
-                        smallDec.Add(letter);
-                    }
-                    else if (move.dex_inc > 0.35f && move.dex_inc <= 0.8f)
-                    {
-                        moderateDec.Add(letter);
-                    }
-                    else if (move.dex_inc > 0.8f && move.dex_inc <= 1.5f)
-                    {
-                        largeDec.Add(letter);
-                    }
-                    else if (move.dex_inc > 1.5f)
-                    {
-                        sharpDec.Add(letter);
-                    }
-                }
-                //Strength
-                {
-                    string letter = ReturnColouredText("strength", strColour);
-                    if (move.str_inc > 0 && move.str_inc <= 0.35f)
-                    {
-                        smallDec.Add(letter);
-                    }
-                    else if (move.str_inc > 0.35f && move.str_inc <= 0.8f)
-                    {
-                        moderateDec.Add(letter);
-                    }
-                    else if (move.str_inc > 0.8f && move.str_inc <= 1.5f)
-                    {
-                        largeDec.Add(letter);
-                    }
-                    else if (move.str_inc > 1.5f)
-                    {
-                        sharpDec.Add(letter);
-                    }
-                }
-                //Vitality
-                {
-                    string letter = ReturnColouredText("vitality", vitColour);
-                    if (move.vit_inc > 0 && move.vit_inc <= 0.35f)
-                    {
-                        smallDec.Add(letter);
-                    }
-                    else if (move.vit_inc > 0.35f && move.vit_inc <= 0.8f)
-                    {
-                        moderateDec.Add(letter);
-                    }
-                    else if (move.vit_inc > 0.8f && move.vit_inc <= 1.5f)
-                    {
-                        largeDec.Add(letter);
-                    }
-                    else if (move.vit_inc > 1.5f)
-                    {
-                        sharpDec.Add(letter);
-                    }
-                }
-                //Guts
-                {
-                    string letter = ReturnColouredText("guts", gutColour);
-                    if (move.gut_inc > 0 && move.gut_inc <= 0.35f)
-                    {
-                        smallDec.Add(letter);
-                    }
-                    else if (move.gut_inc > 0.35f && move.gut_inc <= 0.8f)
-                    {
-                        moderateDec.Add(letter);
-                    }
-                    else if (move.gut_inc > 0.8f && move.gut_inc <= 1.5f)
-                    {
-                        largeDec.Add(letter);
-                    }
-                    else if (move.gut_inc > 1.5f)
-                    {
-                        sharpDec.Add(letter);
-                    }
-                }
-                //Agility
-                {
-                    string letter = ReturnColouredText("agility", agiColour);
-                    if (move.agi_inc > 0 && move.agi_inc <= 0.35f)
-                    {
-                        smallDec.Add(letter);
-                    }
-                    else if (move.agi_inc > 0.35f && move.agi_inc <= 0.8f)
-                    {
-                        moderateDec.Add(letter);
-                    }
-                    else if (move.agi_inc > 0.8f && move.agi_inc <= 1.5f)
-                    {
-                        largeDec.Add(letter);
-                    }
-                    else if (move.agi_inc > 1.5f)
-                    {
-                        sharpDec.Add(letter);
-                    }
-                }
-                break;
-        }
-        #endregion
+        
 
         switch (move.statusMoveType)
         {
@@ -468,10 +377,14 @@ public class s_battleMenu : s_menucontroller
                 break;
 
             case MOVE_TYPE.TALK:
+
+                damage = damageSize + " " + actionT + " " + moveT + " damage.";
+                /*
                 if (move.element == ELEMENT.NORMAL)
                     damage = damageSize + " " + actionT + " " + moveT + " damage.";
                 else
                     damage = damageSize + " " + elementT + " " + actionT + " " + moveT + " damage.";
+                */
                 break;
             case MOVE_TYPE.PHYSICAL:
             case MOVE_TYPE.SPECIAL:
@@ -496,6 +409,8 @@ public class s_battleMenu : s_menucontroller
         {
             for (int i = 0; i < rpgSkills.Count; i++)
             {
+                if (rpgSkills[i].target == TARGET_MOVE_TYPE.NONE)
+                    continue;
                 s_buttonSkill sb = GetButton<s_buttonSkill>(i);
                 sb.BMenu = this;
                 sb.gameObject.SetActive(true);
@@ -503,6 +418,7 @@ public class s_battleMenu : s_menucontroller
                 sb.txt.text = rpgSkills[i].name;
                 sb.item = false;
                 Sprite draw = null;
+                /*
                 switch (sb.moveButton.element)
                 {
                     case ELEMENT.NORMAL:
@@ -550,6 +466,7 @@ public class s_battleMenu : s_menucontroller
                         draw = wind_picture;
                         break;
                 }
+                */
                 switch (sb.moveButton.action_type)
                 {
                     case ACTION_TYPE.FLIRT:
@@ -575,6 +492,18 @@ public class s_battleMenu : s_menucontroller
                     case ACTION_TYPE.RESERVED:
                         sb.buttonTex.color = reservedColour;
                         draw = reserved_picture;
+                        break;
+                    case ACTION_TYPE.LIGHT:
+                        sb.buttonTex.color = lightColour;
+                        draw = light_picture;
+                        break;
+                    case ACTION_TYPE.DARK:
+                        sb.buttonTex.color = darkColour;
+                        draw = dark_picture;
+                        break;
+                    case ACTION_TYPE.PSYCHIC:
+                        sb.buttonTex.color = psychicColour;
+                        draw = psychic_picture;
                         break;
                 }
                 sb.buttonTex.color += new Color(0.3f, 0.3f, 0.3f);

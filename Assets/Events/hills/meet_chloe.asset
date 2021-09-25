@@ -240,7 +240,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan was surprised to see Chloe. He asked her what she was doing here.
+    string0: You were surprised to see your girlfreind, Chloe. You asked her what
+      she was doing here.
     string1: 
     posX: 0
     posY: 0
@@ -270,7 +271,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan asked her why she wasn't responding to his texts.
+    string0: You also asked her why she wasn't responding to his texts.
     string1: 
     posX: 0
     posY: 0
@@ -360,8 +361,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan reassured her, and told her he and Sebastian have something similar
-      as well..
+    string0: You reassured her, and told her that you and Sebastian have something
+      similar as well..
     string1: 
     posX: 0
     posY: 0
@@ -595,7 +596,7 @@ MonoBehaviour:
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 12
+    int0: 9
     int1: 0
     int2: 0
     tpPoint: 0

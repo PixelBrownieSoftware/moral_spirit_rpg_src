@@ -53,10 +53,8 @@ public class s_analyzeStats : MonoBehaviour
         SetTextTo(battleChar.intelligenceBuff, ref dex);
         SetTextTo(battleChar.gutsBuff, ref gut);
         SetTextTo(battleChar.speedBuff, ref agil);
-        HP.text = "HP:" +(float)((float)battleChar.hitPoints / (float)battleChar.maxHitPoints) * 100 + "% " + 
+        HP.text = "Resolve:" +(float)((float)battleChar.hitPoints / (float)battleChar.maxHitPoints) * 100 + "% " + 
             battleChar.hitPoints + "/ " + battleChar.maxHitPoints;
-        SP.text = "SP:" +(float)((float)battleChar.skillPoints / (float)battleChar.maxSkillPoints) * 100 + "% " +
-            battleChar.skillPoints + "/ " + battleChar.maxSkillPoints;
         switch (battleChar.currentStatus) {
             case STATUS_EFFECT.NONE:
                 status.text = "OK";

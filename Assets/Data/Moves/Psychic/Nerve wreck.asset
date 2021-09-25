@@ -16,14 +16,14 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 7
+  cost: 8
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
   infoDescription: 
-  element: 6
-  action_type: 0
-  moveType: 1
+  element: 0
+  action_type: 6
+  moveType: 3
   target: 0
   power: 17
   preAnim: []

@@ -30,21 +30,28 @@ public class s_targCharButton : s_button
                         s_soundmanager.GetInstance().PlaySound("healsound2");
                         break;
 
+                        /*
                     case STATUS_MOVE_TYPE.HEAL_STAMINA:
-                        battleChar.skillPoints += mov.power;
-                        battleChar.skillPoints = Mathf.Clamp(battleChar.skillPoints, 0, battleChar.maxSkillPoints);
+                        if (s_battlesyst.GetInstance().players.Contains(battleChar)) {
+                            float maxCP = s_battlesyst.GetInstance().playerCPMax;
+
+                            s_battlesyst.GetInstance().playerCP += mov.power;
+                            s_battlesyst.GetInstance().playerCP = Mathf.Clamp(s_battlesyst.GetInstance().playerCP, 0, maxCP);
+                        }
                         s_soundmanager.GetInstance().PlaySound("spHealSound");
                         break;
+                        */
                 }
                 break;
 
             case BTN_TYPE.SKILL_LOOK:
                 s_menuhandler.GetInstance().GetMenu<s_skillsMenu>("SkillsMenu").target = battleChar;
+                base.OnButtonClicked();
                 break;
 
             case BTN_TYPE.SKILL_USE:
 
-                battleChar.skillPoints -= mov.cost;
+                s_battlesyst.GetInstance().playerCP -= mov.cost;
                 battleChar.hitPoints += (int)((float)mov.power * (float)(battleChar.intelligence / 4));
 
                 battleChar.hitPoints = Mathf.Clamp(battleChar.hitPoints, 0, battleChar.maxHitPoints);
@@ -64,7 +71,7 @@ public class s_targCharButton : s_button
         switch (targType)
         {
             case BTN_TYPE.SKILL_USE:
-            if (battleChar.skillPoints < mov.cost)
+            if (s_battlesyst.GetInstance().playerCP < mov.cost)
             {
                 gameObject.SetActive(false);
             }
@@ -88,7 +95,7 @@ public class s_targCharButton : s_button
                         break;
 
                     case STATUS_MOVE_TYPE.HEAL_STAMINA:
-                        if (battleChar.skillPoints >= battleChar.maxSkillPoints)
+                        if (s_battlesyst.GetInstance().playerCP >= battleChar.maxSkillPoints)
                         {
                             gameObject.SetActive(false);
                         }
@@ -106,9 +113,6 @@ public class s_targCharButton : s_button
             {
                 if (mov != null)
                 {
-                    if (mov.statusMoveType == STATUS_MOVE_TYPE.HEAL_STAMINA)
-                        txt.text = battleChar.name + " SP: " + battleChar.skillPoints;
-                    else
                         txt.text = battleChar.name + " HP: " + battleChar.hitPoints;
                 }
             }

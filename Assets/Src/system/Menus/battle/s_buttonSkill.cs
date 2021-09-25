@@ -43,7 +43,7 @@ public class s_buttonSkill : s_button
 
                         case MOVE_TYPE.TALK:
                         case MOVE_TYPE.SPECIAL:
-                            if (bc.skillPoints < moveButton.cost)
+                            if (s_battlesyst.GetInstance().playerCP < moveButton.cost)
                                 txt.color = Color.red;
                             else
                                 txt.color = Color.black;
@@ -57,7 +57,7 @@ public class s_buttonSkill : s_button
                                 switch (moveButton.statusMoveType)
                                 {
                                     default:
-                                        if (bc.skillPoints < moveButton.cost)
+                                        if (s_battlesyst.GetInstance().playerCP < moveButton.cost)
                                             txt.color = Color.red;
                                         else
                                             txt.color = Color.black;
@@ -125,7 +125,7 @@ public class s_buttonSkill : s_button
                         if (!moveButton.isFixed) {
                             switch (moveButton.statusMoveType) {
                                 default:
-                                    if (bc.skillPoints < moveButton.cost)
+                                    if (s_battlesyst.GetInstance().playerCP < moveButton.cost)
                                     {
                                         return;
                                     }
@@ -144,7 +144,7 @@ public class s_buttonSkill : s_button
                     case MOVE_TYPE.TALK:
                     case MOVE_TYPE.SPECIAL:
 
-                        if (bc.skillPoints < moveButton.cost)
+                        if (s_battlesyst.GetInstance().playerCP < moveButton.cost)
                         {
                             return;
                         }

@@ -58,12 +58,12 @@ public class s_targetButton : s_button
         if (battleCharButton != null)
         {
             float HP = ((float)battleCharButton.hitPoints / (float)battleCharButton.maxHitPoints) * 100;
-            float SP = ((float)battleCharButton.skillPoints / (float)battleCharButton.maxSkillPoints) * 100;
+            //float SP = ((float)battleCharButton.skillPoints / (float)battleCharButton.maxSkillPoints) * 100;
             HP = Mathf.Round(HP);
-            SP = Mathf.Round(SP);
+            //SP = Mathf.Round(SP);
 
             HPSlider.value = HP;
-            SPSlider.value = SP;
+            //SPSlider.value = SP;
             transform.position = Camera.main.WorldToScreenPoint(battleCharButton.transform.position);
             switch (targType) {
                 default:
@@ -101,7 +101,7 @@ public class s_targetButton : s_button
                                 break;
 
                             case MOVE_TYPE.STATUS:
-                                weaknessIcon.sprite = null;
+                                weaknessIcon.sprite = normDmg;
                                 break;
 
                             case MOVE_TYPE.TALK:
@@ -121,7 +121,7 @@ public class s_targetButton : s_button
                                     {
                                         weaknessIcon.sprite = resDmg;
                                     }
-                                    if (battleCharButton.hitPoints <= 0 || battleCharButton.skillPoints <= 0)
+                                    if (battleCharButton.hitPoints <= 0)
                                     {
                                         weaknessIcon.sprite = normDmg;
                                     }
@@ -179,7 +179,7 @@ public class s_targetButton : s_button
                             break;
                     case MOVE_TYPE.SPECIAL:
                     case MOVE_TYPE.TALK:
-                        if (s_battlesyst.GetInstance().currentCharacter.skillPoints < mov.cost)
+                        if (s_battlesyst.GetInstance().playerCP < mov.cost)
                         {
                             return;
                         }
@@ -193,7 +193,7 @@ public class s_targetButton : s_button
                                 }
                                 break;
                             default:
-                                if (s_battlesyst.GetInstance().currentCharacter.skillPoints < mov.cost)
+                                if (s_battlesyst.GetInstance().playerCP < mov.cost)
                                 {
                                     return;
                                 }

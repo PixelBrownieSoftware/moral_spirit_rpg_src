@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 4
+  cost: 0
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 1
   moveType: 3
   target: 0
-  power: 7
+  power: 6
   preAnim: []
   animation:
   - duration: 0.15
@@ -54,12 +54,12 @@ MonoBehaviour:
     anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
-  str_inc: 1
+  str_inc: 0
   vit_inc: 0
   dex_inc: 0
   luc_inc: 0
   agi_inc: 0
-  gut_inc: 1
+  gut_inc: 0
   buffUser: 0
   buffTarget: 1
   canLearn: 1
@@ -73,4 +73,4 @@ MonoBehaviour:
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0
-  statusMoveType: 5
+  statusMoveType: 0

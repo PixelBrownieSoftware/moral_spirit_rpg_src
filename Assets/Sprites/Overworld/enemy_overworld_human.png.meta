@@ -5,6 +5,21 @@ TextureImporter:
   - first:
       213: -9006614330768539880
     second: enemy_overworld_human_0
+  - first:
+      213: 495284068684082501
+    second: enemy_overworld_human_1
+  - first:
+      213: 8635864287510975759
+    second: enemy_overworld_human_2
+  - first:
+      213: -5692795356451536163
+    second: enemy_overworld_human_3
+  - first:
+      213: 8684204889089150970
+    second: enemy_overworld_human_4
+  - first:
+      213: -8314633789467398858
+    second: enemy_overworld_human_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,6 +73,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -95,10 +112,10 @@ TextureImporter:
       name: enemy_overworld_human_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 58
-        width: 33
-        height: 61
+        x: 0
+        y: 80
+        width: 75
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,6 +125,111 @@ TextureImporter:
       bones: []
       spriteID: 81f39993cf3120380800000000000000
       internalID: -9006614330768539880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_overworld_human_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 80
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d23d08c3a9fd600800000000000000
+      internalID: 495284068684082501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_overworld_human_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 80
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05d29190d0c8d770800000000000000
+      internalID: 8635864287510975759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_overworld_human_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd286b7f8c02ff0b0800000000000000
+      internalID: -5692795356451536163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_overworld_human_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff8ed2f55e748870800000000000000
+      internalID: 8684204889089150970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_overworld_human_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63de55d0f9c7c9c80800000000000000
+      internalID: -8314633789467398858
       vertices: []
       indices: 
       edges: []

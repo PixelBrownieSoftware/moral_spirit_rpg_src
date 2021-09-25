@@ -29,6 +29,7 @@ public class c_player : o_character
         o_trigger c = IfTouchingGetCol<o_trigger>(collision);
         u_save s = IfTouchingGetCol<u_save>(collision);
         o_tresure tr = IfTouchingGetCol<o_tresure>(collision);
+
         
         if (c != null)
         {
@@ -47,7 +48,10 @@ public class c_player : o_character
         }
         else if (tr != null)
         {
-            showThought = true;
+            if (tr.switchA)
+            {
+                showThought = true;
+            }
         }
         else
         {

@@ -19,7 +19,7 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 5319d7adb7e1b3a43aefef5bfde09318, type: 2}
+    moveName: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -79,7 +79,17 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 01a12b298bbe31149a3d45618d0a5017, type: 2}
+    moveName: {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -99,25 +109,26 @@ MonoBehaviour:
   defenceB: 3
   intelligenceB: 4
   gutsB: 4
-  speedB: 5
+  speedB: 3
   maxSkillPointsGMax: 5
   maxSkillPointsGMin: 2
   maxHitPointsGMax: 3
   maxHitPointsGMin: 4
-  attackG: 0.95
-  defenceG: 0.95
-  intelligenceG: 0.95
-  gutsG: 0.95
-  speedG: 0.95
+  attackG: 0.592
+  defenceG: 0.49
+  intelligenceG: 0.459
+  gutsG: 0.826
+  speedG: 0.672
   inBattle: 1
   moveDatabase:
-  - {fileID: 11400000, guid: 5319d7adb7e1b3a43aefef5bfde09318, type: 2}
+  - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
   - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
   - {fileID: 11400000, guid: 93f7bf77fec66934899bc2cb3eb94fcd, type: 2}
   - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
   - {fileID: 11400000, guid: 299680b048ec0ef429a8822ccd58a5be, type: 2}
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
-  - {fileID: 11400000, guid: 01a12b298bbe31149a3d45618d0a5017, type: 2}
+  - {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+  - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -136,12 +147,16 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 1.28
-  - 1.53
-  - -0.23
+  - 2
+  - 1.192
+  - -0.8
+  - 1
+  - 1
   - 1
   - 2
+  - 1
   money: 0
   itemDrop:
   - {fileID: 11400000, guid: 744ac73ac6bd0bf46a2ad91663df30c4, type: 2}
   relationships: []
+  conservativeCP: 0.45

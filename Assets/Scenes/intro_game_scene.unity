@@ -182,7 +182,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -238,6 +238,7 @@ MonoBehaviour:
   eventScript: {fileID: 11400000, guid: 0e3919586cbebcd43ba1436ee2bc09ab, type: 2}
   mapSize: {x: 0, y: 0}
   allChacacters: []
+  BGM: {fileID: 0}
   pointA: {fileID: 496085820}
   pointB: {fileID: 0}
   pointC: {fileID: 0}

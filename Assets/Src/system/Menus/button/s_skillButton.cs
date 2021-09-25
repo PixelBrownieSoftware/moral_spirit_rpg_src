@@ -144,6 +144,18 @@ public class s_skillButton : s_button
                         case ACTION_TYPE.RESERVED:
                             img.sprite = reserved_picture;
                             break;
+
+                        case ACTION_TYPE.DARK:
+                            img.sprite = dark_picture;
+                            break;
+
+                        case ACTION_TYPE.PSYCHIC:
+                            img.sprite = psychic_picture;
+                            break;
+
+                        case ACTION_TYPE.LIGHT:
+                            img.sprite = light_picture;
+                            break;
                     }
                     break;
                 case MOVE_TYPE.STATUS:
@@ -208,6 +220,19 @@ public class s_skillButton : s_button
                         skillButtonImg.color = Color.grey + new Color(0, 0, 0, -0.5f);
                 }
                 DrawButton();
+                break;
+            case BTN_TYPE.ITEM:
+                switch (move.statusMoveType)
+                {
+                    case STATUS_MOVE_TYPE.BUFF:
+                        img.sprite = support_picture;
+                        break;
+
+                    case STATUS_MOVE_TYPE.HEAL_STAMINA:
+                    case STATUS_MOVE_TYPE.HEAL:
+                        img.sprite = heal_picture;
+                        break;
+                }
                 break;
             case BTN_TYPE.SKILL:
                 DrawButton();
@@ -288,17 +313,21 @@ public class s_skillButton : s_button
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").isItem = false;
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").targType = s_targetMenu.TARGET_TYPE.SKILL;
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").backButton.buttonType = "SkillsMenu";
+                    base.OnButtonClicked();
                     break;
 
                 case BTN_TYPE.ITEM:
-                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").move = move;
-                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").isItem = true;
-                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").targType = s_targetMenu.TARGET_TYPE.RECOVERY;
-                    s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").backButton.buttonType = "ItemsMenu";
-                    s_menuhandler.GetInstance().SwitchMenu("TargetMenu");
+                    if (move.statusMoveType == STATUS_MOVE_TYPE.HEAL)
+                    {
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").move = move;
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").isItem = true;
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").targType = s_targetMenu.TARGET_TYPE.RECOVERY;
+                        s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").backButton.buttonType = "ItemsMenu";
+                        s_menuhandler.GetInstance().SwitchMenu("TargetMenu");
+                        base.OnButtonClicked();
+                    }
                     break;
             }
-            base.OnButtonClicked();
         }
     }
 }

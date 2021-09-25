@@ -115,7 +115,7 @@ MonoBehaviour:
   couragePoints: 0
   maxSkillPoints: 0
   maxSkillPointsB: 9
-  maxHitPointsB: 13
+  maxHitPointsB: 18
   attackB: 4
   defenceB: 2
   intelligenceB: 3
@@ -123,8 +123,8 @@ MonoBehaviour:
   speedB: 1
   maxSkillPointsGMax: 3
   maxSkillPointsGMin: 1
-  maxHitPointsGMax: 2
-  maxHitPointsGMin: 2
+  maxHitPointsGMax: 4
+  maxHitPointsGMin: 3
   attackG: 0.28223568
   defenceG: 0.46718606
   intelligenceG: 0.48876953
@@ -155,11 +155,15 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 1.55
-  - 2
+  - 2.21
+  - 1.42
   - 0
   - 1
   - 1
+  - 1
+  - 1.3
+  - 0
   money: 0
   itemDrop: []
   relationships: []
+  conservativeCP: 0.45

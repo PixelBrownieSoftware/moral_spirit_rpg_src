@@ -19,36 +19,6 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 78825537f771e324fa344eb6a59ef795, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: d4ed4d1fc82e80046b6466bcc79d3ade, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
     moveName: {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
     onParty: 1
     number1: 0
@@ -60,16 +30,6 @@ MonoBehaviour:
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: d35f98d523e87634aa0c0aec80218019, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -99,8 +59,28 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0.35
     name: 
-    moveName: {fileID: 11400000, guid: 32f8db9349138d84f9336f015f953c71, type: 2}
+    moveName: {fileID: 11400000, guid: 843059aec98fb0c49ac5a8ffc5c2c4cc, type: 2}
     onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+    onParty: 0
     number1: 0
     number2: 0
     isImportant: 0
@@ -115,21 +95,21 @@ MonoBehaviour:
   couragePoints: 0
   maxSkillPoints: 0
   maxSkillPointsB: 11
-  maxHitPointsB: 15
-  attackB: 2
+  maxHitPointsB: 18
+  attackB: 3
   defenceB: 3
   intelligenceB: 2
   gutsB: 4
   speedB: 2
   maxSkillPointsGMax: 1
   maxSkillPointsGMin: 1
-  maxHitPointsGMax: 2
-  maxHitPointsGMin: 1
-  attackG: 0.69685394
-  defenceG: 0.49222675
-  intelligenceG: 0.39134055
-  gutsG: 0.3487132
-  speedG: 0.35899618
+  maxHitPointsGMax: 4
+  maxHitPointsGMin: 3
+  attackG: 0.799
+  defenceG: 0.607
+  intelligenceG: 0.491
+  gutsG: 0.447
+  speedG: 0.658
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
@@ -137,6 +117,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
   - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
   - {fileID: 11400000, guid: 843059aec98fb0c49ac5a8ffc5c2c4cc, type: 2}
+  - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
+  - {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -155,12 +137,15 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 0.75
-  - 2
-  - 0.9
+  - 1
+  - 2.11
+  - 0.39
   - 1
   - 1
+  - 1
+  - 2.07
+  - 0.65
   money: 0
-  itemDrop:
-  - {fileID: 11400000, guid: 32f8db9349138d84f9336f015f953c71, type: 2}
+  itemDrop: []
   relationships: []
+  conservativeCP: 0.35

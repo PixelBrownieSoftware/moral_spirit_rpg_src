@@ -61,4 +61,5 @@ public class BattleCharacterData : ScriptableObject
 
     //The characters that this one has relationships with prevent this one from being negotated 
     public BattleCharacterData[] relationships;
+    public float conservativeCP = 0.45f;
 }

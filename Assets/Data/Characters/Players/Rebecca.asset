@@ -74,6 +74,26 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 4f8fe9e9bb7ce1d47b65af796be4616a, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims:
   - {fileID: 5899511935908729651, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
@@ -84,22 +104,22 @@ MonoBehaviour:
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 22
-  maxHitPointsB: 16
+  maxSkillPointsB: 14
+  maxHitPointsB: 15
   attackB: 3
   defenceB: 3
   intelligenceB: 4
   gutsB: 3
   speedB: 3
-  maxSkillPointsGMax: 6
+  maxSkillPointsGMax: 3
   maxSkillPointsGMin: 2
   maxHitPointsGMax: 4
-  maxHitPointsGMin: 2
-  attackG: 0.289
+  maxHitPointsGMin: 3
+  attackG: 0.407
   defenceG: 0.254
   intelligenceG: 0.758
-  gutsG: 0.237
-  speedG: 0.517
+  gutsG: 0.329
+  speedG: 0.626
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
@@ -108,6 +128,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
   - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
   - {fileID: 11400000, guid: 108abd6973a0f0d4d962675d5eb37d0c, type: 2}
+  - {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
+  - {fileID: 11400000, guid: 4f8fe9e9bb7ce1d47b65af796be4616a, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -126,7 +148,7 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 1
+  - 1.36
   - 2.2
   - 1
   - 1
@@ -138,3 +160,4 @@ MonoBehaviour:
   itemDrop:
   - {fileID: 11400000, guid: b6196b715ec1ec942bf1d7feb40fb0a7, type: 2}
   relationships: []
+  conservativeCP: 0.45

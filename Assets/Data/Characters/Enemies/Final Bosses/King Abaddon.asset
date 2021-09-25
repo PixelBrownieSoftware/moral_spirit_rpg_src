@@ -85,6 +85,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
   - {fileID: 11400000, guid: 9da4ed113a8973e40854e5d7c074c6eb, type: 2}
   - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
+  - {fileID: 11400000, guid: 5da7ac288f76789488ab1cb584427bf7, type: 2}
+  - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+  - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+  - {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+  - {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -114,3 +119,4 @@ MonoBehaviour:
   money: 0
   itemDrop: []
   relationships: []
+  conservativeCP: 0.45

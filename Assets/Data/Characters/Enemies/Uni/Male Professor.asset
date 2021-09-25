@@ -29,26 +29,6 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: c74c4f2a9ca716f468ec05bafedc5083, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: e138a43a28bd6dc44b6a1a2166dc847d, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
     moveName: {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
     onParty: 0
     number1: 0
@@ -65,15 +45,15 @@ MonoBehaviour:
     number2: 0
     isImportant: 0
   - turnCounters: 0
-    conditions: 18
+    conditions: 0
     element: 0
-    healthPercentage: 0.35
+    healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 660312bea42799e45904537c96f5e9a2, type: 2}
-    onParty: 1
+    moveName: {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+    onParty: 0
     number1: 0
     number2: 0
-    isImportant: 1
+    isImportant: 0
   turnIcons: 1
   characterAnims: []
   front: {fileID: -4927028278684905496, guid: 65ed1238b6563de4ab3951138e474e39, type: 3}
@@ -94,16 +74,17 @@ MonoBehaviour:
   maxSkillPointsGMin: 3
   maxHitPointsGMax: 3
   maxHitPointsGMin: 2
-  attackG: 2
-  defenceG: 3
-  intelligenceG: 2
-  gutsG: 2
-  speedG: 2
+  attackG: 0.348
+  defenceG: 0.316
+  intelligenceG: 0.713
+  gutsG: 0.39
+  speedG: 0.31
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: 7f60ef6c698efd04e881b281b46bcc01, type: 2}
   - {fileID: 11400000, guid: 58d2a5024e0ac3d4784bd0f14bc71105, type: 2}
   - {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
+  - {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -133,3 +114,4 @@ MonoBehaviour:
   money: 0
   itemDrop: []
   relationships: []
+  conservativeCP: 0.45

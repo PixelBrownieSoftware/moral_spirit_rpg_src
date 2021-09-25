@@ -58,14 +58,14 @@ public class s_statusMenu : s_menucontroller
             nameChar.text = currentChar.name + " - Level " + currentChar.level;
             
             float health = ((float)currentChar.hitPoints / (float)currentChar.maxHitPoints) * 100;
-            float stamina = ((float)currentChar.skillPoints / (float)currentChar.maxSkillPoints) * 100f;
+            //float stamina = ((float)currentChar.skillPoints / (float)currentChar.maxSkillPoints) * 100f;
 
             hp.value = Mathf.Round(health);
-            sp.value = Mathf.Round(stamina);
+            //sp.value = Mathf.Round(stamina);
             exp.value = currentChar.exp/100;
 
             hpText.text = Mathf.Round(health) + "% " + currentChar.hitPoints + "/"+ currentChar.maxHitPoints;
-            spText.text = Mathf.Round(stamina) + "% " + currentChar.skillPoints + "/" + currentChar.maxSkillPoints;
+            spText.text = "" + currentChar.maxSkillPoints;
             expText.text = currentChar.exp + "%";
 
             str.amount = currentChar.attack;

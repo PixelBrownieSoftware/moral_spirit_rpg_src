@@ -31,7 +31,7 @@ public class s_targetMenu : s_menucontroller
                     //SkillsMenu
                     GetButton<s_targCharButton>(ind);
                     GetButton<s_targCharButton>(ind).targType = s_targCharButton.BTN_TYPE.SKILL_LOOK;
-                    GetButton<s_targCharButton>(ind).txt.text = bcD.name + " - " + bcD.skillPoints;
+                    GetButton<s_targCharButton>(ind).txt.text = bcD.name;
                     GetButton<s_targCharButton>(ind).battleChar = bcD;
                     ind++;
                 }
@@ -49,7 +49,7 @@ public class s_targetMenu : s_menucontroller
                     }
                     else
                     {
-                        if (bcD.skillPoints >= bcD.maxSkillPoints)
+                        if (s_battlesyst.GetInstance().playerCP >= s_battlesyst.GetInstance().playerCPMax)
                         {
                             continue;
                         }
@@ -72,8 +72,12 @@ public class s_targetMenu : s_menucontroller
 
                     if (move.statusMoveType == STATUS_MOVE_TYPE.HEAL)
                         GetButton<s_targCharButton>(ind).txt.text = bcD.name + " - " + bcD.hitPoints;
+                    /*
+                    if (move.statusMoveType == STATUS_MOVE_TYPE.HEAL)
+                        GetButton<s_targCharButton>(ind).txt.text = bcD.name + " - " + bcD.hitPoints;
                     else
                         GetButton<s_targCharButton>(ind).txt.text = bcD.name + " - " + bcD.skillPoints;
+                    */
                     GetButton<s_targCharButton>(ind).battleChar = bcD;
                     ind++;
                 }

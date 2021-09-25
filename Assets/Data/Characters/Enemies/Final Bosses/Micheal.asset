@@ -15,26 +15,6 @@ MonoBehaviour:
   shortName: 
   characterAI:
   - turnCounters: 0
-    conditions: 12
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
-    onParty: 1
-    number1: 0
-    number2: 3
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: 42fedf82923192a4db4b6e50b4d8a97c, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
     conditions: 0
     element: 0
     healthPercentage: 0
@@ -74,6 +54,46 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 543e2082a24a8f94699a43c229184409, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 2
   characterAnims: []
   front: {fileID: -8050505381868735831, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
@@ -101,12 +121,14 @@ MonoBehaviour:
   speedG: 0.3337646
   inBattle: 1
   moveDatabase:
-  - {fileID: 11400000, guid: 42fedf82923192a4db4b6e50b4d8a97c, type: 2}
   - {fileID: 11400000, guid: 95f6bd3428481eb45a7e270686df4236, type: 2}
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
   - {fileID: 11400000, guid: cda91f69a509f5945b1a191ebadb29d4, type: 2}
   - {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
+  - {fileID: 11400000, guid: 543e2082a24a8f94699a43c229184409, type: 2}
+  - {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+  - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -133,3 +155,4 @@ MonoBehaviour:
   money: 0
   itemDrop: []
   relationships: []
+  conservativeCP: 0.45

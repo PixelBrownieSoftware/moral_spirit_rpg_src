@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7dd4cf0c39b354a82a3382f4e4a2c9, type: 3}
+  m_Name: Cold glare
+  m_EditorClassIdentifier: 
+  isMultiHit: 0
+  isFixed: 0
+  onSelf: 0
+  onTeam: 0
+  cost: 3
+  affectedBySilence: 0
+  multiTech: 0
+  actionDescription: 
+  infoDescription: 
+  element: 0
+  action_type: 3
+  moveType: 3
+  target: 0
+  power: 10
+  preAnim: []
+  animation:
+  - duration: 0.4
+    image: {fileID: 2247081155176706761, guid: 9731b4ce76e00364f96e409adc62df13, type: 3}
+    name: iceFX
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.1
+    image: {fileID: 2247081155176706761, guid: 9731b4ce76e00364f96e409adc62df13, type: 3}
+    name: glare
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0
+    image: {fileID: 0}
+    name: 
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
+  moveRequirements: []
+  accuracy: 85
+  str_inc: 0
+  vit_inc: 0
+  dex_inc: 0
+  luc_inc: 0
+  agi_inc: 0
+  gut_inc: 0
+  buffUser: 0
+  buffTarget: 1
+  canLearn: 1
+  excludeUser: 0
+  str_req: 5
+  dex_req: 0
+  vit_req: 3
+  agi_req: 0
+  gut_req: 0
+  customFx: 
+  statusEffectChances:
+    statusEffectChance: 0
+    status_effect: 0
+  statusMoveType: 0

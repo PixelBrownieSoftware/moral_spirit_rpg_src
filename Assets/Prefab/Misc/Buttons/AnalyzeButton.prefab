@@ -193,6 +193,7 @@ MonoBehaviour:
   txt: {fileID: 5822733273186401212}
   buttonTex: {fileID: 2332879572880090331}
   isPause: 0
+  allowMenuPause: 0
   battleCharButton: {fileID: 0}
   targType: 3
   mov: {fileID: 0}
@@ -202,6 +203,7 @@ MonoBehaviour:
   normDmg: {fileID: 0}
   weakDmg: {fileID: 0}
   resDmg: {fileID: 0}
+  unkDmg: {fileID: 0}
   isItem: 0
   isAll: 0
 --- !u!222 &5685862712232614777

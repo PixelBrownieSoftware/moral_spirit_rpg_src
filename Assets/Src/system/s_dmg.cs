@@ -66,14 +66,22 @@ public class s_dmg : MonoBehaviour
             case HIT_FX_TYPE.BLOCK:
             case HIT_FX_TYPE.MISS:
             case HIT_FX_TYPE.REFLECT:
-            case HIT_FX_TYPE.STAT_INC:
-            case HIT_FX_TYPE.STAT_DEC:
                 rendTXT.enabled = false;
                 rendTXTBk.enabled = false;
                 text.text = "";
                 textBK.text = "";
                 break;
+            case HIT_FX_TYPE.STAT_INC:
+            case HIT_FX_TYPE.STAT_DEC:
+                rendTXT.sortingOrder = 18;
+                rendTXTBk.sortingOrder = 17;
+                rendTXT.enabled = true;
+                rendTXTBk.enabled = true;
+                text.text = "" + dmg;
+                textBK.text = "" + dmg;
+                break;
         }
+        /*
         switch (pt)
         {
             default:
@@ -89,6 +97,7 @@ public class s_dmg : MonoBehaviour
                 text.color = SPDamage;
                 break;
         }
+        */
         switch (pt) {
             default:
                 anim.Play("hitAnimation");

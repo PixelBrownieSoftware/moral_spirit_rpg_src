@@ -119,6 +119,7 @@ public class c_enemy : o_overworlC
 
     public override void ArtificialIntelleginceControl()
     {
+        AnimMove();
         if (waypoints != null)
         {
             if (waypoints.Length > 0)

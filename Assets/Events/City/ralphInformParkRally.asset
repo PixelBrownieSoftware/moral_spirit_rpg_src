@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: ralphInformParkRally
   m_EditorClassIdentifier: 
-  objectReferences: []
+  objectReferences:
+  - Player
+  - Sebastian
+  - Ralph
   elements:
   - logic: 0
     eventType: 3
@@ -31,6 +34,126 @@ MonoBehaviour:
     boolean1: 0
     boolean2: 0
     string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: -1
+    jump: 0
+    pos: {x: 4214, y: 974}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 21
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Well, that was a great meal! I'm full!
     string1: Sebastian
     posX: 0
     posY: 0
@@ -77,11 +200,11 @@ MonoBehaviour:
   - logic: 0
     eventType: 9
     funcName: 
-    simultaenous: 0
+    simultaenous: 1
     simlutaneousDelay: 0
-    camMode: 0
+    camMode: 3
     jump: 0
-    pos: {x: 0, y: 0}
+    pos: {x: 4062, y: 1000}
     colour: {r: 0, g: 0, b: 0, a: 0}
     int0: 0
     int1: 0
@@ -94,7 +217,97 @@ MonoBehaviour:
     string1: Sebastian
     posX: 0
     posY: 0
+    float0: 0.05
+    float1: -1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 0
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 4155, y: 1003}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 2
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: 
+    string1: Sebastian
+    posX: 0
+    posY: 0
     float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 18
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 1.5
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 1
+    jump: 0
+    pos: {x: 4214, y: 974}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0.05
     float1: 0
     stringList: []
     dialogueChoices: []
@@ -150,7 +363,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Do you work for those angels? You heard of an angel called Gabriel?
+    string0: This might sound crazy of me but, do you work for some tall men who
+      look like angels?
     string1: Young boy
     posX: 0
     posY: 0
@@ -484,7 +698,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: The rally is at the park, it's being lead by a guy named Bill.
+    string0: The rally is at fairy hill, it's being lead by a guy named Bill.
     string1: Young boy
     posX: 0
     posY: 0
@@ -516,36 +730,6 @@ MonoBehaviour:
     boolean2: 0
     string0: Name's Ralph, hopefully we'll meet again.
     string1: Young boy
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-    sound: {fileID: 0}
-  - logic: 0
-    eventType: 9
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 1
-    boolean1: 0
-    boolean2: 0
-    string0: Player
-    string1: Sebastian
     posX: 0
     posY: 0
     float0: 0
@@ -694,8 +878,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: At least we've got a lead, even if it was sudden. Let's go to the park,
-      Evan!
+    string0: At least we've got a lead, even if it was sudden. Let's go to fairy
+      hill, Evan!
     string1: Sebastian
     posX: 0
     posY: 0
@@ -770,6 +954,36 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
+    eventType: 13
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
     eventType: 7
     funcName: 
     simultaenous: 0
@@ -800,6 +1014,36 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
+    eventType: 13
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
     eventType: 7
     funcName: 
     simultaenous: 0
@@ -816,6 +1060,66 @@ MonoBehaviour:
     boolean1: 0
     boolean2: 0
     string0: place_go
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 21
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Player
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Player
     string1: Sebastian
     posX: 0
     posY: 0

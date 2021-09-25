@@ -130,7 +130,10 @@ public class s_battlesyst : s_singleton<s_battlesyst>
     public Queue<o_battleChar> oppositionCharacterTurnQueue = new Queue<o_battleChar>();
     public o_battleChar guestPartyMember;   //They have their turn right after the party members, like earthbound/mother 3, they can't take damage
 
+    List<string> enemySkillsUsed = new List<string>();
+
     public HashSet<o_battleChar> active_characters = new HashSet<o_battleChar>();
+    public List<RPG_battleMemory> oppositionBattleMemory = new List<RPG_battleMemory>();
     public o_battleChar currentCharacter;
     public int Menuchoice = 0;
     public string currentItem;
@@ -172,6 +175,12 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             return pressTurn + halfTurn;
         }
     }
+    public float opponentCP, opponentCPMax;
+    public float playerCP, playerCPMax;
+
+    public Slider playerCPSlider, opponentCPSlider;
+    public Text playerCPText, opponentCPText;
+
     public BATTLE_ENGINE_STATE CurrentBattleEngineState = BATTLE_ENGINE_STATE.IDLE;
 
     public Sprite battleBG;
@@ -362,239 +371,39 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             case MOVE_TYPE.TALK:
             case MOVE_TYPE.SPECIAL:
             case MOVE_TYPE.STATUS:
-                if (move.cost <= battleCharacter.skillPoints)
-                    return true;
+                if (players.Contains(battleCharacter))
+                {
+                    if (move.cost <= playerCP)
+                        return true;
+                }
+                else
+                {
+                    if (move.cost <= opponentCP)
+                        return true;
+                }
                 break;
         }
         return false;
     }
 
-    /*
-    public void EnemySelectAttack(ref o_battleChar character)
-    {
-        if (character != null)
-        {
-            o_battleChar target = null;
-            s_move move = null;
-            List<o_battleChar> candidates = new List<o_battleChar>();
-
-            foreach (o_battleChar p in players)
-            {
-                if (p.hitPoints > 0)
-                    candidates.Add(p);
-            }
-
-            List<s_move> allmove = new List<s_move>();
-            allmove.Add(guardMove);
-            foreach (s_move m in allmove)
-            {
-                if (!CheckForCostRequirements(m, character))
-                    continue;
-                allmove.Add(m);
-            }
-
-            if (character.characterAI != null)
-                foreach (charAI chai in character.characterAI)
-                {
-
-                    bool breakOutOfLoop = false;
-
-                    if (target != null)
-                        break;
-
-                    o_battleChar Targ = null;
-                    move = chai.moveName;
-                    switch (chai.conditions)
-                    {
-                        case charAI.CONDITIONS.ALWAYS:
-                            {
-                                Targ = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
-                                if (Targ != null)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-                        case charAI.CONDITIONS.USER_PARTY_HP_LOWER:
-                            {
-                                Targ = opposition.Find(x => x.hitPoints < chai.healthPercentage * x.maxHitPoints);
-                                if (Targ != null)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-                        case charAI.CONDITIONS.USER_PARTY_HP_HIGHER:
-                            {
-                                Targ = opposition.Find(x => x.hitPoints > chai.healthPercentage * x.maxHitPoints);
-                                if (Targ != null)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-                        case charAI.CONDITIONS.TARGET_PARTY_HP_HIGHER:
-                            {
-                                Targ = candidates.Find(x => x.hitPoints > chai.healthPercentage * x.maxHitPoints);
-                                if (Targ != null)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-
-                        case charAI.CONDITIONS.SELF_HP_HIGHER:
-                            {
-                                if (character.hitPoints > chai.healthPercentage * character.maxHitPoints)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-                        case charAI.CONDITIONS.SELF_HP_LOWER:
-                            {
-                                if (character.hitPoints < chai.healthPercentage * character.maxHitPoints)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-
-                        case charAI.CONDITIONS.SELF_SP_HIGHER:
-                            {
-                                if (character.skillPoints > chai.healthPercentage * character.maxSkillPoints)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-                        case charAI.CONDITIONS.SELF_SP_LOWER:
-                            {
-                                if (character.skillPoints < chai.healthPercentage * character.maxSkillPoints)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-
-                        case charAI.CONDITIONS.TARGET_PARTY_HP_LOWER:
-                            {
-                                Targ = candidates.Find(x => x.hitPoints < chai.healthPercentage * x.maxHitPoints);
-                                if (Targ != null)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-                        case charAI.CONDITIONS.ON_TURN:
-                            break;
-                        case charAI.CONDITIONS.USER_PARTY_SP_HIGHER:
-                            {
-                                Targ = opposition.Find(x => x.skillPoints > chai.healthPercentage * x.maxSkillPoints);
-                                if (Targ != null)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-                        case charAI.CONDITIONS.USER_PARTY_SP_LOWER:
-                            {
-                                Targ = opposition.Find(x => x.skillPoints < chai.healthPercentage * x.maxSkillPoints);
-                                if (Targ != null)
-                                {
-                                    target = Targ;
-                                    breakOutOfLoop = true;
-                                }
-                            }
-                            break;
-
-                    }
-                    switch (chai.turnCounters)
-                    {
-                        case charAI.TURN_COUNTER.TURN_COUNTER_EQU:
-                            if (currentCharacter.turnNumber == chai.number1)
-                            {
-                                currentCharacter.turnNumber = 0;
-                                breakOutOfLoop = true;
-                            }
-                            else
-                            {
-                                breakOutOfLoop = false;
-                            }
-                            break;
-
-                        case charAI.TURN_COUNTER.ROUND_COUNTER_EQU:
-                            if (currentCharacter.roundNumber == chai.number2)
-                            {
-                                currentCharacter.roundNumber = 0;
-                                breakOutOfLoop = true;
-                            }
-                            else {
-                                breakOutOfLoop = false;
-                            }
-                            break;
-
-                        case charAI.TURN_COUNTER.ROUND_TURN_COUNTER_EQU:
-                            if (currentCharacter.roundNumber == chai.number2 &&
-                                currentCharacter.turnNumber == chai.number1)
-                            {
-                                currentCharacter.roundNumber = 0;
-                                currentCharacter.turnNumber = 0;
-                                breakOutOfLoop = true;
-                            }
-                            else
-                            {
-                                breakOutOfLoop = false;
-                            }
-                            break;
-                    }
-                    if (breakOutOfLoop)
-                        break;
-                }
-            else {
-                target = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
-                if (allmove.Count == 0 || character.skillPoints <= 0) {
-                    move = guardMove;
-                    target = null;
-                }
-                else
-                {
-                    move = allmove[UnityEngine.Random.Range(0, allmove.Count - 1)];
-                }
-            }
-            currentMove = new s_battleAction (
-                    character,
-                    target,
-                    move);
-        }
-        }
-    */
-
-        /*
-    public void ClearButtons()
-    {
-        fightButton.gameObject.SetActive(false);
-        itemsButton.gameObject.SetActive(false);
-        skillsButton.gameObject.SetActive(false);
-        guardButton.gameObject.SetActive(false);
-        spareButton.gameObject.SetActive(false);
-        runButton.gameObject.SetActive(false);
-        passButton.gameObject.SetActive(false);
-    }
-    */
-
     public void WinBattle()
     {
+    }
+    
+    public void SetEnemyBattleMemoryAction(string charName, ACTION_TYPE ac)
+    {
+        RPG_battleMemory bat = oppositionBattleMemory.Find(x => x.name == charName);
+        if (bat == null)
+        {
+            bat = new RPG_battleMemory();
+            bat.name = charName;
+            oppositionBattleMemory.Add(bat);
+            bat.knownTalkAffinites[(int)ac] = true;
+        }
+        else
+        {
+            bat.knownTalkAffinites[(int)ac] = true;
+        }
     }
 
     public void SpawnDamageObject(string dmg, Vector2 characterPos, s_dmg.HIT_FX_TYPE flag) {
@@ -695,90 +504,19 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
                 if (!mov.onTeam)
                 {
-                    /*
-                    float acc1 = ((currentMove.user.getNetSpeed / 8) * 6.25f);
-                    float acc2 = ((Targ.getNetSpeed / 8) * 6.25f);
-
-                    float accuracy_percentage = (float)currentMove.move.accuracy * (acc1/acc2);
-                   // print("User: " + move.user + " Target: " + Targ + " accuracy = " + accuracy_percentage);
-                    float accuracy = UnityEngine.Random.Range(0,100);
-
-                    if (mov.moveType != MOVE_TYPE.TALK)
-                    {
-                        //If the accuracy is higher than the chance the move misses
-                        //TALK moves never miss
-                        if (accuracy > accuracy_percentage)
-                        {
-                            turnPressFlag = PRESS_TURN_TYPE.MISS;
-                        }
-                    }
-                    if (turnPressFlag != PRESS_TURN_TYPE.MISS) {
-                        if (mov.element != ELEMENT.UNKNOWN) {
-                            if (Targ.elementTypeCharts[(int)mov.element] > 1.99f || Targ.actionTypeCharts[(int)mov.action_type] > 1.99f)
-                            {
-                                if (Targ.guardPoints > 0 && mov.moveType != MOVE_TYPE.TALK)
-                                {
-                                    turnPressFlag = PRESS_TURN_TYPE.NORMAL;
-                                }
-                                else
-                                {
-                                    turnPressFlag = PRESS_TURN_TYPE.WEAKNESS;
-                                }
-                                if (Targ.actionTypeCharts[(int)mov.action_type] > 1.99f && Targ.skillPoints <= 0)
-                                {
-                                    turnPressFlag = PRESS_TURN_TYPE.NORMAL;
-                                }
-                            }
-                            else if ((Targ.elementTypeCharts[(int)mov.element] < 0 &&
-                              Targ.elementTypeCharts[(int)mov.element] >= -1) ||
-                              (Targ.actionTypeCharts[(int)mov.action_type] < 0 &&
-                              Targ.actionTypeCharts[(int)mov.action_type] >= -1))
-                            {
-                                turnPressFlag = PRESS_TURN_TYPE.REFLECT;
-                            }
-                            else if (Targ.elementTypeCharts[(int)mov.element] < -1 ||
-                            Targ.actionTypeCharts[(int)mov.action_type] < -1)
-                            {
-                                //ABSORB
-                                turnPressFlag = PRESS_TURN_TYPE.ABSORB;
-                            }
-                            else if (Targ.elementTypeCharts[(int)mov.element] == 0 ||
-                                Targ.actionTypeCharts[(int)mov.action_type] == 0)
-                            {
-                                turnPressFlag = PRESS_TURN_TYPE.IMMUNE;
-                            }
-                            if (players.Contains(currentMove.user))
-                            {
-                                if (mov.moveType == MOVE_TYPE.SPECIAL ||
-                                   mov.moveType == MOVE_TYPE.PHYSICAL)
-                                {
-                                    rpg_globals.GetInstance().GetComponent<rpg_globals>().SetBattleMemoryElement(Targ.name, mov.element);
-                                }
-                                else if (mov.moveType == MOVE_TYPE.TALK)
-                                {
-                                    rpg_globals.GetInstance().GetComponent<rpg_globals>().SetBattleMemoryAction(Targ.name, mov.action_type);
-                                }
-                            }
-                        }
-                    }
-                    */
                     if (mov.element != ELEMENT.UNKNOWN)
                     {
                         if (/*
                             Targ.elementTypeCharts[(int)mov.element] > 1.99f ||
                             */Targ.actionTypeCharts[(int)mov.action_type] > 1.99f)
                         {
-                            if (Targ.guardPoints > 0 && mov.moveType != MOVE_TYPE.TALK)
+                            if (Targ.guardPoints > 0)
                             {
                                 turnPressFlag = PRESS_TURN_TYPE.NORMAL;
                             }
                             else
                             {
                                 turnPressFlag = PRESS_TURN_TYPE.WEAKNESS;
-                            }
-                            if (Targ.actionTypeCharts[(int)mov.action_type] > 1.99f && Targ.skillPoints <= 0)
-                            {
-                                turnPressFlag = PRESS_TURN_TYPE.NORMAL;
                             }
                         }
                         else if (
@@ -813,6 +551,11 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                             {
                                 rpg_globals.GetInstance().GetComponent<rpg_globals>().SetBattleMemoryAction(Targ.name, mov.action_type);
                             }
+                        }
+                        else
+                        {
+                            if (mov.moveType == MOVE_TYPE.TALK)
+                                SetEnemyBattleMemoryAction(Targ.name, mov.action_type);
                         }
                     }
                 }
@@ -977,108 +720,164 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                         switch (mov.statusMoveType)
                         {
                             case STATUS_MOVE_TYPE.BUFF:
+                                yield return new WaitForSeconds(0.3f);
                                 characterPos = Targ.transform.position;
-                                if (mov.buffUser)
                                 {
-                                    currentCharacter.attackBuff += mov.str_inc;
-                                    currentCharacter.intelligenceBuff += mov.dex_inc;
-                                    currentCharacter.defenceBuff += mov.vit_inc;
-                                    currentCharacter.speedBuff += mov.agi_inc;
-                                    currentCharacter.gutsBuff += mov.gut_inc;
-                                }
-                                if (mov.buffTarget)
-                                {
-                                    Targ.attackBuff += mov.str_inc;
-                                    Targ.intelligenceBuff += mov.dex_inc;
-                                    Targ.defenceBuff += mov.vit_inc;
-                                    Targ.speedBuff += mov.agi_inc;
-                                    Targ.gutsBuff += mov.gut_inc;
-                                }
+                                    if (mov.buffUser)
+                                    {
+                                        currentCharacter.attackBuff += mov.str_inc;
+                                        currentCharacter.intelligenceBuff += mov.dex_inc;
+                                        currentCharacter.defenceBuff += mov.vit_inc;
+                                        currentCharacter.speedBuff += mov.agi_inc;
+                                        currentCharacter.gutsBuff += mov.gut_inc;
+                                    }
+                                    if (mov.buffTarget)
+                                    {
+                                        Targ.attackBuff += mov.str_inc;
+                                        Targ.intelligenceBuff += mov.dex_inc;
+                                        Targ.defenceBuff += mov.vit_inc;
+                                        Targ.speedBuff += mov.agi_inc;
+                                        Targ.gutsBuff += mov.gut_inc;
+                                    }
 
-                                if (mov.str_inc > 0)
-                                {
+                                    string buff_debuff_string = "";
+                                    if (mov.str_inc > 0)
+                                    {
+                                        buff_debuff_string += "+ " + mov.str_inc + " Str" + '\n';
+                                    }
+
+                                    if (mov.dex_inc > 0)
+                                    {
+                                        buff_debuff_string += "+ " + mov.dex_inc + " Dex" + '\n';
+                                    }
+
+                                    if (mov.vit_inc > 0)
+                                    {
+                                        buff_debuff_string += "+ " + mov.vit_inc + " Vit" + '\n';
+                                    }
+
+                                    if (mov.agi_inc > 0)
+                                    {
+                                        buff_debuff_string += "+ " + mov.agi_inc + " Agi" + '\n';
+                                    }
+
+                                    if (mov.gut_inc > 0)
+                                    {
+                                        buff_debuff_string += "+ " + mov.gut_inc + " Gut" + '\n';
+                                    }
+                                    //s_soundmanager.sound.PlaySound("int_up");
+                                    SpawnDamageObject(buff_debuff_string, characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
                                     s_soundmanager.sound.PlaySound("attk_up");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
                                     yield return new WaitForSeconds(buffTimer);
                                 }
-
-                                if (mov.dex_inc > 0)
-                                {
-                                    s_soundmanager.sound.PlaySound("int_up");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
-
-                                if (mov.vit_inc > 0)
-                                {
-                                    s_soundmanager.sound.PlaySound("def_up");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
-
-                                if (mov.agi_inc > 0)
-                                {
-                                    s_soundmanager.sound.PlaySound("agi_up");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
-
-                                if (mov.gut_inc > 0)
-                                {
-                                    s_soundmanager.sound.PlaySound("gut_up");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
+                                
                                 break;
 
                             case STATUS_MOVE_TYPE.DEBUFF:
+                                yield return new WaitForSeconds(0.3f);
                                 characterPos = Targ.transform.position;
-                                if (mov.str_inc > 0)
                                 {
-                                    s_soundmanager.sound.PlaySound("attk_down");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
+                                    Targ.attackBuff -= mov.str_inc;
+                                    Targ.intelligenceBuff -= mov.dex_inc;
+                                    Targ.defenceBuff -= mov.vit_inc;
+                                    Targ.speedBuff -= mov.agi_inc;
+                                    Targ.gutsBuff -= mov.gut_inc;
 
-                                if (mov.dex_inc > 0)
-                                {
+                                    string buff_debuff_string = "";
+                                    if (mov.str_inc > 0)
+                                    {
+                                        buff_debuff_string += "- " + mov.str_inc + " Str" + '\n';
+                                    }
+
+                                    if (mov.dex_inc > 0)
+                                    {
+                                        buff_debuff_string += "- " + mov.dex_inc + " Dex" + '\n';
+                                    }
+
+                                    if (mov.vit_inc > 0)
+                                    {
+                                        buff_debuff_string += "- " + mov.vit_inc + " Vit" + '\n';
+                                    }
+
+                                    if (mov.agi_inc > 0)
+                                    {
+                                        buff_debuff_string += "- " + mov.agi_inc + " Agi" + '\n';
+                                    }
+
+                                    if (mov.gut_inc > 0)
+                                    {
+                                        buff_debuff_string += "- " + mov.gut_inc + " Gut" + '\n';
+                                    }
+                                    //s_soundmanager.sound.PlaySound("int_up");
                                     s_soundmanager.sound.PlaySound("int_down");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
+                                    SpawnDamageObject(buff_debuff_string, characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
                                     yield return new WaitForSeconds(buffTimer);
-                                }
-
-                                if (mov.vit_inc > 0)
-                                {
-                                    s_soundmanager.sound.PlaySound("def_down");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
-
-                                if (mov.agi_inc > 0)
-                                {
-                                    s_soundmanager.sound.PlaySound("agi_down");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
-
-                                if (mov.gut_inc > 0)
-                                {
-                                    s_soundmanager.sound.PlaySound("gut_down");
-                                    SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                                    yield return new WaitForSeconds(buffTimer);
-                                }
-
-                                Targ.attackBuff -= mov.str_inc;
-                                Targ.intelligenceBuff -= mov.dex_inc;
-                                Targ.defenceBuff -= mov.vit_inc;
-                                Targ.speedBuff -= mov.agi_inc;
-                                Targ.gutsBuff -= mov.gut_inc;
+                                }    
                                 break;
                         }
                         break;
                 }
-                yield return new WaitForSeconds(0.05f);
 
+                if (mov.cost == 0)
+                {
+                    if (players.Contains(currentCharacter))
+                    {
+                        switch (turnPressFlag)
+                        {
+                            case PRESS_TURN_TYPE.NORMAL:
+                                if (Targ.actionTypeCharts[(int)mov.action_type] >= 1)
+                                    playerCP += 3;
+                                else
+                                    playerCP += 1;
+                                break;
+
+                            case PRESS_TURN_TYPE.WEAKNESS:
+                                playerCP += 4;
+                                break;
+
+                            case PRESS_TURN_TYPE.ABSORB:
+                                opponentCP += 2;
+                                break;
+
+                            case PRESS_TURN_TYPE.REFLECT:
+                                opponentCP += 1;
+                                break;
+
+                            default:
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        switch (turnPressFlag)
+                        {
+                            case PRESS_TURN_TYPE.NORMAL:
+                                if (Targ.actionTypeCharts[(int)mov.action_type] >= 1)
+                                    opponentCP += 3;
+                                else
+                                    opponentCP += 1;
+                                break;
+
+                            case PRESS_TURN_TYPE.WEAKNESS:
+                                opponentCP += 4;
+                                break;
+
+                            case PRESS_TURN_TYPE.ABSORB:
+                                playerCP += 2;
+                                break;
+
+                            case PRESS_TURN_TYPE.REFLECT:
+                                playerCP += 1;
+                                break;
+
+                            default:
+                                break;
+                        }
+                    }
+                }
+                playerCP = Mathf.Clamp(playerCP, 0, playerCPMax);
+                opponentCP = Mathf.Clamp(opponentCP, 0, opponentCPMax);
+                yield return new WaitForSeconds(0.05f);
                 break;
 
             case MOVE_TYPE.STATUS:
@@ -1114,9 +913,15 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                     case STATUS_MOVE_TYPE.HEAL_STAMINA:
                         characterPos = Targ.transform.position;
                         s_soundmanager.sound.PlaySound("spHealSound");
-                        Targ.skillPoints += damage;
-                        Targ.skillPoints = Mathf.Clamp(Targ.skillPoints, 0, Targ.maxSkillPoints);
-                        SpawnDamageObject("" + damage, characterPos, s_dmg.HIT_FX_TYPE.HEAL);
+                        if (players.Contains(Targ))
+                        {
+                            playerCP += damage;
+                            playerCP = Mathf.Clamp(playerCP, 0, playerCPMax);
+                        }
+                        else {
+                            opponentCP += damage;
+                            opponentCP = Mathf.Clamp(opponentCP, 0, opponentCPMax);
+                        }
                         break;
 
                     case STATUS_MOVE_TYPE.CURE_STATUS:
@@ -1138,46 +943,43 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                     case STATUS_MOVE_TYPE.DEBUFF:
                         characterPos = Targ.transform.position;
 
-                        if (mov.str_inc > 0)
                         {
-                            s_soundmanager.sound.PlaySound("attk_down");
-                            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                            yield return new WaitForSeconds(buffTimer);
-                        }
+                            Targ.attackBuff -= mov.str_inc;
+                            Targ.intelligenceBuff -= mov.dex_inc;
+                            Targ.defenceBuff -= mov.vit_inc;
+                            Targ.speedBuff -= mov.agi_inc;
+                            Targ.gutsBuff -= mov.gut_inc;
 
-                        if (mov.dex_inc > 0)
-                        {
+                            string buff_debuff_string = "";
+                            if (mov.str_inc > 0)
+                            {
+                                buff_debuff_string += "- " + mov.str_inc + " Str" + '\n';
+                            }
+
+                            if (mov.dex_inc > 0)
+                            {
+                                buff_debuff_string += "- " + mov.dex_inc + " Dex" + '\n';
+                            }
+
+                            if (mov.vit_inc > 0)
+                            {
+                                buff_debuff_string += "- " + mov.vit_inc + " Vit" + '\n';
+                            }
+
+                            if (mov.agi_inc > 0)
+                            {
+                                buff_debuff_string += "- " + mov.agi_inc + " Agi" + '\n';
+                            }
+
+                            if (mov.gut_inc > 0)
+                            {
+                                buff_debuff_string += "- " + mov.gut_inc + " Gut" + '\n';
+                            }
+                            //s_soundmanager.sound.PlaySound("int_up");
                             s_soundmanager.sound.PlaySound("int_down");
-                            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
+                            SpawnDamageObject(buff_debuff_string, characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
                             yield return new WaitForSeconds(buffTimer);
                         }
-
-                        if (mov.vit_inc > 0)
-                        {
-                            s_soundmanager.sound.PlaySound("def_down");
-                            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                            yield return new WaitForSeconds(buffTimer);
-                        }
-
-                        if (mov.agi_inc > 0)
-                        {
-                            s_soundmanager.sound.PlaySound("agi_down");
-                            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                            yield return new WaitForSeconds(buffTimer);
-                        }
-
-                        if (mov.gut_inc > 0)
-                        {
-                            s_soundmanager.sound.PlaySound("gut_down");
-                            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_DEC);
-                            yield return new WaitForSeconds(buffTimer);
-                        }
-
-                        Targ.attackBuff -= mov.str_inc;
-                        Targ.intelligenceBuff -= mov.dex_inc;
-                        Targ.defenceBuff -= mov.vit_inc;
-                        Targ.speedBuff -= mov.agi_inc;
-                        Targ.gutsBuff -= mov.gut_inc;
                         break;
 
                     case STATUS_MOVE_TYPE.CUSTOM:
@@ -1231,10 +1033,18 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 characterPos = currentCharacter.transform.position;
                 turnPressFlag = PRESS_TURN_TYPE.NORMAL;
                 currentCharacter.guardPoints++;
-                damage = Mathf.RoundToInt(30 * currentCharacter.guts / 25);
-                currentCharacter.skillPoints += damage;
-                currentCharacter.skillPoints = Mathf.Clamp(currentCharacter.skillPoints, 0, currentCharacter.maxSkillPoints);
-                SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.HEAL);
+                damage = 2;
+                if (players.Contains(currentCharacter))
+                {
+                    playerCP += damage;
+                    playerCP = Mathf.Clamp(playerCP, 0, playerCPMax);
+                }
+                else
+                {
+                    opponentCP += damage;
+                    opponentCP = Mathf.Clamp(opponentCP, 0, opponentCPMax);
+                }
+                //SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.HEAL);
                 break;
         }
         if (mov.moveType != MOVE_TYPE.GUARD)
@@ -1267,44 +1077,79 @@ public class s_battlesyst : s_singleton<s_battlesyst>
         float buffTimer = 0.15f;
         Vector2 characterPos = bc.transform.position;
 
-        bc.attackBuff += mov.str_inc;
-        bc.intelligenceBuff += mov.dex_inc;
-        bc.defenceBuff += mov.vit_inc;
-        bc.speedBuff += mov.agi_inc;
-        bc.gutsBuff += mov.gut_inc;
-
-        if (mov.str_inc > 0)
+        if (mov.buffUser)
         {
+            currentCharacter.attackBuff += mov.str_inc;
+            currentCharacter.intelligenceBuff += mov.dex_inc;
+            currentCharacter.defenceBuff += mov.vit_inc;
+            currentCharacter.speedBuff += mov.agi_inc;
+            currentCharacter.gutsBuff += mov.gut_inc;
+            string buff_debuff_string = "";
+            if (mov.str_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.str_inc + " Str" + '\n';
+            }
+
+            if (mov.dex_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.dex_inc + " Dex" + '\n';
+            }
+
+            if (mov.vit_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.vit_inc + " Vit" + '\n';
+            }
+
+            if (mov.agi_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.agi_inc + " Agi" + '\n';
+            }
+
+            if (mov.gut_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.gut_inc + " Gut" + '\n';
+            }
+            //s_soundmanager.sound.PlaySound("int_up");
+            SpawnDamageObject(buff_debuff_string, currentCharacter.transform.position, s_dmg.HIT_FX_TYPE.STAT_INC);
             s_soundmanager.sound.PlaySound("attk_up");
-            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
             yield return new WaitForSeconds(buffTimer);
         }
-
-        if (mov.dex_inc > 0)
+        if (mov.buffTarget)
         {
-            s_soundmanager.sound.PlaySound("int_up");
-            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
-            yield return new WaitForSeconds(buffTimer);
-        }
+            bc.attackBuff += mov.str_inc;
+            bc.intelligenceBuff += mov.dex_inc;
+            bc.defenceBuff += mov.vit_inc;
+            bc.speedBuff += mov.agi_inc;
+            bc.gutsBuff += mov.gut_inc;
 
-        if (mov.vit_inc > 0)
-        {
-            s_soundmanager.sound.PlaySound("def_up");
-            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
-            yield return new WaitForSeconds(buffTimer);
-        }
+            string buff_debuff_string = "";
+            if (mov.str_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.str_inc + " Str" + '\n';
+            }
 
-        if (mov.agi_inc > 0)
-        {
-            s_soundmanager.sound.PlaySound("agi_up");
-            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
-            yield return new WaitForSeconds(buffTimer);
-        }
+            if (mov.dex_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.dex_inc + " Dex" + '\n';
+            }
 
-        if (mov.gut_inc > 0)
-        {
-            s_soundmanager.sound.PlaySound("gut_up");
-            SpawnDamageObject("", characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
+            if (mov.vit_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.vit_inc + " Vit" + '\n';
+            }
+
+            if (mov.agi_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.agi_inc + " Agi" + '\n';
+            }
+
+            if (mov.gut_inc > 0)
+            {
+                buff_debuff_string += "+ " + mov.gut_inc + " Gut" + '\n';
+            }
+            //s_soundmanager.sound.PlaySound("int_up");
+            SpawnDamageObject(buff_debuff_string, characterPos, s_dmg.HIT_FX_TYPE.STAT_INC);
+            s_soundmanager.sound.PlaySound("attk_up");
             yield return new WaitForSeconds(buffTimer);
         }
     }
@@ -1328,6 +1173,10 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                 {
                                     case s_move.s_moveAnim.MOVEPOSTION.ON_TARGET:
                                         Pos = t.transform.position;
+                                        break;
+
+                                    case s_move.s_moveAnim.MOVEPOSTION.ON_USER:
+                                        Pos = currentCharacter.transform.position;
                                         break;
 
                                     case s_move.s_moveAnim.MOVEPOSTION.FIXED:
@@ -1385,6 +1234,14 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
     public IEnumerator PlayAnim(s_battleAction move, int times, List<o_battleChar> characterList) {
         s_move mov = move.move;
+        if (opposition.Contains(move.user)) {
+
+            if (mov.canLearn)
+            {
+                enemySkillsUsed.Add(mov.name);
+            }
+        }
+
         switch (mov.target)
         {
             case TARGET_MOVE_TYPE.SINGLE:
@@ -1519,7 +1376,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 anim = move.move.animation;
                 preAnim = move.move.preAnim;
                 if (move.move.isMultiHit)
-                    times = UnityEngine.Random.Range(1, 6);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
+                    times = UnityEngine.Random.Range(1, 3);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
                 mov = move.move;
                 break;
 
@@ -1527,7 +1384,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 anim = move.item.action.animation;
                 preAnim = move.item.action.preAnim;
                 if (move.item.action.isMultiHit)
-                    times = UnityEngine.Random.Range(1, 6);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
+                    times = UnityEngine.Random.Range(1, 3);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
                 mov = move.item.action;
                 break;
         }
@@ -1610,26 +1467,35 @@ public class s_battlesyst : s_singleton<s_battlesyst>
         return Camera.main.WorldToScreenPoint(transformpos);
     }
     
-    
     public void StartBattleRoutine()
     {
+        s_globals.allowPause = false;
         if (enemyGroup.battleEvents != null) {
             OnBattleEvents = new s_battleEvents[enemyGroup.battleEvents.Length];
             Array.Copy(enemyGroup.battleEvents, OnBattleEvents, enemyGroup.battleEvents.Length);
             battleEvDone = Enumerable.Repeat(true, enemyGroup.battleEvents.Length).ToArray();
         }
+        s_globals.allowPause = false;
         bgBattle.sprite = FindObjectOfType<s_BGSETTER>().BattleBG;
         StartCoroutine(StartBattle());
     }
     public IEnumerator StartBattle()
     {
+        playerCPMax = 0;
+        opponentCPMax = 0;
+        playerCP = 0;
+        opponentCP = 0;
+        s_globals.allowPause = false;
         s_BGM.GetInstance().PlaySong(enemyGroup.songName);
         s_menuhandler.GetInstance().SwitchMenu("EMPTY");
         foreach (Image img in PT_GUI)
         {
             img.GetComponent<Animator>().Play("PTIconGone");
         }
-
+        oppositionBattleMemory.Clear();
+        oppositionBattleMemory = new List<RPG_battleMemory>();
+        enemySkillsUsed.Clear();
+        enemySkillsUsed = new List<string>();
         {
             opposition.ForEach(x => x.guardPoints = 0);
             opposition.ForEach(x => x.attackBuff = 0);
@@ -1645,6 +1511,14 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             players.ForEach(x => x.speedBuff = 0);
             players.ForEach(x => x.gutsBuff = 0);
             players.ForEach(x => x.intelligenceBuff = 0);
+        }
+        foreach (var a in players)
+        {
+            playerCPMax += a.maxSkillPoints;
+        }
+        foreach (var a in opposition)
+        {
+            opponentCPMax += a.maxSkillPoints;
         }
 
         CurrentBattleEngineState = BATTLE_ENGINE_STATE.NONE;
@@ -1662,6 +1536,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             pressTurn = i;
         }
         yield return new WaitForSeconds(0.75f);
+        s_globals.allowPause = false;
         yield return StartCoroutine(PollBattleEvent());
         menu_state = MENUSTATE.MENU;
         CurrentBattleEngineState = BATTLE_ENGINE_STATE.IDLE;
@@ -1735,38 +1610,6 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
         yield return StartCoroutine(rpg_globals.gl.Fade(false));
     }
-    /*
-    public IEnumerator BattleEventPlay(s_battleEvents ev) {
-
-        foreach (s_bEvent beElement in ev.events)
-        {
-            switch (beElement.battleAction)
-            {
-                case s_bEvent.B_ACTION_TYPE.DIALOGUE:
-
-                    actionDisp.text = beElement.string0 + "\n";
-                    yield return new WaitForSeconds(1.5f);
-                    break;
-                case s_bEvent.B_ACTION_TYPE.MOVE:
-
-                    actionDisp.text = beElement.string0 + "\n";
-                    //yield return StartCoroutine(PlayAniamtion());
-                    break;
-
-                case s_bEvent.B_ACTION_TYPE.CHECK_FLAG:
-
-                    break;
-
-                case s_bEvent.B_ACTION_TYPE.END_BATTLE:
-                    if (beElement.name == "")
-                        EndBattle();
-                    else
-                        EndBattle(beElement.eventScript);
-                    break;
-            }
-        }
-    }
-    */
 
     public IEnumerator PollBattleEvent() {
         yield return CheckForStatusEffect();
@@ -1986,7 +1829,8 @@ public class s_battlesyst : s_singleton<s_battlesyst>
     {
         foreach(o_battleChar bc in players)
         {
-            bc.skillPoints -= Mathf.RoundToInt(bc.maxSkillPoints * 0.15f);
+            bc.hitPoints -= Mathf.RoundToInt(bc.maxSkillPoints * 0.15f);
+            bc.hitPoints = Mathf.Clamp(bc.hitPoints, 1, bc.maxSkillPoints);
         }
         StartCoroutine(DefeatedEnemies());
         /*
@@ -2010,7 +1854,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
     public o_battleChar GetTargetCharacter(List<o_battleChar> candidates, charAI chai)
     {
         float res = 0;
-        int rand = 0;
+        int rand = -1;
         o_battleChar Targ = null;
         switch (chai.conditions)
         {
@@ -2034,8 +1878,68 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                 candidates.Remove(p);
                             }
                         }
-                        rand = UnityEngine.Random.Range(0, candidates.Count);
-                        Targ = candidates[rand];
+                        
+                        List<o_battleChar> resistantTargets = new List<o_battleChar>();
+                        List<o_battleChar> normalTargets = new List<o_battleChar>();
+                        List<o_battleChar> bestTargets = new List<o_battleChar>();
+                        List<o_battleChar> unknown = new List<o_battleChar>();
+
+                        switch (chai.moveName.moveType) {
+                            case MOVE_TYPE.TALK:
+                                foreach (var a in candidates) {
+                                    RPG_battleMemory batt = oppositionBattleMemory.Find(x => x.name == a.name);
+                                    if (batt != null)
+                                    {
+                                        if (batt.knownTalkAffinites[(int)chai.moveName.action_type])
+                                        {
+                                            float affinity = a.actionTypeCharts[(int)chai.moveName.action_type];
+                                            
+                                            if (affinity < 1 && affinity > 0)
+                                                resistantTargets.Add(a);
+                                            else if (affinity >= 1 && affinity < 2)
+                                                normalTargets.Add(a);
+                                            else if (affinity >= 2)
+                                                bestTargets.Add(a);
+                                        }
+                                        else
+                                        {
+                                            unknown.Add(a);
+                                        }
+                                    }
+                                    //Let's try another target out if the enemy dosen't know the resistance
+                                    else
+                                    {
+                                        unknown.Add(a);
+                                    }
+                                }
+
+                                if (bestTargets.Count > 0)
+                                {
+                                    rand = UnityEngine.Random.Range(0, bestTargets.Count);
+                                    Targ = bestTargets[rand];
+                                }
+                                else if (unknown.Count > 0)
+                                {
+                                    rand = UnityEngine.Random.Range(0, unknown.Count);
+                                    Targ = unknown[rand];
+                                }
+                                else if (normalTargets.Count > 0) {
+                                    rand = UnityEngine.Random.Range(0, normalTargets.Count);
+                                    Targ = normalTargets[rand];
+                                }
+                                else if (resistantTargets.Count > 0)
+                                {
+                                    rand = UnityEngine.Random.Range(0, resistantTargets.Count);
+                                    Targ = resistantTargets[rand];
+                                }
+                                break;
+
+                            default:
+                                rand = UnityEngine.Random.Range(0, candidates.Count);
+                                Targ = candidates[rand];
+                                break;
+                        }
+
                     }
                     else
                     {
@@ -2049,12 +1953,14 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             case charAI.CONDITIONS.USER_PARTY_HP_HIGHER:
                 Targ = candidates.Find(x => x.hitPoints > chai.healthPercentage * x.maxHitPoints);
                 break;
+                /*
             case charAI.CONDITIONS.USER_PARTY_SP_HIGHER:
                 Targ = candidates.Find(x => x.skillPoints > chai.healthPercentage * x.maxSkillPoints);
                 break;
             case charAI.CONDITIONS.USER_PARTY_SP_LOWER:
                 Targ = candidates.Find(x => x.skillPoints < chai.healthPercentage * x.maxSkillPoints);
                 break;
+                */
             case charAI.CONDITIONS.TARGET_PARTY_HP_HIGHER:
                 Targ = candidates.Find(x => x.hitPoints > chai.healthPercentage * x.maxHitPoints);
                 break;
@@ -2088,7 +1994,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
             case charAI.CONDITIONS.SELF_SP_HIGHER:
                 {
-                    if (currentCharacter.skillPoints > chai.healthPercentage * currentCharacter.maxSkillPoints)
+                    if (opponentCP > chai.healthPercentage * opponentCPMax)
                     {
                         Targ = currentCharacter;
                     }
@@ -2100,7 +2006,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 break;
             case charAI.CONDITIONS.SELF_SP_LOWER:
                 {
-                    if (currentCharacter.skillPoints < chai.healthPercentage * currentCharacter.maxSkillPoints)
+                    if (opponentCP < chai.healthPercentage * opponentCPMax)
                     {
                         Targ = currentCharacter;
                     }
@@ -2256,7 +2162,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
                             if (currentCharacter != null)
                             {
-                                if (currentCharacter.hitPoints <= 0 || currentCharacter.skillPoints == -currentCharacter.maxSkillPoints)
+                                if (currentCharacter.hitPoints <= 0 )
                                 {
                                     playerCharacterTurnQueue.Dequeue();
                                     playerCharacterTurnQueue.Enqueue(currentCharacter);
@@ -2276,7 +2182,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                         else
                         {
                             currentCharacter = oppositionCharacterTurnQueue.Peek();
-                            if (currentCharacter.hitPoints <= 0 || currentCharacter.skillPoints == -currentCharacter.maxSkillPoints)
+                            if (currentCharacter.hitPoints <= 0 )
                             {
                                 oppositionCharacterTurnQueue.Dequeue();
                                 oppositionCharacterTurnQueue.Enqueue(currentCharacter);
@@ -2344,19 +2250,23 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
                                             if (nonImportant == null)
                                             {
-                                                target = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
-                                                move = normalAttack;
-                                                if (currentCharacter.skillPoints < 0) {
-                                                    move = guardMove;
-                                                    target = null;
-                                                }
+                                                target = null;
+                                                move = guardMove;
                                             }
                                             else
                                             {
+                                                charAI moveAI = nonImportant[UnityEngine.Random.Range(0, nonImportant.Count - 1)];
                                                 if (nonImportant.Count > 0)
                                                 {
-                                                    charAI moveAI = nonImportant[UnityEngine.Random.Range(0, nonImportant.Count - 1)];
-
+                                                    //Conserve CP
+                                                    float conserv = UnityEngine.Random.Range(0f, 2f);
+                                                    print(conserv);
+                                                    if (currentCharacter.data.conservativeCP > conserv)
+                                                    {
+                                                        List<charAI> aiNoCost = nonImportant.FindAll(x => x.moveName.cost == 0);
+                                                        moveAI = aiNoCost[UnityEngine.Random.Range(0, aiNoCost.Count - 1)];
+                                                    }
+                                                    
                                                     if (moveAI.moveName.onTeam)
                                                         target = GetTargetCharacter(partyCandidates, moveAI);
                                                     else
@@ -2372,31 +2282,17 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                                 }
                                                 else
                                                 {
-                                                    target = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
-                                                    move = normalAttack;
-                                                    if (currentCharacter.skillPoints < 0)
-                                                    {
-                                                        move = guardMove;
-                                                        target = null;
-                                                    }
+                                                    target = null;
+                                                    move = guardMove;
                                                 }
                                             }
-                                            //print(move.name);
-                                            //print(currentCharacter.name);
-                                            //print(target.name);
                                         }
 
                                     }
                                     else
                                     {
-                                        //print("I've got nothing, man!");
-                                        target = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
-                                        move = normalAttack;
-                                        if (currentCharacter.skillPoints < 0)
-                                        {
-                                            move = guardMove;
-                                            target = null;
-                                        }
+                                        move = guardMove;
+                                        target = null;
                                     }
                                     currentMove = new s_battleAction(currentCharacter, target, move);
 
@@ -2517,7 +2413,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                         {
                             o_battleChar tc = null;
                             float HP = 0;
-                            float SP = 0;
+                            //float SP = 0;
                             switch (currentMove.move.target)
                             {
                                 case TARGET_MOVE_TYPE.SINGLE:
@@ -2528,12 +2424,10 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
                                         singleTargSelector.Selector.SetActive(true);
                                         HP = ((float)tc.hitPoints / (float)tc.maxHitPoints) * 100;
-                                        SP = ((float)tc.skillPoints / (float)tc.maxSkillPoints) * 100;
+                                        //SP = ((float)tc.skillPoints / (float)tc.maxSkillPoints) * 100;
                                         HP = Mathf.Round(HP);
-                                        SP = Mathf.Round(SP);
 
                                         singleTargSelector.enemyHP.value = HP;
-                                        singleTargSelector.enemySP.value = SP;
                                         //print(tc.elementTypeCharts[(int)currentMove.move.element]);
                                         switch (currentMove.move.moveType)
                                         {
@@ -2567,9 +2461,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                         allTargetSelectors[i].Selector.SetActive(true);
                                         allTargetSelectors[i].Selector.transform.position = screenTOVIEW(tc.transform.position);
                                         HP = ((float)tc.hitPoints / (float)tc.maxHitPoints) * 100;
-                                        SP = ((float)tc.skillPoints / (float)tc.maxSkillPoints) * 100;
                                         HP = Mathf.Round(HP);
-                                        SP = Mathf.Round(SP);
 
                                         if (tc.elementTypeCharts[(int)currentMove.move.element] >= 2)
                                             allTargetSelectors[i].weaknessTarg.sprite = weakDmgTargImage;
@@ -2579,7 +2471,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                             allTargetSelectors[i].weaknessTarg.sprite = normalDmgTargImage;
 
                                         allTargetSelectors[i].enemyHP.value = HP;
-                                        allTargetSelectors[i].enemySP.value = SP;
+                                        //allTargetSelectors[i].enemySP.value = SP;
                                     }
                                     break;
 
@@ -2607,7 +2499,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                         tc = currentMove.target;
 
                                         HP = ((float)tc.hitPoints / (float)tc.maxHitPoints) * 100;
-                                        SP = ((float)tc.skillPoints / (float)tc.maxSkillPoints) * 100;
+                                        //SP = ((float)tc.skillPoints / (float)tc.maxSkillPoints) * 100;
                                         HP = Mathf.Round(HP);
                                         SP = Mathf.Round(SP);
 
@@ -2624,7 +2516,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                         allTargetSelectors[i].Selector.SetActive(true);
                                         allTargetSelectors[i].Selector.transform.position = screenTOVIEW(tc.transform.position);
                                         HP = ((float)tc.hitPoints / (float)tc.maxHitPoints) * 100;
-                                        SP = ((float)tc.skillPoints / (float)tc.maxSkillPoints) * 100;
+                                        //SP = ((float)tc.skillPoints / (float)tc.maxSkillPoints) * 100;
                                         HP = Mathf.Round(HP);
                                         SP = Mathf.Round(SP);
 
@@ -2741,7 +2633,13 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                     case MOVE_TYPE.STATUS:
                                         switch (currentMove.move.statusMoveType) {
                                             default:
-                                                currentMove.user.skillPoints -= currentMove.move.cost;
+                                                if (players.Contains(currentMove.user)) {
+                                                    playerCP -= currentMove.move.cost;
+                                                }
+                                                else
+                                                {
+                                                    opponentCP -= currentMove.move.cost;
+                                                }
                                                 break;
 
                                             case STATUS_MOVE_TYPE.HEAL_STAMINA:
@@ -2751,7 +2649,14 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                         break;
                                     case MOVE_TYPE.TALK:
                                     case MOVE_TYPE.SPECIAL:
-                                        currentMove.user.skillPoints -= currentMove.move.cost;
+                                        if (players.Contains(currentMove.user))
+                                        {
+                                            playerCP -= currentMove.move.cost;
+                                        }
+                                        else
+                                        {
+                                            opponentCP -= currentMove.move.cost;
+                                        }
                                         break;
                                 }
                                 break;
@@ -2765,12 +2670,12 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
                     case BATTLE_ENGINE_STATE.NEGOTIATE_MENU:
 
+                        /*
                         int act = 0;
                         sparable = new List<o_battleChar>();
                         sparable = opposition.FindAll(x => x.skillPoints <= 0);
                         bool relationship = false;
-
-                        /*
+                        
                         //If they have relationships with any character that does not have depleted SP, give a cold look
                         foreach (o_battleChar bc in sparable) {
                             if (bc.relationships == null)
@@ -2782,7 +2687,6 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                 }
                             }
                         }
-                        */
 
                         if (!relationship)
                         {
@@ -2791,6 +2695,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                             //ClearButtons();
                             //s_soundmanager.sound.PlaySound(ref selectOption, false);
                         }
+                        */
                         break;
 
                     case BATTLE_ENGINE_STATE.END:
@@ -2918,6 +2823,11 @@ public class s_battlesyst : s_singleton<s_battlesyst>
     {
         if (isActive)
         {
+            playerCPSlider.value = ((float)playerCP / (float)playerCPMax) * 100;
+            opponentCPSlider.value = ((float)opponentCP / (float)opponentCPMax) * 100;
+            playerCPText.text = " " + playerCP + "/"  + playerCPMax + " - Player";
+            opponentCPText.text = "Enemy - " + opponentCP + "/" + opponentCPMax;
+
             for (int i = 0; i < guis.Count; i++)
             {
                 if (players.Count - 1 < i)
@@ -2947,8 +2857,8 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 }
 
                 guis[i].txt.text = b.name;
-                guis[i].HPTxt.text = "HP: " + b.hitPoints;
-                guis[i].SPTxt.text = "SP: " + b.skillPoints;
+                guis[i].HPTxt.text = "RP: " + b.hitPoints;
+                //guis[i].SPTxt.text = "SP: " + b.skillPoints;
                 if (b.guardPoints > 0)
                 {
                     guis[i].guardPTS.text = "+" + b.guardPoints;
@@ -2964,12 +2874,12 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                     b.hitPointMeter -= Time.deltaTime * b.meterSpeed;
 
                 float HP = ((float)b.hitPoints / (float)b.maxHitPoints) * 100;
-                float SP = ((float)b.skillPoints / (float)b.maxSkillPoints) * 100;
+                //float SP = ((float)b.skillPoints / (float)b.maxSkillPoints) * 100;
                 HP = Mathf.Round(HP);
-                SP = Mathf.Round(SP);
+                //SP = Mathf.Round(SP);
 
                 guis[i].hpBar.value = HP;
-                guis[i].spBar.value = SP;
+                //guis[i].spBar.value = SP;
 
                 if (b.hitPoints <= 0)
                 {
@@ -3380,7 +3290,6 @@ public class s_battlesyst : s_singleton<s_battlesyst>
         List<string> movesList = new List<string>();
         Dictionary<string, int> items = new Dictionary<string, int>();
         
-        yield return new WaitForSeconds(1.4f);
         foreach (o_battleChar chTarg in targ)
         {
             if (chTarg.hitPoints <= 0)
@@ -3409,6 +3318,11 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 for (int i = 0; i < skillsToLearn.Count; i++)
                 {
                     s_move skill = skillsToLearn[i];
+                    if (skill.cost == 0)
+                        continue;
+                    if (!enemySkillsUsed.Contains(skill.name)) {
+                        continue;
+                    }
                     if (!rpg_globals.gl.extraSkills.Contains(skill))
                     {
                         rpg_globals.gl.extraSkills.Add(skill);
@@ -3434,6 +3348,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             int exp = 0;
             foreach (o_battleChar chTarg in targ)
             {
+                /*
                 if (chTarg.skillPoints <= 0)
                 {
                     expMult = 0.65f;
@@ -3445,7 +3360,8 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 else {
                     expMult = 0;
                 }
-                exp += bc.CalculateExp(chTarg, expMult);
+                */
+                exp += bc.CalculateExp(chTarg, 1);
             }
             yield return new WaitForSeconds(0.05f);
             for (int i2 = 0; i2 < exp; i2++)
@@ -3471,7 +3387,6 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                     {
                         bc.speed++;
                     }
-
                     if (EligibleForIncrease(bc.level, ch.gutsG))
                     {
                         bc.guts++;
@@ -3510,8 +3425,10 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 yield return new WaitForSeconds(Time.deltaTime * 3.85f);
             }
         }
+        yield return new WaitForSeconds(1.5f);
     }
     
+    /*
     public IEnumerator SpareEnemy(o_battleChar[] targ, int mode) {
         CurrentBattleEngineState = BATTLE_ENGINE_STATE.MOVE_PROCESS;
         drawExp = true;
@@ -3570,6 +3487,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
         yield return StartCoroutine(ConcludeBattle());
 
     }
+    */
 
     public void EndPlayerTurn()
     {
@@ -3617,3 +3535,330 @@ public class s_battlesyst : s_singleton<s_battlesyst>
         }
     }
 }
+
+
+
+/*
+public void EnemySelectAttack(ref o_battleChar character)
+{
+    if (character != null)
+    {
+        o_battleChar target = null;
+        s_move move = null;
+        List<o_battleChar> candidates = new List<o_battleChar>();
+
+        foreach (o_battleChar p in players)
+        {
+            if (p.hitPoints > 0)
+                candidates.Add(p);
+        }
+
+        List<s_move> allmove = new List<s_move>();
+        allmove.Add(guardMove);
+        foreach (s_move m in allmove)
+        {
+            if (!CheckForCostRequirements(m, character))
+                continue;
+            allmove.Add(m);
+        }
+
+        if (character.characterAI != null)
+            foreach (charAI chai in character.characterAI)
+            {
+
+                bool breakOutOfLoop = false;
+
+                if (target != null)
+                    break;
+
+                o_battleChar Targ = null;
+                move = chai.moveName;
+                switch (chai.conditions)
+                {
+                    case charAI.CONDITIONS.ALWAYS:
+                        {
+                            Targ = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
+                            if (Targ != null)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+                    case charAI.CONDITIONS.USER_PARTY_HP_LOWER:
+                        {
+                            Targ = opposition.Find(x => x.hitPoints < chai.healthPercentage * x.maxHitPoints);
+                            if (Targ != null)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+                    case charAI.CONDITIONS.USER_PARTY_HP_HIGHER:
+                        {
+                            Targ = opposition.Find(x => x.hitPoints > chai.healthPercentage * x.maxHitPoints);
+                            if (Targ != null)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+                    case charAI.CONDITIONS.TARGET_PARTY_HP_HIGHER:
+                        {
+                            Targ = candidates.Find(x => x.hitPoints > chai.healthPercentage * x.maxHitPoints);
+                            if (Targ != null)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+
+                    case charAI.CONDITIONS.SELF_HP_HIGHER:
+                        {
+                            if (character.hitPoints > chai.healthPercentage * character.maxHitPoints)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+                    case charAI.CONDITIONS.SELF_HP_LOWER:
+                        {
+                            if (character.hitPoints < chai.healthPercentage * character.maxHitPoints)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+
+                    case charAI.CONDITIONS.SELF_SP_HIGHER:
+                        {
+                            if (character.skillPoints > chai.healthPercentage * character.maxSkillPoints)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+                    case charAI.CONDITIONS.SELF_SP_LOWER:
+                        {
+                            if (character.skillPoints < chai.healthPercentage * character.maxSkillPoints)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+
+                    case charAI.CONDITIONS.TARGET_PARTY_HP_LOWER:
+                        {
+                            Targ = candidates.Find(x => x.hitPoints < chai.healthPercentage * x.maxHitPoints);
+                            if (Targ != null)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+                    case charAI.CONDITIONS.ON_TURN:
+                        break;
+                    case charAI.CONDITIONS.USER_PARTY_SP_HIGHER:
+                        {
+                            Targ = opposition.Find(x => x.skillPoints > chai.healthPercentage * x.maxSkillPoints);
+                            if (Targ != null)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+                    case charAI.CONDITIONS.USER_PARTY_SP_LOWER:
+                        {
+                            Targ = opposition.Find(x => x.skillPoints < chai.healthPercentage * x.maxSkillPoints);
+                            if (Targ != null)
+                            {
+                                target = Targ;
+                                breakOutOfLoop = true;
+                            }
+                        }
+                        break;
+
+                }
+                switch (chai.turnCounters)
+                {
+                    case charAI.TURN_COUNTER.TURN_COUNTER_EQU:
+                        if (currentCharacter.turnNumber == chai.number1)
+                        {
+                            currentCharacter.turnNumber = 0;
+                            breakOutOfLoop = true;
+                        }
+                        else
+                        {
+                            breakOutOfLoop = false;
+                        }
+                        break;
+
+                    case charAI.TURN_COUNTER.ROUND_COUNTER_EQU:
+                        if (currentCharacter.roundNumber == chai.number2)
+                        {
+                            currentCharacter.roundNumber = 0;
+                            breakOutOfLoop = true;
+                        }
+                        else {
+                            breakOutOfLoop = false;
+                        }
+                        break;
+
+                    case charAI.TURN_COUNTER.ROUND_TURN_COUNTER_EQU:
+                        if (currentCharacter.roundNumber == chai.number2 &&
+                            currentCharacter.turnNumber == chai.number1)
+                        {
+                            currentCharacter.roundNumber = 0;
+                            currentCharacter.turnNumber = 0;
+                            breakOutOfLoop = true;
+                        }
+                        else
+                        {
+                            breakOutOfLoop = false;
+                        }
+                        break;
+                }
+                if (breakOutOfLoop)
+                    break;
+            }
+        else {
+            target = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
+            if (allmove.Count == 0 || character.skillPoints <= 0) {
+                move = guardMove;
+                target = null;
+            }
+            else
+            {
+                move = allmove[UnityEngine.Random.Range(0, allmove.Count - 1)];
+            }
+        }
+        currentMove = new s_battleAction (
+                character,
+                target,
+                move);
+    }
+    }
+*/
+
+/*
+public void ClearButtons()
+{
+fightButton.gameObject.SetActive(false);
+itemsButton.gameObject.SetActive(false);
+skillsButton.gameObject.SetActive(false);
+guardButton.gameObject.SetActive(false);
+spareButton.gameObject.SetActive(false);
+runButton.gameObject.SetActive(false);
+passButton.gameObject.SetActive(false);
+}
+*/
+
+/*
+float acc1 = ((currentMove.user.getNetSpeed / 8) * 6.25f);
+float acc2 = ((Targ.getNetSpeed / 8) * 6.25f);
+
+float accuracy_percentage = (float)currentMove.move.accuracy * (acc1/acc2);
+// print("User: " + move.user + " Target: " + Targ + " accuracy = " + accuracy_percentage);
+float accuracy = UnityEngine.Random.Range(0,100);
+
+if (mov.moveType != MOVE_TYPE.TALK)
+{
+    //If the accuracy is higher than the chance the move misses
+    //TALK moves never miss
+    if (accuracy > accuracy_percentage)
+    {
+        turnPressFlag = PRESS_TURN_TYPE.MISS;
+    }
+}
+if (turnPressFlag != PRESS_TURN_TYPE.MISS) {
+    if (mov.element != ELEMENT.UNKNOWN) {
+        if (Targ.elementTypeCharts[(int)mov.element] > 1.99f || Targ.actionTypeCharts[(int)mov.action_type] > 1.99f)
+        {
+            if (Targ.guardPoints > 0 && mov.moveType != MOVE_TYPE.TALK)
+            {
+                turnPressFlag = PRESS_TURN_TYPE.NORMAL;
+            }
+            else
+            {
+                turnPressFlag = PRESS_TURN_TYPE.WEAKNESS;
+            }
+            if (Targ.actionTypeCharts[(int)mov.action_type] > 1.99f && Targ.skillPoints <= 0)
+            {
+                turnPressFlag = PRESS_TURN_TYPE.NORMAL;
+            }
+        }
+        else if ((Targ.elementTypeCharts[(int)mov.element] < 0 &&
+          Targ.elementTypeCharts[(int)mov.element] >= -1) ||
+          (Targ.actionTypeCharts[(int)mov.action_type] < 0 &&
+          Targ.actionTypeCharts[(int)mov.action_type] >= -1))
+        {
+            turnPressFlag = PRESS_TURN_TYPE.REFLECT;
+        }
+        else if (Targ.elementTypeCharts[(int)mov.element] < -1 ||
+        Targ.actionTypeCharts[(int)mov.action_type] < -1)
+        {
+            //ABSORB
+            turnPressFlag = PRESS_TURN_TYPE.ABSORB;
+        }
+        else if (Targ.elementTypeCharts[(int)mov.element] == 0 ||
+            Targ.actionTypeCharts[(int)mov.action_type] == 0)
+        {
+            turnPressFlag = PRESS_TURN_TYPE.IMMUNE;
+        }
+        if (players.Contains(currentMove.user))
+        {
+            if (mov.moveType == MOVE_TYPE.SPECIAL ||
+               mov.moveType == MOVE_TYPE.PHYSICAL)
+            {
+                rpg_globals.GetInstance().GetComponent<rpg_globals>().SetBattleMemoryElement(Targ.name, mov.element);
+            }
+            else if (mov.moveType == MOVE_TYPE.TALK)
+            {
+                rpg_globals.GetInstance().GetComponent<rpg_globals>().SetBattleMemoryAction(Targ.name, mov.action_type);
+            }
+        }
+    }
+}
+*/
+
+/*
+public IEnumerator BattleEventPlay(s_battleEvents ev) {
+
+    foreach (s_bEvent beElement in ev.events)
+    {
+        switch (beElement.battleAction)
+        {
+            case s_bEvent.B_ACTION_TYPE.DIALOGUE:
+
+                actionDisp.text = beElement.string0 + "\n";
+                yield return new WaitForSeconds(1.5f);
+                break;
+            case s_bEvent.B_ACTION_TYPE.MOVE:
+
+                actionDisp.text = beElement.string0 + "\n";
+                //yield return StartCoroutine(PlayAniamtion());
+                break;
+
+            case s_bEvent.B_ACTION_TYPE.CHECK_FLAG:
+
+                break;
+
+            case s_bEvent.B_ACTION_TYPE.END_BATTLE:
+                if (beElement.name == "")
+                    EndBattle();
+                else
+                    EndBattle(beElement.eventScript);
+                break;
+        }
+    }
+}
+*/

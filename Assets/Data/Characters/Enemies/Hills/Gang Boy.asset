@@ -101,11 +101,8 @@ MonoBehaviour:
   speedG: 0.38634998
   inBattle: 1
   moveDatabase:
-  - {fileID: 11400000, guid: 5319d7adb7e1b3a43aefef5bfde09318, type: 2}
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
   - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
-  - {fileID: 11400000, guid: a7a933f7d27ee8b4ebc86887cc56aa4e, type: 2}
-  - {fileID: 11400000, guid: fc0631d18b6ab8c43bf55eeedbf81797, type: 2}
   - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}
   - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
   currentMoves: []
@@ -132,6 +129,6 @@ MonoBehaviour:
   - 1
   - 2.07
   money: 0
-  itemDrop:
-  - {fileID: 11400000, guid: b6196b715ec1ec942bf1d7feb40fb0a7, type: 2}
+  itemDrop: []
   relationships: []
+  conservativeCP: 0.45

@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 11
+  cost: 6
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
@@ -26,10 +26,10 @@ MonoBehaviour:
   action_type: 2
   moveType: 3
   target: 0
-  power: 15
+  power: 16
   preAnim: []
   animation:
-  - duration: 0.1
+  - duration: 0.3
     image: {fileID: 0}
     name: joke
     position: {x: 0, y: 0}
@@ -51,17 +51,17 @@ MonoBehaviour:
   vit_inc: 0
   dex_inc: 0
   luc_inc: 0
-  agi_inc: 2
-  gut_inc: 2
+  agi_inc: 0
+  gut_inc: 1
   buffUser: 0
   buffTarget: 1
   canLearn: 1
   excludeUser: 0
-  str_req: 3
-  dex_req: 5
+  str_req: 0
+  dex_req: 2
   vit_req: 0
-  agi_req: 0
-  gut_req: 6
+  agi_req: 7
+  gut_req: 4
   customFx: 
   statusEffectChances:
     statusEffectChance: 0

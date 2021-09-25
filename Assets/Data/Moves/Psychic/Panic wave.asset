@@ -20,7 +20,7 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: Sends a constant wave of panic to random enemies.
   element: 0
   action_type: 6
   moveType: 3
@@ -31,10 +31,10 @@ MonoBehaviour:
   moveRequirements: []
   accuracy: 95
   str_inc: 0
-  vit_inc: 0
+  vit_inc: 1
   dex_inc: 0
   luc_inc: 0
-  agi_inc: 0
+  agi_inc: 1
   gut_inc: 0
   buffUser: 0
   buffTarget: 1
