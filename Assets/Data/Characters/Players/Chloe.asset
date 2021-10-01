@@ -13,11 +13,52 @@ MonoBehaviour:
   m_Name: Chloe
   m_EditorClassIdentifier: 
   shortName: 
-  characterAI: []
+  characterAI:
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 6
+    element: 0
+    healthPercentage: 0.35
+    name: 
+    moveName: {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims: []
   front: {fileID: 0}
   back: {fileID: -9141494762117073498, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
+  character_colour: {r: 0.8784314, g: 0.5982196, b: 0.25490195, a: 1}
   isPartyChar: 0
   baseExpYeild: 0
   maxHitPoints: 0
@@ -34,10 +75,10 @@ MonoBehaviour:
   maxSkillPointsGMin: 2
   maxHitPointsGMax: 4
   maxHitPointsGMin: 3
-  attackG: 0.506
+  attackG: 0.444
   defenceG: 0.44
-  intelligenceG: 0.514
-  gutsG: 0.683
+  intelligenceG: 0.703
+  gutsG: 0.643
   speedG: 0.479
   inBattle: 1
   moveDatabase:
@@ -45,6 +86,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
   - {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
+  - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -75,3 +117,4 @@ MonoBehaviour:
   itemDrop: []
   relationships: []
   conservativeCP: 0.45
+  sheildChance: 0.25

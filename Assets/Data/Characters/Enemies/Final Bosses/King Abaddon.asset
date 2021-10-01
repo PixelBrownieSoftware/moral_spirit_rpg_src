@@ -15,12 +15,12 @@ MonoBehaviour:
   shortName: 
   characterAI:
   - turnCounters: 3
-    conditions: 12
+    conditions: 0
     element: 0
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
-    onParty: 0
+    onParty: 1
     number1: 0
     number2: 3
     isImportant: 1
@@ -50,6 +50,56 @@ MonoBehaviour:
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 5da7ac288f76789488ab1cb584427bf7, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -58,6 +108,7 @@ MonoBehaviour:
   characterAnims: []
   front: {fileID: 21300000, guid: cce31dcb98ce61f44967aa2c50325b8a, type: 3}
   back: {fileID: 21300000, guid: cce31dcb98ce61f44967aa2c50325b8a, type: 3}
+  character_colour: {r: 0, g: 0, b: 0, a: 0}
   isPartyChar: 0
   baseExpYeild: 0
   maxHitPoints: 0
@@ -120,3 +171,4 @@ MonoBehaviour:
   itemDrop: []
   relationships: []
   conservativeCP: 0.45
+  sheildChance: 0

@@ -58,10 +58,10 @@ MonoBehaviour:
   canLearn: 1
   excludeUser: 0
   str_req: 0
-  dex_req: 3
-  vit_req: 2
+  dex_req: 0
+  vit_req: 0
   agi_req: 0
-  gut_req: 2
+  gut_req: 6
   customFx: 
   statusEffectChances:
     statusEffectChance: 0

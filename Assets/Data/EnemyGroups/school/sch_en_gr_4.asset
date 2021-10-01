@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 49cf4a96a7fdfbd4bbdd7ade3e2b389e, type: 2}
   - {fileID: 11400000, guid: 49cf4a96a7fdfbd4bbdd7ade3e2b389e, type: 2}
   - {fileID: 11400000, guid: 49cf4a96a7fdfbd4bbdd7ade3e2b389e, type: 2}
-  maxLevel: 20
+  maxLevel: 25
   minLevel: 20
   fixedLevel: 
   isFixedLevel: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5be311a9499eb1a46a2052db45723e4f, type: 2}
   maxLevel: 0
   minLevel: 0
-  fixedLevel: 2d000000
+  fixedLevel: 28000000
   isFixedLevel: 1
   battleEvents: []
   allRelations: 1

@@ -21,13 +21,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a755235832a98784b88885494001bf23, type: 2}
   maxLevel: 0
   minLevel: 0
-  fixedLevel: 16000000160000001c0000001600000016000000
+  fixedLevel: 1a0000001a0000001c0000001a0000001a000000
   isFixedLevel: 1
   battleEvents:
   - eventScript: {fileID: 11400000, guid: 660b210990c17e14689d9753b9fa3ac1, type: 2}
     battleCond: 2
     battleCheckCond: 1
-    enabled: 0
+    enabled: 1
     int0: 15
   allRelations: 1
   isFleeable: 0

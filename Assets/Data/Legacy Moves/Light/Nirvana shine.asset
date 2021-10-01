@@ -22,7 +22,7 @@ MonoBehaviour:
   actionDescription: 
   infoDescription: 
   element: 0
-  action_type: 7
+  action_type: 1
   moveType: 3
   target: 0
   power: 25

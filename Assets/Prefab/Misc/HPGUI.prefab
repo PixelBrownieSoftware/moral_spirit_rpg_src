@@ -1012,6 +1012,7 @@ MonoBehaviour:
   guard: {fileID: 2918957238940797360}
   guardPTS: {fileID: 8789568829244220989}
   guardPTSS: {fileID: 1412603306666468158}
+  hpBarImg: {fileID: 6592224612573405484}
 --- !u!1 &7269627872928838942
 GameObject:
   m_ObjectHideFlags: 0

@@ -127,7 +127,6 @@ public class RPG_save : dat_save
             its.Add(new sav_item(it.Key, it.Value));
         }
         savedItems = its.ToArray();
-        Debug.Log(this.partyMembers.Length);
     }
     public RPG_save()
     {
@@ -245,10 +244,7 @@ public class rpg_globals : s_globals
     public List<BattleCharacterData> dataCharacters;
     public u_encounter enc;
     public List<RPG_battleMemory> battleMemory = new List<RPG_battleMemory>();
-
-    public override void LoadSaveData()
-    {
-    }
+    
     public override void StartStuff()
     {
         base.StartStuff();
@@ -299,6 +295,8 @@ public class rpg_globals : s_globals
         partyMembers.Clear();
         inventory.Clear();
         extraSkills.Clear();
+        s_battlesyst.GetInstance().players.Clear();
+        s_battlesyst.GetInstance().opposition.Clear();
         battleMemory.Clear();
     }
 
@@ -905,7 +903,6 @@ public class rpg_globals : s_globals
         sav.location = new s_save_vector(player.transform.position.x, player.transform.position.y);
         sav.gbflg = new dat_globalflags(GlobalFlags);
         sav.currentmap = currentMapName;
-        print(objectStates.Count);
         sav.trigStates = objectStates;
         {
             int ind = 0;

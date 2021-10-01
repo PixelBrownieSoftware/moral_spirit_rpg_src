@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7dd4cf0c39b354a82a3382f4e4a2c9, type: 3}
+  m_Name: Ego boost
+  m_EditorClassIdentifier: 
+  isMultiHit: 0
+  isFixed: 0
+  onSelf: 1
+  onTeam: 1
+  cost: 18
+  affectedBySilence: 0
+  multiTech: 0
+  actionDescription: 
+  infoDescription: The user boasts about themselves.
+  element: 0
+  action_type: 0
+  moveType: 2
+  target: 0
+  power: 0
+  preAnim: []
+  animation: []
+  moveRequirements: []
+  accuracy: 85
+  str_inc: 1
+  vit_inc: 0
+  dex_inc: 0
+  luc_inc: 0
+  agi_inc: 1
+  gut_inc: 2
+  buffUser: 0
+  buffTarget: 1
+  canLearn: 1
+  excludeUser: 0
+  str_req: 0
+  dex_req: 7
+  vit_req: 0
+  agi_req: 5
+  gut_req: 0
+  customFx: 
+  statusEffectChances:
+    statusEffectChance: 0
+    status_effect: 0
+  statusMoveType: 4

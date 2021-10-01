@@ -269,6 +269,7 @@ public class o_battleChar : MonoBehaviour
     int animNum = 0;
     float animSpeed;
     float animPT;
+    public int hitByWeaknessCount = 0;
 
     public float getNetAttack {
         get
@@ -489,7 +490,7 @@ public class o_battleChar : MonoBehaviour
                     switch (mov.statusMoveType)
                     {
                         case STATUS_MOVE_TYPE.HEAL:
-                            movePow = (int)((float)mov.power * (float)(move.user.getNetIntellgence / 4));
+                            movePow = (int)((float)mov.power * (float)(move.user.getNetDefence / 4));
                             break;
 
                         case STATUS_MOVE_TYPE.HEAL_STAMINA:
@@ -638,7 +639,7 @@ public class o_battleChar : MonoBehaviour
                 talkFormula = (getNetGuts / 2.2f) +(getNetDefence / 3f);
                 break;
             case ACTION_TYPE.PLAYFUL:
-                talkFormula = (getNetGuts / 1.6f) + (getNetSpeed / 1.6f);
+                talkFormula = (getNetGuts / 1.6f) + (getNetSpeed / 1.25f);
                 break;
 
             case ACTION_TYPE.RESERVED:
@@ -649,8 +650,10 @@ public class o_battleChar : MonoBehaviour
                 talkFormula = getNetGuts;
                 break;
         }
-        print(name + " Stat: " + talkFormula);
-        return talkFormula;
+        if(guardPoints > 0)
+            return talkFormula + (guardPoints + 1);
+        else
+            return talkFormula;
     }
     public float GetTalkMoveDamage(s_battleAction move)
     {
@@ -693,18 +696,13 @@ public class o_battleChar : MonoBehaviour
                      (move.user.getNetGuts / 1.5f);
                 break;
         }
-        //print(elementFormula);
-
-        print(move.user.name + " Stat: " + talkFormula);
         return talkFormula;
     }
 
     public int CalculateExp(o_battleChar character)
     {
         float lvl = (character.level / level);
-        print(lvl);
         float final = (lvl * character.baseExpYeild);
-        print(final);
 
         return Mathf.RoundToInt(final);
     }

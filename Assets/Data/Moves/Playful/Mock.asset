@@ -60,7 +60,7 @@ MonoBehaviour:
   dex_req: 0
   vit_req: 0
   agi_req: 5
-  gut_req: 4
+  gut_req: 3
   customFx: 
   statusEffectChances:
     statusEffectChance: 0

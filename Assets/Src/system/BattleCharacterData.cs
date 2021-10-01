@@ -14,6 +14,7 @@ public class BattleCharacterData : ScriptableObject
 
     public Sprite front;
     public Sprite back;
+    public Color character_colour;
 
     public bool isPartyChar;
 
@@ -62,4 +63,5 @@ public class BattleCharacterData : ScriptableObject
     //The characters that this one has relationships with prevent this one from being negotated 
     public BattleCharacterData[] relationships;
     public float conservativeCP = 0.45f;
+    public float sheildChance = 0.25f;
 }

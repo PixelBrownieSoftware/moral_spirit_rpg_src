@@ -17,11 +17,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c709c3c6b517198458aff1e01e82b194, type: 2}
   - {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
   - {fileID: 11400000, guid: a5f32c1c148e6a647a8a555a11c5a4a4, type: 2}
-  maxLevel: 0
-  minLevel: 0
-  fixedLevel: 0a0000000c0000000a000000
-  isFixedLevel: 1
-  battleEvents: []
+  maxLevel: 13
+  minLevel: 13
+  fixedLevel: 
+  isFixedLevel: 0
+  battleEvents:
+  - eventScript: {fileID: 11400000, guid: 9539a20395e64794bbafbe5c3cc29bd9, type: 2}
+    battleCond: 2
+    battleCheckCond: 1
+    enabled: 1
+    int0: 7
   allRelations: 1
   isFleeable: 0
   songName: rise_up_to_the_truth

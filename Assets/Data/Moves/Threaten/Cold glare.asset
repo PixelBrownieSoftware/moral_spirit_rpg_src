@@ -64,9 +64,9 @@ MonoBehaviour:
   buffTarget: 1
   canLearn: 1
   excludeUser: 0
-  str_req: 5
+  str_req: 6
   dex_req: 0
-  vit_req: 3
+  vit_req: 4
   agi_req: 0
   gut_req: 0
   customFx: 

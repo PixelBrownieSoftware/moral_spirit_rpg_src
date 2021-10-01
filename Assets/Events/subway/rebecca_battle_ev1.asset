@@ -121,7 +121,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: But this is 4 against 2! There is no way I'm going to loose!
+    string0: But this is 3 against 2! There is no way I'm going to loose!
     string1: Rebecca
     posX: 0
     posY: 0
@@ -167,6 +167,36 @@ MonoBehaviour:
     sound: {fileID: 0}
   - logic: 0
     eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah! Our spirits are strong!
+    string1: Other freinds
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 10
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0

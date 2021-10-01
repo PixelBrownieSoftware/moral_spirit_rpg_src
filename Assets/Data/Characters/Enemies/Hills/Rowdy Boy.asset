@@ -74,10 +74,21 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims: []
   front: {fileID: 9046916614972136775, guid: 65ed1238b6563de4ab3951138e474e39, type: 3}
   back: {fileID: 0}
+  character_colour: {r: 0, g: 0, b: 0, a: 0}
   isPartyChar: 0
   baseExpYeild: 55
   maxHitPoints: 0
@@ -139,3 +150,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 744ac73ac6bd0bf46a2ad91663df30c4, type: 2}
   relationships: []
   conservativeCP: 0.45
+  sheildChance: 0.25

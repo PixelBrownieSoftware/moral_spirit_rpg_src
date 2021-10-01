@@ -109,8 +109,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 81cf74c255ca4ad4c8d6c9b34150e94d, type: 3}
   front: {fileID: 2112927663541022341, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
   back: {fileID: 0}
+  character_colour: {r: 0, g: 0, b: 0, a: 0}
   isPartyChar: 0
-  baseExpYeild: 56
+  baseExpYeild: 47
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0

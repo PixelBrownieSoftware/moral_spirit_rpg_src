@@ -15,11 +15,11 @@ C:/Users/hamza/Own Games/Unity/InDevelopment/Moral spirit
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52477
+51996
 Successfully changed project path to: C:/Users/hamza/Own Games/Unity/InDevelopment/Moral spirit
 C:/Users/hamza/Own Games/Unity/InDevelopment/Moral spirit
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 860.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 111.44 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
@@ -30,199 +30,627 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
     Vendor:   
     VRAM:     2007 MB
-    Driver:   27.21.14.6140
+    Driver:   30.0.14.7141
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002479 seconds.
+Registered in 0.003784 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 63.72 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 97.83 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in 12.012 seconds
+- Completed reload, in  1.704 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.029611 seconds.
+Registered in 0.007723 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 83.99 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 110.70 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.035 seconds
+- Completed reload, in  1.522 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.24 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2940 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 152.6 MB.
 System memory in use after: 152.8 MB.
 
 Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 3390.
-Total: 2.962700 ms (FindLiveObjects: 0.451900 ms CreateObjectMapping: 0.266200 ms MarkObjects: 2.170000 ms  DeleteObjects: 0.073400 ms)
+Total: 3.835300 ms (FindLiveObjects: 0.471200 ms CreateObjectMapping: 0.270800 ms MarkObjects: 3.049900 ms  DeleteObjects: 0.042000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Data/Characters/Enemies/School/Diligent girl.asset
-  artifactKey: Guid(9ad5b38a5fc90884391f3d3657906407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent girl.asset using Guid(9ad5b38a5fc90884391f3d3657906407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371ecf89e8e957cb25d87837e78a88db') in 0.111029 seconds
-  Import took 0.117405 seconds .
+  path: Assets/Data/Moves/Status/Aggrivate.asset
+  artifactKey: Guid(108abd6973a0f0d4d962675d5eb37d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Aggrivate.asset using Guid(108abd6973a0f0d4d962675d5eb37d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ddbeb37d66872bfa0c5c493aa2d0d5') in 0.082101 seconds
+  Import took 0.118474 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.615003 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent girl.asset
-  artifactKey: Guid(9ad5b38a5fc90884391f3d3657906407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent girl.asset using Guid(9ad5b38a5fc90884391f3d3657906407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be6224c1782b294591fb51d20a4d019c') in 0.034341 seconds
-  Import took 0.039519 seconds .
+  Time since last request: 0.000319 seconds.
+  path: Assets/Data/Moves/Status/Flex.asset
+  artifactKey: Guid(beb4aa0dbbb75284f84787b6dececefe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Flex.asset using Guid(beb4aa0dbbb75284f84787b6dececefe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c58f33ecf2eaa034570c36eb0f0994') in 0.013282 seconds
+  Import took 0.044644 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.086879 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent girl.asset
-  artifactKey: Guid(9ad5b38a5fc90884391f3d3657906407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent girl.asset using Guid(9ad5b38a5fc90884391f3d3657906407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be6224c1782b294591fb51d20a4d019c') in 0.007155 seconds
-  Import took 0.012952 seconds .
+  Time since last request: 21.183398 seconds.
+  path: Assets/Data/Moves/Status/Chant.asset
+  artifactKey: Guid(51153a6f8017d66458e6151b0799d2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Chant.asset using Guid(51153a6f8017d66458e6151b0799d2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f353b8f8aa83d4fecea8cde1e0847a') in 0.013885 seconds
+  Import took 0.048556 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.473111 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent boy.asset
-  artifactKey: Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent boy.asset using Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004a3a4e83b204d3f535e8e4d2b77059') in 0.019397 seconds
-  Import took 0.024949 seconds .
+  Time since last request: 34.204140 seconds.
+  path: Assets/Data/Moves/Status/Motivate.asset
+  artifactKey: Guid(1ed9aa6069c528e4c9ed603c67ea90b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Motivate.asset using Guid(1ed9aa6069c528e4c9ed603c67ea90b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1421a21ef2e59d4f7472d9662007575') in 0.026086 seconds
+  Import took 0.058562 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.099778 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent boy.asset
-  artifactKey: Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent boy.asset using Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004a3a4e83b204d3f535e8e4d2b77059') in 0.004134 seconds
-  Import took 0.010457 seconds .
+  Time since last request: 43.150959 seconds.
+  path: Assets/Data/Moves/Status/Tensify.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Tensify.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1117b3a53cb15721214dc50999900b5b') in 0.014476 seconds
+  Import took 0.040019 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.234792 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent boy.asset
-  artifactKey: Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent boy.asset using Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0addabc9b22b7fee18f975b538af9e') in 0.004695 seconds
-  Import took 0.010890 seconds .
+  Time since last request: 77.714788 seconds.
+  path: Assets/Data/Moves/Status/Clench fists.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Clench fists.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a686cdd62ab59146ce1c291dd4843c7c') in 0.016133 seconds
+  Import took 0.077577 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001341 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent boy.asset
-  artifactKey: Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent boy.asset using Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0addabc9b22b7fee18f975b538af9e') in 0.003874 seconds
-  Import took 0.009695 seconds .
+  Time since last request: 0.000255 seconds.
+  path: Assets/Data/Moves/Status/Chant.asset
+  artifactKey: Guid(51153a6f8017d66458e6151b0799d2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Chant.asset using Guid(51153a6f8017d66458e6151b0799d2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bb30705785fd8a79a511b987186eb6') in 0.006464 seconds
+  Import took 0.024293 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.615043 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent boy.asset
-  artifactKey: Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent boy.asset using Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5146725e6927e0b4129bb5270f65e003') in 0.058195 seconds
-  Import took 0.063352 seconds .
+  Time since last request: 40.575003 seconds.
+  path: Assets/Data/Moves/Status/Macho boost.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Macho boost.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216be546c0cb3faafeebc42115c8cc0b') in 0.016424 seconds
+  Import took 0.079942 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.051761 seconds.
-  path: Assets/Data/Characters/Enemies/School/Diligent boy.asset
-  artifactKey: Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/School/Diligent boy.asset using Guid(a755235832a98784b88885494001bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5146725e6927e0b4129bb5270f65e003') in 0.004428 seconds
-  Import took 0.009580 seconds .
+  Time since last request: 0.001276 seconds.
+  path: Assets/Data/Moves/Status/Macho boost.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Macho boost.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216be546c0cb3faafeebc42115c8cc0b') in 0.007492 seconds
+  Import took 0.018641 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.441298 seconds.
-  path: Assets/Data/Characters/Enemies/Uni/Knowledgable woman.asset
-  artifactKey: Guid(d8cda4cdb922f754f96ecfb910c8b637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/Uni/Knowledgable woman.asset using Guid(d8cda4cdb922f754f96ecfb910c8b637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88054f264908ead10022475ba5a7184d') in 0.006394 seconds
-  Import took 0.011551 seconds .
+  Time since last request: 43.563552 seconds.
+  path: Assets/Data/Moves/Status/Rage.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Rage.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938d7687e74f0c7fe3009fe407633bd1') in 0.013600 seconds
+  Import took 0.032017 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.766300 seconds.
-  path: Assets/Data/Characters/Enemies/Uni/Female Professor.asset
-  artifactKey: Guid(e0694de16dbcc17478c5beda32563dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/Uni/Female Professor.asset using Guid(e0694de16dbcc17478c5beda32563dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9e53f32b95c47ee6fa38d703322b1b') in 0.043376 seconds
-  Import took 0.097002 seconds .
+  Time since last request: 10.171409 seconds.
+  path: Assets/Data/Moves/Status/Rage.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Rage.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b62b4e959924d065e971bef9f6c1d26') in 0.006824 seconds
+  Import took 0.030530 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.568019 seconds.
-  path: Assets/Data/Characters/Enemies/Uni/Female Professor.asset
-  artifactKey: Guid(e0694de16dbcc17478c5beda32563dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/Uni/Female Professor.asset using Guid(e0694de16dbcc17478c5beda32563dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d56538c7ced287ed8037a8d3947ba9') in 0.003669 seconds
-  Import took 0.008776 seconds .
+  Time since last request: 17.867522 seconds.
+  path: Assets/Data/Moves/Status/Rage.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Rage.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a5912107b8edaab19fd9bc4617c78d') in 0.007754 seconds
+  Import took 0.028856 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001373 seconds.
-  path: Assets/Data/Characters/Enemies/Uni/Female Professor.asset
-  artifactKey: Guid(e0694de16dbcc17478c5beda32563dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/Uni/Female Professor.asset using Guid(e0694de16dbcc17478c5beda32563dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d56538c7ced287ed8037a8d3947ba9') in 0.003496 seconds
-  Import took 0.009236 seconds .
+  Time since last request: 6.455733 seconds.
+  path: Assets/Data/Moves/Status/Rage.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Rage.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1799eb3b69022d653a1f9f34c984ae4a') in 0.006880 seconds
+  Import took 0.039478 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.204260 seconds.
-  path: Assets/Data/Characters/Enemies/Uni/Male Professor.asset
-  artifactKey: Guid(e95397fb2a081184cb9b1303f99cbed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/Uni/Male Professor.asset using Guid(e95397fb2a081184cb9b1303f99cbed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0266f244045ae0e9a1b1e463ad3c9e') in 0.023051 seconds
-  Import took 0.047244 seconds .
+  Time since last request: 11.040520 seconds.
+  path: Assets/Data/Moves/Status/Rage.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Rage.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759f2a153ecef4534c040c43cb0ed6a7') in 0.007565 seconds
+  Import took 0.038066 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.824718 seconds.
-  path: Assets/Data/Characters/Enemies/Uni/Male Professor.asset
-  artifactKey: Guid(e95397fb2a081184cb9b1303f99cbed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/Uni/Male Professor.asset using Guid(e95397fb2a081184cb9b1303f99cbed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f04b0e3867e0a2514ae94a0433927d3') in 0.003741 seconds
-  Import took 0.008898 seconds .
+  Time since last request: 5.200981 seconds.
+  path: Assets/Data/Moves/Status/Rage.asset
+  artifactKey: Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Rage.asset using Guid(799aed13f2585434695812563847f812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c7f5708e53f7f588f4ca518b83e383') in 0.008034 seconds
+  Import took 0.036642 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.109042 seconds.
-  path: Assets/Data/Characters/Enemies/Uni/Male Professor.asset
-  artifactKey: Guid(e95397fb2a081184cb9b1303f99cbed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Characters/Enemies/Uni/Male Professor.asset using Guid(e95397fb2a081184cb9b1303f99cbed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f04b0e3867e0a2514ae94a0433927d3') in 0.092894 seconds
-  Import took 0.098092 seconds .
+  Time since last request: 46.205688 seconds.
+  path: Assets/Data/Moves/Status/Yoga stretch.asset
+  artifactKey: Guid(3700559c2ecef5b4689ac3d645dbe9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Yoga stretch.asset using Guid(3700559c2ecef5b4689ac3d645dbe9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9368b19b41973e27dadb36b7f36c5d') in 0.013299 seconds
+  Import took 0.024844 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.486121 seconds.
+  Time since last request: 0.004081 seconds.
+  path: Assets/Data/Moves/Status/Yoga stretch.asset
+  artifactKey: Guid(3700559c2ecef5b4689ac3d645dbe9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Yoga stretch.asset using Guid(3700559c2ecef5b4689ac3d645dbe9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9368b19b41973e27dadb36b7f36c5d') in 0.007024 seconds
+  Import took 0.014423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.598369 seconds.
+  path: Assets/Data/Moves/Status/Plot.asset
+  artifactKey: Guid(93f7bf77fec66934899bc2cb3eb94fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Plot.asset using Guid(93f7bf77fec66934899bc2cb3eb94fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1519dff67ebd0b891a569f5ba5adc51') in 0.013591 seconds
+  Import took 0.030749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.955391 seconds.
+  path: Assets/Data/Moves/Status/Plot.asset
+  artifactKey: Guid(93f7bf77fec66934899bc2cb3eb94fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Plot.asset using Guid(93f7bf77fec66934899bc2cb3eb94fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11826dafd4775ac9bd4952637573349') in 0.007658 seconds
+  Import took 0.023684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.455456 seconds.
+  path: Assets/Data/Moves/Status/Plot.asset
+  artifactKey: Guid(93f7bf77fec66934899bc2cb3eb94fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Plot.asset using Guid(93f7bf77fec66934899bc2cb3eb94fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967178799e7a765d2d595fbae1d812e6') in 0.007467 seconds
+  Import took 0.028536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.518094 seconds.
+  path: Assets/Data/Moves/Status/Meditate.asset
+  artifactKey: Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Meditate.asset using Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61316ed03899cf6188f683b7fdd4579e') in 0.014372 seconds
+  Import took 0.036864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.726450 seconds.
   path: Assets/Data/Moves/Status/Fortify.asset
   artifactKey: Guid(e74fc6a0e9fc4a547baf8746969eb484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Data/Moves/Status/Fortify.asset using Guid(e74fc6a0e9fc4a547baf8746969eb484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0423172ea916bf15871bea301d653d58') in 0.006236 seconds
-  Import took 0.012109 seconds .
+Start importing Assets/Data/Moves/Status/Fortify.asset using Guid(e74fc6a0e9fc4a547baf8746969eb484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8495624e7d55727acb432fb17013b551') in 0.014040 seconds
+  Import took 0.027685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.090457 seconds.
+  path: Assets/Data/Moves/Status/Hybrid
+  artifactKey: Guid(668c068d069b7c14c8a8b171650680ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Hybrid using Guid(668c068d069b7c14c8a8b171650680ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b00ab57aa5ee1845d793e1ace1a8dbf') in 0.012492 seconds
+  Import took 0.022133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.661179 seconds.
+  path: Assets/Data/Moves/Status/Str incresase
+  artifactKey: Guid(35923b27de4a1894c9d7d90a03f649e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Str incresase using Guid(35923b27de4a1894c9d7d90a03f649e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f912a3f18b058598944bc6eb489ccfe') in 0.013673 seconds
+  Import took 0.035299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.326877 seconds.
+  path: Assets/Data/Moves/Status/Strength
+  artifactKey: Guid(35923b27de4a1894c9d7d90a03f649e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Strength using Guid(35923b27de4a1894c9d7d90a03f649e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad059816204b23ba9628a90f55f6504a') in 0.029648 seconds
+  Import took 0.055820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.547522 seconds.
+  path: Assets/Data/Moves/Status/Baton pass.asset
+  artifactKey: Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Baton pass.asset using Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2443145aeccf70d79920fddd38fa0b45') in 0.013586 seconds
+  Import took 0.037234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.976925 seconds.
+  path: Assets/Data/Moves/Status/Baton pass.asset
+  artifactKey: Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Baton pass.asset using Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6460f73f0190310b25398efd2fe746') in 0.007330 seconds
+  Import took 0.023486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011423 seconds.
+  path: Assets/Data/Moves/Status/Baton pass.asset
+  artifactKey: Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Baton pass.asset using Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6460f73f0190310b25398efd2fe746') in 0.005195 seconds
+  Import took 0.013193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.203703 seconds.
+  path: Assets/Data/Moves/Status/Baton pass.asset
+  artifactKey: Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Baton pass.asset using Guid(ab7179cf5c21c7849840dc04a05a4835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444207eb43e1087c89211c0ce5392ea9') in 0.005525 seconds
+  Import took 0.032781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.864683 seconds.
+  path: Assets/Data/Moves/Status/Guts
+  artifactKey: Guid(6af04e37b5b79a74e86601cbc410c59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts using Guid(6af04e37b5b79a74e86601cbc410c59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f9b1fff7dcdf6928e855d31609ddb4') in 0.010985 seconds
+  Import took 0.027055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.353341 seconds.
+  path: Assets/Data/Moves/Status/Contemplate.asset
+  artifactKey: Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Contemplate.asset using Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f462d21f8209e2cd97445e4f63b2aa') in 0.011422 seconds
+  Import took 0.023420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.455063 seconds.
+  path: Assets/Data/Moves/Status/Contemplate.asset
+  artifactKey: Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Contemplate.asset using Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2a65f7ccdf49aa73c0742d2eb93da1') in 0.006686 seconds
+  Import took 0.024867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.936969 seconds.
+  path: Assets/Data/Moves/Status/Contemplate.asset
+  artifactKey: Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Contemplate.asset using Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd49b4286ba79a9e342f4bfaa000ac67') in 0.005143 seconds
+  Import took 0.013871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005756 seconds.
+  path: Assets/Data/Moves/Status/Contemplate.asset
+  artifactKey: Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Contemplate.asset using Guid(6d626bed3e08a0c41a93efc92a38fd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd49b4286ba79a9e342f4bfaa000ac67') in 0.004457 seconds
+  Import took 0.012427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.098485 seconds.
+  path: Assets/Data/Moves/Status/Dexterity
+  artifactKey: Guid(55861d12f703dff4bb03eaae9b0ba956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Dexterity using Guid(55861d12f703dff4bb03eaae9b0ba956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91942516da5852834699c9d47184520') in 0.011666 seconds
+  Import took 0.036915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.491285 seconds.
+  path: Assets/Data/Moves/Status/Double illusion.asset
+  artifactKey: Guid(d78f551d24173b84c9996fb3366fdc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Double illusion.asset using Guid(d78f551d24173b84c9996fb3366fdc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4951177f689b1c8e7ebb2f877da58166') in 0.010549 seconds
+  Import took 0.025882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.652786 seconds.
+  path: Assets/Data/Moves/Status/Ego boost.asset
+  artifactKey: Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Ego boost.asset using Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a09f99946a6eb89e44478118584173a') in 0.025290 seconds
+  Import took 0.034473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.127710 seconds.
+  path: Assets/Data/Moves/Status/Ego boost.asset
+  artifactKey: Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Ego boost.asset using Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0fae126d98550e0bb3ae6a4e34b6b0') in 0.005026 seconds
+  Import took 0.025977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.799260 seconds.
+  path: Assets/Data/Moves/Status/Ego boost.asset
+  artifactKey: Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Ego boost.asset using Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639bbf8f82161aa7a3be53e0f2774f36') in 0.005036 seconds
+  Import took 0.014711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002448 seconds.
+  path: Assets/Data/Moves/Status/Ego boost.asset
+  artifactKey: Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Ego boost.asset using Guid(4f8fe9e9bb7ce1d47b65af796be4616a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639bbf8f82161aa7a3be53e0f2774f36') in 0.004787 seconds
+  Import took 0.013268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.186467 seconds.
+  path: Assets/Data/Moves/Status/Encore.asset
+  artifactKey: Guid(ff3efd792e8d581488aab727ed990f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Encore.asset using Guid(ff3efd792e8d581488aab727ed990f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba2ffaf5d09075a2c0ff4fb1446a742') in 0.012337 seconds
+  Import took 0.027831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.187417 seconds.
+  path: Assets/Data/Moves/Status/Guts/Consult.asset
+  artifactKey: Guid(aa8e4e174ffe499488677f8b150643f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Consult.asset using Guid(aa8e4e174ffe499488677f8b150643f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75b44c993113c2ab954d2f26d5f1138') in 0.008862 seconds
+  Import took 0.028293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.868957 seconds.
+  path: Assets/Data/Moves/Status/Guts/Meditate.asset
+  artifactKey: Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Meditate.asset using Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33496acdd50ddd8cc18350fa20448d8b') in 0.005886 seconds
+  Import took 0.019350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.950460 seconds.
+  path: Assets/Data/Moves/Status/Guts/Meditate.asset
+  artifactKey: Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Meditate.asset using Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7518ab98df10fd223810e60e2ad7a606') in 0.005236 seconds
+  Import took 0.020903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.670503 seconds.
+  path: Assets/Data/Moves/Status/Guts/Iron will.asset
+  artifactKey: Guid(38aa226830d31194091902cb6235287f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Iron will.asset using Guid(38aa226830d31194091902cb6235287f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a22fa9095be9f2543d1c09821b8edc') in 0.027724 seconds
+  Import took 0.058289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.107007 seconds.
+  path: Assets/Data/Moves/Status/Guts/Meditate.asset
+  artifactKey: Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Meditate.asset using Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d12c544c4eb3348d985c20e7a2d2574') in 0.005770 seconds
+  Import took 0.027993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.636802 seconds.
+  path: Assets/Data/Moves/Status/Guts/Meditate.asset
+  artifactKey: Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Meditate.asset using Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440deb6789db82d96957a8173aace9d6') in 0.006260 seconds
+  Import took 0.015674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003417 seconds.
+  path: Assets/Data/Moves/Status/Guts/Meditate.asset
+  artifactKey: Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Meditate.asset using Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440deb6789db82d96957a8173aace9d6') in 0.005653 seconds
+  Import took 0.015219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.181592 seconds.
+  path: Assets/Data/Moves/Status/Guts/Meditate.asset
+  artifactKey: Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Guts/Meditate.asset using Guid(095269df5d4a17f43894c2cbc67e8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae75ca10d686afe495d7dde68538d63') in 0.006185 seconds
+  Import took 0.019362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.208136 seconds.
+  path: Assets/Data/Moves/Status/Sprint.asset
+  artifactKey: Guid(0faca192d2b64334884e2336bbedf5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Status/Sprint.asset using Guid(0faca192d2b64334884e2336bbedf5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ac9870f862ba2a6f89df343dfc7707') in 0.033481 seconds
+  Import took 0.062701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2449.213685 seconds.
+  path: Assets/Data/Moves/Comfort/Aroura soothe.asset
+  artifactKey: Guid(68473089e0a3cc844b0a4771779398a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Aroura soothe.asset using Guid(68473089e0a3cc844b0a4771779398a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3b53ec09608bf3813d0b21def9214a') in 0.773260 seconds
+  Import took 0.926849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5100.899345 seconds.
+  path: Assets/Data/EnemyGroups/subway/rebeccaFight2.asset
+  artifactKey: Guid(a40871ccae389e446be465f55df08e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/EnemyGroups/subway/rebeccaFight2.asset using Guid(a40871ccae389e446be465f55df08e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c2cfbb9def9d22f8a909ac66d5f8cf') in 1.022379 seconds
+  Import took 1.103387 seconds .
 
 ========================================================================
 Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 7.52 ms, found 0 plugins.
+Registering precompiled user dll's ...
+Registered in 0.004895 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.1 MB.
-System memory in use after: 90.4 MB.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.130 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2809 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 145.0 MB.
+System memory in use after: 145.2 MB.
 
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 3390.
-Total: 4.140500 ms (FindLiveObjects: 0.567400 ms CreateObjectMapping: 0.356000 ms MarkObjects: 3.179000 ms  DeleteObjects: 0.037400 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 3392.
+Total: 3.670400 ms (FindLiveObjects: 0.665600 ms CreateObjectMapping: 0.144200 ms MarkObjects: 2.804900 ms  DeleteObjects: 0.054800 ms)
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 4103.975152 seconds.
+  path: Assets/Data/Moves/Comfort/Fake sad.asset
+  artifactKey: Guid(543e2082a24a8f94699a43c229184409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Fake sad.asset using Guid(543e2082a24a8f94699a43c229184409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22aa60e350f57547d30454851fb65d4') in 0.225792 seconds
+  Import took 0.232543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1672.990575 seconds.
+  path: Assets/Data/Moves/Playful/Banter.asset
+  artifactKey: Guid(c378f1c77d4effb4db5213d61f2166fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Playful/Banter.asset using Guid(c378f1c77d4effb4db5213d61f2166fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f94bc17117753091776442b6ae3506') in 4.196006 seconds
+  Import took 4.203851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8903.001247 seconds.
+  path: Assets/Data/Moves/Comfort/Calm ember.asset
+  artifactKey: Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Calm ember.asset using Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f83bd31312e6852ff1179ba6096bba') in 0.495223 seconds
+  Import took 0.504069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.148680 seconds.
+  path: Assets/Data/Moves/Comfort/Calm ember.asset
+  artifactKey: Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Calm ember.asset using Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6234f625c5bb05cb2a5537b1d2bde9') in 0.007496 seconds
+  Import took 0.067541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.964642 seconds.
+  path: Assets/Data/Moves/Comfort/Calm ember.asset
+  artifactKey: Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Calm ember.asset using Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ba82f4f0855f4bcdd2a2b8548bff09') in 0.011005 seconds
+  Import took 0.019414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000933 seconds.
+  path: Assets/Data/Moves/Comfort/Calm ember.asset
+  artifactKey: Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Calm ember.asset using Guid(04543ff3159a3184cbcf92d8b9bb0c2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ba82f4f0855f4bcdd2a2b8548bff09') in 0.008509 seconds
+  Import took 0.015846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.661801 seconds.
+  path: Assets/Data/Moves/Comfort/Whistle.asset
+  artifactKey: Guid(08f2497605ab2fb45a55bd998bbc622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Whistle.asset using Guid(08f2497605ab2fb45a55bd998bbc622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e3442da6a2e4572384f5550d4270b7') in 0.013587 seconds
+  Import took 0.021860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.711981 seconds.
+  path: Assets/Data/Moves/Comfort/Warmth spread.asset
+  artifactKey: Guid(f0777d40932c65c418fbb2a502667079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Warmth spread.asset using Guid(f0777d40932c65c418fbb2a502667079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ecef0c0cf12a1803cd21f122e88164') in 0.024115 seconds
+  Import took 0.031065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.842963 seconds.
+  path: Assets/Data/Moves/Comfort/Warmth spread.asset
+  artifactKey: Guid(f0777d40932c65c418fbb2a502667079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Warmth spread.asset using Guid(f0777d40932c65c418fbb2a502667079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406de13f7833ee1445e84149911563ae') in 0.048124 seconds
+  Import took 0.058116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011884 seconds.
+  path: Assets/Data/Moves/Comfort/Warmth spread.asset
+  artifactKey: Guid(f0777d40932c65c418fbb2a502667079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Comfort/Warmth spread.asset using Guid(f0777d40932c65c418fbb2a502667079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406de13f7833ee1445e84149911563ae') in 0.006440 seconds
+  Import took 0.015276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.480037 seconds.
+  path: Assets/Data/Characters/Enemies/Subway/Delinquent boy.asset
+  artifactKey: Guid(c69dbcac101bc9f4fa0f61f1492b76e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Characters/Enemies/Subway/Delinquent boy.asset using Guid(c69dbcac101bc9f4fa0f61f1492b76e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67dd144f51dccf730b0974d447b2978') in 0.218789 seconds
+  Import took 0.226535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1677.769621 seconds.
+  path: Assets/Data/Characters/Players/Chloe.asset
+  artifactKey: Guid(5d503aba61f92ce4a97ef4f3dbf633bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Characters/Players/Chloe.asset using Guid(5d503aba61f92ce4a97ef4f3dbf633bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95193b9615fb360ef4d2dccb67558d99') in 0.083015 seconds
+  Import took 0.091019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Data/Characters/Players/Sebastian.asset
+  artifactKey: Guid(725fc24de7953a94382752c5fe52597b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Characters/Players/Sebastian.asset using Guid(725fc24de7953a94382752c5fe52597b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '478f641c82f2c98748df573f8488af98') in 0.087448 seconds
+  Import took 0.093310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Data/Moves/Playful/Joy spark.asset
+  artifactKey: Guid(112731b83737b7248838564111be9473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Playful/Joy spark.asset using Guid(112731b83737b7248838564111be9473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03749f4ad096389525e6757d875c8885') in 0.011904 seconds
+  Import took 0.018131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.221528 seconds.
+  path: Assets/Data/Moves/Playful/Joy spark.asset
+  artifactKey: Guid(112731b83737b7248838564111be9473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Moves/Playful/Joy spark.asset using Guid(112731b83737b7248838564111be9473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77f079f083b7eafc57e0e45a68ccaaa') in 0.006412 seconds
+  Import took 0.014882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2685.848344 seconds.
+  path: Assets/Data/Characters/Players/Sebastian.asset
+  artifactKey: Guid(725fc24de7953a94382752c5fe52597b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Characters/Players/Sebastian.asset using Guid(725fc24de7953a94382752c5fe52597b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '173dcb74893fcb26aefaa3f06cc24d4d') in 0.492718 seconds
+  Import took 0.515908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.433282 seconds.
+  path: Assets/Data/Characters/Players/Chloe.asset
+  artifactKey: Guid(5d503aba61f92ce4a97ef4f3dbf633bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Characters/Players/Chloe.asset using Guid(5d503aba61f92ce4a97ef4f3dbf633bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f57cd182d0751704747e3708594e22c') in 0.163638 seconds
+  Import took 0.172058 seconds .
+

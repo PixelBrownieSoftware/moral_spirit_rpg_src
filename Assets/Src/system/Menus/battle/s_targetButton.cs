@@ -27,6 +27,10 @@ public class s_targetButton : s_button
     public Sprite resDmg;
     public Sprite unkDmg;
 
+    public GameObject guard;
+    public Text guardPTS;
+    public Text guardPTSS;
+
     public bool isItem = false;
     public bool isAll = false;
     RPG_battleMemory memory;
@@ -70,6 +74,18 @@ public class s_targetButton : s_button
                     if (mov.element != ELEMENT.UNKNOWN)
                     {
                         weaknessIcon.color = Color.white;
+
+                        if (battleCharButton.guardPoints > 0)
+                        {
+                            guardPTS.text = "+" + battleCharButton.guardPoints;
+                            guardPTSS.text = "+" + battleCharButton.guardPoints;
+                            guard.SetActive(true);
+                        }
+                        else
+                        {
+                            guard.SetActive(false);
+                        }
+
                         switch (mov.moveType)
                         {
                             case MOVE_TYPE.PHYSICAL:
@@ -110,7 +126,10 @@ public class s_targetButton : s_button
                                 {
                                     if (battleCharButton.actionTypeCharts[(int)mov.action_type] >= 2)
                                     {
-                                        weaknessIcon.sprite = weakDmg;
+                                        if(battleCharButton.guardPoints <= 0)
+                                            weaknessIcon.sprite = weakDmg;
+                                        else
+                                            weaknessIcon.sprite = normDmg;
                                     }
                                     else if (battleCharButton.actionTypeCharts[(int)mov.action_type] > 0 &&
                                         battleCharButton.actionTypeCharts[(int)mov.action_type] < 2)

@@ -43,10 +43,10 @@ MonoBehaviour:
   str_req: 6
   dex_req: 0
   vit_req: 0
-  agi_req: 0
+  agi_req: 8
   gut_req: 7
   customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0
-  statusMoveType: 5
+  statusMoveType: 0

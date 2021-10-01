@@ -66,7 +66,7 @@ MonoBehaviour:
   excludeUser: 0
   str_req: 0
   dex_req: 0
-  vit_req: 8
+  vit_req: 11
   agi_req: 0
   gut_req: 0
   customFx: 

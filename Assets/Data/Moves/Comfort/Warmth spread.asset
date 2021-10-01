@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 1
   moveType: 3
   target: 2
-  power: 3
+  power: 4
   preAnim: []
   animation:
   - duration: 0.1
@@ -57,10 +57,10 @@ MonoBehaviour:
   canLearn: 1
   excludeUser: 0
   str_req: 0
-  dex_req: 5
-  vit_req: 0
+  dex_req: 0
+  vit_req: 5
   agi_req: 4
-  gut_req: 3
+  gut_req: 4
   customFx: 
   statusEffectChances:
     statusEffectChance: 0

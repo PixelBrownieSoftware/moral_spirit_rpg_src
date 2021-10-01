@@ -516,6 +516,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                             }
                             else
                             {
+                                Targ.hitByWeaknessCount++;
                                 turnPressFlag = PRESS_TURN_TYPE.WEAKNESS;
                             }
                         }
@@ -527,6 +528,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                           (Targ.actionTypeCharts[(int)mov.action_type] < 0 &&
                           Targ.actionTypeCharts[(int)mov.action_type] >= -1))
                         {
+                            Targ.hitByWeaknessCount = 0;
                             turnPressFlag = PRESS_TURN_TYPE.REFLECT;
                         }
                         else if (Targ.elementTypeCharts[(int)mov.element] < -1 ||
@@ -538,6 +540,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                         else if (Targ.elementTypeCharts[(int)mov.element] == 0 ||
                             Targ.actionTypeCharts[(int)mov.action_type] == 0)
                         {
+                            Targ.hitByWeaknessCount = 0;
                             turnPressFlag = PRESS_TURN_TYPE.IMMUNE;
                         }
                         if (players.Contains(currentMove.user))
@@ -617,7 +620,8 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                             Targ.skillPoints = Mathf.Clamp(Targ.skillPoints, 0, Targ.maxSkillPoints);
                         }
                         */
-                        Targ.guardPoints--;
+                        if(Targ.guardPoints > 0)
+                            Targ.guardPoints--;
                         Targ.hitPoints -= damage;
                         if (Targ.hitPoints <= 0)
                         {
@@ -890,12 +894,12 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                         {
                             Targ.rend.color = Color.white;
                         }
-                        Targ.hitPoints += damage;
-                        Targ.hitPoints = Mathf.Clamp(Targ.hitPoints, -Targ.maxHitPoints, Targ.maxHitPoints);
-                        if(damage >= Targ.maxHitPoints)
+                        if(damage + Targ.hitPoints >= Targ.maxHitPoints)
                             SpawnDamageObject("Max", characterPos, s_dmg.HIT_FX_TYPE.HEAL);
                         else
                             SpawnDamageObject(""+ damage, characterPos, s_dmg.HIT_FX_TYPE.HEAL);
+                        Targ.hitPoints += damage;
+                        Targ.hitPoints = Mathf.Clamp(Targ.hitPoints, -Targ.maxHitPoints, Targ.maxHitPoints);
 
                         if (Targ.hitPoints > 0)
                         {
@@ -1578,7 +1582,6 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
     public IEnumerator DefeatedEnemies()
     {
-        actionDisp.text += "Defeated all enemies" + "\n";
         yield return StartCoroutine(ResultsShow(opposition.ToArray(), 1));
         yield return StartCoroutine(ConcludeBattle());
     }
@@ -1597,6 +1600,8 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             rpg_globals.gl.SetStats(c);
         }
 
+        players.Clear();
+        opposition.Clear();
         if (enemyGroup.endEvent == null)
             EndBattle();
         else
@@ -1885,6 +1890,40 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                         List<o_battleChar> unknown = new List<o_battleChar>();
 
                         switch (chai.moveName.moveType) {
+
+                            case MOVE_TYPE.STATUS:
+                                if (chai.moveName.statusMoveType == STATUS_MOVE_TYPE.BUFF)
+                                {
+                                    foreach (var a in candidates)
+                                    {
+                                        bool strBuffTooHigh = chai.moveName.str_inc > 0 && chai.moveName.str_inc + Targ.attackBuff > 5;
+                                        bool dexBuffTooHigh = chai.moveName.dex_inc > 0 && chai.moveName.dex_inc + Targ.intelligenceBuff > 5;
+                                        bool vitBuffTooHigh = chai.moveName.vit_inc > 0 && chai.moveName.vit_inc + Targ.defenceBuff > 5;
+                                        bool agiBuffTooHigh = chai.moveName.agi_inc > 0 && chai.moveName.agi_inc + Targ.speedBuff > 5;
+                                        bool gutBuffTooHigh = chai.moveName.gut_inc > 0 && chai.moveName.gut_inc + Targ.gutsBuff > 5;
+                                        bool buffsTooHigh = strBuffTooHigh && dexBuffTooHigh && vitBuffTooHigh && agiBuffTooHigh && gutBuffTooHigh;
+                                        if (buffsTooHigh)
+                                        {
+                                            resistantTargets.Add(a);
+                                        }
+                                        else
+                                        {
+                                            normalTargets.Add(a);
+                                        }
+                                    }
+                                    if (normalTargets.Count > 0)
+                                    {
+                                        rand = UnityEngine.Random.Range(0, normalTargets.Count);
+                                        Targ = normalTargets[rand];
+                                    }
+                                    else
+                                    {
+                                        rand = UnityEngine.Random.Range(0, resistantTargets.Count);
+                                        Targ = resistantTargets[rand];
+                                    }
+                                }
+                                break;
+
                             case MOVE_TYPE.TALK:
                                 foreach (var a in candidates) {
                                     RPG_battleMemory batt = oppositionBattleMemory.Find(x => x.name == a.name);
@@ -2256,29 +2295,52 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                             else
                                             {
                                                 charAI moveAI = nonImportant[UnityEngine.Random.Range(0, nonImportant.Count - 1)];
+
                                                 if (nonImportant.Count > 0)
                                                 {
                                                     //Conserve CP
+                                                    float sheildChance = UnityEngine.Random.Range(0f, 2f);
                                                     float conserv = UnityEngine.Random.Range(0f, 2f);
-                                                    print(conserv);
+                                                    bool isGuard = false;
                                                     if (currentCharacter.data.conservativeCP > conserv)
                                                     {
-                                                        List<charAI> aiNoCost = nonImportant.FindAll(x => x.moveName.cost == 0);
-                                                        moveAI = aiNoCost[UnityEngine.Random.Range(0, aiNoCost.Count - 1)];
+                                                        if (currentCharacter.hitByWeaknessCount > 2) {
+                                                            isGuard = true;
+                                                            currentCharacter.hitByWeaknessCount = 0;
+                                                        } else {
+                                                            List<charAI> aiNoCost = nonImportant.FindAll(x => x.moveName.cost == 0);
+                                                            moveAI = aiNoCost[UnityEngine.Random.Range(0, aiNoCost.Count - 1)];
+                                                        }
                                                     }
-                                                    
-                                                    if (moveAI.moveName.onTeam)
-                                                        target = GetTargetCharacter(partyCandidates, moveAI);
-                                                    else
-                                                        target = GetTargetCharacter(candidates, moveAI);
-                                                    if (target == null)
+                                                    if (currentCharacter.data.sheildChance > sheildChance)
+                                                    {
+                                                        if (currentCharacter.hitByWeaknessCount > 2)
+                                                        {
+                                                            isGuard = true;
+                                                            currentCharacter.hitByWeaknessCount = 0;
+                                                        }
+                                                    }
+
+                                                    if (!isGuard)
                                                     {
                                                         if (moveAI.moveName.onTeam)
-                                                            target = partyCandidates[UnityEngine.Random.Range(0, partyCandidates.Count - 1)];
+                                                            target = GetTargetCharacter(partyCandidates, moveAI);
                                                         else
-                                                            target = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
+                                                            target = GetTargetCharacter(candidates, moveAI);
+                                                        if (target == null)
+                                                        {
+                                                            if (moveAI.moveName.onTeam)
+                                                                target = partyCandidates[UnityEngine.Random.Range(0, partyCandidates.Count - 1)];
+                                                            else
+                                                                target = candidates[UnityEngine.Random.Range(0, candidates.Count - 1)];
+                                                        }
+                                                        move = moveAI.moveName;
                                                     }
-                                                    move = moveAI.moveName;
+                                                    else
+                                                    {
+                                                        target = null;
+                                                        move = guardMove;
+                                                    }
                                                 }
                                                 else
                                                 {
@@ -2855,8 +2917,9 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                         break;
 
                 }
-
+                guis[i].txt.color = b.data.character_colour;
                 guis[i].txt.text = b.name;
+                guis[i].HPTxt.color = b.data.character_colour;
                 guis[i].HPTxt.text = "RP: " + b.hitPoints;
                 //guis[i].SPTxt.text = "SP: " + b.skillPoints;
                 if (b.guardPoints > 0)
@@ -2877,7 +2940,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 //float SP = ((float)b.skillPoints / (float)b.maxSkillPoints) * 100;
                 HP = Mathf.Round(HP);
                 //SP = Mathf.Round(SP);
-
+                guis[i].hpBarImg.color = b.data.character_colour;
                 guis[i].hpBar.value = HP;
                 //guis[i].spBar.value = SP;
 
@@ -3336,9 +3399,19 @@ public class s_battlesyst : s_singleton<s_battlesyst>
         {
             earningsBattle.text += "\n" + it.Key + " x " + it.Value;
         }
-        foreach (string it in movesList)
+        if (movesList.Count > 0)
         {
-            earningsBattle.text += "\n" + "Gained extra skill " + it;
+            if (movesList.Count > 1)
+                earningsBattle.text += "\n" + "Gained extra skills ";
+            else
+                earningsBattle.text += "\n" + "Gained extra skill ";
+            for (int i = 0; i < movesList.Count; i++)
+            {
+                string it = movesList[i];
+                earningsBattle.text += it;
+                if (movesList.Count > 1 && i != movesList.Count)
+                    earningsBattle.text += ',';
+            }
         }
         actionDisp.text = "";
 
@@ -3348,22 +3421,11 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             int exp = 0;
             foreach (o_battleChar chTarg in targ)
             {
-                /*
-                if (chTarg.skillPoints <= 0)
-                {
-                    expMult = 0.65f;
-                }
-                else if (chTarg.hitPoints <= 0)
-                {
-                    expMult = 1f;
-                }
-                else {
-                    expMult = 0;
-                }
-                */
-                exp += bc.CalculateExp(chTarg, 1);
+                if (chTarg.hitPoints <= 0)
+                    exp += bc.CalculateExp(chTarg, 1);
             }
             yield return new WaitForSeconds(0.05f);
+            List<string> extra_skills_gained = new List<string>();
             for (int i2 = 0; i2 < exp; i2++)
             {
                 bc.exp += 1;
@@ -3396,7 +3458,6 @@ public class s_battlesyst : s_singleton<s_battlesyst>
 
                     //bc.skillPoints = bc.maxSkillPoints;
                     bc.hitPoints = bc.maxHitPoints;
-
                     foreach (s_move mov in bc.data.moveDatabase)
                     {
                         if (bc.skillMoves.Contains(mov))
@@ -3408,8 +3469,8 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                             && mov.gut_req <= bc.guts
                             )
                         {
+                            extra_skills_gained.Add(mov.name);
                             bc.skillMoves.Add(mov);
-                            actionDisp.text += bc.name + " learned " + mov.name + "\n";
                         }
                     }
 
@@ -3423,6 +3484,17 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 EXPText[i].text = players[i].name + " Level: " + players[i].level;
                 EXPList[i].value = bc.exp;
                 yield return new WaitForSeconds(Time.deltaTime * 3.85f);
+            }
+
+            if (extra_skills_gained.Count > 0)
+            {
+                string movesLearned = "";
+                for (int i2 = 0; i2 < extra_skills_gained.Count; i2++)
+                {
+                    string mov = extra_skills_gained[i2];
+                    movesLearned += mov + ", ";
+                }
+                earningsBattle.text += "\n" + bc.name + " learned " + movesLearned + "\n";
             }
         }
         yield return new WaitForSeconds(1.5f);

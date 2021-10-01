@@ -27,7 +27,7 @@ MonoBehaviour:
   - eventScript: {fileID: 11400000, guid: dd01ebf8f7c6aa2478bfa1a9f9b894d9, type: 2}
     battleCond: 2
     battleCheckCond: 1
-    enabled: 0
+    enabled: 1
     int0: 12
   allRelations: 1
   isFleeable: 0

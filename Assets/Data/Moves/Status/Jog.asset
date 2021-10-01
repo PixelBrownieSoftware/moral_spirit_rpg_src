@@ -34,7 +34,7 @@ MonoBehaviour:
   vit_inc: 0
   dex_inc: 0
   luc_inc: 0
-  agi_inc: 1
+  agi_inc: 2
   gut_inc: 0
   buffUser: 0
   buffTarget: 1

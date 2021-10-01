@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
   front: {fileID: 0}
   back: {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
+  character_colour: {r: 0.1779548, g: 0.87077516, b: 0.8773585, a: 1}
   isPartyChar: 0
   baseExpYeild: 0
   maxHitPoints: 0
@@ -31,14 +32,14 @@ MonoBehaviour:
   intelligenceB: 2
   gutsB: 3
   speedB: 2
-  maxSkillPointsGMax: 2
+  maxSkillPointsGMax: 1
   maxSkillPointsGMin: 1
-  maxHitPointsGMax: 5
-  maxHitPointsGMin: 4
-  attackG: 0.583
-  defenceG: 0.676
+  maxHitPointsGMax: 4
+  maxHitPointsGMin: 3
+  attackG: 0.674
+  defenceG: 0.708
   intelligenceG: 0.355
-  gutsG: 0.443
+  gutsG: 0.464
   speedG: 0.321
   inBattle: 1
   moveDatabase:
@@ -47,6 +48,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
   - {fileID: 11400000, guid: 1f3eab8ed8d726b498f3df4301e42e78, type: 2}
   - {fileID: 11400000, guid: 68473089e0a3cc844b0a4771779398a7, type: 2}
+  - {fileID: 11400000, guid: f6cfa87d7041a174ea588caf2e9232b2, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -77,3 +79,4 @@ MonoBehaviour:
   itemDrop: []
   relationships: []
   conservativeCP: 0.45
+  sheildChance: 0.25

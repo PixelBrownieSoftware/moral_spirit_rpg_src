@@ -33,10 +33,10 @@ MonoBehaviour:
   accuracy: 85
   str_inc: 0
   vit_inc: 0
-  dex_inc: 1
+  dex_inc: 2
   luc_inc: 0
   agi_inc: 0
-  gut_inc: 0
+  gut_inc: 1
   buffUser: 1
   buffTarget: 1
   canLearn: 1

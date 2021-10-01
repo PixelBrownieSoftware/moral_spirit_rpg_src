@@ -16,8 +16,8 @@ MonoBehaviour:
   enemies:
   - {fileID: 11400000, guid: 55307863b9a77794786d8f7536760b83, type: 2}
   - {fileID: 11400000, guid: 25eb17ca41ef7cd419480a0c0d6aa8a6, type: 2}
-  maxLevel: 45
-  minLevel: 45
+  maxLevel: 35
+  minLevel: 35
   fixedLevel: 
   isFixedLevel: 0
   battleEvents: []

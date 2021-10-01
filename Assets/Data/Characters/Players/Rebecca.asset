@@ -94,11 +94,22 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims:
   - {fileID: 5899511935908729651, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
   front: {fileID: 5899511935908729651, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
   back: {fileID: 4856682898194012189, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
+  character_colour: {r: 0.53632927, g: 0.31372547, b: 0.8901961, a: 1}
   isPartyChar: 0
   baseExpYeild: 65
   maxHitPoints: 0
@@ -109,7 +120,7 @@ MonoBehaviour:
   attackB: 3
   defenceB: 3
   intelligenceB: 4
-  gutsB: 3
+  gutsB: 4
   speedB: 3
   maxSkillPointsGMax: 3
   maxSkillPointsGMin: 2
@@ -117,9 +128,9 @@ MonoBehaviour:
   maxHitPointsGMin: 3
   attackG: 0.407
   defenceG: 0.254
-  intelligenceG: 0.758
-  gutsG: 0.329
-  speedG: 0.626
+  intelligenceG: 0.667
+  gutsG: 0.4775
+  speedG: 0.7
   inBattle: 1
   moveDatabase:
   - {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
@@ -130,6 +141,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 108abd6973a0f0d4d962675d5eb37d0c, type: 2}
   - {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
   - {fileID: 11400000, guid: 4f8fe9e9bb7ce1d47b65af796be4616a, type: 2}
+  - {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -149,15 +161,16 @@ MonoBehaviour:
   actionTypeCharts:
   - 1
   - 1.36
-  - 2.2
+  - 2
   - 1
   - 1
   - 1
-  - 0.59
+  - 0.6
   - 1
   - 1
   money: 0.15
   itemDrop:
   - {fileID: 11400000, guid: b6196b715ec1ec942bf1d7feb40fb0a7, type: 2}
   relationships: []
-  conservativeCP: 0.45
+  conservativeCP: 0.25
+  sheildChance: 0.6
