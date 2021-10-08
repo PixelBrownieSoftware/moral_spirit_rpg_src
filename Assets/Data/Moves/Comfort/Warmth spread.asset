@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 5
+  cost: 7
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 1
   moveType: 3
   target: 2
-  power: 4
+  power: 5
   preAnim: []
   animation:
   - duration: 0.1

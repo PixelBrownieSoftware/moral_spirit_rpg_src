@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endEvent: {fileID: 0}
   enemies:
-  - {fileID: 11400000, guid: 4909cf921c51bf74d986fdde0275cb18, type: 2}
+  - {fileID: 11400000, guid: 549ccc0845d52cc4085852aa19308d82, type: 2}
   - {fileID: 11400000, guid: 4909cf921c51bf74d986fdde0275cb18, type: 2}
   - {fileID: 11400000, guid: a5f32c1c148e6a647a8a555a11c5a4a4, type: 2}
   maxLevel: 17

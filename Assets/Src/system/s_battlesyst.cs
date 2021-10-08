@@ -1380,7 +1380,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 anim = move.move.animation;
                 preAnim = move.move.preAnim;
                 if (move.move.isMultiHit)
-                    times = UnityEngine.Random.Range(1, 3);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
+                    times = UnityEngine.Random.Range(1, 4);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
                 mov = move.move;
                 break;
 
@@ -1388,7 +1388,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                 anim = move.item.action.animation;
                 preAnim = move.item.action.preAnim;
                 if (move.item.action.isMultiHit)
-                    times = UnityEngine.Random.Range(1, 3);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
+                    times = UnityEngine.Random.Range(1, 4);  //For now we'll hard-code a RNG in there but later on it's going to be affected by aglity
                 mov = move.item.action;
                 break;
         }
@@ -1507,6 +1507,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             opposition.ForEach(x => x.speedBuff = 0);
             opposition.ForEach(x => x.gutsBuff = 0);
             opposition.ForEach(x => x.intelligenceBuff = 0);
+            opposition.ForEach(x => x.hitByWeaknessCount = 0);
         }
         {
             players.ForEach(x => x.guardPoints = 0);
@@ -1515,14 +1516,21 @@ public class s_battlesyst : s_singleton<s_battlesyst>
             players.ForEach(x => x.speedBuff = 0);
             players.ForEach(x => x.gutsBuff = 0);
             players.ForEach(x => x.intelligenceBuff = 0);
+            players.ForEach(x => x.hitByWeaknessCount = 0);
         }
         foreach (var a in players)
         {
-            playerCPMax += a.maxSkillPoints;
+            if (a.data.determineCP)
+                playerCPMax += a.data.maxSkillPointsB;
+            else
+                playerCPMax += 10;
         }
         foreach (var a in opposition)
         {
-            opponentCPMax += a.maxSkillPoints;
+            if(a.data.determineCP)
+                opponentCPMax += a.data.maxSkillPointsB;
+            else
+                opponentCPMax += 10;
         }
 
         CurrentBattleEngineState = BATTLE_ENGINE_STATE.NONE;
@@ -2300,7 +2308,9 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                                                 {
                                                     //Conserve CP
                                                     float sheildChance = UnityEngine.Random.Range(0f, 2f);
-                                                    float conserv = UnityEngine.Random.Range(0f, 2f);
+                                                    float CPPercent = (opponentCP / opponentCPMax) * 1.75f;
+                                                    float conserv = UnityEngine.Random.Range(0f, 2.5f) * CPPercent;
+                                                    print(conserv + " percent: " + CPPercent);
                                                     bool isGuard = false;
                                                     if (currentCharacter.data.conservativeCP > conserv)
                                                     {

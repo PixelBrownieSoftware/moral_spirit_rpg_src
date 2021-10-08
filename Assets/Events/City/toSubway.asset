@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b66fa80e7dc814a9ec51c0699c89c9, type: 3}
   m_Name: toSubway
   m_EditorClassIdentifier: 
+  objectReferences: []
   elements:
   - logic: 0
     eventType: 8
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -41,11 +43,13 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 24
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -60,8 +64,8 @@ MonoBehaviour:
     string1: 
     posX: 0
     posY: 0
-    float0: 0
-    float1: 0
+    float0: 265
+    float1: 2095
     stringList: []
     dialogueChoices: []
     intList: 
@@ -69,11 +73,13 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 34
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -97,11 +103,13 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 3
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 3021, y: 1070}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -125,11 +133,13 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -153,11 +163,13 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 0
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 3020, y: 1070}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -181,11 +193,13 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 3
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
+    camMode: 0
     jump: 0
     pos: {x: 3021, y: 1070}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -209,3 +223,4 @@ MonoBehaviour:
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}
+    sound: {fileID: 0}

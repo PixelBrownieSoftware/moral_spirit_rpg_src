@@ -72,19 +72,14 @@ public class s_battleMenu : s_menucontroller
         List<string> moderateInc = new List<string>();
         List<string> largeInc = new List<string>();
         List<string> sharpInc = new List<string>();
-
-        List<string> smallDec = new List<string>();
-        List<string> moderateDec = new List<string>();
-        List<string> largeDec = new List<string>();
-        List<string> sharpDec = new List<string>();
-
+        
         string damage = "";
 
-        if (move.power < 9)
+        if (move.power < 11)
         {
             damageSize = "Small";
         }
-        else if (move.power >= 9 && move.power < 21)
+        else if (move.power >= 11 && move.power < 21)
         {
             damageSize = "Moderate";
         }
@@ -99,44 +94,7 @@ public class s_battleMenu : s_menucontroller
         
         elementT = move.element.ToString();
         actionT = move.action_type.ToString();
-
-        /*
-        switch (move.element) {
-            case ELEMENT.FIRE:
-                elementT = ReturnColouredText(elementT, fireColour);
-                break;
-            case ELEMENT.ICE:
-                elementT = ReturnColouredText(elementT, iceColour);
-                break;
-            case ELEMENT.ELECTRIC:
-                elementT = ReturnColouredText(elementT, electricColour);
-                break;
-            case ELEMENT.EARTH:
-                elementT = ReturnColouredText(elementT, earthColour);
-                break;
-            case ELEMENT.WIND:
-                elementT = ReturnColouredText(elementT, windColour);
-                break;
-            case ELEMENT.LIGHT:
-                elementT = ReturnColouredText(elementT, lightColour);
-                break;
-            case ELEMENT.DARK:
-                elementT = ReturnColouredText(elementT, darkColour);
-                break;
-            case ELEMENT.PSYCHIC:
-                elementT = ReturnColouredText(elementT, psychicColour);
-                break;
-            case ELEMENT.FORCE:
-                elementT = ReturnColouredText(elementT, forceColour);
-                break;
-            case ELEMENT.NORMAL:
-                elementT = ReturnColouredText(elementT, strikeColour);
-                break;
-            case ELEMENT.PEIRCE:
-                elementT = ReturnColouredText(elementT, peirceColour);
-                break;
-        }
-        */
+        
         switch (move.action_type)
         {
             case ACTION_TYPE.COMFORT:
@@ -159,16 +117,8 @@ public class s_battleMenu : s_menucontroller
                 actionT = ReturnColouredText(actionT, reservedColour);
                 break;
 
-            case ACTION_TYPE.LIGHT:
-                actionT = ReturnColouredText(elementT, lightColour);
-                break;
-
-            case ACTION_TYPE.DARK:
-                actionT = ReturnColouredText(elementT, darkColour);
-                break;
-
             case ACTION_TYPE.PSYCHIC:
-                actionT = ReturnColouredText(elementT, psychicColour);
+                actionT = ReturnColouredText(actionT, psychicColour);
                 break;
         }
 
@@ -185,8 +135,7 @@ public class s_battleMenu : s_menucontroller
                 moveT = "talk";
                 break;
         }
-
-        #region BUFFS
+        
         switch (move.statusMoveType)
         {
             case STATUS_MOVE_TYPE.DEBUFF:
@@ -293,40 +242,38 @@ public class s_battleMenu : s_menucontroller
                 }
                 break;
         }
-        #endregion
         
-
         switch (move.statusMoveType)
         {
             case STATUS_MOVE_TYPE.DEBUFF:
-                if (smallDec.Count > 0)
+                if (smallInc.Count > 0)
                 {
                     statusEff += "Slightly decreases ";
-                    foreach (string str in smallDec)
+                    foreach (string str in smallInc)
                     {
                         statusEff += str + ",";
                     }
                 }
-                if (moderateDec.Count > 0)
+                if (moderateInc.Count > 0)
                 {
                     statusEff += "Moderately decreases ";
-                    foreach (string str in moderateDec)
+                    foreach (string str in moderateInc)
                     {
                         statusEff += str + ",";
                     }
                 }
-                if (largeDec.Count > 0)
+                if (largeInc.Count > 0)
                 {
                     statusEff += "Largely decreases ";
-                    foreach (string str in largeDec)
+                    foreach (string str in largeInc)
                     {
                         statusEff += str + ",";
                     }
                 }
-                if (sharpDec.Count > 0)
+                if (sharpInc.Count > 0)
                 {
                     statusEff += "Sharply decreases ";
-                    foreach (string str in sharpDec)
+                    foreach (string str in sharpInc)
                     {
                         statusEff += str + ",";
                     }
@@ -377,15 +324,9 @@ public class s_battleMenu : s_menucontroller
                 break;
 
             case MOVE_TYPE.TALK:
-
-                damage = damageSize + " " + actionT + " " + moveT + " damage.";
-                /*
-                if (move.element == ELEMENT.NORMAL)
-                    damage = damageSize + " " + actionT + " " + moveT + " damage.";
-                else
-                    damage = damageSize + " " + elementT + " " + actionT + " " + moveT + " damage.";
-                */
+                damage = damageSize + " " + actionT + " " + moveT + " resolve damage.";
                 break;
+
             case MOVE_TYPE.PHYSICAL:
             case MOVE_TYPE.SPECIAL:
                 damage = damageSize + " " + moveT + " " + elementT + " damage.";

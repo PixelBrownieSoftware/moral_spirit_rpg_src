@@ -15,20 +15,19 @@ MonoBehaviour:
   endEvent: {fileID: 11400000, guid: 1cc4b85635ef4cb479f2a58af3fa043c, type: 2}
   enemies:
   - {fileID: 11400000, guid: 3668f809916c2754e831d723adbef2eb, type: 2}
-  - {fileID: 11400000, guid: 12991a45fe53bbe449e1da58357bfaa9, type: 2}
   - {fileID: 11400000, guid: e192bd25599300440924323fea9319f3, type: 2}
-  - {fileID: 11400000, guid: 02ea1f1c6803efe44b129fee570727d8, type: 2}
+  - {fileID: 11400000, guid: 12991a45fe53bbe449e1da58357bfaa9, type: 2}
   - {fileID: 11400000, guid: 35385c4859f20c940a083e72dc18d9b9, type: 2}
   maxLevel: 0
   minLevel: 0
-  fixedLevel: 140000001400000019000000140000001400000014000000
+  fixedLevel: 150000001a0000001500000015000000
   isFixedLevel: 1
   battleEvents:
   - eventScript: {fileID: 11400000, guid: dd01ebf8f7c6aa2478bfa1a9f9b894d9, type: 2}
     battleCond: 2
     battleCheckCond: 1
     enabled: 1
-    int0: 12
+    int0: 8
   allRelations: 1
   isFleeable: 0
   songName: rise_up_to_the_truth

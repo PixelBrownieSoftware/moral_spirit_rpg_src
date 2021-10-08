@@ -27,7 +27,31 @@ MonoBehaviour:
   target: 0
   power: 25
   preAnim: []
-  animation: []
+  animation:
+  - duration: 0.25
+    image: {fileID: 0}
+    name: soothe
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.25
+    image: {fileID: 0}
+    name: soothe
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.2
+    image: {fileID: 0}
+    name: soothe
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
   moveRequirements: []
   accuracy: 55
   str_inc: 0

@@ -58,6 +58,7 @@ MonoBehaviour:
   characterAnims: []
   front: {fileID: -4927028278684905496, guid: 65ed1238b6563de4ab3951138e474e39, type: 3}
   back: {fileID: 0}
+  character_colour: {r: 0, g: 0, b: 0, a: 0}
   isPartyChar: 0
   baseExpYeild: 55
   maxHitPoints: 0
@@ -103,11 +104,11 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
+  - 1.2
+  - 0.5
   - 1
   - 1
-  - 1
-  - 1
-  - 1
+  - 1.6
   - 1
   - 1
   - 1
@@ -115,3 +116,4 @@ MonoBehaviour:
   itemDrop: []
   relationships: []
   conservativeCP: 0.45
+  sheildChance: 0.25

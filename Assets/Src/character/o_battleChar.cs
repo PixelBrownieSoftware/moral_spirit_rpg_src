@@ -651,7 +651,7 @@ public class o_battleChar : MonoBehaviour
                 break;
         }
         if(guardPoints > 0)
-            return talkFormula + (guardPoints + 1);
+            return talkFormula + (guardPoints * 2);
         else
             return talkFormula;
     }

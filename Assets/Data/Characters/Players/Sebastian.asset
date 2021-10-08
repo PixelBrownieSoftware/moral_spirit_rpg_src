@@ -13,7 +13,67 @@ MonoBehaviour:
   m_Name: Sebastian
   m_EditorClassIdentifier: Assembly-CSharp::BattleCharacterData
   shortName: 
-  characterAI: []
+  characterAI:
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 0faca192d2b64334884e2336bbedf5a3, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: a388c78515dfe3142bb9b51e31789dce, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 3b0cacda698cca7459e25918308bd7a3, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims:
   - {fileID: -6094698522535559717, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
@@ -27,7 +87,7 @@ MonoBehaviour:
   maxSkillPoints: 0
   maxSkillPointsB: 6
   maxHitPointsB: 18
-  attackB: 3
+  attackB: 2
   defenceB: 2
   intelligenceB: 4
   gutsB: 3
@@ -36,7 +96,7 @@ MonoBehaviour:
   maxSkillPointsGMin: 1
   maxHitPointsGMax: 4
   maxHitPointsGMin: 3
-  attackG: 0.527
+  attackG: 0.514
   defenceG: 0.562
   intelligenceG: 0.488
   gutsG: 0.5111
@@ -48,6 +108,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
   - {fileID: 11400000, guid: a388c78515dfe3142bb9b51e31789dce, type: 2}
   - {fileID: 11400000, guid: 3b0cacda698cca7459e25918308bd7a3, type: 2}
+  - {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

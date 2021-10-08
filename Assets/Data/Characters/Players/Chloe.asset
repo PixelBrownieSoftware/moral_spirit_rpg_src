@@ -54,6 +54,26 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims: []
   front: {fileID: 0}
@@ -87,6 +107,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
   - {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
   - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
+  - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

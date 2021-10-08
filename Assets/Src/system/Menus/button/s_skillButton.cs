@@ -308,6 +308,7 @@ public class s_skillButton : s_button
         {
             switch (BUTTON_TYPE)
             {
+                /*
                 case BTN_TYPE.SKILL:
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").move = move;
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").isItem = false;
@@ -315,6 +316,7 @@ public class s_skillButton : s_button
                     s_menuhandler.GetInstance().GetMenu<s_targetMenu>("TargetMenu").backButton.buttonType = "SkillsMenu";
                     base.OnButtonClicked();
                     break;
+                    */
 
                 case BTN_TYPE.ITEM:
                     if (move.statusMoveType == STATUS_MOVE_TYPE.HEAL)

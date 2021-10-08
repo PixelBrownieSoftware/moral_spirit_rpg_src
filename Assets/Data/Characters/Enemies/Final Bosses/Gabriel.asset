@@ -74,24 +74,85 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 0faca192d2b64334884e2336bbedf5a3, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 4f8fe9e9bb7ce1d47b65af796be4616a, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: c9c3ff1645aa19b4eb2efc854ede1e0e, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 2
   characterAnims: []
   front: {fileID: -7593777287308456034, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
   back: {fileID: 0}
+  character_colour: {r: 0, g: 0, b: 0, a: 0}
   isPartyChar: 0
   baseExpYeild: 100
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 43
+  maxSkillPointsB: 35
   maxHitPointsB: 55
   attackB: 3
   defenceB: 4
   intelligenceB: 2
   gutsB: 4
   speedB: 4
-  maxSkillPointsGMax: 4
-  maxSkillPointsGMin: 2
+  maxSkillPointsGMax: 0
+  maxSkillPointsGMin: 0
   maxHitPointsGMax: 5
   maxHitPointsGMin: 3
   attackG: 0.45932534
@@ -99,7 +160,7 @@ MonoBehaviour:
   intelligenceG: 0.49766356
   gutsG: 0.69903094
   speedG: 0.25641513
-  inBattle: 1
+  determineCP: 1
   moveDatabase:
   - {fileID: 11400000, guid: 74a895e6164ccfd4aba7ec9763d58847, type: 2}
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
@@ -107,6 +168,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 150ee1bc1f4e09c4f83a9d88b7886737, type: 2}
   - {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
   - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+  - {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
+  - {fileID: 11400000, guid: 0faca192d2b64334884e2336bbedf5a3, type: 2}
+  - {fileID: 11400000, guid: 4f8fe9e9bb7ce1d47b65af796be4616a, type: 2}
+  - {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+  - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
+  - {fileID: 11400000, guid: c9c3ff1645aa19b4eb2efc854ede1e0e, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -134,3 +201,4 @@ MonoBehaviour:
   itemDrop: []
   relationships: []
   conservativeCP: 0.45
+  sheildChance: 0.25

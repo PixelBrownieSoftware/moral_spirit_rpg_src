@@ -49,7 +49,7 @@ public class BattleCharacterData : ScriptableObject
     public float gutsG = 1;
     public float speedG = 1;
 
-    public bool inBattle = true;
+    public bool determineCP = false;
 
     public List<s_move> moveDatabase = new List<s_move>();
     public List<s_move> currentMoves = new List<s_move>();

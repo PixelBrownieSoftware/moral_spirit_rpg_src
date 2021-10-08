@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 1
   onTeam: 1
-  cost: 0
+  cost: 14
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 

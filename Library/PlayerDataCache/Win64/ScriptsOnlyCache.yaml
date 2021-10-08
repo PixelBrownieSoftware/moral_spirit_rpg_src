@@ -118,8 +118,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -158,8 +160,6 @@ ScriptsOnlyBuild:
     - s_menucontroller
     - s_menuhandler
     - s_sceneTrans
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/Ending.unity:
     - Class: 1
@@ -465,9 +465,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 25960}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 26264}
+      Script: {instanceID: 26280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -545,6 +545,12 @@ ScriptsOnlyBuild:
     - Class: 61
       Script: {instanceID: 0}
     - Class: 66
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -630,7 +636,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7190}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -807,9 +813,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7190}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 34624}
+      Script: {instanceID: 30080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -909,9 +915,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7194}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 34624}
+      Script: {instanceID: 30080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -986,9 +992,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7194}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 34624}
+      Script: {instanceID: 30080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1055,9 +1061,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7194}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 34624}
+      Script: {instanceID: 30080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1400,9 +1406,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7194}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 34624}
+      Script: {instanceID: 30080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1477,9 +1483,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7194}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 34624}
+      Script: {instanceID: 30080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1548,9 +1554,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7190}
     - Class: 114
-      Script: {instanceID: 26260}
+      Script: {instanceID: 26276}
     - Class: 114
-      Script: {instanceID: 34624}
+      Script: {instanceID: 30080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1886,7 +1892,7 @@ ScriptsOnlyBuild:
     className: s_dmg
   - hash:
       serializedVersion: 2
-      Hash: 6890556b2eb5468f45eb417dbaab30dd
+      Hash: aeb80dcd646cb194de708d7a64b11529
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BattleCharacterData
@@ -3064,5 +3070,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/cutscene_place.unity
   - Assets/Scenes/intro_game_scene.unity
   - Assets/Scenes/Ending.unity
-  playerPath: C:/Users/hamza/Own Games/Unity/Builds/Moral spirit Builds/2021/September/30-09-2021/Moral
+  playerPath: C:/Users/hamza/Own Games/Unity/Builds/Moral spirit Builds/2021/October/07-10-2021/Moral
     Spirit.exe

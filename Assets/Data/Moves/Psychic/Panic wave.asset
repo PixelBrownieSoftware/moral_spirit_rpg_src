@@ -40,10 +40,10 @@ MonoBehaviour:
   buffTarget: 1
   canLearn: 1
   excludeUser: 0
-  str_req: 0
-  dex_req: 14
+  str_req: 15
+  dex_req: 17
   vit_req: 0
-  agi_req: 11
+  agi_req: 0
   gut_req: 0
   customFx: 
   statusEffectChances:

@@ -74,6 +74,26 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 799aed13f2585434695812563847f812, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims:
   - {fileID: -4402627653049701587, guid: 004e7d5e4e8a80d4e83b33c1bb4ae75e, type: 3}
@@ -85,15 +105,15 @@ MonoBehaviour:
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 9
+  maxSkillPointsB: 5
   maxHitPointsB: 21
   attackB: 3
   defenceB: 3
   intelligenceB: 2
   gutsB: 4
   speedB: 2
-  maxSkillPointsGMax: 2
-  maxSkillPointsGMin: 2
+  maxSkillPointsGMax: 1
+  maxSkillPointsGMin: 1
   maxHitPointsGMax: 5
   maxHitPointsGMin: 3
   attackG: 0.54311043
@@ -109,6 +129,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: beb4aa0dbbb75284f84787b6dececefe, type: 2}
   - {fileID: 11400000, guid: 5b53a0e2a2cf3cb4f94df758a3359e8b, type: 2}
   - {fileID: 11400000, guid: f0777d40932c65c418fbb2a502667079, type: 2}
+  - {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
+  - {fileID: 11400000, guid: 799aed13f2585434695812563847f812, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

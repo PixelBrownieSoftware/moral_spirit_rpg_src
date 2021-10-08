@@ -34,8 +34,8 @@ MonoBehaviour:
     string1: 
     posX: 0
     posY: 0
-    float0: 0
-    float1: 0
+    float0: 345
+    float1: -434
     stringList: []
     dialogueChoices: []
     intList: 

@@ -59,48 +59,18 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 5319d7adb7e1b3a43aefef5bfde09318, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: e721fbf6d45f1034ebb41e6b0796bbbd, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 18
-    element: 0
-    healthPercentage: 0.35
-    name: 
-    moveName: {fileID: 11400000, guid: 32f8db9349138d84f9336f015f953c71, type: 2}
-    onParty: 1
-    number1: 0
-    number2: 0
-    isImportant: 1
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
     moveName: {fileID: 11400000, guid: 74e51401a0a3d5f4596caa7bfb61e28f, type: 2}
     onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
+    onParty: 1
     number1: 0
     number2: 0
     isImportant: 0
@@ -115,14 +85,14 @@ MonoBehaviour:
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 9
+  maxSkillPointsB: 6
   maxHitPointsB: 18
   attackB: 4
   defenceB: 2
   intelligenceB: 3
   gutsB: 4
   speedB: 1
-  maxSkillPointsGMax: 3
+  maxSkillPointsGMax: 1
   maxSkillPointsGMin: 1
   maxHitPointsGMax: 4
   maxHitPointsGMin: 3
@@ -137,7 +107,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd236fadec1cf7e4ca598006d1ee553f, type: 2}
   - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
   - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
-  - {fileID: 11400000, guid: 74e51401a0a3d5f4596caa7bfb61e28f, type: 2}
+  - {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -168,3 +138,4 @@ MonoBehaviour:
   itemDrop: []
   relationships: []
   conservativeCP: 0.45
+  sheildChance: 0.25

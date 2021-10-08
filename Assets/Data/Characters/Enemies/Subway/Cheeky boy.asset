@@ -124,6 +124,36 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: c9068466cc69ec14e8f519b8f819f242, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims:
   - {fileID: 101998949037462375, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
@@ -135,15 +165,15 @@ MonoBehaviour:
   maxHitPoints: 0
   couragePoints: 0
   maxSkillPoints: 0
-  maxSkillPointsB: 8
+  maxSkillPointsB: 7
   maxHitPointsB: 21
   attackB: 2
   defenceB: 3
   intelligenceB: 3
   gutsB: 3
   speedB: 5
-  maxSkillPointsGMax: 3
-  maxSkillPointsGMin: 3
+  maxSkillPointsGMax: 1
+  maxSkillPointsGMin: 1
   maxHitPointsGMax: 4
   maxHitPointsGMin: 2
   attackG: 0.43314904
@@ -164,6 +194,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
   - {fileID: 11400000, guid: 3dfe3f42a073b8844b1812fdc574d4f6, type: 2}
   - {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+  - {fileID: 11400000, guid: c9068466cc69ec14e8f519b8f819f242, type: 2}
+  - {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+  - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -183,10 +216,10 @@ MonoBehaviour:
   actionTypeCharts:
   - 1
   - 1
-  - 0.716
+  - 1.2
   - 2
   - 1
-  - 1
+  - 0.6
   - 1
   - 0.591
   - 1
@@ -195,3 +228,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 784c4d3601e51a841857415fd9f25a1d, type: 2}
   relationships: []
   conservativeCP: 0.25
+  sheildChance: 0.25

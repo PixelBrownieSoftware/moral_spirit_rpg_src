@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endEvent: {fileID: 0}
   enemies:
-  - {fileID: 11400000, guid: 02ea1f1c6803efe44b129fee570727d8, type: 2}
+  - {fileID: 11400000, guid: c709c3c6b517198458aff1e01e82b194, type: 2}
   - {fileID: 11400000, guid: 4909cf921c51bf74d986fdde0275cb18, type: 2}
   - {fileID: 11400000, guid: 02ea1f1c6803efe44b129fee570727d8, type: 2}
-  maxLevel: 14
-  minLevel: 14
+  maxLevel: 20
+  minLevel: 20
   fixedLevel: 
   isFixedLevel: 0
   battleEvents: []
