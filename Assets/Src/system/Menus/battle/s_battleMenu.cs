@@ -245,6 +245,12 @@ public class s_battleMenu : s_menucontroller
         
         switch (move.statusMoveType)
         {
+            case STATUS_MOVE_TYPE.HEAL:
+                if (move.isFixed) {
+                    moveT = "Restores " + ReturnColouredText("" + move.power,Color.green)  + " RP.";
+                }
+                break;
+
             case STATUS_MOVE_TYPE.DEBUFF:
                 if (smallInc.Count > 0)
                 {
@@ -359,55 +365,6 @@ public class s_battleMenu : s_menucontroller
                 sb.txt.text = rpgSkills[i].name;
                 sb.item = false;
                 Sprite draw = null;
-                /*
-                switch (sb.moveButton.element)
-                {
-                    case ELEMENT.NORMAL:
-                        sb.buttonTex.color = strikeColour;
-                        draw = strike_picture;
-                        break;
-                    case ELEMENT.PEIRCE:
-                        sb.buttonTex.color = peirceColour;
-                        draw = perice_picture;
-                        break;
-                    case ELEMENT.FIRE:
-                        sb.buttonTex.color = fireColour;
-                        draw = fire_picture;
-                        break;
-                    case ELEMENT.ICE:
-                        sb.buttonTex.color = iceColour;
-                        draw = ice_picture;
-                        break;
-                    case ELEMENT.ELECTRIC:
-                        sb.buttonTex.color = electricColour;
-                        draw = electric_picture;
-                        break;
-                    case ELEMENT.FORCE:
-                        sb.buttonTex.color = forceColour;
-                        draw = force_picture;
-                        break;
-                    case ELEMENT.EARTH:
-                        sb.buttonTex.color = earthColour;
-                        draw = earth_picture;
-                        break;
-                    case ELEMENT.LIGHT:
-                        sb.buttonTex.color = lightColour;
-                        draw = light_picture;
-                        break;
-                    case ELEMENT.DARK:
-                        sb.buttonTex.color = darkColour;
-                        draw = dark_picture;
-                        break;
-                    case ELEMENT.PSYCHIC:
-                        sb.buttonTex.color = psychicColour;
-                        draw = psychic_picture;
-                        break;
-                    case ELEMENT.WIND:
-                        sb.buttonTex.color = windColour;
-                        draw = wind_picture;
-                        break;
-                }
-                */
                 switch (sb.moveButton.action_type)
                 {
                     case ACTION_TYPE.FLIRT:

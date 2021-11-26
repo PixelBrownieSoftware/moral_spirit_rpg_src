@@ -134,6 +134,16 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ab7179cf5c21c7849840dc04a05a4835, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 1
   characterAnims: []
   front: {fileID: 1827840151334956389, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
@@ -160,7 +170,7 @@ MonoBehaviour:
   intelligenceG: 0.338
   gutsG: 0.78
   speedG: 0.581
-  inBattle: 1
+  determineCP: 0
   moveDatabase:
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
   - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
@@ -174,6 +184,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7a933f7d27ee8b4ebc86887cc56aa4e, type: 2}
   - {fileID: 11400000, guid: f6cfa87d7041a174ea588caf2e9232b2, type: 2}
   - {fileID: 11400000, guid: 25149046214b342458bb9f621b6e5431, type: 2}
+  - {fileID: 11400000, guid: ab7179cf5c21c7849840dc04a05a4835, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

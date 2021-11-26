@@ -213,7 +213,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: You tried to comfort Rebecca, but nothing worked.
+    string0: You tried to comfort Rebecca, but she didn't seem like she wanted to
+      talk.
     string1: 
     posX: 0
     posY: 0
@@ -770,7 +771,7 @@ MonoBehaviour:
   - logic: 0
     eventType: 9
     funcName: 
-    simultaenous: 1
+    simultaenous: 0
     simlutaneousDelay: 0
     camMode: 4
     jump: 0
@@ -847,8 +848,38 @@ MonoBehaviour:
     string1: Sebastian
     posX: 0
     posY: 0
-    float0: 0.05
+    float0: 0.01
     float1: -1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 18
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 1.8
+    float1: 0
     stringList: []
     dialogueChoices: []
     intList: 
@@ -963,8 +994,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Gosh... that's a lot to process.
-    string1: Sebastian
+    string0: I hope she's okay, lets go and find her.
+    string1: Teen
     posX: 0
     posY: 0
     float0: 0
@@ -989,42 +1020,11 @@ MonoBehaviour:
     int0: 0
     int1: 0
     int2: 0
-    tpPoint: 0
+    tpPoint: 97
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan informed the teenagers that they needed to get back home. He asked
-      whether they knew the way back.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-    sound: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: Yeah, we know the way back, we live 5 minutes away.
+    string0: Sorry for what happened, sir.
     string1: Teen
     posX: 0
     posY: 0
@@ -1054,8 +1054,68 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Alright! Hope you guys make it out well!
+    string0: It's cool, focus on your freind!
     string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 18
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: cutscene_place
+    string1: Sebastian
+    posX: 0
+    posY: 0
+    float0: 1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: You were slightly worried about how Rebecca wil take in these events.
+    string1: 
     posX: 0
     posY: 0
     float0: 0
@@ -1114,8 +1174,39 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: You gladly accepted the offer.
+    string0: Regardless, you accepted Sebastian's offer, as these series of events
+      was quite a bit to process.
     string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 7
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 3
+    int1: 0
+    int2: 0
+    tpPoint: 98
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: story
+    string1: Sebastian
     posX: 0
     posY: 0
     float0: 0
@@ -1205,36 +1296,6 @@ MonoBehaviour:
     boolean1: 0
     boolean2: 0
     string0: cutscene_place
-    string1: Sebastian
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-    sound: {fileID: 0}
-  - logic: 0
-    eventType: 7
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 3
-    int1: 0
-    int2: 0
-    tpPoint: 98
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: story
     string1: Sebastian
     posX: 0
     posY: 0

@@ -122,7 +122,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Y-you two... are strong! But this isn't the end!
+    string0: 'You adults aren''t as naive as I thought... But - '
     string1: Rebecca
     posX: 0
     posY: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: If you think you are so amazing how about fighting me and my mates over
-      at the subway!?
+    string0: If you think you are so amazing how about you talk to me and my mates
+      over at the subway!?
     string1: Rebecca
     posX: 0
     posY: 0

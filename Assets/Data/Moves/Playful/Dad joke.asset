@@ -20,7 +20,7 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user tells the target a really bad pun.
   element: 0
   action_type: 2
   moveType: 3
@@ -60,7 +60,7 @@ MonoBehaviour:
   dex_req: 0
   vit_req: 6
   agi_req: 0
-  gut_req: 4
+  gut_req: 5
   customFx: 
   statusEffectChances:
     statusEffectChance: 0

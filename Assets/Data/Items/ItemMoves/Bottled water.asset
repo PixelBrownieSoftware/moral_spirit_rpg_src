@@ -20,7 +20,7 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: A bottle of fresh water, perfect when you feel thirsty.
   element: 0
   action_type: 0
   moveType: 2
@@ -45,6 +45,7 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 0
   excludeUser: 0
   str_req: 0

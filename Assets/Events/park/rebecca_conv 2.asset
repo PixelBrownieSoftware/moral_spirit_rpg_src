@@ -181,7 +181,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Um... sorry, I lost it there...
+    string0: Um... sorry, I lost it there... anyway...
     string1: Rebecca
     posX: 0
     posY: 0
@@ -211,7 +211,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Thanks for listening to me rant, Evan.
+    string0: Truth be told, I'm not really sure why they want would want Ralph of
+      all people...
     string1: Rebecca
     posX: 0
     posY: 0
@@ -241,37 +242,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: You smiled at her.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-    sound: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: You seem to always know what to do in situations like this.
+    string0: I know him incredibly well, and I don't think he would ever be the kind
+      of guy to join some strange cult.
     string1: Rebecca
     posX: 0
     posY: 0
@@ -301,7 +273,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: No wonder Chloe goes crazy for you.
+    string0: Well, unless it involves planes... he goes a bit overboard with it when
+      he talks about them to me, ha ha!
     string1: Rebecca
     posX: 0
     posY: 0
@@ -331,8 +304,71 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Heh...
-    string1: Evan
+    string0: Perhaps the angels want him because, maybe - just maybe, his parents
+      pressured him to be religious.
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: He sometimes rants about his secularism to me, and he gets really defensive
+      when prompted to become religious.
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: In those situations, I'd just get him out of there and try to change
+      the subject of conversion - usually music.
+    string1: Rebecca
     posX: 0
     posY: 0
     float0: 0

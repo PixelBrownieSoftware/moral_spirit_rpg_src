@@ -114,9 +114,19 @@ public class ed_characterdat : Editor
 
     public void GenerateAIFromMoves(List<s_move> moves)
     {
+        int index = 0;
         List<charAI> aiList = new List<charAI>();
         foreach (s_move a in moves)
         {
+            if (index < data.characterAI.Length)
+            {
+                if (data.characterAI[index].isImportant)
+                {
+                    aiList.Add(data.characterAI[index]);
+                    index++;
+                    continue;
+                }
+            }
             charAI cha = new charAI();
             cha.moveName = a;
             if (a.onTeam) {
@@ -134,6 +144,7 @@ public class ed_characterdat : Editor
                 }
             }
             aiList.Add(cha);
+            index++;
         }
         data.characterAI = aiList.ToArray();
     }

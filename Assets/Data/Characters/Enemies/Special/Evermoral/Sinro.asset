@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Sinro
+  m_EditorClassIdentifier: 
+  shortName: 
+  characterAI: []
+  turnIcons: 1
+  characterAnims: []
+  front: {fileID: 0}
+  back: {fileID: 0}
+  character_colour: {r: 0, g: 0, b: 0, a: 0}
+  isPartyChar: 0
+  baseExpYeild: 0
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 1
+  maxHitPointsB: 1
+  attackB: 1
+  defenceB: 1
+  intelligenceB: 1
+  gutsB: 1
+  speedB: 1
+  maxSkillPointsGMax: 0
+  maxSkillPointsGMin: 0
+  maxHitPointsGMax: 0
+  maxHitPointsGMin: 0
+  attackG: 1
+  defenceG: 1
+  intelligenceG: 1
+  gutsG: 1
+  speedG: 1
+  determineCP: 0
+  moveDatabase: []
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []
+  conservativeCP: 0.45
+  sheildChance: 0.25

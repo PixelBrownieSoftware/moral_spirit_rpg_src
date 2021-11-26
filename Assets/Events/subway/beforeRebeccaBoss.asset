@@ -753,7 +753,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan was not sure of what to make of the situation.
+    string0: You were not sure of what to make of the situation.
     string1: 
     posX: 0
     posY: 0
@@ -1387,8 +1387,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan felt a small sense of fear, but continued on, with the help of
-      Sebastian, to discuss with Rebecca.
+    string0: You felt a small sense of fear, but continued on, with the help of Sebastian,
+      to discuss with Rebecca.
     string1: 
     posX: 0
     posY: 0

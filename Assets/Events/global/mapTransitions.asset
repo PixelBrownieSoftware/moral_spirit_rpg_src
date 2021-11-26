@@ -351,7 +351,7 @@ MonoBehaviour:
     simlutaneousDelay: 0
     camMode: 0
     jump: 0
-    pos: {x: 3049, y: 984}
+    pos: {x: 3049, y: 1082}
     colour: {r: 0, g: 0, b: 0, a: 0}
     int0: 0
     int1: 0

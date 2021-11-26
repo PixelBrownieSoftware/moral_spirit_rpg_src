@@ -301,7 +301,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: There is a notification from his your close friend, Sebastian.
+    string0: There is a text message from your close friend, Sebastian.
     string1: 
     posX: 0
     posY: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: I'm at the park, u coming Evan?
+    string0: I'm at the park, u comin Evan?
     string1: Sebastian
     posX: 0
     posY: 0

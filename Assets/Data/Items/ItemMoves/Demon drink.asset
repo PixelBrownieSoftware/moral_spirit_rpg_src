@@ -20,7 +20,7 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: A fizzy drink that tastes bittersweet.
   element: 0
   action_type: 0
   moveType: 2

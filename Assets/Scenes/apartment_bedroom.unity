@@ -21579,7 +21579,7 @@ MonoBehaviour:
   eventScript: {fileID: 11400000, guid: 0e3919586cbebcd43ba1436ee2bc09ab, type: 2}
   mapSize: {x: 0, y: 0}
   allChacacters: []
-  BGM: {fileID: 0}
+  BGM: {fileID: 8300000, guid: d7b4357bdc276744ea5fa038e9452fbf, type: 3}
   pointA: {fileID: 1928048675}
   pointB: {fileID: 1989270054}
   pointC: {fileID: 0}
@@ -45612,12 +45612,12 @@ PrefabInstance:
     - target: {fileID: 5307365058252772317, guid: f96ae827f8f8fb64a8394f7ecea23ee8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 157.36073
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5307365058252772317, guid: f96ae827f8f8fb64a8394f7ecea23ee8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 316.30414
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 5307365058252772317, guid: f96ae827f8f8fb64a8394f7ecea23ee8,
         type: 3}

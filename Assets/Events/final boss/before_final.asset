@@ -88,7 +88,7 @@ MonoBehaviour:
     simlutaneousDelay: 0
     camMode: 0
     jump: 0
-    pos: {x: 365, y: 271.4}
+    pos: {x: 365, y: 230}
     colour: {r: 0, g: 0, b: 0, a: 0}
     int0: 1
     int1: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan was surprised to see another Ralph.
+    string0: You was surprised to see another Ralph.
     string1: 
     posX: 0
     posY: 0
@@ -506,7 +506,7 @@ MonoBehaviour:
     funcName: START_BATTLE
     simultaenous: 0
     simlutaneousDelay: 0
-    camMode: 0
+    camMode: 4
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
@@ -522,7 +522,7 @@ MonoBehaviour:
     posX: 0
     posY: 0
     float0: 0.02
-    float1: 0
+    float1: 160
     stringList: []
     dialogueChoices: []
     intList: 
@@ -697,7 +697,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan was confused at the situation.
+    string0: 'You were confused and worried about the situation. '
     string1: 
     posX: 0
     posY: 0
@@ -942,8 +942,98 @@ MonoBehaviour:
     string1: Evan & co
     posX: 0
     posY: 0
+    float0: -1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 3
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
     float0: 1
     float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 2
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: -1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: -1
     stringList: []
     dialogueChoices: []
     intList: 
@@ -1316,6 +1406,66 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
+    eventType: 0
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 316, y: 228.4}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: -1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
     eventType: 1
     funcName: 
     simultaenous: 0
@@ -1331,7 +1481,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan gave Ralph moral support.
+    string0: You gave Ralph moral support.
     string1: 
     posX: 0
     posY: 0
@@ -1371,6 +1521,156 @@ MonoBehaviour:
     dialogueChoices: []
     intList: 
     scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 0
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 359.2, y: 214.4}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 4
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 3
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: START_BATTLE
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 2
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Yeah!
+    string1: Evan & co
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 11400000, guid: 93c42189d9e4c2d498239ef9aa8a8efd, type: 2}
     objectToControl: {fileID: 0}
     logicType: 0
     timelineAsset: {fileID: 0}

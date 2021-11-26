@@ -17,7 +17,7 @@ public class s_dmg : MonoBehaviour
         WEAK_HP,
         WEAK_SP,
         CRIT_HP,
-        CRIT_SP,
+        ABSORB,
         MISS,
         HEAL,
         REFLECT,
@@ -106,8 +106,10 @@ public class s_dmg : MonoBehaviour
                 anim.Play("block");
                 break;
             case HIT_FX_TYPE.CRIT_HP:
-            case HIT_FX_TYPE.CRIT_SP:
                 anim.Play("criticalAnim");
+                break;
+            case HIT_FX_TYPE.ABSORB:
+                anim.Play("absorbAnim");
                 break;
             case HIT_FX_TYPE.MISS:
                 anim.Play("blackAnim");

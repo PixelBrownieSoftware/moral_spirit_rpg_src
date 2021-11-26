@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 3
   moveType: 3
   target: 1
-  power: 12
+  power: 14
   preAnim: []
   animation:
   - duration: 0.2

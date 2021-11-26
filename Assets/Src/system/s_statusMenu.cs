@@ -65,7 +65,7 @@ public class s_statusMenu : s_menucontroller
             exp.value = currentChar.exp/100;
 
             hpText.text = Mathf.Round(health) + "% " + currentChar.hitPoints + "/"+ currentChar.maxHitPoints;
-            spText.text = "" + currentChar.maxSkillPoints;
+            //spText.text = "" + currentChar.maxSkillPoints;
             expText.text = currentChar.exp + "%";
 
             str.amount = currentChar.attack;

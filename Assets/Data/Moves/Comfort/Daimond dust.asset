@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 1
   moveType: 1
   target: 0
-  power: 55
+  power: 28
   preAnim: []
   animation: []
   moveRequirements: []
@@ -49,4 +49,4 @@ MonoBehaviour:
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0
-  statusMoveType: 0
+  statusMoveType: 5

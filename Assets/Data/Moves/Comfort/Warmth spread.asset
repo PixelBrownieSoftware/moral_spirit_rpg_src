@@ -36,6 +36,14 @@ MonoBehaviour:
     type: 3
     pos: 0
     anim: {fileID: 0}
+  - duration: 0.1
+    image: {fileID: 0}
+    name: soothe
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
   - duration: 0
     image: {fileID: 0}
     name: fireFX

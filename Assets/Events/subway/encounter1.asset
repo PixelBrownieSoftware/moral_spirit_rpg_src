@@ -332,8 +332,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Wait, they are the ones that Rebecca told us about!
-    string1: Arrogant teen
+    string0: You aren't going anywhere, unless you convince us to.
+    string1: Cheeky boy
     posX: 0
     posY: 0
     float0: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: I guess we have no choice Evan..
+    string0: Sigh... fine.
     string1: Sebastian
     posX: 0
     posY: 0

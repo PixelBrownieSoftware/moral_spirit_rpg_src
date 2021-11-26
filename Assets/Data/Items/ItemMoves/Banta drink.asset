@@ -20,12 +20,12 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: A fizzy drink that tastes like oranges.
   element: 0
   action_type: 0
   moveType: 2
   target: 0
-  power: 5
+  power: 45
   preAnim: []
   animation:
   - duration: 0
@@ -57,4 +57,4 @@ MonoBehaviour:
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0
-  statusMoveType: 3
+  statusMoveType: 1

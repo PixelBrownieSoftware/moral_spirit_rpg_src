@@ -39,7 +39,7 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0.35
     name: 
-    moveName: {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+    moveName: {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
     onParty: 1
     number1: 0
     number2: 0
@@ -100,11 +100,11 @@ MonoBehaviour:
   intelligenceG: 0.703
   gutsG: 0.643
   speedG: 0.479
-  inBattle: 1
+  determineCP: 0
   moveDatabase:
   - {fileID: 11400000, guid: 6b620990688cf9649b913310728e50a1, type: 2}
   - {fileID: 11400000, guid: 989abdcd1849f1c4ba8c6cda3b542d1c, type: 2}
-  - {fileID: 11400000, guid: 5e83c982b0da9e443b10a6cf2faf4f34, type: 2}
+  - {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
   - {fileID: 11400000, guid: 112731b83737b7248838564111be9473, type: 2}
   - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
   - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}

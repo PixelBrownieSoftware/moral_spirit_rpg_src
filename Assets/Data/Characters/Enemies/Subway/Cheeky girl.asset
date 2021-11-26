@@ -161,7 +161,7 @@ MonoBehaviour:
   intelligenceG: 0.598
   gutsG: 0.804
   speedG: 0.821
-  inBattle: 1
+  determineCP: 0
   moveDatabase:
   - {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
   - {fileID: 11400000, guid: c7e5bef227c2e6e4eb7bc578ba602e4b, type: 2}
@@ -175,6 +175,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c9068466cc69ec14e8f519b8f819f242, type: 2}
   - {fileID: 11400000, guid: 4f8fe9e9bb7ce1d47b65af796be4616a, type: 2}
   - {fileID: 11400000, guid: 38aa226830d31194091902cb6235287f, type: 2}
+  - {fileID: 11400000, guid: ff3efd792e8d581488aab727ed990f29, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

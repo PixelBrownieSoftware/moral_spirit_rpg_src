@@ -278,6 +278,7 @@ public class rpg_globals : s_globals
                     AddItem(it.itemName, it.amount);
                 }
             }
+            s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
         }
         else
         {
@@ -286,11 +287,12 @@ public class rpg_globals : s_globals
             AddItem("Demon drink", 5);
             AddMemeber(firstCharacter, 1);
         }
-        s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
+        //
     }
 
     public override void ClearAllThings()
     {
+        ResetCharacters();
         base.ClearAllThings();
         partyMembers.Clear();
         inventory.Clear();
@@ -634,6 +636,43 @@ public class rpg_globals : s_globals
         character.maxHitPoints = bc.maxHitPoints;
         character.maxSkillPoints = bc.maxSkillPoints;
     }
+    public void PositionPlayers(int quantity)
+    {
+        for (int i = 0; i < quantity; i++)
+        {
+            playerSlots[i].rend.color = Color.white;
+        }
+        switch (quantity)
+        {
+            case 1:
+                playerSlots[0].transform.position = new Vector3(0, -80);
+                break;
+            case 2:
+                playerSlots[0].transform.position = new Vector3(-45, -80);
+                playerSlots[1].transform.position = new Vector3(45, -80);
+                break;
+            case 3:
+                playerSlots[0].transform.position = new Vector3(-96, -80);
+                playerSlots[1].transform.position = new Vector3(0, -80);
+                playerSlots[2].transform.position = new Vector3(100, -80);
+                break;
+
+            case 4:
+                playerSlots[0].transform.position = new Vector3(-152, -80);
+                playerSlots[1].transform.position = new Vector3(-50, -80);
+                playerSlots[2].transform.position = new Vector3(47, -80);
+                playerSlots[3].transform.position = new Vector3(153, -80);
+                break;
+
+            case 5:
+                playerSlots[0].transform.position = new Vector3(-215, -80);
+                playerSlots[1].transform.position = new Vector3(-110, -80);
+                playerSlots[2].transform.position = new Vector3(-11, -80);
+                playerSlots[3].transform.position = new Vector3(95, -80);
+                playerSlots[4].transform.position = new Vector3(200, -80);
+                break;
+        }
+    }
 
     public void PositionEnemies(int quantity)
     {
@@ -643,40 +682,40 @@ public class rpg_globals : s_globals
         switch (quantity)
         {
             case 1:
-                enemySlots[0].transform.position = new Vector3(0, enemySlots[0].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(0, 55);
                 break;
             case 2:
-                enemySlots[0].transform.position = new Vector3(-45, enemySlots[0].transform.position.y);
-                enemySlots[1].transform.position = new Vector3(45, enemySlots[1].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-45, 55);
+                enemySlots[1].transform.position = new Vector3(45, 55);
                 break;
             case 3:
-                enemySlots[0].transform.position = new Vector3(-87, enemySlots[0].transform.position.y);
-                enemySlots[1].transform.position = new Vector3(28, enemySlots[1].transform.position.y);
-                enemySlots[2].transform.position = new Vector3(145, enemySlots[2].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-87, 55);
+                enemySlots[1].transform.position = new Vector3(28, 55);
+                enemySlots[2].transform.position = new Vector3(145, 55);
                 break;
 
             case 4:
-                enemySlots[0].transform.position = new Vector3(-152, enemySlots[0].transform.position.y);
-                enemySlots[1].transform.position = new Vector3(-50, enemySlots[1].transform.position.y);
-                enemySlots[2].transform.position = new Vector3(47, enemySlots[2].transform.position.y);
-                enemySlots[3].transform.position = new Vector3(135, enemySlots[3].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-152, 55);
+                enemySlots[1].transform.position = new Vector3(-50, 55);
+                enemySlots[2].transform.position = new Vector3(47, 55);
+                enemySlots[3].transform.position = new Vector3(135, 55);
                 break;
 
             case 5:
-                enemySlots[0].transform.position = new Vector3(-150, enemySlots[0].transform.position.y);
-                enemySlots[1].transform.position = new Vector3(-50, enemySlots[1].transform.position.y);
-                enemySlots[2].transform.position = new Vector3(40, enemySlots[2].transform.position.y);
-                enemySlots[3].transform.position = new Vector3(95, enemySlots[3].transform.position.y);
-                enemySlots[4].transform.position = new Vector3(175, enemySlots[4].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-215, 55);
+                enemySlots[1].transform.position = new Vector3(-110, 55);
+                enemySlots[2].transform.position = new Vector3(-11, 55);
+                enemySlots[3].transform.position = new Vector3(95, 55);
+                enemySlots[4].transform.position = new Vector3(200, 55);
                 break;
 
             case 6:
-                enemySlots[0].transform.position = new Vector3(-170, enemySlots[0].transform.position.y);
-                enemySlots[1].transform.position = new Vector3(-95, enemySlots[1].transform.position.y);
-                enemySlots[2].transform.position = new Vector3(-10, enemySlots[2].transform.position.y);
-                enemySlots[3].transform.position = new Vector3(95, enemySlots[3].transform.position.y);
-                enemySlots[4].transform.position = new Vector3(175, enemySlots[4].transform.position.y);
-                enemySlots[5].transform.position = new Vector3(225, enemySlots[5].transform.position.y);
+                enemySlots[0].transform.position = new Vector3(-263, 55);
+                enemySlots[1].transform.position = new Vector3(-162, 55);
+                enemySlots[2].transform.position = new Vector3(-63, 55);
+                enemySlots[3].transform.position = new Vector3(35, 55);
+                enemySlots[4].transform.position = new Vector3(138, 55);
+                enemySlots[5].transform.position = new Vector3(240, 55);
                 break;
         }
     }
@@ -788,6 +827,7 @@ public class rpg_globals : s_globals
                 spr.sprite = null;
             }
         }
+        PositionPlayers(battleSystem.players.Count);
         PositionEnemies(battleSystem.opposition.Count);
 
         if (!battleSystem.isActive)

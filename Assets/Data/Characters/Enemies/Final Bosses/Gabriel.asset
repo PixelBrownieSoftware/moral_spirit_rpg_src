@@ -14,12 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shortName: 
   characterAI:
+  - turnCounters: 3
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 3
+    isImportant: 1
   - turnCounters: 0
     conditions: 0
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 74a895e6164ccfd4aba7ec9763d58847, type: 2}
+    moveName: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -34,16 +44,6 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
-  - turnCounters: 0
-    conditions: 18
-    element: 0
-    healthPercentage: 0.35
-    name: 
-    moveName: {fileID: 11400000, guid: 464c814f1a255df42b5bdf0d9259f369, type: 2}
-    onParty: 1
-    number1: 0
-    number2: 0
-    isImportant: 1
   - turnCounters: 0
     conditions: 0
     element: 0
@@ -134,11 +134,21 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
   turnIcons: 2
   characterAnims: []
   front: {fileID: -7593777287308456034, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
   back: {fileID: 0}
-  character_colour: {r: 0, g: 0, b: 0, a: 0}
+  character_colour: {r: 0.735849, g: 0.4295138, b: 0.18396226, a: 1}
   isPartyChar: 0
   baseExpYeild: 100
   maxHitPoints: 0
@@ -162,9 +172,8 @@ MonoBehaviour:
   speedG: 0.25641513
   determineCP: 1
   moveDatabase:
-  - {fileID: 11400000, guid: 74a895e6164ccfd4aba7ec9763d58847, type: 2}
+  - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
   - {fileID: 11400000, guid: 51153a6f8017d66458e6151b0799d2a5, type: 2}
-  - {fileID: 11400000, guid: 464c814f1a255df42b5bdf0d9259f369, type: 2}
   - {fileID: 11400000, guid: 150ee1bc1f4e09c4f83a9d88b7886737, type: 2}
   - {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
   - {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
@@ -174,6 +183,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
   - {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
   - {fileID: 11400000, guid: c9c3ff1645aa19b4eb2efc854ede1e0e, type: 2}
+  - {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
+  - {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:
@@ -192,6 +203,9 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
+  - 2
+  - 1
+  - -1
   - 1
   - 1
   - 1

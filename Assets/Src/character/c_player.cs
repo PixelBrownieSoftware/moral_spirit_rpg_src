@@ -48,7 +48,7 @@ public class c_player : o_character
         }
         else if (tr != null)
         {
-            if (tr.switchA)
+            if (!tr.switchA)
             {
                 showThought = true;
             }

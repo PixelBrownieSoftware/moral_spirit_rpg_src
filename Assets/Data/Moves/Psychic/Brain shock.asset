@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 11
+  cost: 10
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
@@ -25,21 +25,20 @@ MonoBehaviour:
   action_type: 6
   moveType: 3
   target: 0
-  power: 24
+  power: 19
   preAnim: []
   animation:
-  - duration: 0.23
-    image: {fileID: -4068766378435259518, guid: 3ece68a7c2beec84b87f25a23c7453d7,
-      type: 3}
+  - duration: 0.2
+    image: {fileID: 0}
     name: psychic
     position: {x: 0, y: 0}
     camMode: 0
     type: 3
     pos: 0
     anim: {fileID: 0}
-  - duration: 0
+  - duration: 0.2
     image: {fileID: 0}
-    name: 
+    name: psychic
     position: {x: 0, y: 0}
     camMode: 0
     type: 1
@@ -57,13 +56,13 @@ MonoBehaviour:
   buffTarget: 1
   canLearn: 1
   excludeUser: 0
-  str_req: 0
-  dex_req: 9
+  str_req: 5
+  dex_req: 11
   vit_req: 0
   agi_req: 0
-  gut_req: 2
+  gut_req: 0
   customFx: 
   statusEffectChances:
     statusEffectChance: 0
     status_effect: 0
-  statusMoveType: 5
+  statusMoveType: 0

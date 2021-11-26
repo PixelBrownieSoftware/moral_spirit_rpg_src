@@ -20,12 +20,12 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user gives the target moral support.
   element: 0
   action_type: 0
   moveType: 2
   target: 0
-  power: 15
+  power: 16
   preAnim: []
   animation:
   - duration: 0.22

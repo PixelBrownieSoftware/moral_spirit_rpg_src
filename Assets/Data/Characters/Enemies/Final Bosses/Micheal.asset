@@ -14,6 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shortName: 
   characterAI:
+  - turnCounters: 3
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 3
+    isImportant: 1
   - turnCounters: 0
     conditions: 0
     element: 0
@@ -51,16 +61,6 @@ MonoBehaviour:
     name: 
     moveName: {fileID: 11400000, guid: cda91f69a509f5945b1a191ebadb29d4, type: 2}
     onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: d7187a19b97061a46b8dd8db93788772, type: 2}
-    onParty: 1
     number1: 0
     number2: 0
     isImportant: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   characterAnims: []
   front: {fileID: -8050505381868735831, guid: 0f52d3178986fda459897a5feea6d762, type: 3}
   back: {fileID: 0}
-  character_colour: {r: 0, g: 0, b: 0, a: 0}
+  character_colour: {r: 1, g: 0.75202864, b: 0.34509802, a: 1}
   isPartyChar: 0
   baseExpYeild: 100
   maxHitPoints: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   - 1
   actionTypeCharts:
   - 1
-  - 1
+  - 2
   - 1
   - 0
   - 1

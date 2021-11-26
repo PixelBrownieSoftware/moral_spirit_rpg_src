@@ -185,8 +185,8 @@ MonoBehaviour:
     string1: 
     posX: 0
     posY: 0
-    float0: -40
-    float1: -200
+    float0: 150
+    float1: 320
     stringList: []
     dialogueChoices: []
     intList: 

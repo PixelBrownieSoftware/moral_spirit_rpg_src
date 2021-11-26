@@ -20,12 +20,13 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: A healthy meal that consists of a combination of strawberries,
+    melons, apple slices and kiwi fruit.
   element: 0
   action_type: 0
   moveType: 2
   target: 0
-  power: 35
+  power: 75
   preAnim: []
   animation: []
   moveRequirements: []

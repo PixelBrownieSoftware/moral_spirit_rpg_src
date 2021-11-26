@@ -29,17 +29,9 @@ MonoBehaviour:
   power: 14
   preAnim: []
   animation:
-  - duration: 0.2
+  - duration: 0.3
     image: {fileID: 0}
-    name: joke
-    position: {x: 0, y: 0}
-    camMode: 0
-    type: 3
-    pos: 0
-    anim: {fileID: 0}
-  - duration: 0.1
-    image: {fileID: 0}
-    name: glare
+    name: tauntFX
     position: {x: 0, y: 0}
     camMode: 0
     type: 3

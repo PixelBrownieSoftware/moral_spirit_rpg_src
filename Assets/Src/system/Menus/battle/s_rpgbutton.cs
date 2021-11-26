@@ -12,7 +12,45 @@ public class s_rpgbutton : s_button
     public s_button backButton;
     public string buttonT;
     public s_skillsMenu menuSkill;
-    
+    public s_mainBattleMenu battleMenMain;
+    float _CP = 0;
+    float _MaxCP = 0;
+
+    protected override void OnHover()
+    {
+        base.OnHover();
+        if (battleMenMain != null) {
+            string txt = "";
+            switch (buttonT)
+            {
+                case "analyze":
+                    txt = "Analyse - View stats of both sides.";
+                    break;
+                case "skill":
+                    txt = "Act - Talk to the target.";
+                    break;
+                case "item":
+                    txt = "Item - Use an item";
+                    break;
+                case "guard":
+                    txt = "Guard - Take less resolve damage and negate weaknesses.";
+                    break;
+                case "pass":
+                    txt = "Pass - Your turn goes to the next character without consuming a full turn icon.";
+                    break;
+            }
+            switch (buttonT)
+            {
+                default:
+                    battleMenMain.ChangeDesc(txt, false);
+                    break;
+                case "run":
+                    battleMenMain.ChangeDesc(txt,true);
+                    break;
+            }
+        }
+    }
+
     protected override void OnButtonClicked()
     {
         switch (buttonT) {
@@ -69,7 +107,7 @@ public class s_rpgbutton : s_button
 
             case "pass":
                 //s_battleEngine.engineSingleton.battleAction.type = s_battleEngine.s_battleAction.MOVE_TYPE.PASS;
-                s_battlesyst.GetInstance().turnPressFlag = PRESS_TURN_TYPE.PASS;
+                s_battlesyst.GetInstance().finalTurnPressFlag = PRESS_TURN_TYPE.PASS;
                 s_battlesyst.GetInstance().CurrentBattleEngineState = BATTLE_ENGINE_STATE.MOVE_PROCESS;
                 s_battlesyst.GetInstance().EndAction();
                 s_menuhandler.GetInstance().SwitchMenu("EMPTY");
@@ -87,8 +125,13 @@ public class s_rpgbutton : s_button
                 break;
 
             case "run":
-                s_menuhandler.GetInstance().SwitchMenu("EMPTY");
-                s_battlesyst.GetInstance().RunTurn();
+                _MaxCP = s_battlesyst.GetInstance().playerCPMax;
+                _CP = s_battlesyst.GetInstance().playerCP;
+                if (_CP >= (_MaxCP/2))
+                {
+                    s_menuhandler.GetInstance().SwitchMenu("EMPTY");
+                    s_battlesyst.GetInstance().RunTurn();
+                }
                 break;
 
             case "back":

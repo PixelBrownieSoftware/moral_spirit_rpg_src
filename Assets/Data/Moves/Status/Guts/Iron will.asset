@@ -42,7 +42,7 @@ MonoBehaviour:
   excludeUser: 0
   str_req: 3
   dex_req: 0
-  vit_req: 3
+  vit_req: 5
   agi_req: 0
   gut_req: 0
   customFx: 

@@ -20,7 +20,7 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: The user reassures the target that things will be okay.
+  infoDescription: The user reassures the target that things may be okay.
   element: 0
   action_type: 0
   moveType: 2
@@ -42,7 +42,7 @@ MonoBehaviour:
   excludeUser: 1
   str_req: 0
   dex_req: 0
-  vit_req: 7
+  vit_req: 8
   agi_req: 0
   gut_req: 0
   customFx: 

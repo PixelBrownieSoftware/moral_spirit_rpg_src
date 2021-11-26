@@ -103,9 +103,9 @@ TextureImporter:
       name: gabriel_micheal_overworld_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 6
-        width: 50
+        x: 38
+        y: 2
+        width: 65
         height: 83
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -124,9 +124,9 @@ TextureImporter:
       name: gabriel_micheal_overworld_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 6
-        width: 49
+        x: 122
+        y: 1
+        width: 65
         height: 82
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -150,7 +150,7 @@ TextureImporter:
         width: 29
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

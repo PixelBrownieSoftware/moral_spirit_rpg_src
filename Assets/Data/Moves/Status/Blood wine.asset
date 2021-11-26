@@ -38,7 +38,7 @@ MonoBehaviour:
   gut_inc: 0
   buffUser: 0
   buffTarget: 0
-  canLearn: 1
+  canLearn: 0
   excludeUser: 0
   str_req: 0
   dex_req: 0

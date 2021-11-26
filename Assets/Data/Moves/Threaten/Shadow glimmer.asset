@@ -28,6 +28,14 @@ MonoBehaviour:
   power: 15
   preAnim: []
   animation:
+  - duration: 0.17
+    image: {fileID: 0}
+    name: darkFX
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
   - duration: 0
     image: {fileID: 0}
     name: 
@@ -38,12 +46,12 @@ MonoBehaviour:
     anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
-  str_inc: 0
+  str_inc: 1
   vit_inc: 0
   dex_inc: 0
   luc_inc: 0
-  agi_inc: 0
-  gut_inc: 0
+  agi_inc: 1
+  gut_inc: 1
   buffUser: 0
   buffTarget: 1
   canLearn: 0

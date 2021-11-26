@@ -39,6 +39,16 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
+    moveName: {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
     moveName: {fileID: 11400000, guid: f615414a165b353409141f732193e74f, type: 2}
     onParty: 0
     number1: 0
@@ -94,16 +104,6 @@ MonoBehaviour:
     number1: 0
     number2: 0
     isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
   turnIcons: 1
   characterAnims:
   - {fileID: 5899511935908729651, guid: 41852e420e4774147a1e7e950b85af08, type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
   intelligenceG: 0.667
   gutsG: 0.4775
   speedG: 0.7
-  inBattle: 1
+  determineCP: 0
   moveDatabase:
   - {fileID: 11400000, guid: df1ca444f01339544bced52d42ff5248, type: 2}
   - {fileID: 11400000, guid: 45e42b97043d2294b88c4ec60af66412, type: 2}

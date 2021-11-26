@@ -14,7 +14,7 @@ public class BattleCharacterData : ScriptableObject
 
     public Sprite front;
     public Sprite back;
-    public Color character_colour;
+    public Color character_colour = Color.white;
 
     public bool isPartyChar;
 

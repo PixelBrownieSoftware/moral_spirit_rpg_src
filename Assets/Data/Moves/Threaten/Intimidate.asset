@@ -16,16 +16,16 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 17
+  cost: 20
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
   infoDescription: The user asserts their dominance over their target.
-  element: 8
+  element: 0
   action_type: 3
   moveType: 3
   target: 0
-  power: 12
+  power: 17
   preAnim: []
   animation:
   - duration: 0.2
@@ -33,7 +33,7 @@ MonoBehaviour:
     name: glare
     position: {x: 0, y: 0}
     camMode: 0
-    type: 0
+    type: 3
     pos: 0
     anim: {fileID: 0}
   - duration: 0.2

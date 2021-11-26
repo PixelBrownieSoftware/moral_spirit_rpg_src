@@ -29,7 +29,7 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: bd236fadec1cf7e4ca598006d1ee553f, type: 2}
+    moveName: {fileID: 11400000, guid: 475fd0115d36ada4d91c69a4006723fb, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -59,7 +59,27 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 74e51401a0a3d5f4596caa7bfb61e28f, type: 2}
+    moveName: {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 6
+    element: 0
+    healthPercentage: 0.35
+    name: 
+    moveName: {fileID: 11400000, guid: 3dfe3f42a073b8844b1812fdc574d4f6, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
     onParty: 0
     number1: 0
     number2: 0
@@ -69,8 +89,18 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
-    moveName: {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
-    onParty: 1
+    moveName: {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 0fe9642bf35fd6140a44df6d0855e1c3, type: 2}
+    onParty: 0
     number1: 0
     number2: 0
     isImportant: 0
@@ -101,13 +131,17 @@ MonoBehaviour:
   intelligenceG: 0.48876953
   gutsG: 0.4940736
   speedG: 0.38411403
-  inBattle: 1
+  determineCP: 0
   moveDatabase:
   - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
-  - {fileID: 11400000, guid: bd236fadec1cf7e4ca598006d1ee553f, type: 2}
+  - {fileID: 11400000, guid: 475fd0115d36ada4d91c69a4006723fb, type: 2}
   - {fileID: 11400000, guid: 1ed9aa6069c528e4c9ed603c67ea90b0, type: 2}
   - {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
   - {fileID: 11400000, guid: 4a6164a171dc959479a2e70666b81210, type: 2}
+  - {fileID: 11400000, guid: 3dfe3f42a073b8844b1812fdc574d4f6, type: 2}
+  - {fileID: 11400000, guid: 04543ff3159a3184cbcf92d8b9bb0c2e, type: 2}
+  - {fileID: 11400000, guid: ac04f06226c4ffe489442fd57b30a07d, type: 2}
+  - {fileID: 11400000, guid: 0fe9642bf35fd6140a44df6d0855e1c3, type: 2}
   currentMoves: []
   currentStatus: 0
   elementTypeCharts:

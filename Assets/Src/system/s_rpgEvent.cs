@@ -50,6 +50,7 @@ public class s_rpgEvent : s_triggerhandler
     public static bool _inBattle = false;
     delegate void disableBattle();
     disableBattle db;
+    public bool _disableOpenMenu = false;
 
     public new void Awake()
     {
@@ -80,7 +81,7 @@ public class s_rpgEvent : s_triggerhandler
     }
 
     public void EndEvent() {
-        if(!_inBattle)
+        if(!_inBattle && !_disableOpenMenu)
             s_menuhandler.GetInstance().SwitchMenu("OpenMenu");
     }
     IEnumerator GotoBattle(enemy_group group)
@@ -139,6 +140,10 @@ public class s_rpgEvent : s_triggerhandler
                         BattleCharacterData bcd = current_ev.scrObj as BattleCharacterData;
                         if (rpg_globals.gl.partyMembers.Find(x => x.name == bcd.name) == null)
                             rpg_globals.gl.AddMemeber(bcd, current_ev.int0);
+                        break;
+
+                    case "ENABLE_OPENMENU":
+                        _disableOpenMenu = current_ev.boolean;
                         break;
 
                     case "INCREASE_ES_LIMIT":

@@ -20,7 +20,8 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: A meal that contains different combinations of foods like burgers,
+    wraps or salad. Enough to feed a whole team.
   element: 0
   action_type: 0
   moveType: 2

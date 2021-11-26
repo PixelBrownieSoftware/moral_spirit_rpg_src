@@ -15,7 +15,7 @@ MonoBehaviour:
   isMultiHit: 0
   isFixed: 0
   onSelf: 0
-  onTeam: 0
+  onTeam: 1
   cost: 25
   affectedBySilence: 0
   multiTech: 0
@@ -42,9 +42,9 @@ MonoBehaviour:
   canLearn: 1
   excludeUser: 0
   str_req: 0
-  dex_req: 0
+  dex_req: 6
   vit_req: 0
-  agi_req: 0
+  agi_req: 18
   gut_req: 0
   customFx: 
   statusEffectChances:

@@ -20,7 +20,7 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user treis to calm the group down.
   element: 0
   action_type: 0
   moveType: 2

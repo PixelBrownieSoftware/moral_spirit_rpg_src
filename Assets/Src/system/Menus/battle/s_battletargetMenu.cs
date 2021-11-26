@@ -34,6 +34,11 @@ public class s_battletargetMenu : s_menucontroller
                     case TARGET_MOVE_TYPE.SINGLE:
                         for (int i = 0; i < bcs.Count; i++)
                         {
+                            if (mov.statusMoveType == STATUS_MOVE_TYPE.BUFF && mov.moveType == MOVE_TYPE.STATUS)
+                            {
+                                if (bcs[i].hitPoints <= 0)
+                                    continue;
+                            }
                             if (mov.excludeUser &&
                                 bcs[i] == s_battlesyst.GetInstance().currentCharacter)
                             {
@@ -55,6 +60,10 @@ public class s_battletargetMenu : s_menucontroller
                     case TARGET_MOVE_TYPE.ALL:
                         for (int i = 0; i < bcs.Count; i++)
                         {
+                            if (mov.statusMoveType == STATUS_MOVE_TYPE.BUFF && mov.moveType == MOVE_TYPE.STATUS) {
+                                if (bcs[i].hitPoints <= 0)
+                                    continue;
+                            }
                             if (mov.excludeUser &&
                                 bcs[i] == s_battlesyst.GetInstance().currentCharacter)
                             {

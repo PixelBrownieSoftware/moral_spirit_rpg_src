@@ -16,36 +16,6 @@ MonoBehaviour:
   - Player
   elements:
   - logic: 0
-    eventType: 9
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 2095, y: -955}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 97
-    boolean: 1
-    boolean1: 0
-    boolean2: 1
-    string0: city
-    string1: Mr.Lovewell
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-    sound: {fileID: 0}
-  - logic: 0
     eventType: 21
     funcName: 
     simultaenous: 0
@@ -76,22 +46,22 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
-    eventType: 1
+    eventType: 9
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
-    camMode: 0
+    camMode: -1
     jump: 0
-    pos: {x: 0, y: 0}
+    pos: {x: 2080, y: -960}
     colour: {r: 0, g: 0, b: 0, a: 0}
     int0: 0
     int1: 0
     int2: 0
-    tpPoint: 0
-    boolean: 0
+    tpPoint: 97
+    boolean: 1
     boolean1: 0
-    boolean2: 0
-    string0: Ugh... I never knew you would be powerful enough to beat me.
+    boolean2: 1
+    string0: city
     string1: Mr.Lovewell
     posX: 0
     posY: 0
@@ -121,7 +91,68 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Yeah yeah... these guys with me are sure as hell to beat you!
+    string0: Hmph... well done. You weren't wrong about your potential... Ralph.
+    string1: Mr.Lovewell
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: As for you Rebecca, you've done rather well - despite your downfall.
+      You can work rather well with others.
+    string1: Mr.Lovewell
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: 'Yeah yeah... I know. '
     string1: Rebecca
     posX: 0
     posY: 0
@@ -151,8 +182,39 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Should have known...
+    string0: Well, you all can go scott free, take your new freind with you. Ralph,
+      I am sure you will go on to do great things.
     string1: Mr.Lovewell
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Uh huh...
+    string1: Ralph
     posX: 0
     posY: 0
     float0: 0
@@ -181,7 +243,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: I know where the uni is, Evan and I used to go there, right Evan?
+    string0: I know where the uni is, I used to study there. And Evan graduated there
+      too.
     string1: Chloe
     posX: 0
     posY: 0
@@ -256,15 +319,45 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
-    eventType: 1
+    eventType: 9
     funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 99
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: city
+    string1: Mr.Lovewell
+    posX: 0
+    posY: 0
+    float0: 0.05
+    float1: -1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 6
+    funcName: INCREASE_ES_LIMIT
     simultaenous: 0
     simlutaneousDelay: 0
     camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
     colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
+    int0: 2
     int1: 0
     int2: 0
     tpPoint: 97
@@ -316,7 +409,37 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
-    eventType: 24
+    eventType: 7
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 8
+    int1: 0
+    int2: 0
+    tpPoint: 97
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: story
+    string1: Mr.Lovewell
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
@@ -331,12 +454,42 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: city
-    string1: Mr.Lovewell
+    string0: You can now set 2 extra skills
+    string1: 
     posX: 0
     posY: 0
     float0: 0
     float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 24
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 99
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: city
+    string1: Mr.Lovewell
+    posX: 0
+    posY: 0
+    float0: 2996
+    float1: 980
     stringList: []
     dialogueChoices: []
     intList: 

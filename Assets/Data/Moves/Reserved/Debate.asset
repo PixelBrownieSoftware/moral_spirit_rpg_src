@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 17
+  cost: 25
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
@@ -25,9 +25,25 @@ MonoBehaviour:
   action_type: 5
   moveType: 3
   target: 0
-  power: 25
+  power: 20
   preAnim: []
-  animation: []
+  animation:
+  - duration: 0.2
+    image: {fileID: 0}
+    name: reservedFX
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 0
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.2
+    image: {fileID: 0}
+    name: reservedFX
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
   str_inc: 2
@@ -41,8 +57,8 @@ MonoBehaviour:
   canLearn: 1
   excludeUser: 0
   str_req: 0
-  dex_req: 11
-  vit_req: 3
+  dex_req: 15
+  vit_req: 7
   agi_req: 0
   gut_req: 7
   customFx: 

@@ -397,11 +397,11 @@ public class o_battleChar : MonoBehaviour
             }
         }
 
-        attackBuff = Mathf.Clamp(attackBuff, -5,5);
-        defenceBuff = Mathf.Clamp(defenceBuff, -5,5);
-        speedBuff = Mathf.Clamp(speedBuff, -5,5);
-        intelligenceBuff = Mathf.Clamp(intelligenceBuff, -5,5);
-        gutsBuff = Mathf.Clamp(gutsBuff, -5,5);
+        attackBuff = Mathf.Clamp(attackBuff, -6,6);
+        defenceBuff = Mathf.Clamp(defenceBuff, -6,6);
+        speedBuff = Mathf.Clamp(speedBuff, -6,6);
+        intelligenceBuff = Mathf.Clamp(intelligenceBuff, -6,6);
+        gutsBuff = Mathf.Clamp(gutsBuff, -6,6);
 
         if (animations != null)
         {
@@ -434,10 +434,6 @@ public class o_battleChar : MonoBehaviour
             case s_battleAction.MOVE_TYPE.MOVE:
                 mov = move.move;
                 break;
-
-            case s_battleAction.MOVE_TYPE.ITEM:
-                mov = move.item.action;
-                break;
         }
         if (!mov.isFixed)
         {
@@ -453,9 +449,15 @@ public class o_battleChar : MonoBehaviour
                     }
                     else
                     {
+                        movePow = (int)((mov.power * (GetElementDamage(move)+5))/
+                            (getNetDefence + (guardPoints * 2)));
+
+                        //(float)() / (float)(getNetDefence + (guardPoints * 2));
+                        /*
                         movePow = (int)(mov.power *
                             (((move.user.level + 1) / 15) +
                             (float)(GetElementDamage(move) / (float)(getNetDefence + guardPoints))));
+                        */
                     }
                     /*
                     movePow = (int)(
@@ -499,12 +501,16 @@ public class o_battleChar : MonoBehaviour
                     }
                     break;
 
-                //Talking's effectivenes relies on the guts of the defender
                 case MOVE_TYPE.TALK:
+                    movePow = (int)((GetTalkMoveDamage(move) * (mov.power + 5)) /
+                        (GetTalkMoveDefence(move) + (guardPoints * 2)));
+                    movePow = Mathf.CeilToInt((float)movePow /2.4f);
+                    /*
                     movePow = (int)(
                         ((mov.power * 
                         (((move.user.level + 1) ) / 21.5f) + (GetTalkMoveDamage(move) / (float)GetTalkMoveDefence(move)))) *
                         (actionTypeCharts[(int)mov.action_type])) ;
+                    */
                     break;
             }
         } else {
@@ -636,7 +642,7 @@ public class o_battleChar : MonoBehaviour
         switch (move.move.action_type)
         {
             case ACTION_TYPE.THREAT:
-                talkFormula = (getNetGuts / 2.2f) +(getNetDefence / 3f);
+                talkFormula = Mathf.CeilToInt(getNetGuts / 2) + Mathf.CeilToInt(getNetDefence / 2);
                 break;
             case ACTION_TYPE.PLAYFUL:
                 talkFormula = (getNetGuts / 1.6f) + (getNetSpeed / 1.25f);

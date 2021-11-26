@@ -25,7 +25,7 @@ MonoBehaviour:
   action_type: 3
   moveType: 3
   target: 0
-  power: 17
+  power: 13
   preAnim: []
   animation:
   - duration: 0.45
@@ -57,7 +57,7 @@ MonoBehaviour:
   canLearn: 1
   excludeUser: 0
   str_req: 7
-  dex_req: 5
+  dex_req: 0
   vit_req: 0
   agi_req: 0
   gut_req: 4

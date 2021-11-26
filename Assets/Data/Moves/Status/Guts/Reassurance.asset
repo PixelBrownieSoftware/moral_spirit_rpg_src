@@ -16,11 +16,11 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 1
-  cost: 11
+  cost: 10
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user reassures the target that things will go smoothly.
   element: 0
   action_type: 0
   moveType: 2
@@ -39,10 +39,10 @@ MonoBehaviour:
   buffUser: 0
   buffTarget: 1
   canLearn: 1
-  excludeUser: 0
+  excludeUser: 1
   str_req: 0
   dex_req: 0
-  vit_req: 4
+  vit_req: 12
   agi_req: 0
   gut_req: 7
   customFx: 

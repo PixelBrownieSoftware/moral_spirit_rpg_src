@@ -2,12 +2,25 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class s_mainBattleMenu : s_menucontroller
 {
+    
+    float _MaxCP = 0;
+    public Text text;
+
+    public void ChangeDesc(string desc, bool isRun) {
+        if (!isRun)
+            text.text = desc;
+        else
+            text.text = "Run - Leave the battle. Costs " + _MaxCP/2 + " Courage";
+    }
+
     public override void OnOpen()
     {
         base.OnOpen();
+        _MaxCP = s_battlesyst.GetInstance().playerCPMax;
         buttons[0].gameObject.SetActive(false);
         buttons[6].gameObject.SetActive(false);
         if (rpg_globals.gl.inventory.Count > 0)

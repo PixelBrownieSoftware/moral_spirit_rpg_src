@@ -16,7 +16,7 @@ MonoBehaviour:
   isFixed: 0
   onSelf: 0
   onTeam: 0
-  cost: 3
+  cost: 6
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
@@ -25,9 +25,25 @@ MonoBehaviour:
   action_type: 3
   moveType: 3
   target: 0
-  power: 8
+  power: 14
   preAnim: []
-  animation: []
+  animation:
+  - duration: 0.2
+    image: {fileID: 0}
+    name: glare
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 3
+    pos: 0
+    anim: {fileID: 0}
+  - duration: 0.2
+    image: {fileID: 0}
+    name: glare
+    position: {x: 0, y: 0}
+    camMode: 0
+    type: 1
+    pos: 0
+    anim: {fileID: 0}
   moveRequirements: []
   accuracy: 85
   str_inc: 1

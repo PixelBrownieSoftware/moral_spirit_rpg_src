@@ -20,12 +20,12 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: A bar that gives you extra energy.
   element: 0
   action_type: 0
   moveType: 2
   target: 0
-  power: 35
+  power: 50
   preAnim: []
   animation: []
   moveRequirements: []
@@ -37,6 +37,7 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 0
   excludeUser: 0
   str_req: 0

@@ -14,7 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectReferences:
   - Ralph
+  - Abaddon
+  - Player
+  - True Ralph
+  - Rebecca
   elements:
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: -1
+    jump: 0
+    pos: {x: 360.3, y: 200}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 1
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
   - logic: 0
     eventType: 1
     funcName: 
@@ -91,8 +125,68 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Your power surpasses mine, you and I will become one.
+    string0: I have no reason to remain here in this form, let me enter your heart.
     string1: Abaddon
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0.05
+    float1: 115
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 0
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 314, y: 218}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: Ending
+    string1: 
     posX: 0
     posY: 0
     float0: 0
@@ -136,6 +230,186 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
+    eventType: 37
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 2
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: -1
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 13
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 1, g: 1, b: 1, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 5
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 8300000, guid: 7ae412c2a3a50b64ba7b2605e6cef7b4, type: 3}
+  - logic: 0
+    eventType: 18
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0.6
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 25
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 1
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 1
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 13
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 1, g: 1, b: 1, a: 0}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
     eventType: 1
     funcName: 
     simultaenous: 0
@@ -151,7 +425,7 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan checked on Raphael
+    string0: You checked on Raphael
     string1: 
     posX: 0
     posY: 0
@@ -226,6 +500,36 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
+    eventType: 37
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 2
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
     eventType: 1
     funcName: 
     simultaenous: 0
@@ -241,7 +545,97 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: W-what's happening to me?
+    string0: Hold on.... I see my true self waking up!
+    string1: Raphael
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 3
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0.01
+    float1: 120
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 0
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 368, y: 323}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ralph? Y-you're waking up! So glad to see you aw-
     string1: Raphael
     posX: 0
     posY: 0
@@ -258,7 +652,7 @@ MonoBehaviour:
   - logic: 0
     eventType: 35
     funcName: 
-    simultaenous: 0
+    simultaenous: 1
     simlutaneousDelay: 0
     camMode: 0
     jump: 0
@@ -286,6 +680,96 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
+    eventType: 5
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 8300000, guid: 79bc00484823ad8478453f90cd3f47a8, type: 3}
+  - logic: 0
+    eventType: 18
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 1.8
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: H-he dissapeared! But the real Ralph's awake!
+    string1: Chloe
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
     eventType: 1
     funcName: 
     simultaenous: 0
@@ -301,7 +785,157 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Who... are you gu-
+    string0: Who are... you all? Rebecca...?
+    string1: Ralph
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 9
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 4
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 4
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0.02
+    float1: -1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 0
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 368, y: 323}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 4
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 1
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 37
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 4
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ending
+    string1: 
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 1
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Ralph! Hi! It's me! Rebecca, your freind from school!
+    string1: Rebecca
+    posX: 0
+    posY: 0
+    float0: 0
+    float1: 0
+    stringList: []
+    dialogueChoices: []
+    intList: 
+    scrObj: {fileID: 0}
+    objectToControl: {fileID: 0}
+    logicType: 0
+    timelineAsset: {fileID: 0}
+    sound: {fileID: 0}
+  - logic: 0
+    eventType: 1
+    funcName: 
+    simultaenous: 0
+    simlutaneousDelay: 0
+    camMode: 0
+    jump: 0
+    pos: {x: 0, y: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 0
+    int1: 0
+    int2: 0
+    tpPoint: 0
+    boolean: 0
+    boolean1: 0
+    boolean2: 0
+    string0: Rebecca...? Hey... how have you been doing?
     string1: Ralph
     posX: 0
     posY: 0
@@ -331,7 +965,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Ralph suddenly fell asleep.
+    string0: Ralph and Rebecca talked to each other, with her introducing you, Sebastian
+      and Chloe.
     string1: 
     posX: 0
     posY: 0
@@ -346,27 +981,27 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
-    eventType: 1
+    eventType: 9
     funcName: 
     simultaenous: 0
     simlutaneousDelay: 0
-    camMode: 0
+    camMode: 4
     jump: 0
     pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
+    colour: {r: 0, g: 0, b: 0, a: 1}
+    int0: 2
     int1: 0
     int2: 0
     tpPoint: 0
     boolean: 0
     boolean1: 0
-    boolean2: 0
-    string0: Ralph!
-    string1: Everyone
+    boolean2: 1
+    string0: Ending
+    string1: 
     posX: 0
     posY: 0
-    float0: 0
-    float1: 0
+    float0: 0.01
+    float1: -1
     stringList: []
     dialogueChoices: []
     intList: 
@@ -421,7 +1056,8 @@ MonoBehaviour:
     boolean: 0
     boolean1: 0
     boolean2: 0
-    string0: Evan and his party stayed in the hospital.
+    string0: You and the party stayed in the hospital, until the doctors came in
+      which you explained the situation to them.
     string1: 
     posX: 0
     posY: 0
@@ -436,53 +1072,22 @@ MonoBehaviour:
     timelineAsset: {fileID: 0}
     sound: {fileID: 0}
   - logic: 0
-    eventType: 1
-    funcName: 
+    eventType: 6
+    funcName: DISABLE_OPENMENU
     simultaenous: 0
     simlutaneousDelay: 0
     camMode: 0
     jump: 0
     pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
+    colour: {r: 0, g: 0, b: 0, a: 1}
     int0: 0
     int1: 0
     int2: 0
     tpPoint: 0
-    boolean: 0
+    boolean: 1
     boolean1: 0
     boolean2: 0
-    string0: The hospital equipment did not indicate any sign of death. Ralph was
-      just asleep.
-    string1: 
-    posX: 0
-    posY: 0
-    float0: 0
-    float1: 0
-    stringList: []
-    dialogueChoices: []
-    intList: 
-    scrObj: {fileID: 0}
-    objectToControl: {fileID: 0}
-    logicType: 0
-    timelineAsset: {fileID: 0}
-    sound: {fileID: 0}
-  - logic: 0
-    eventType: 1
-    funcName: 
-    simultaenous: 0
-    simlutaneousDelay: 0
-    camMode: 0
-    jump: 0
-    pos: {x: 0, y: 0}
-    colour: {r: 0, g: 0, b: 0, a: 0}
-    int0: 0
-    int1: 0
-    int2: 0
-    tpPoint: 0
-    boolean: 0
-    boolean1: 0
-    boolean2: 0
-    string0: The doctors came and Evan explained the situation to them.
+    string0: Ending
     string1: 
     posX: 0
     posY: 0

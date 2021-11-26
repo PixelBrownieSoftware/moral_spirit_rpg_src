@@ -20,10 +20,10 @@ MonoBehaviour:
   affectedBySilence: 0
   multiTech: 0
   actionDescription: 
-  infoDescription: 
+  infoDescription: The user tries to calm themselves down.
   element: 0
   action_type: 0
-  moveType: 0
+  moveType: 2
   target: 0
   power: 0
   preAnim: []
@@ -31,7 +31,7 @@ MonoBehaviour:
   moveRequirements: []
   accuracy: 85
   str_inc: 0
-  vit_inc: 1
+  vit_inc: 2
   dex_inc: 0
   luc_inc: 0
   agi_inc: 0

@@ -113,14 +113,6 @@ public class s_buttonSkill : s_button
             {
                 switch (moveButton.moveType)
                 {
-                    case MOVE_TYPE.PHYSICAL:
-
-                        if (bc.hitPoints <= ((float)(moveButton.cost / 100) * bc.maxHitPoints))
-                        {
-                            return;
-                        }
-                        break;
-
                     case MOVE_TYPE.STATUS:
                         if (!moveButton.isFixed) {
                             switch (moveButton.statusMoveType) {
