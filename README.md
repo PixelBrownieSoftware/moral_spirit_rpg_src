@@ -1,2 +1,2 @@
-# moral_spirit_rpg_src
-This is the source code for my RPG
+# Moral spirit source code
+This is the source code for my non-combat RPG Moralspirit.
