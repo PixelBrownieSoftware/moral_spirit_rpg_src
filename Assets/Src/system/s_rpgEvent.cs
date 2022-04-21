@@ -138,8 +138,13 @@ public class s_rpgEvent : s_triggerhandler
 
                     case "ADD_PARTY_MEMBER":
                         BattleCharacterData bcd = current_ev.scrObj as BattleCharacterData;
-                        if (rpg_globals.gl.partyMembers.Find(x => x.name == bcd.name) == null)
-                            rpg_globals.gl.AddMemeber(bcd, current_ev.int0);
+                        rpg_globals.gl.AddMemeber(bcd, current_ev.int0);
+                        break;
+
+                    case "REMOVE_PARTY_MEMBER":
+                        BattleCharacterData bcdR = current_ev.scrObj as BattleCharacterData;
+                        if (rpg_globals.gl.partyMembers.Find(x => x.name == bcdR.name) != null)
+                            rpg_globals.gl.RemoveMember(bcdR);
                         break;
 
                     case "ENABLE_OPENMENU":

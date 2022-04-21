@@ -12,7 +12,8 @@ public class s_targetMenu : s_menucontroller
     public enum TARGET_TYPE {
         RECOVERY,
         ASSIGN_SKILL,
-        SKILL
+        SKILL,
+        ASSIGN_PARTY_MEMBER
     }
     public TARGET_TYPE targType;
 
@@ -24,15 +25,36 @@ public class s_targetMenu : s_menucontroller
         List<o_battleCharData> bcs = rpg_globals.gl.partyMembers;
         switch (targType)
         {
+            case TARGET_TYPE.ASSIGN_PARTY_MEMBER:
+
+                foreach (o_battleCharData bcD in bcs)
+                {
+                    //SkillsMenu
+                    s_targCharButton chrBTN = GetButton<s_targCharButton>(ind);
+                    chrBTN.targType = s_targCharButton.BTN_TYPE.ASSIGN_PARTY_MEMBER;
+                    if (bcD.inBattle)
+                    {
+                        chrBTN.buttonColour.color = Color.white;
+                    }
+                    else
+                    {
+                        chrBTN.buttonColour.color = Color.grey;
+                    }
+                    chrBTN.txt.text = bcD.name;
+                    chrBTN.battleChar = bcD;
+                    ind++;
+                }
+                break;
             case TARGET_TYPE.SKILL:
 
                 foreach (o_battleCharData bcD in bcs)
                 {
                     //SkillsMenu
-                    GetButton<s_targCharButton>(ind);
-                    GetButton<s_targCharButton>(ind).targType = s_targCharButton.BTN_TYPE.SKILL_LOOK;
-                    GetButton<s_targCharButton>(ind).txt.text = bcD.name;
-                    GetButton<s_targCharButton>(ind).battleChar = bcD;
+                    s_targCharButton chrBTN = GetButton<s_targCharButton>(ind);
+                    chrBTN.buttonColour.color = Color.white;
+                    chrBTN.targType = s_targCharButton.BTN_TYPE.SKILL_LOOK;
+                    chrBTN.txt.text = bcD.name;
+                    chrBTN.battleChar = bcD;
                     ind++;
                 }
                 break;

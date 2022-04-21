@@ -601,7 +601,7 @@ public class s_battlesyst : s_singleton<s_battlesyst>
                             characterPos = Targ.transform.position;
                         //TODO: PUT IMMUNE GRAPHIC
                         SpawnDamageObject("", currentMove.target.transform.position, s_dmg.HIT_FX_TYPE.REFLECT);
-                        SpawnDamageObject("" + damage, characterPos, s_dmg.HIT_FX_TYPE.NONE);
+                        SpawnDamageObject("" + Mathf.Abs(damage), characterPos, s_dmg.HIT_FX_TYPE.NONE);
                         break;
 
                     case PRESS_TURN_TYPE.IMMUNE:

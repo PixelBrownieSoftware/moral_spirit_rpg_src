@@ -60,7 +60,8 @@ public class s_battletargetMenu : s_menucontroller
                     case TARGET_MOVE_TYPE.ALL:
                         for (int i = 0; i < bcs.Count; i++)
                         {
-                            if (mov.statusMoveType == STATUS_MOVE_TYPE.BUFF && mov.moveType == MOVE_TYPE.STATUS) {
+                            if (mov.statusMoveType == STATUS_MOVE_TYPE.BUFF && mov.moveType == MOVE_TYPE.STATUS)
+                            {
                                 if (bcs[i].hitPoints <= 0)
                                     continue;
                             }
@@ -72,9 +73,10 @@ public class s_battletargetMenu : s_menucontroller
                             tg = GetButton<s_targetButton>(i);
                             tg.targType = s_targetButton.TARGET_TYPE.BATTLE;
                             tg.isItem = isItem;
+                            tg.mov = mov;
+                            tg.battleCharButton = bcs[i];
                             tg.isAll = true;
                             tg.GetMemory(bcs[i]);
-                            tg.mov = mov;
                             tg.transform.position = Camera.main.WorldToScreenPoint(bcs[i].transform.position);
                             tg.txt.text = bcs[i].name;
                         }

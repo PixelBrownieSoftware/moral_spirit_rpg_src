@@ -40,11 +40,17 @@ public class s_statusMenu : s_menucontroller
         base.OnOpen();
         List<o_battleCharData> partyMembers = rpg_globals.gl.partyMembers;
         ResetButton();
-        for (int i = 0; i < partyMembers.Count; i++)
-        {
+        int i = 0;
+        foreach (var ptM in partyMembers) {
+
+            if (i == 5)
+                break;
+            if (!ptM.inBattle)
+                continue;
             GetButton<s_statusButton>(i).gameObject.SetActive(true);
-            GetButton<s_statusButton>(i).character = partyMembers[i];
-            GetButton<s_statusButton>(i).txt.text = partyMembers[i].name;
+            GetButton<s_statusButton>(i).character = ptM;
+            GetButton<s_statusButton>(i).txt.text = ptM.name;
+            i++;
         }
     }
 

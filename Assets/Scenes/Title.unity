@@ -238,7 +238,7 @@ MonoBehaviour:
   fade: {fileID: 0}
   _buttonList: []
   _keyList: []
-  mainGameLoad: intro_game_scene
+  mainGameLoad: lounge_1f
   areaPartLoad: 97
 --- !u!1 &1456228976
 GameObject:

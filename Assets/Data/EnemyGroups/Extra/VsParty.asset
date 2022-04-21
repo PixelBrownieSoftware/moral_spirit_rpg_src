@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6aa7109b6963a46850a45af304b7a3, type: 3}
+  m_Name: VsParty
+  m_EditorClassIdentifier: 
+  endEvent: {fileID: 0}
+  enemies:
+  - {fileID: 11400000, guid: d483d8997c75e42448c2897f0039b022, type: 2}
+  - {fileID: 11400000, guid: 725fc24de7953a94382752c5fe52597b, type: 2}
+  - {fileID: 11400000, guid: 5d503aba61f92ce4a97ef4f3dbf633bf, type: 2}
+  - {fileID: 11400000, guid: 4acd8b7635f57b34d819769028c544d0, type: 2}
+  - {fileID: 11400000, guid: 835b704e94697624eb36c969ca94dc59, type: 2}
+  maxLevel: 45
+  minLevel: 45
+  fixedLevel: 
+  isFixedLevel: 0
+  battleEvents: []
+  allRelations: 0
+  isFleeable: 1
+  songName: face_the_truth

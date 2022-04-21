@@ -106,8 +106,8 @@ MonoBehaviour:
     isImportant: 0
   turnIcons: 1
   characterAnims:
-  - {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
-  front: {fileID: 0}
+  - {fileID: -6190682728497897286, guid: 940070163ab8f544794c12b75ae15bbb, type: 3}
+  front: {fileID: -6190682728497897286, guid: 940070163ab8f544794c12b75ae15bbb, type: 3}
   back: {fileID: -4423519337451487988, guid: 20cbab0306440fc4d8a1c887612a1ef9, type: 3}
   character_colour: {r: 0.1779548, g: 0.87077516, b: 0.8773585, a: 1}
   isPartyChar: 0

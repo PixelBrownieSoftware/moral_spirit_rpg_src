@@ -19,6 +19,16 @@ MonoBehaviour:
     element: 0
     healthPercentage: 0
     name: 
+    moveName: {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
     moveName: {fileID: 11400000, guid: e773f3ec99f5cf74eb2a427eaf623643, type: 2}
     onParty: 0
     number1: 0
@@ -80,16 +90,6 @@ MonoBehaviour:
     healthPercentage: 0
     name: 
     moveName: {fileID: 11400000, guid: 1d7f1f92c3d975048b0ee5b5fccc26d5, type: 2}
-    onParty: 0
-    number1: 0
-    number2: 0
-    isImportant: 0
-  - turnCounters: 0
-    conditions: 0
-    element: 0
-    healthPercentage: 0
-    name: 
-    moveName: {fileID: 11400000, guid: 0b70285dc1d0d0c48a4237b364c50038, type: 2}
     onParty: 0
     number1: 0
     number2: 0

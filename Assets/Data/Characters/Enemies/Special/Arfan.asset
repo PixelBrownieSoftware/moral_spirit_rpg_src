@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e51f03554380741b55b3dfa6f32545, type: 3}
+  m_Name: Arfan
+  m_EditorClassIdentifier: 
+  shortName: 
+  characterAI:
+  - turnCounters: 1
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 164d39577c0ea734e9ca69c7f1fb8902, type: 2}
+    onParty: 0
+    number1: 1
+    number2: 0
+    isImportant: 1
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 299680b048ec0ef429a8822ccd58a5be, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 12b42c486bd357147a010459a145da9d, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: 108abd6973a0f0d4d962675d5eb37d0c, type: 2}
+    onParty: 1
+    number1: 0
+    number2: 0
+    isImportant: 0
+  - turnCounters: 0
+    conditions: 0
+    element: 0
+    healthPercentage: 0
+    name: 
+    moveName: {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+    onParty: 0
+    number1: 0
+    number2: 0
+    isImportant: 0
+  turnIcons: 1
+  characterAnims: []
+  front: {fileID: 2981047858644412124, guid: 940070163ab8f544794c12b75ae15bbb, type: 3}
+  back: {fileID: 0}
+  character_colour: {r: 0.2775454, g: 0.5361696, b: 0.9339623, a: 1}
+  isPartyChar: 0
+  baseExpYeild: 0
+  maxHitPoints: 0
+  couragePoints: 0
+  maxSkillPoints: 0
+  maxSkillPointsB: 1
+  maxHitPointsB: 15
+  attackB: 1
+  defenceB: 1
+  intelligenceB: 1
+  gutsB: 1
+  speedB: 1
+  maxSkillPointsGMax: 0
+  maxSkillPointsGMin: 0
+  maxHitPointsGMax: 5
+  maxHitPointsGMin: 4
+  attackG: 0.369
+  defenceG: 0.299
+  intelligenceG: 0.265
+  gutsG: 0.329
+  speedG: 0.523
+  determineCP: 0
+  moveDatabase:
+  - {fileID: 11400000, guid: b9444e3e4c00d414b8b9f3172769a9bf, type: 2}
+  - {fileID: 11400000, guid: 299680b048ec0ef429a8822ccd58a5be, type: 2}
+  - {fileID: 11400000, guid: c378f1c77d4effb4db5213d61f2166fd, type: 2}
+  - {fileID: 11400000, guid: 12b42c486bd357147a010459a145da9d, type: 2}
+  - {fileID: 11400000, guid: 108abd6973a0f0d4d962675d5eb37d0c, type: 2}
+  - {fileID: 11400000, guid: ed381c84d3ff89b4394bfa150ab2cc5a, type: 2}
+  - {fileID: 11400000, guid: 164d39577c0ea734e9ca69c7f1fb8902, type: 2}
+  - {fileID: 11400000, guid: 58502287d714e124d8d5a3a71c7d51a9, type: 2}
+  currentMoves: []
+  currentStatus: 0
+  elementTypeCharts:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  actionTypeCharts:
+  - 1
+  - 0.78
+  - 1.41
+  - -0.43
+  - 1
+  - 2.14
+  - 1
+  - 1
+  - 1
+  money: 0
+  itemDrop: []
+  relationships: []
+  conservativeCP: 0.45
+  sheildChance: 0.25

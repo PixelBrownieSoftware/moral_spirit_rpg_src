@@ -22,7 +22,7 @@ MonoBehaviour:
   actionDescription: 
   infoDescription: 
   element: 4
-  action_type: 0
+  action_type: 3
   moveType: 0
   target: 0
   power: 17
@@ -61,6 +61,7 @@ MonoBehaviour:
   agi_inc: 0
   gut_inc: 0
   buffUser: 0
+  buffTarget: 1
   canLearn: 1
   excludeUser: 0
   str_req: 3

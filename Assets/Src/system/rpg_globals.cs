@@ -100,7 +100,7 @@ public class RPG_save : dat_save
             pm.hitPoints = da.hitPoints;
             pm.maxHitPoints = da.maxHitPoints;
 
-            //pm.skillPoints = 0;
+            pm.inBattle = da.inBattle;
             pm.maxSkillPoints = da.maxSkillPoints;
 
             pm.dataSrc = da.dataSrc.name;
@@ -395,10 +395,20 @@ public class rpg_globals : s_globals
         }
         return bat;
     }
+
+    public void RemoveMember(BattleCharacterData data) {
+        partyMembers[partyMembers.FindIndex(x => x.dataSrc == data)].inBattle = false;
+    }
     
     public void AddMemeber(BattleCharacterData data, int level)
     {
-        o_battleCharData newCharacter = new o_battleCharData();
+        o_battleCharData newCharacter = partyMembers.Find(x => x.dataSrc == data);
+        if (newCharacter != null) {
+            newCharacter.inBattle = true;
+            return;
+        }
+        level = 25;
+        newCharacter = new o_battleCharData();
         {
             newCharacter.level = level;
             newCharacter.name = data.name;
@@ -456,6 +466,7 @@ public class rpg_globals : s_globals
         }
         newCharacter.dataSrc = data;
         partyMembers.Add(newCharacter);
+        newCharacter.inBattle = CheckPartyMemberBounds();
     }
 
     public void AddMemeber(o_battleCharSaveData saveDat)
@@ -474,7 +485,7 @@ public class rpg_globals : s_globals
             int tempAg = data.speedB;
             int tempGut = data.gutsB;
 
-            newCharacter.inBattle = true;
+            newCharacter.inBattle = saveDat.inBattle;
 
             newCharacter.currentMoves = new List<s_move>();
 
@@ -616,6 +627,11 @@ public class rpg_globals : s_globals
         StartCoroutine(BattleTransition(enemy.enemyGroup));
     }
 
+    public bool CheckPartyMemberBounds() {
+        int pMemberCount = partyMembers.FindAll(x => x.inBattle).Count;
+        return pMemberCount < 5;
+    }
+
     public void SetStats(o_battleChar bc)
     {
         o_battleCharData character = partyMembers.Find(x => x.name == bc.name);
@@ -733,31 +749,37 @@ public class rpg_globals : s_globals
         charactersInBattle = partyMembers;
 
         battleSystem.players = new List<o_battleChar>();
+        int iChara = 0;
         for (int i = 0; i < charactersInBattle.Count; i++)
         {
             o_battleCharData bc = charactersInBattle[i];
-            playerSlots[i].skillMoves = new List<s_move>();
-            playerSlots[i].extra_skills = new List<s_move>();
-            playerSlots[i].name = bc.name;
-            playerSlots[i].level = bc.level;
-            playerSlots[i].baseExpYeild = bc.baseExpYeild;
-            playerSlots[i].maxHitPoints = bc.maxHitPoints;
-            playerSlots[i].hitPoints = bc.hitPoints;
-            playerSlots[i].maxSkillPoints = bc.maxSkillPoints;
+            if (!bc.inBattle)
+                continue;
+            if (iChara == 5)
+                break;
+            o_battleChar bcSlot = playerSlots[iChara];
+            bcSlot.skillMoves = new List<s_move>();
+            bcSlot.extra_skills = new List<s_move>();
+            bcSlot.name = bc.name;
+            bcSlot.level = bc.level;
+            bcSlot.baseExpYeild = bc.baseExpYeild;
+            bcSlot.maxHitPoints = bc.maxHitPoints;
+            bcSlot.hitPoints = bc.hitPoints;
+            bcSlot.maxSkillPoints = bc.maxSkillPoints;
             //playerSlots[i].skillPoints = bc.maxSkillPoints/2;
-            playerSlots[i].defence = bc.defence;
-            playerSlots[i].intelligence = bc.intelligence;
-            playerSlots[i].guts = bc.guts;
-            playerSlots[i].speed = bc.speed;
-            playerSlots[i].attack = bc.attack;
-            playerSlots[i].rend.color = Color.white;
+            bcSlot.defence = bc.defence;
+            bcSlot.intelligence = bc.intelligence;
+            bcSlot.guts = bc.guts;
+            bcSlot.speed = bc.speed;
+            bcSlot.attack = bc.attack;
+            bcSlot.rend.color = Color.white;
             //playerSlots[i].actionTypeCharts = bc.dataSrc.actionTypeCharts;
-            Array.Copy(bc.dataSrc.actionTypeCharts , playerSlots[i].actionTypeCharts, playerSlots[i].actionTypeCharts.Length);
-            Array.Copy(bc.dataSrc.elementTypeCharts, playerSlots[i].elementTypeCharts, playerSlots[i].elementTypeCharts.Length);
-            
+            Array.Copy(bc.dataSrc.actionTypeCharts , bcSlot.actionTypeCharts, bcSlot.actionTypeCharts.Length);
+            Array.Copy(bc.dataSrc.elementTypeCharts, bcSlot.elementTypeCharts, bcSlot.elementTypeCharts.Length);
+
             //playerSlots[i].elementTypeCharts = bc.dataSrc.elementTypeCharts;
-            playerSlots[i].moveDatabase = bc.moveDatabase;
-            playerSlots[i].data = bc.dataSrc;
+            bcSlot.moveDatabase = bc.moveDatabase;
+            bcSlot.data = bc.dataSrc;
             /*
             foreach (o_battleChar.move_learn ml in bc.moveDatabase)
             {
@@ -766,26 +788,27 @@ public class rpg_globals : s_globals
             ///FOR NOW ADD IN ALL OF THE PLAYER AND ENEY CHARACTERS TO THE QUEUE
             battleSystem.characterTurnQueue.Enqueue(playerSlots[i]);
             */
-            playerSlots[i].skillMoves = new List<s_move>();
+            bcSlot.skillMoves = new List<s_move>();
             foreach (s_move ml in bc.currentMoves)
             {
-                AddMove(ref playerSlots[i], ml);
+                AddMove(ref bcSlot, ml);
             }
             foreach (s_move ml in bc.extra_skills)
             {
-                AddExtraMove(ref playerSlots[i], ml);
+                AddExtraMove(ref bcSlot, ml);
             }
 
-            battleSystem.players.Add(playerSlots[i]);
-            battleSystem.allCharacters.Add(playerSlots[i]);
+            battleSystem.players.Add(bcSlot);
+            battleSystem.allCharacters.Add(bcSlot);
             if (bc.dataSrc.characterAnims != null)
             {
-                playerSlots[i].sprites = bc.dataSrc.characterAnims;
-                playerSlots[i].rend.sprite = bc.dataSrc.back;
-                playerSlots[i].rend.color = Color.white;
+                bcSlot.sprites = bc.dataSrc.characterAnims;
+                bcSlot.rend.sprite = bc.dataSrc.back;
+                bcSlot.rend.color = Color.white;
             }
-            playerSlots[i].itemUsed = null;
-            battleSystem.playerCharacterTurnQueue.Enqueue(playerSlots[i]);
+            bcSlot.itemUsed = null;
+            iChara++;
+            battleSystem.playerCharacterTurnQueue.Enqueue(bcSlot);
         }
 
         battleSystem.opposition = new List<o_battleChar>();
@@ -860,6 +883,7 @@ public class rpg_globals : s_globals
 
     public void SetStatsOpponent(ref o_battleChar charObj, BattleCharacterData enem, enemy_group enemyGroup, int level)
     {
+        level = 25;
         int tempLvl = level;
         int tempHP = enem.maxHitPointsB;
         int tempSP = enem.maxSkillPointsB;

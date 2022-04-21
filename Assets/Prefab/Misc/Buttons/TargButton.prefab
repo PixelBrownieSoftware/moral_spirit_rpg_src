@@ -139,6 +139,7 @@ MonoBehaviour:
   txt: {fileID: 3801173002814250449}
   buttonTex: {fileID: 0}
   isPause: 1
+  allowMenuPause: 1
   battleChar:
     dataSrc: {fileID: 0}
     characterAI: []
@@ -150,14 +151,12 @@ MonoBehaviour:
     baseExpYeild: 0
     hitPoints: 0
     maxHitPoints: 0
-    skillPoints: 0
     maxSkillPoints: 0
     attack: 0
     defence: 0
     intelligence: 0
     guts: 0
     speed: 0
-    luck: 0
     inBattle: 1
     moveDatabase: []
     currentMoves: []
@@ -167,6 +166,7 @@ MonoBehaviour:
   mov: {fileID: 0}
   itemName: 
   targType: 0
+  buttonColour: {fileID: 3801173001215686963}
 --- !u!114 &4517927916831136067
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -116,7 +116,7 @@ MonoBehaviour:
   couragePoints: 0
   maxSkillPoints: 0
   maxSkillPointsB: 14
-  maxHitPointsB: 15
+  maxHitPointsB: 13
   attackB: 3
   defenceB: 3
   intelligenceB: 4
@@ -124,8 +124,8 @@ MonoBehaviour:
   speedB: 3
   maxSkillPointsGMax: 3
   maxSkillPointsGMin: 2
-  maxHitPointsGMax: 4
-  maxHitPointsGMin: 3
+  maxHitPointsGMax: 3
+  maxHitPointsGMin: 2
   attackG: 0.407
   defenceG: 0.254
   intelligenceG: 0.667

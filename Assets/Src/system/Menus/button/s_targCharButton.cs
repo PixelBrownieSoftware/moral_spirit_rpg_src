@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using MagnumFoundation2.System.Core;
 
 public class s_targCharButton : s_button
@@ -13,9 +14,11 @@ public class s_targCharButton : s_button
         SKILL_USE,
         ITEM,
         ASSIGN_SKILL,
-        SKILL_LOOK
+        SKILL_LOOK,
+        ASSIGN_PARTY_MEMBER
     }
     public BTN_TYPE targType;
+    public Image buttonColour;
 
     protected override void OnButtonClicked()
     {
@@ -42,6 +45,22 @@ public class s_targCharButton : s_button
                         break;
                         */
                 }
+                break;
+
+            case BTN_TYPE.ASSIGN_PARTY_MEMBER:
+                if (battleChar.inBattle)
+                {
+                    if(rpg_globals.gl.partyMembers.FindAll(x => x.inBattle).Count > 1)
+                        battleChar.inBattle = false;
+                }
+                else
+                {
+                    if (rpg_globals.gl.CheckPartyMemberBounds())
+                    {
+                        battleChar.inBattle = true;
+                    }
+                }
+                base.OnButtonClicked();
                 break;
 
             case BTN_TYPE.SKILL_LOOK:
@@ -79,6 +98,16 @@ public class s_targCharButton : s_button
         }
         switch (targType)
         {
+            case BTN_TYPE.ASSIGN_PARTY_MEMBER:
+                if (battleChar.inBattle)
+                {
+                    buttonColour.color = Color.white;
+                }
+                else
+                {
+                    buttonColour.color = Color.grey;
+                }
+                break;
             case BTN_TYPE.SKILL_USE:
             case BTN_TYPE.ITEM:
                 switch (mov.statusMoveType)
