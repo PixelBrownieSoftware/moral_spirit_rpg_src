@@ -107,8 +107,8 @@ MonoBehaviour:
   turnIcons: 1
   characterAnims: []
   front: {fileID: 9121403135921029393, guid: ce00c4e86cd0fd54e94f908a61ce5638, type: 3}
-  back: {fileID: 0}
-  character_colour: {r: 0, g: 0, b: 0, a: 0}
+  back: {fileID: 9121403135921029393, guid: ce00c4e86cd0fd54e94f908a61ce5638, type: 3}
+  character_colour: {r: 0.38964608, g: 0.7924528, b: 0.18316127, a: 1}
   isPartyChar: 0
   baseExpYeild: 55
   maxHitPoints: 0
